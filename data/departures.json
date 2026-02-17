@@ -1,0 +1,7 @@
+[
+  { "id": "takamatsu", "label": "高松", "region": "四国" },
+  { "id": "osaka", "label": "大阪", "region": "関西" },
+  { "id": "okayama", "label": "岡山", "region": "中国" },
+  { "id": "tokyo", "label": "東京", "region": "関東" },
+  { "id": "fukuoka", "label": "博多", "region": "九州" }
+]
