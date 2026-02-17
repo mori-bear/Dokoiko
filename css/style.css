@@ -1,0 +1,93 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  background: linear-gradient(135deg,#f6f8fb,#eef2f7);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 520px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align:center;
+  margin-bottom: 5px;
+  font-size: 26px;
+}
+
+.subtitle {
+  text-align:center;
+  color:#666;
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+label {
+  display:block;
+  margin-top:15px;
+  font-size:14px;
+  font-weight:600;
+}
+
+select {
+  width:100%;
+  padding:12px;
+  margin-top:6px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  font-size:14px;
+}
+
+.primary-btn {
+  width:100%;
+  padding:14px;
+  margin-top:20px;
+  border:none;
+  border-radius:12px;
+  font-size:16px;
+  font-weight:bold;
+  background: linear-gradient(135deg,#111,#333);
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+.result-box {
+  margin-top:25px;
+  padding:22px;
+  background:white;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  animation: fadeIn 0.4s ease;
+}
+
+.cta-btn {
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background: linear-gradient(135deg,#ff6b00,#ff9900);
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-top:15px;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(10px);}
+  to {opacity:1; transform:translateY(0);}
+}
