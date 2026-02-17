@@ -6,6 +6,13 @@
 import { buildAffiliateUrl } from './affiliate.js';
 import { THEME_LABELS, DISTANCE_LABELS } from './config.js';
 
+/** フォールバック時に表示するメッセージ */
+const RELAXED_MESSAGES = {
+  theme: '条件に完全一致するプランがなかったため、テーマを広げて提案しています。',
+  distance: '条件に完全一致するプランがなかったため、距離の条件を広げて提案しています。',
+  both: '条件に完全一致するプランがなかったため、条件を広げて提案しています。'
+};
+
 /**
  * 出発地セレクトボックスを描画
  */
@@ -28,11 +35,16 @@ function renderThemeTags(themes) {
  * プラン結果を描画
  */
 export function renderResult(container, plan) {
-  const { destination, access, modelCourse, candidateCount } = plan;
+  const { destination, access, modelCourse, candidateCount, relaxed } = plan;
   const affiliateUrl = buildAffiliateUrl(destination.prefectureSlug);
+
+  const relaxedBanner = relaxed
+    ? `<div class="relaxed-banner">${RELAXED_MESSAGES[relaxed]}</div>`
+    : '';
 
   container.innerHTML = `
     <div class="result-card" role="article">
+      ${relaxedBanner}
       <div class="result-header">
         <div>
           <h2 class="result-city">${destination.city}</h2>
