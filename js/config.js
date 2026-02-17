@@ -1,0 +1,23 @@
+/**
+ * アプリケーション設定
+ * 楽天アフィリエイトIDやデータパスなど、環境ごとの設定を一元管理
+ */
+
+export const RAKUTEN_AFFILIATE = {
+  baseUrl: 'https://hb.afl.rakuten.co.jp/hgc/5113ee4b.8662cfc5.5113ee4c.119de89a/',
+  paramKey: 'pc',
+  travelUrlBase: 'https://travel.rakuten.co.jp/yado/'
+};
+
+export const DATA_PATH = './data';
+
+export const THEME_LABELS = {
+  view: '景色',
+  food: 'グルメ',
+  experience: '体験'
+};
+
+export const DISTANCE_LABELS = {
+  near: '近場',
+  far: '遠出'
+};

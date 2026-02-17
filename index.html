@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>どこ行こ？</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="出発地・距離感・テーマから日帰り旅行プランをランダム提案。迷ったらまかせて。">
+  <meta name="theme-color" content="#2563eb">
+  <title>どこ行こ？ - 日帰り旅プラン提案</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <div class="app">
 
-<div class="container">
-  <div class="card">
+    <header class="app-header">
+      <h1 class="app-title">どこ行こ？</h1>
+      <p class="app-subtitle">迷ったら、まかせて。<br>日帰り旅プランをランダム提案。</p>
+    </header>
 
-    <h1>どこ行こ？</h1>
-    <p class="subtitle">迷いはここで終わり。</p>
+    <main class="app-main">
+      <div class="form-card">
+        <div class="form-group">
+          <label for="departure">出発地</label>
+          <div class="select-wrap">
+            <select id="departure">
+              <option value="">読み込み中...</option>
+            </select>
+          </div>
+        </div>
 
-    <label>出発地</label>
-    <select id="departure">
-      <option value="takamatsu">高松</option>
-      <option value="osaka">大阪</option>
-      <option value="okayama">岡山</option>
-      <option value="tokyo">東京</option>
-      <option value="fukuoka">博多</option>
-    </select>
+        <div class="form-row">
+          <div class="form-group form-group--half">
+            <label for="distance">距離感</label>
+            <div class="select-wrap">
+              <select id="distance">
+                <option value="any">こだわらない</option>
+                <option value="near">近場</option>
+                <option value="far">遠出</option>
+              </select>
+            </div>
+          </div>
 
-    <label>距離感</label>
-    <select id="distance">
-      <option value="near">近場</option>
-      <option value="far">遠出</option>
-    </select>
+          <div class="form-group form-group--half">
+            <label for="theme">テーマ</label>
+            <div class="select-wrap">
+              <select id="theme">
+                <option value="any">こだわらない</option>
+                <option value="view">景色</option>
+                <option value="food">グルメ</option>
+                <option value="experience">体験</option>
+              </select>
+            </div>
+          </div>
+        </div>
 
-    <label>テーマ</label>
-    <select id="theme">
-      <option value="view">景色</option>
-      <option value="food">ご飯</option>
-      <option value="experience">体験</option>
-    </select>
+        <button id="generate-btn" class="primary-btn" disabled>
+          読み込み中...
+        </button>
+      </div>
 
-    <button class="primary-btn" onclick="generatePlan()">
-      提案を見る
-    </button>
+      <div id="result" class="result-container" style="display:none;"></div>
+    </main>
+
+    <footer class="app-footer">
+      <p>掲載情報は変更の可能性があります。お出かけ前に最新情報をご確認ください。</p>
+    </footer>
 
   </div>
 
-  <div id="result" class="result-box" style="display:none;"></div>
-
-</div>
-
-<script src="js/data.js"></script>
-<script src="js/script.js"></script>
-
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>
