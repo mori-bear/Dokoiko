@@ -1458,5 +1458,311 @@
         "ic": "利用可"
       }
     }
+  },
+  {
+    "id": "uji",
+    "city": "宇治",
+    "prefecture": "京都府",
+    "prefectureSlug": "kyoto",
+    "description": "平等院鳳凰堂と宇治抹茶の街",
+    "themes": ["view", "food"],
+    "modelCourses": [
+      "平等院鳳凰堂 → 宇治上神社 → 宇治抹茶スイーツ → 中村藤吉本店",
+      "平等院 → 源氏物語ミュージアム → 宇治川沿い散策 → 抹茶ソフト"
+    ],
+    "access": {
+      "kyoto": {
+        "distance": "near",
+        "outbound": "京都 8:30発 → JR奈良線 → 宇治 8:47着",
+        "return": "宇治 18:00発 → JR奈良線 → 京都 18:17着",
+        "time": "約17分",
+        "price": "約480円（往復）",
+        "ic": "利用可"
+      },
+      "osaka": {
+        "distance": "near",
+        "outbound": "大阪 8:15発 → JR → 京都乗換 → JR奈良線 → 宇治 9:10着",
+        "return": "宇治 18:00発 → JR奈良線 → 京都 → JR → 大阪 18:55着",
+        "time": "約55分",
+        "price": "約1,600円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "amanohashidate",
+    "city": "天橋立",
+    "prefecture": "京都府",
+    "prefectureSlug": "kyoto",
+    "description": "日本三景・股のぞきの絶景",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "天橋立ビューランド（股のぞき） → 松並木散策 → 智恩寺 → 海鮮ランチ",
+      "傘松公園リフト → 成相寺 → 天橋立松並木レンタサイクル → 廻旋橋"
+    ],
+    "access": {
+      "kyoto": {
+        "distance": "far",
+        "outbound": "京都 8:25発 → 特急はしだて → 天橋立 10:30着",
+        "return": "天橋立 17:15発 → 特急はしだて → 京都 19:19着",
+        "time": "約2時間5分",
+        "price": "約5,400円（往復）",
+        "ic": "JR区間のみ利用可"
+      },
+      "osaka": {
+        "distance": "far",
+        "outbound": "大阪 8:00発 → JR → 福知山乗換 → 京都丹後鉄道 → 天橋立 10:30着",
+        "return": "天橋立 17:00発 → 京都丹後鉄道 → 福知山 → JR → 大阪 19:30着",
+        "time": "約2時間30分",
+        "price": "約6,000円（往復）",
+        "ic": "JR区間のみ利用可"
+      }
+    }
+  },
+  {
+    "id": "kinosaki",
+    "city": "城崎温泉",
+    "prefecture": "兵庫県",
+    "prefectureSlug": "hyogo",
+    "description": "七つの外湯めぐりと但馬の味覚",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "外湯めぐり（御所の湯・一の湯） → 城崎ロープウェイ → 温泉街散策 → カニ料理",
+      "城崎マリンワールド → 外湯めぐり → 温泉街食べ歩き → 但馬牛"
+    ],
+    "access": {
+      "kyoto": {
+        "distance": "far",
+        "outbound": "京都 8:37発 → 特急きのさき → 城崎温泉 11:12着",
+        "return": "城崎温泉 17:01発 → 特急きのさき → 京都 19:32着",
+        "time": "約2時間35分",
+        "price": "約6,000円（往復）",
+        "ic": "利用可"
+      },
+      "osaka": {
+        "distance": "far",
+        "outbound": "大阪 8:11発 → 特急こうのとり → 城崎温泉 10:52着",
+        "return": "城崎温泉 17:01発 → 特急こうのとり → 大阪 19:40着",
+        "time": "約2時間40分",
+        "price": "約6,000円（往復）",
+        "ic": "利用可"
+      },
+      "kobe": {
+        "distance": "far",
+        "outbound": "三ノ宮 8:00発 → JR → 大阪乗換 → 特急こうのとり → 城崎温泉 10:52着",
+        "return": "城崎温泉 17:01発 → 特急こうのとり → 大阪 → JR → 三ノ宮 19:55着",
+        "time": "約2時間50分",
+        "price": "約6,500円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "awajishima",
+    "city": "淡路島",
+    "prefecture": "兵庫県",
+    "prefectureSlug": "hyogo",
+    "description": "花と海と淡路島バーガーの島",
+    "themes": ["view", "food"],
+    "modelCourses": [
+      "あわじ花さじき → 淡路島バーガー → 淡路ワールドパークONOKORO → 明石海峡大橋展望",
+      "淡路夢舞台 → 国営明石海峡公園 → 生しらす丼 → うずしおクルーズ"
+    ],
+    "access": {
+      "kobe": {
+        "distance": "near",
+        "outbound": "三ノ宮BT 8:30発 → 高速バス → 淡路IC 9:15着",
+        "return": "淡路IC 17:30発 → 高速バス → 三ノ宮BT 18:15着",
+        "time": "約45分",
+        "price": "約1,850円（往復）",
+        "ic": "不可（窓口 or 事前購入）"
+      },
+      "osaka": {
+        "distance": "far",
+        "outbound": "大阪 8:30発 → 高速バス → 淡路IC 10:00着",
+        "return": "淡路IC 17:00発 → 高速バス → 大阪 18:30着",
+        "time": "約1時間30分",
+        "price": "約3,100円（往復）",
+        "ic": "不可（事前購入）"
+      }
+    }
+  },
+  {
+    "id": "tottori",
+    "city": "鳥取砂丘",
+    "prefecture": "鳥取県",
+    "prefectureSlug": "tottori",
+    "description": "日本最大級の砂丘とらくだ体験",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "鳥取砂丘 → らくだ体験 → 砂の美術館 → 白兎神社 → 海鮮ランチ",
+      "鳥取砂丘パラグライダー → 砂の美術館 → 鳥取市内でカニ料理"
+    ],
+    "access": {
+      "matsue": {
+        "distance": "far",
+        "outbound": "松江 8:00発 → 特急スーパーまつかぜ → 鳥取 9:50着 → バス → 砂丘",
+        "return": "砂丘 → バス → 鳥取 17:00発 → 特急スーパーまつかぜ → 松江 18:50着",
+        "time": "約2時間10分（バス含む）",
+        "price": "約4,500円（往復・バス別）",
+        "ic": "JR区間のみ利用可"
+      },
+      "kobe": {
+        "distance": "far",
+        "outbound": "三ノ宮 8:00発 → 高速バス → 鳥取 10:40着 → バス → 砂丘",
+        "return": "砂丘 → バス → 鳥取 16:30発 → 高速バス → 三ノ宮 19:10着",
+        "time": "約3時間（バス含む）",
+        "price": "約3,800円（往復・バス別）",
+        "ic": "不可（事前予約）"
+      }
+    }
+  },
+  {
+    "id": "miyajima",
+    "city": "宮島（廿日市市）",
+    "prefecture": "広島県",
+    "prefectureSlug": "hiroshima",
+    "description": "海に浮かぶ朱色の大鳥居と厳島神社",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "厳島神社 → 大鳥居 → 表参道商店街（もみじ饅頭・穴子飯） → 弥山ロープウェイ",
+      "弥山登山 → 厳島神社 → 五重塔 → 表参道で牡蠣 → 大鳥居ライトアップ"
+    ],
+    "access": {
+      "hiroshima": {
+        "distance": "near",
+        "outbound": "広島 8:15発 → JR山陽本線 → 宮島口 8:43着 → フェリー → 宮島 8:53着",
+        "return": "宮島 18:00発 → フェリー → 宮島口 → JR → 広島 18:40着",
+        "time": "約40分（フェリー含む）",
+        "price": "約1,000円（往復・フェリー込み）",
+        "ic": "利用可"
+      },
+      "okayama": {
+        "distance": "far",
+        "outbound": "岡山 8:08発 → 新幹線 → 広島 → JR → 宮島口 → フェリー → 宮島 9:40着",
+        "return": "宮島 17:30発 → フェリー → 宮島口 → JR → 広島 → 新幹線 → 岡山 19:10着",
+        "time": "約1時間30分",
+        "price": "約8,000円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "kure",
+    "city": "呉",
+    "prefecture": "広島県",
+    "prefectureSlug": "hiroshima",
+    "description": "大和ミュージアムと海軍カレーの港町",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "大和ミュージアム → てつのくじら館 → 海軍カレーランチ → 呉港クルーズ",
+      "アレイからすこじま → 海軍カレー → 大和ミュージアム → 音戸の瀬戸"
+    ],
+    "access": {
+      "hiroshima": {
+        "distance": "near",
+        "outbound": "広島 8:20発 → JR呉線 → 呉 9:00着",
+        "return": "呉 18:00発 → JR呉線 → 広島 18:40着",
+        "time": "約40分",
+        "price": "約1,000円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "iwakuni",
+    "city": "岩国（錦帯橋）",
+    "prefecture": "山口県",
+    "prefectureSlug": "yamaguchi",
+    "description": "日本三名橋・錦帯橋と岩国寿司",
+    "themes": ["view", "food"],
+    "modelCourses": [
+      "錦帯橋 → 吉香公園 → 岩国城ロープウェイ → 岩国寿司ランチ",
+      "錦帯橋 → 白蛇の館 → 岩国城 → 岩国シロヘビの館 → 地酒試飲"
+    ],
+    "access": {
+      "hiroshima": {
+        "distance": "near",
+        "outbound": "広島 8:00発 → JR山陽本線 → 岩国 8:50着",
+        "return": "岩国 18:00発 → JR山陽本線 → 広島 18:50着",
+        "time": "約50分",
+        "price": "約1,600円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "izumo",
+    "city": "出雲大社",
+    "prefecture": "島根県",
+    "prefectureSlug": "shimane",
+    "description": "縁結びの聖地・出雲大社と出雲そば",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "出雲大社 → 神門通り（出雲そば・ぜんざい） → 稲佐の浜 → 島根ワイナリー",
+      "出雲大社 → 古代出雲歴史博物館 → 出雲そば → 日御碕灯台"
+    ],
+    "access": {
+      "matsue": {
+        "distance": "near",
+        "outbound": "松江 8:00発 → 一畑電車 → 出雲大社前 9:00着",
+        "return": "出雲大社前 17:30発 → 一畑電車 → 松江 18:30着",
+        "time": "約1時間",
+        "price": "約1,600円（往復）",
+        "ic": "不可（現金のみ）"
+      },
+      "hiroshima": {
+        "distance": "far",
+        "outbound": "広島 7:15発 → 高速バス → 出雲市 10:50着 → 一畑電車 → 出雲大社前",
+        "return": "出雲市 16:50発 → 高速バス → 広島 20:20着",
+        "time": "約3時間40分",
+        "price": "約7,000円（往復）",
+        "ic": "不可（事前予約）"
+      }
+    }
+  },
+  {
+    "id": "sakaiminato",
+    "city": "境港（水木しげるロード）",
+    "prefecture": "鳥取県",
+    "prefectureSlug": "tottori",
+    "description": "ゲゲゲの鬼太郎ロードと海鮮",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "水木しげるロード → 水木しげる記念館 → 境港さかなセンター → 海鮮丼",
+      "水木しげるロード → 妖怪神社 → 境港水産物直売センター → カニ料理"
+    ],
+    "access": {
+      "matsue": {
+        "distance": "near",
+        "outbound": "松江 8:30発 → JR境線 → 境港 9:15着",
+        "return": "境港 17:30発 → JR境線 → 松江 18:15着",
+        "time": "約45分",
+        "price": "約1,200円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "yasugi",
+    "city": "安来（足立美術館）",
+    "prefecture": "島根県",
+    "prefectureSlug": "shimane",
+    "description": "日本一の庭園と横山大観コレクション",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "足立美術館（日本庭園・横山大観） → 安来節演芸館（どじょうすくい） → 月山富田城跡",
+      "足立美術館 → 清水寺（安来市） → 安来節演芸館 → しじみ料理"
+    ],
+    "access": {
+      "matsue": {
+        "distance": "near",
+        "outbound": "松江 8:15発 → JR山陰本線 → 安来 8:40着 → 無料シャトルバス → 足立美術館",
+        "return": "足立美術館 → シャトルバス → 安来 17:10発 → JR → 松江 17:35着",
+        "time": "約40分（バス含む）",
+        "price": "約640円（往復・バス無料）",
+        "ic": "利用可"
+      }
+    }
   }
 ]
