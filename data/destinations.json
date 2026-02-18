@@ -926,5 +926,307 @@
         "ic": "利用可"
       }
     }
+  },
+  {
+    "id": "otaru",
+    "city": "小樽",
+    "prefecture": "北海道",
+    "prefectureSlug": "hokkaido",
+    "description": "運河とガラスとお寿司の港町",
+    "themes": ["view", "food"],
+    "modelCourses": [
+      "小樽運河散策 → 堺町通り（ガラス・オルゴール） → 小樽寿司",
+      "小樽運河クルーズ → 北一硝子 → ルタオ本店 → 三角市場で海鮮丼"
+    ],
+    "access": {
+      "sapporo": {
+        "distance": "near",
+        "outbound": "札幌 8:00発 → JR快速エアポート → 小樽 8:32着",
+        "return": "小樽 18:00発 → JR快速エアポート → 札幌 18:32着",
+        "time": "約32分",
+        "price": "約1,280円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "noboribetsu",
+    "city": "登別温泉",
+    "prefecture": "北海道",
+    "prefectureSlug": "hokkaido",
+    "description": "地獄谷と多彩な泉質の温泉郷",
+    "themes": ["experience", "view"],
+    "modelCourses": [
+      "地獄谷 → 大湯沼 → 天然足湯 → 登別温泉街散策",
+      "のぼりべつクマ牧場 → 地獄谷 → 大湯沼川天然足湯 → 温泉"
+    ],
+    "access": {
+      "sapporo": {
+        "distance": "near",
+        "outbound": "札幌 8:00発 → 特急すずらん → 登別 9:15着 → バス → 登別温泉",
+        "return": "登別温泉 → バス → 登別 17:30発 → 特急すずらん → 札幌 18:45着",
+        "time": "約1時間30分（バス含む）",
+        "price": "約5,500円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "furano",
+    "city": "富良野・美瑛",
+    "prefecture": "北海道",
+    "prefectureSlug": "hokkaido",
+    "description": "ラベンダー畑と丘の絶景パッチワーク",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "ファーム富田（ラベンダー） → 四季彩の丘 → 青い池 → 白ひげの滝",
+      "パッチワークの路 → ケンとメリーの木 → ファーム富田 → 富良野チーズ工房"
+    ],
+    "access": {
+      "sapporo": {
+        "distance": "far",
+        "outbound": "札幌 7:30発 → JR特急ライラック → 旭川乗換 → 富良野線 → 富良野 10:10着",
+        "return": "富良野 17:00発 → 富良野線 → 旭川乗換 → 特急ライラック → 札幌 19:30着",
+        "time": "約2時間40分",
+        "price": "約5,500円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "hakodate",
+    "city": "函館",
+    "prefecture": "北海道",
+    "prefectureSlug": "hokkaido",
+    "description": "百万ドルの夜景と朝市の海鮮",
+    "themes": ["view", "food"],
+    "modelCourses": [
+      "函館朝市 → 金森赤レンガ倉庫 → 元町散策 → 函館山ロープウェイ（夜景）",
+      "五稜郭タワー → ベイエリア → 八幡坂 → 函館山夜景"
+    ],
+    "access": {
+      "sapporo": {
+        "distance": "far",
+        "outbound": "札幌 7:49発 → 特急北斗 → 函館 11:28着",
+        "return": "函館 17:33発 → 特急北斗 → 札幌 21:12着",
+        "time": "約3時間40分",
+        "price": "約9,500円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "asahiyama",
+    "city": "旭川（旭山動物園）",
+    "prefecture": "北海道",
+    "prefectureSlug": "hokkaido",
+    "description": "行動展示で人気の動物園と旭川ラーメン",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "旭山動物園（ペンギン・ホッキョクグマ） → 旭川ラーメン村",
+      "旭山動物園 → 上野ファーム → 旭川ラーメン"
+    ],
+    "access": {
+      "sapporo": {
+        "distance": "far",
+        "outbound": "札幌 7:30発 → 特急ライラック → 旭川 8:55着 → バス → 旭山動物園",
+        "return": "旭山動物園 → バス → 旭川 17:00発 → 特急ライラック → 札幌 18:25着",
+        "time": "約2時間（バス含む）",
+        "price": "約5,500円（往復・バス別）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "matsushima",
+    "city": "松島",
+    "prefecture": "宮城県",
+    "prefectureSlug": "miyagi",
+    "description": "日本三景の島々と瑞巌寺",
+    "themes": ["view", "food"],
+    "modelCourses": [
+      "松島湾遊覧船 → 瑞巌寺 → 五大堂 → 松島さかな市場で牡蠣",
+      "福浦島 → 円通院 → 瑞巌寺 → 牡蠣小屋 → 松島海岸散策"
+    ],
+    "access": {
+      "sendai": {
+        "distance": "near",
+        "outbound": "仙台 8:15発 → JR仙石線 → 松島海岸 8:55着",
+        "return": "松島海岸 17:30発 → JR仙石線 → 仙台 18:10着",
+        "time": "約40分",
+        "price": "約840円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "yamadera",
+    "city": "山寺（山形市）",
+    "prefecture": "山形県",
+    "prefectureSlug": "yamagata",
+    "description": "奥の細道・1015段の石段と絶景",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "立石寺（山寺）石段登り → 五大堂からの絶景 → 山寺芭蕉記念館 → 冷やしそば",
+      "山寺 → 山形市内 → 蔵王温泉（日帰り入浴）"
+    ],
+    "access": {
+      "sendai": {
+        "distance": "near",
+        "outbound": "仙台 8:00発 → JR仙山線 → 山寺 8:55着",
+        "return": "山寺 17:00発 → JR仙山線 → 仙台 17:55着",
+        "time": "約55分",
+        "price": "約1,700円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "hiraizumi",
+    "city": "平泉",
+    "prefecture": "岩手県",
+    "prefectureSlug": "iwate",
+    "description": "世界遺産・中尊寺金色堂と浄土庭園",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "中尊寺（金色堂） → 毛越寺 → 平泉わんこそば",
+      "毛越寺（浄土庭園） → 中尊寺 → 高館義経堂 → 前沢牛ランチ"
+    ],
+    "access": {
+      "sendai": {
+        "distance": "near",
+        "outbound": "仙台 8:00発 → 東北新幹線 → 一ノ関 8:30着 → JR → 平泉 8:38着",
+        "return": "平泉 17:30発 → JR → 一ノ関 → 東北新幹線 → 仙台 18:15着",
+        "time": "約40分",
+        "price": "約4,500円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "aizuwakamatsu",
+    "city": "会津若松",
+    "prefecture": "福島県",
+    "prefectureSlug": "fukushima",
+    "description": "鶴ヶ城と白虎隊の歴史ロマン",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "鶴ヶ城 → 飯盛山（白虎隊） → 七日町通り散策 → ソースカツ丼",
+      "大内宿 → 鶴ヶ城 → 会津ラーメン → 東山温泉"
+    ],
+    "access": {
+      "sendai": {
+        "distance": "far",
+        "outbound": "仙台 7:40発 → 東北新幹線 → 郡山乗換 → 磐越西線 → 会津若松 10:00着",
+        "return": "会津若松 17:00発 → 磐越西線 → 郡山 → 東北新幹線 → 仙台 19:10着",
+        "time": "約2時間20分",
+        "price": "約6,500円（往復）",
+        "ic": "利用可"
+      },
+      "niigata": {
+        "distance": "far",
+        "outbound": "新潟 7:30発 → 磐越西線SLばんえつ物語or快速 → 会津若松 10:00着",
+        "return": "会津若松 16:30発 → 磐越西線 → 新潟 19:00着",
+        "time": "約2時間30分",
+        "price": "約3,400円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "echigoyuzawa",
+    "city": "越後湯沢",
+    "prefecture": "新潟県",
+    "prefectureSlug": "niigata",
+    "description": "温泉と日本酒とスキーの雪国リゾート",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "ぽんしゅ館（日本酒試飲） → 越後湯沢温泉 → へぎそば → 湯沢高原ロープウェイ",
+      "GALA湯沢 or 石打丸山スキー場 → 温泉 → 越後もち豚ランチ"
+    ],
+    "access": {
+      "niigata": {
+        "distance": "near",
+        "outbound": "新潟 8:30発 → 上越新幹線 → 越後湯沢 9:20着",
+        "return": "越後湯沢 18:00発 → 上越新幹線 → 新潟 18:50着",
+        "time": "約50分",
+        "price": "約4,700円（往復・自由席）",
+        "ic": "利用可"
+      },
+      "tokyo": {
+        "distance": "far",
+        "outbound": "東京 8:08発 → 上越新幹線 → 越後湯沢 9:25着",
+        "return": "越後湯沢 18:12発 → 上越新幹線 → 東京 19:28着",
+        "time": "約1時間17分",
+        "price": "約6,800円（往復・自由席）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "sado",
+    "city": "佐渡島（両津）",
+    "prefecture": "新潟県",
+    "prefectureSlug": "niigata",
+    "description": "たらい舟と金山の自然豊かな島",
+    "themes": ["experience", "view"],
+    "modelCourses": [
+      "佐渡金山 → 北沢浮遊選鉱場跡 → たらい舟体験 → 夕日",
+      "トキの森公園 → たらい舟 → 宿根木（千石船の里） → 佐渡海鮮"
+    ],
+    "access": {
+      "niigata": {
+        "distance": "far",
+        "outbound": "新潟港 8:05発 → カーフェリー → 両津港 10:35着",
+        "return": "両津港 16:00発 → カーフェリー → 新潟港 18:30着",
+        "time": "約2時間30分",
+        "price": "約5,000円（往復・2等）",
+        "ic": "不可（窓口購入）"
+      }
+    }
+  },
+  {
+    "id": "yahiko",
+    "city": "弥彦（弥彦村）",
+    "prefecture": "新潟県",
+    "prefectureSlug": "niigata",
+    "description": "越後一宮・弥彦神社と山頂パノラマ",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "弥彦神社 → 弥彦山ロープウェイ → 山頂パノラマタワー → 弥彦温泉",
+      "弥彦神社 → 弥彦公園 → おもてなし広場（食べ歩き） → 弥彦温泉"
+    ],
+    "access": {
+      "niigata": {
+        "distance": "near",
+        "outbound": "新潟 8:15発 → JR弥彦線（吉田乗換） → 弥彦 9:30着",
+        "return": "弥彦 17:15発 → JR弥彦線 → 新潟 18:30着",
+        "time": "約1時間15分",
+        "price": "約1,500円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "nagaoka",
+    "city": "長岡・寺泊",
+    "prefecture": "新潟県",
+    "prefectureSlug": "niigata",
+    "description": "花火の街と魚のアメ横",
+    "themes": ["food", "experience"],
+    "modelCourses": [
+      "寺泊魚の市場通り（浜焼き） → 長岡花火ミュージアム → アオーレ長岡",
+      "国営越後丘陵公園 → 寺泊で海鮮ランチ → 長岡の醸造蔵見学"
+    ],
+    "access": {
+      "niigata": {
+        "distance": "near",
+        "outbound": "新潟 8:00発 → 上越新幹線 → 長岡 8:25着",
+        "return": "長岡 18:00発 → 上越新幹線 → 新潟 18:25着",
+        "time": "約25分",
+        "price": "約3,200円（往復・自由席）",
+        "ic": "利用可"
+      }
+    }
   }
 ]
