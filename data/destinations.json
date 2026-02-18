@@ -610,6 +610,14 @@
         "time": "約2時間20分",
         "price": "約10,000円（往復）",
         "ic": "利用可"
+      },
+      "yokohama": {
+        "distance": "far",
+        "outbound": "横浜 7:20発 → JR湘南新宿ライン → 大宮乗換 → 東武日光線 → 東武日光 10:10着",
+        "return": "東武日光 17:00発 → 東武日光線 → 大宮 → JR → 横浜 19:50着",
+        "time": "約2時間50分",
+        "price": "約5,800円（往復）",
+        "ic": "利用可"
       }
     }
   },
@@ -675,6 +683,14 @@
         "return": "西武秩父 18:05発 → 西武特急ラビュー → 池袋 19:23着",
         "time": "約1時間18分",
         "price": "約3,400円（往復・特急）",
+        "ic": "利用可"
+      },
+      "yokohama": {
+        "distance": "far",
+        "outbound": "横浜 7:20発 → JR湘南新宿ライン → 池袋乗換 → 西武特急ラビュー → 西武秩父 9:23着",
+        "return": "西武秩父 18:05発 → 西武特急ラビュー → 池袋 → JR → 横浜 20:00着",
+        "time": "約2時間",
+        "price": "約4,200円（往復）",
         "ic": "利用可"
       }
     }
@@ -1762,6 +1778,486 @@
         "time": "約40分（バス含む）",
         "price": "約640円（往復・バス無料）",
         "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "imabari",
+    "city": "今治（しまなみ海道）",
+    "prefecture": "愛媛県",
+    "prefectureSlug": "ehime",
+    "description": "しまなみ海道サイクリングと来島海峡",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "サンライズ糸山 → しまなみ海道サイクリング → 大島 → 来島海峡大橋 → 焼豚玉子飯",
+      "来島海峡急流観潮船 → 亀老山展望公園 → 今治城 → 焼き鳥ランチ"
+    ],
+    "access": {
+      "matsuyama": {
+        "distance": "near",
+        "outbound": "松山 8:15発 → JR予讃線特急 → 今治 8:52着",
+        "return": "今治 18:00発 → JR予讃線特急 → 松山 18:37着",
+        "time": "約37分",
+        "price": "約2,500円（往復）",
+        "ic": "利用可"
+      },
+      "hiroshima": {
+        "distance": "far",
+        "outbound": "広島 8:00発 → 高速バス（しまなみライナー） → 今治 10:20着",
+        "return": "今治 17:00発 → 高速バス → 広島 19:20着",
+        "time": "約2時間20分",
+        "price": "約4,600円（往復）",
+        "ic": "不可（事前予約）"
+      }
+    }
+  },
+  {
+    "id": "uchiko",
+    "city": "内子",
+    "prefecture": "愛媛県",
+    "prefectureSlug": "ehime",
+    "description": "白壁の町並みと内子座の歴史ロマン",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "内子座（芝居小屋） → 八日市・護国の町並み → 木蝋資料館上芳我邸 → 内子豚ランチ",
+      "町並み散策 → 商いと暮らし博物館 → 内子フレッシュパークからり → 大洲城"
+    ],
+    "access": {
+      "matsuyama": {
+        "distance": "near",
+        "outbound": "松山 8:20発 → JR特急宇和海 → 内子 8:45着",
+        "return": "内子 17:30発 → JR特急宇和海 → 松山 17:55着",
+        "time": "約25分",
+        "price": "約2,600円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "ozu",
+    "city": "大洲",
+    "prefecture": "愛媛県",
+    "prefectureSlug": "ehime",
+    "description": "伊予の小京都と肱川の城下町",
+    "themes": ["view", "food"],
+    "modelCourses": [
+      "大洲城 → おはなはん通り → 臥龍山荘 → 肱川沿い散策 → 大洲コロッケ",
+      "ポコペン横丁 → 大洲城 → 臥龍山荘 → 鵜飼い（夏季）"
+    ],
+    "access": {
+      "matsuyama": {
+        "distance": "near",
+        "outbound": "松山 8:20発 → JR特急宇和海 → 伊予大洲 9:00着",
+        "return": "伊予大洲 17:45発 → JR特急宇和海 → 松山 18:25着",
+        "time": "約40分",
+        "price": "約2,900円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "shimanto",
+    "city": "四万十（四万十市）",
+    "prefecture": "高知県",
+    "prefectureSlug": "kochi",
+    "description": "日本最後の清流と沈下橋",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "佐田沈下橋 → 四万十川カヌー体験 → 四万十の天然うなぎランチ",
+      "四万十川遊覧船 → 岩間沈下橋 → 安並水車の里 → 四万十うなぎ"
+    ],
+    "access": {
+      "kochi": {
+        "distance": "far",
+        "outbound": "高知 7:58発 → 特急あしずり → 中村 9:40着",
+        "return": "中村 17:00発 → 特急あしずり → 高知 18:42着",
+        "time": "約1時間42分",
+        "price": "約5,200円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "muroto",
+    "city": "室戸岬",
+    "prefecture": "高知県",
+    "prefectureSlug": "kochi",
+    "description": "世界ジオパークの断崖と深海",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "室戸岬灯台 → 中岡慎太郎像 → 室戸世界ジオパークセンター → 室戸海洋深層水アクア・ファーム",
+      "御厨人窟 → 最御崎寺 → 室戸ドルフィンセンター → キンメ丼ランチ"
+    ],
+    "access": {
+      "kochi": {
+        "distance": "far",
+        "outbound": "高知 7:30発 → 高知東部交通バス → 室戸岬 10:10着",
+        "return": "室戸岬 16:00発 → 高知東部交通バス → 高知 18:40着",
+        "time": "約2時間40分",
+        "price": "約3,200円（往復）",
+        "ic": "不可（現金のみ）"
+      }
+    }
+  },
+  {
+    "id": "niyodogawa",
+    "city": "仁淀川（いの町）",
+    "prefecture": "高知県",
+    "prefectureSlug": "kochi",
+    "description": "仁淀ブルーの奇跡の清流",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "にこ淵 → 安居渓谷（水晶淵） → 仁淀川カヌー体験",
+      "中津渓谷 → にこ淵 → 仁淀川沿いドライブ → 土佐和紙工芸村"
+    ],
+    "access": {
+      "kochi": {
+        "distance": "near",
+        "outbound": "高知 8:30発 → JR → 伊野 → バス → にこ淵 10:00着",
+        "return": "にこ淵 16:00発 → バス → 伊野 → JR → 高知 17:30着",
+        "time": "約1時間30分（バス含む）",
+        "price": "約2,000円（往復・バス別）",
+        "ic": "JR区間のみ利用可"
+      }
+    }
+  },
+  {
+    "id": "aso",
+    "city": "阿蘇",
+    "prefecture": "熊本県",
+    "prefectureSlug": "kumamoto",
+    "description": "世界最大級のカルデラと草千里",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "阿蘇山火口 → 草千里ヶ浜 → 阿蘇神社 → あか牛丼ランチ",
+      "大観峰 → 草千里 → 阿蘇中岳火口 → 内牧温泉"
+    ],
+    "access": {
+      "kumamoto": {
+        "distance": "near",
+        "outbound": "熊本 8:00発 → JR豊肥本線特急あそ → 阿蘇 9:15着",
+        "return": "阿蘇 17:30発 → JR豊肥本線 → 熊本 18:55着",
+        "time": "約1時間15分",
+        "price": "約2,800円（往復）",
+        "ic": "利用可"
+      },
+      "fukuoka": {
+        "distance": "far",
+        "outbound": "博多 8:00発 → 九州新幹線 → 熊本乗換 → JR特急あそ → 阿蘇 10:15着",
+        "return": "阿蘇 17:00発 → JR → 熊本 → 九州新幹線 → 博多 19:15着",
+        "time": "約2時間15分",
+        "price": "約7,500円（往復）",
+        "ic": "利用可"
+      },
+      "kagoshima": {
+        "distance": "far",
+        "outbound": "鹿児島中央 7:30発 → 九州新幹線 → 熊本乗換 → JR特急あそ → 阿蘇 10:15着",
+        "return": "阿蘇 17:00発 → JR → 熊本 → 九州新幹線 → 鹿児島中央 19:30着",
+        "time": "約2時間45分",
+        "price": "約9,000円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "nagasaki",
+    "city": "長崎",
+    "prefecture": "長崎県",
+    "prefectureSlug": "nagasaki",
+    "description": "異国情緒あふれる坂の街とちゃんぽん",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "グラバー園 → 大浦天主堂 → 中華街（ちゃんぽん） → 稲佐山夜景",
+      "平和公園 → 原爆資料館 → 出島 → 眼鏡橋 → トルコライス"
+    ],
+    "access": {
+      "fukuoka": {
+        "distance": "far",
+        "outbound": "博多 8:15発 → 西九州新幹線かもめ → 長崎 9:37着",
+        "return": "長崎 18:00発 → 西九州新幹線かもめ → 博多 19:22着",
+        "time": "約1時間22分",
+        "price": "約6,000円（往復・自由席）",
+        "ic": "利用可"
+      },
+      "kumamoto": {
+        "distance": "far",
+        "outbound": "熊本 7:30発 → 九州新幹線 → 新鳥栖乗換 → 西九州新幹線 → 長崎 9:30着",
+        "return": "長崎 17:30発 → 西九州新幹線 → 新鳥栖 → 九州新幹線 → 熊本 19:30着",
+        "time": "約2時間",
+        "price": "約8,500円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "amakusa",
+    "city": "天草",
+    "prefecture": "熊本県",
+    "prefectureSlug": "kumamoto",
+    "description": "世界遺産の潜伏キリシタンとイルカウォッチング",
+    "themes": ["experience", "view"],
+    "modelCourses": [
+      "天草五橋ドライブ → 崎津集落（世界遺産） → イルカウォッチング",
+      "天草キリシタン館 → 崎津天主堂 → 大江天主堂 → 海鮮ランチ"
+    ],
+    "access": {
+      "kumamoto": {
+        "distance": "far",
+        "outbound": "熊本 8:00発 → 快速バスあまくさ号 → 本渡BT 10:20着",
+        "return": "本渡BT 16:30発 → 快速バス → 熊本 18:50着",
+        "time": "約2時間20分",
+        "price": "約3,800円（往復）",
+        "ic": "不可（現金 or 回数券）"
+      }
+    }
+  },
+  {
+    "id": "hitoyoshi",
+    "city": "人吉",
+    "prefecture": "熊本県",
+    "prefectureSlug": "kumamoto",
+    "description": "球磨焼酎と相良700年の城下町",
+    "themes": ["food", "experience"],
+    "modelCourses": [
+      "人吉城跡 → 球磨焼酎蔵めぐり → 鍛冶屋町通り → うなぎランチ",
+      "青井阿蘇神社（国宝） → 人吉城跡 → 焼酎試飲 → 球磨川ラフティング"
+    ],
+    "access": {
+      "kumamoto": {
+        "distance": "near",
+        "outbound": "熊本 8:30発 → 高速バス → 人吉IC 10:00着",
+        "return": "人吉IC 17:00発 → 高速バス → 熊本 18:30着",
+        "time": "約1時間30分",
+        "price": "約3,600円（往復）",
+        "ic": "不可（事前購入）"
+      }
+    }
+  },
+  {
+    "id": "sakurajima",
+    "city": "桜島",
+    "prefecture": "鹿児島県",
+    "prefectureSlug": "kagoshima",
+    "description": "活火山の迫力と溶岩の絶景",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "桜島フェリー → 湯之平展望所 → 有村溶岩展望所 → 桜島溶岩なぎさ足湯",
+      "桜島ビジターセンター → 烏島展望所 → 叫びの肖像 → 溶岩なぎさ遊歩道"
+    ],
+    "access": {
+      "kagoshima": {
+        "distance": "near",
+        "outbound": "鹿児島港 8:30発 → 桜島フェリー → 桜島港 8:45着",
+        "return": "桜島港 17:30発 → 桜島フェリー → 鹿児島港 17:45着",
+        "time": "約15分",
+        "price": "約400円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "ibusuki",
+    "city": "指宿",
+    "prefecture": "鹿児島県",
+    "prefectureSlug": "kagoshima",
+    "description": "砂むし温泉と開聞岳の絶景",
+    "themes": ["experience", "view"],
+    "modelCourses": [
+      "砂むし会館砂楽 → 長崎鼻（開聞岳ビュー） → たまて箱温泉 → 池田湖",
+      "JR特急指宿のたまて箱 → 砂むし温泉 → 知林ヶ島 → そうめん流し"
+    ],
+    "access": {
+      "kagoshima": {
+        "distance": "near",
+        "outbound": "鹿児島中央 8:56発 → 特急指宿のたまて箱 → 指宿 9:47着",
+        "return": "指宿 17:56発 → 特急指宿のたまて箱 → 鹿児島中央 18:47着",
+        "time": "約51分",
+        "price": "約2,400円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "kirishima",
+    "city": "霧島",
+    "prefecture": "鹿児島県",
+    "prefectureSlug": "kagoshima",
+    "description": "天孫降臨の神話と霧島温泉郷",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "霧島神宮 → 丸尾滝 → 霧島温泉郷（日帰り入浴） → 高千穂牧場",
+      "えびの高原 → 大浪池トレッキング → 霧島温泉 → 黒豚ランチ"
+    ],
+    "access": {
+      "kagoshima": {
+        "distance": "near",
+        "outbound": "鹿児島中央 8:15発 → JR日豊本線 → 霧島神宮 9:30着",
+        "return": "霧島神宮 17:30発 → JR日豊本線 → 鹿児島中央 18:45着",
+        "time": "約1時間15分",
+        "price": "約2,500円（往復）",
+        "ic": "利用可"
+      },
+      "kumamoto": {
+        "distance": "far",
+        "outbound": "熊本 8:00発 → 九州新幹線 → 鹿児島中央乗換 → JR → 霧島神宮 10:30着",
+        "return": "霧島神宮 17:00発 → JR → 鹿児島中央 → 九州新幹線 → 熊本 19:20着",
+        "time": "約2時間30分",
+        "price": "約8,500円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "yakushima",
+    "city": "屋久島",
+    "prefecture": "鹿児島県",
+    "prefectureSlug": "kagoshima",
+    "description": "世界遺産の太古の森と縄文杉",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "白谷雲水峡（もののけの森） → 大川の滝 → 平内海中温泉",
+      "縄文杉トレッキング（往復10時間） → 屋久島温泉"
+    ],
+    "access": {
+      "kagoshima": {
+        "distance": "far",
+        "outbound": "鹿児島港 7:45発 → 高速船トッピー → 宮之浦港 9:45着",
+        "return": "宮之浦港 16:00発 → 高速船トッピー → 鹿児島港 18:00着",
+        "time": "約2時間",
+        "price": "約10,800円（往復）",
+        "ic": "不可（事前予約）"
+      }
+    }
+  },
+  {
+    "id": "chiran",
+    "city": "知覧",
+    "prefecture": "鹿児島県",
+    "prefectureSlug": "kagoshima",
+    "description": "武家屋敷庭園と特攻平和会館",
+    "themes": ["experience", "view"],
+    "modelCourses": [
+      "知覧特攻平和会館 → 武家屋敷庭園群 → 知覧茶スイーツ",
+      "武家屋敷通り → 知覧特攻平和会館 → 薩摩の里 → 知覧鶏飯ランチ"
+    ],
+    "access": {
+      "kagoshima": {
+        "distance": "near",
+        "outbound": "鹿児島中央 8:30発 → バス → 知覧 9:40着",
+        "return": "知覧 17:00発 → バス → 鹿児島中央 18:10着",
+        "time": "約1時間10分",
+        "price": "約1,600円（往復）",
+        "ic": "不可（現金のみ）"
+      }
+    }
+  },
+  {
+    "id": "churaumi",
+    "city": "美ら海（本部町）",
+    "prefecture": "沖縄県",
+    "prefectureSlug": "okinawa",
+    "description": "世界最大級の水槽とエメラルドの海",
+    "themes": ["experience", "view"],
+    "modelCourses": [
+      "美ら海水族館 → エメラルドビーチ → 備瀬のフクギ並木 → 古宇利大橋",
+      "美ら海水族館 → 今帰仁城跡（世界遺産） → 古宇利島ハートロック"
+    ],
+    "access": {
+      "naha": {
+        "distance": "far",
+        "outbound": "那覇BT 8:00発 → 高速バス117番 → 美ら海水族館 10:30着",
+        "return": "美ら海水族館 16:00発 → 高速バス → 那覇BT 18:30着",
+        "time": "約2時間30分",
+        "price": "約4,000円（往復）",
+        "ic": "不可（現金のみ）"
+      }
+    }
+  },
+  {
+    "id": "chatan",
+    "city": "北谷（アメリカンビレッジ）",
+    "prefecture": "沖縄県",
+    "prefectureSlug": "okinawa",
+    "description": "異国感あふれるシーサイドタウン",
+    "themes": ["food", "experience"],
+    "modelCourses": [
+      "アメリカンビレッジ → デポアイランド → サンセットビーチ → ステーキディナー",
+      "アラハビーチ → アメリカンビレッジ → タコライス&ハンバーガー → 観覧車"
+    ],
+    "access": {
+      "naha": {
+        "distance": "near",
+        "outbound": "那覇BT 9:00発 → 路線バス28番 → 北谷 9:50着",
+        "return": "北谷 18:00発 → 路線バス → 那覇BT 18:50着",
+        "time": "約50分",
+        "price": "約1,200円（往復）",
+        "ic": "不可（現金のみ）"
+      }
+    }
+  },
+  {
+    "id": "nanjo",
+    "city": "南城（斎場御嶽）",
+    "prefecture": "沖縄県",
+    "prefectureSlug": "okinawa",
+    "description": "琉球最高の聖地と絶景カフェ",
+    "themes": ["experience", "view"],
+    "modelCourses": [
+      "斎場御嶽（世界遺産） → 知念岬公園 → カフェくるくま（絶景ランチ） → ニライカナイ橋",
+      "おきなわワールド（玉泉洞） → 斎場御嶽 → 新原ビーチ → グラスボート"
+    ],
+    "access": {
+      "naha": {
+        "distance": "near",
+        "outbound": "那覇BT 8:30発 → 路線バス38番 → 斎場御嶽入口 9:40着",
+        "return": "斎場御嶽入口 17:00発 → 路線バス → 那覇BT 18:10着",
+        "time": "約1時間10分",
+        "price": "約1,400円（往復）",
+        "ic": "不可（現金のみ）"
+      }
+    }
+  },
+  {
+    "id": "yomitan",
+    "city": "読谷（やちむんの里）",
+    "prefecture": "沖縄県",
+    "prefectureSlug": "okinawa",
+    "description": "焼き物の里と沖縄の原風景",
+    "themes": ["experience", "view"],
+    "modelCourses": [
+      "やちむんの里（陶芸工房めぐり） → 座喜味城跡（世界遺産） → 残波岬 → 沖縄そば",
+      "体験王国むら咲むら → やちむんの里 → 座喜味城跡 → 御菓子御殿"
+    ],
+    "access": {
+      "naha": {
+        "distance": "near",
+        "outbound": "那覇BT 8:15発 → 路線バス28番 → 読谷 9:30着",
+        "return": "読谷 17:30発 → 路線バス → 那覇BT 18:45着",
+        "time": "約1時間15分",
+        "price": "約1,500円（往復）",
+        "ic": "不可（現金のみ）"
+      }
+    }
+  },
+  {
+    "id": "kouri",
+    "city": "古宇利島",
+    "prefecture": "沖縄県",
+    "prefectureSlug": "okinawa",
+    "description": "恋の島とエメラルドグリーンの海",
+    "themes": ["view", "food"],
+    "modelCourses": [
+      "古宇利大橋 → ティーヌ浜（ハートロック） → 古宇利オーシャンタワー → 海鮮ランチ",
+      "古宇利ビーチ → トケイ浜 → 古宇利オーシャンタワー → ウニ丼"
+    ],
+    "access": {
+      "naha": {
+        "distance": "far",
+        "outbound": "那覇 8:00発 → 高速道路経由バス（やんばる急行バス） → 古宇利島 10:30着",
+        "return": "古宇利島 16:30発 → バス → 那覇 19:00着",
+        "time": "約2時間30分",
+        "price": "約4,200円（往復）",
+        "ic": "不可（現金のみ）"
       }
     }
   }
