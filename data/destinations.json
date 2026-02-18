@@ -1228,5 +1228,235 @@
         "ic": "利用可"
       }
     }
+  },
+  {
+    "id": "enoshima",
+    "city": "江ノ島",
+    "prefecture": "神奈川県",
+    "prefectureSlug": "kanagawa",
+    "description": "湘南の海と島散策・しらすグルメ",
+    "themes": ["view", "food"],
+    "modelCourses": [
+      "江ノ島シーキャンドル → 岩屋洞窟 → しらす丼ランチ → 湘南海岸散策",
+      "新江ノ島水族館 → 江ノ島神社 → サムエル・コッキング苑 → 海沿いカフェ"
+    ],
+    "access": {
+      "tokyo": {
+        "distance": "near",
+        "outbound": "新宿 8:00発 → 小田急線 → 片瀬江ノ島 9:10着",
+        "return": "片瀬江ノ島 18:00発 → 小田急線 → 新宿 19:10着",
+        "time": "約1時間10分",
+        "price": "約1,300円（往復）",
+        "ic": "利用可"
+      },
+      "yokohama": {
+        "distance": "near",
+        "outbound": "横浜 8:30発 → JR東海道線 → 藤沢乗換 → 江ノ電 → 江ノ島 9:20着",
+        "return": "江ノ島 18:00発 → 江ノ電 → 藤沢 → JR → 横浜 18:50着",
+        "time": "約50分",
+        "price": "約1,200円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "inuyama",
+    "city": "犬山",
+    "prefecture": "愛知県",
+    "prefectureSlug": "aichi",
+    "description": "国宝犬山城と城下町の食べ歩き",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "犬山城 → 城下町食べ歩き（五平餅・田楽） → 三光稲荷神社 → 犬山温泉",
+      "日本モンキーパーク → 犬山城 → 城下町散策 → からくり展示館"
+    ],
+    "access": {
+      "nagoya": {
+        "distance": "near",
+        "outbound": "名鉄名古屋 8:15発 → 名鉄犬山線 → 犬山 8:41着",
+        "return": "犬山 18:00発 → 名鉄犬山線 → 名鉄名古屋 18:26着",
+        "time": "約26分",
+        "price": "約1,180円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "tokoname",
+    "city": "常滑（やきもの散歩道）",
+    "prefecture": "愛知県",
+    "prefectureSlug": "aichi",
+    "description": "招き猫と焼き物の坂道散策",
+    "themes": ["experience", "view"],
+    "modelCourses": [
+      "やきもの散歩道 → とこなめ招き猫通り → 陶芸体験 → 常滑屋でランチ",
+      "INAXライブミュージアム → やきもの散歩道 → 常滑焼ショッピング"
+    ],
+    "access": {
+      "nagoya": {
+        "distance": "near",
+        "outbound": "名鉄名古屋 8:30発 → 名鉄常滑線 → 常滑 9:08着",
+        "return": "常滑 18:00発 → 名鉄常滑線 → 名鉄名古屋 18:38着",
+        "time": "約38分",
+        "price": "約1,300円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "iseshima",
+    "city": "伊勢志摩",
+    "prefecture": "三重県",
+    "prefectureSlug": "mie",
+    "description": "お伊勢参りとおかげ横丁グルメ",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "伊勢神宮外宮 → 内宮 → おかげ横丁（赤福・伊勢うどん） → 夫婦岩",
+      "伊勢神宮内宮 → おかげ横丁 → 鳥羽水族館 → 海女小屋で海鮮"
+    ],
+    "access": {
+      "nagoya": {
+        "distance": "far",
+        "outbound": "近鉄名古屋 8:00発 → 近鉄特急 → 伊勢市 9:20着",
+        "return": "伊勢市 17:30発 → 近鉄特急 → 近鉄名古屋 18:50着",
+        "time": "約1時間20分",
+        "price": "約6,200円（往復）",
+        "ic": "利用可"
+      },
+      "osaka": {
+        "distance": "far",
+        "outbound": "大阪難波 8:00発 → 近鉄特急 → 伊勢市 9:50着",
+        "return": "伊勢市 17:30発 → 近鉄特急 → 大阪難波 19:20着",
+        "time": "約1時間50分",
+        "price": "約7,400円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "gero",
+    "city": "下呂温泉",
+    "prefecture": "岐阜県",
+    "prefectureSlug": "gifu",
+    "description": "日本三名泉のとろり美肌の湯",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "温泉寺 → 下呂温泉街散策 → 足湯めぐり → 飛騨牛ランチ → 噴泉池",
+      "合掌村 → 温泉街食べ歩き → 日帰り温泉 → 飛騨牛コロッケ"
+    ],
+    "access": {
+      "nagoya": {
+        "distance": "far",
+        "outbound": "名古屋 7:43発 → 特急ひだ → 下呂 9:22着",
+        "return": "下呂 17:33発 → 特急ひだ → 名古屋 19:09着",
+        "time": "約1時間40分",
+        "price": "約8,500円（往復）",
+        "ic": "利用可"
+      }
+    }
+  },
+  {
+    "id": "takayama",
+    "city": "高山",
+    "prefecture": "岐阜県",
+    "prefectureSlug": "gifu",
+    "description": "飛騨の小京都・古い町並みと朝市",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "宮川朝市 → 古い町並み散策 → 飛騨牛握り → 高山陣屋 → 飛騨の里",
+      "古い町並み → 飛騨高山レトロミュージアム → 高山ラーメン → 中橋散策"
+    ],
+    "access": {
+      "nagoya": {
+        "distance": "far",
+        "outbound": "名古屋 7:43発 → 特急ひだ → 高山 10:07着",
+        "return": "高山 17:08発 → 特急ひだ → 名古屋 19:39着",
+        "time": "約2時間24分",
+        "price": "約12,000円（往復）",
+        "ic": "利用可"
+      },
+      "kanazawa": {
+        "distance": "far",
+        "outbound": "金沢 8:00発 → 高速バス → 高山 10:15着",
+        "return": "高山 17:00発 → 高速バス → 金沢 19:15着",
+        "time": "約2時間15分",
+        "price": "約4,000円（往復）",
+        "ic": "不可（事前予約）"
+      }
+    }
+  },
+  {
+    "id": "shirakawago",
+    "city": "白川郷",
+    "prefecture": "岐阜県",
+    "prefectureSlug": "gifu",
+    "description": "世界遺産の合掌造り集落",
+    "themes": ["view", "experience"],
+    "modelCourses": [
+      "荻町城跡展望台 → 和田家 → 合掌造り集落散策 → 白川郷の湯",
+      "であい橋 → 長瀬家 → 明善寺 → 展望台 → 飛騨牛コロッケ"
+    ],
+    "access": {
+      "kanazawa": {
+        "distance": "near",
+        "outbound": "金沢 8:10発 → 高速バス → 白川郷 9:25着",
+        "return": "白川郷 16:30発 → 高速バス → 金沢 17:45着",
+        "time": "約1時間15分",
+        "price": "約3,800円（往復）",
+        "ic": "不可（事前予約）"
+      },
+      "nagoya": {
+        "distance": "far",
+        "outbound": "名古屋 8:00発 → 高速バス → 白川郷 10:50着",
+        "return": "白川郷 15:30発 → 高速バス → 名古屋 18:20着",
+        "time": "約2時間50分",
+        "price": "約4,400円（往復）",
+        "ic": "不可（事前予約）"
+      }
+    }
+  },
+  {
+    "id": "tojinbo",
+    "city": "東尋坊",
+    "prefecture": "福井県",
+    "prefectureSlug": "fukui",
+    "description": "断崖絶壁の絶景と越前ガニ",
+    "themes": ["view", "food"],
+    "modelCourses": [
+      "東尋坊（遊覧船） → 越前松島水族館 → 芝政ワールド → 越前そば",
+      "東尋坊 → 丸岡城 → 永平寺 → 越前おろしそば"
+    ],
+    "access": {
+      "kanazawa": {
+        "distance": "near",
+        "outbound": "金沢 8:00発 → JR北陸本線 → 芦原温泉 8:40着 → バス → 東尋坊",
+        "return": "東尋坊 → バス → 芦原温泉 17:30発 → JR → 金沢 18:10着",
+        "time": "約1時間20分（バス含む）",
+        "price": "約3,200円（往復・バス別）",
+        "ic": "JR区間のみ利用可"
+      }
+    }
+  },
+  {
+    "id": "wakura",
+    "city": "和倉温泉",
+    "prefecture": "石川県",
+    "prefectureSlug": "ishikawa",
+    "description": "能登の海沿い名湯と海鮮グルメ",
+    "themes": ["experience", "food"],
+    "modelCourses": [
+      "総湯 → 辻口博啓美術館 → 能登島大橋 → のとじま水族館 → 海鮮ランチ",
+      "和倉温泉街散策 → 足湯 → 能登食祭市場 → 七尾城跡"
+    ],
+    "access": {
+      "kanazawa": {
+        "distance": "near",
+        "outbound": "金沢 8:00発 → JR七尾線 → 和倉温泉 9:20着",
+        "return": "和倉温泉 17:30発 → JR七尾線 → 金沢 18:50着",
+        "time": "約1時間20分",
+        "price": "約2,600円（往復）",
+        "ic": "利用可"
+      }
+    }
   }
 ]
