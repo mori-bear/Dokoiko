@@ -225,6 +225,43 @@ body {
   line-height: 1.6;
 }
 
+/* Level Stars */
+.level-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+  padding: 10px 14px;
+  background: var(--c-surface);
+  border-radius: var(--r-sm);
+}
+
+.level-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.level-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--c-text-sub);
+  min-width: 2em;
+}
+
+.star--filled { color: #f59e0b; }
+.star--empty  { color: #d1d5db; }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
 /* Sections */
 .result-section {
   margin-bottom: 20px;

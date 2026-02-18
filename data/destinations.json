@@ -5,7 +5,10 @@
     "prefecture": "高知県",
     "prefectureSlug": "kochi",
     "description": "太平洋の絶景とカツオの街",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "桂浜 → ひろめ市場 → 高知城",
       "日曜市 → 高知城 → はりまや橋 → ひろめ市場"
@@ -43,7 +46,9 @@
         "price": "約8,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 5,
+    "budgetLevel": 4
   },
   {
     "id": "tokushima",
@@ -51,7 +56,10 @@
     "prefecture": "徳島県",
     "prefectureSlug": "tokushima",
     "description": "阿波踊りの街と徳島ラーメン",
-    "themes": ["food", "experience"],
+    "themes": [
+      "food",
+      "experience"
+    ],
     "modelCourses": [
       "徳島ラーメン → 阿波踊り会館 → 眉山ロープウェイ",
       "眉山 → ひょうたん島クルーズ → 徳島ラーメン"
@@ -81,7 +89,9 @@
         "price": "約3,600円（往復）",
         "ic": "不可（事前予約）"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "shodoshima",
@@ -89,7 +99,10 @@
     "prefecture": "香川県",
     "prefectureSlug": "kagawa",
     "description": "エンジェルロードとオリーブの島",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "エンジェルロード → オリーブ公園 → 海沿いカフェ",
       "寒霞渓ロープウェイ → 二十四の瞳映画村 → 醤油蔵通り"
@@ -111,7 +124,9 @@
         "price": "約2,100円（往復）",
         "ic": "不可（現金のみ）"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "matsuyama",
@@ -119,7 +134,10 @@
     "prefecture": "愛媛県",
     "prefectureSlug": "ehime",
     "description": "道後温泉と文学の街",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "道後温泉本館 → 松山城 → 大街道で鯛めし",
       "松山城 → 坊っちゃんカラクリ時計 → 道後温泉 → 鯛めし"
@@ -149,7 +167,9 @@
         "price": "約7,400円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 4
   },
   {
     "id": "kotohira",
@@ -157,7 +177,10 @@
     "prefecture": "香川県",
     "prefectureSlug": "kagawa",
     "description": "金刀比羅宮の石段参りと讃岐うどん",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "金刀比羅宮（石段785段） → 参道で讃岐うどん → 旧金毘羅大芝居",
       "中野うどん学校（うどん作り体験） → 金刀比羅宮 → 参道散策"
@@ -187,7 +210,9 @@
         "price": "約3,200円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "naruto",
@@ -195,7 +220,10 @@
     "prefecture": "徳島県",
     "prefectureSlug": "tokushima",
     "description": "渦潮と大塚国際美術館",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "渦の道（渦潮見学） → 大塚国際美術館 → 鳴門わかめ料理",
       "うずしお観潮船 → 大塚国際美術館 → 鳴門海峡展望台"
@@ -209,7 +237,9 @@
         "price": "約4,000円（往復）",
         "ic": "一部区間のみ"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "iyakei",
@@ -217,7 +247,9 @@
     "prefecture": "徳島県",
     "prefectureSlug": "tokushima",
     "description": "日本三大秘境のかずら橋と渓谷美",
-    "themes": ["view"],
+    "themes": [
+      "view"
+    ],
     "modelCourses": [
       "祖谷のかずら橋 → 小便小僧展望台 → 大歩危峡遊覧船",
       "大歩危峡 → かずら橋 → 祖谷温泉"
@@ -239,7 +271,9 @@
         "price": "約3,800円（往復・バス別）",
         "ic": "JR区間のみ利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "naoshima",
@@ -247,7 +281,10 @@
     "prefecture": "香川県",
     "prefectureSlug": "kagawa",
     "description": "アートの島・草間彌生のかぼちゃ",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "地中美術館 → 李禹煥美術館 → 黄かぼちゃ → ベネッセハウス",
       "家プロジェクト（本村地区） → ANDO MUSEUM → 赤かぼちゃ → 海沿い散策"
@@ -269,7 +306,9 @@
         "price": "約600円（往復・宇野〜直島）",
         "ic": "不可（現金のみ）"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "kyoto",
@@ -277,7 +316,10 @@
     "prefecture": "京都府",
     "prefectureSlug": "kyoto",
     "description": "千年の古都と寺社仏閣",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "伏見稲荷大社 → 清水寺 → 祇園散策 → 錦市場",
       "金閣寺 → 龍安寺 → 嵐山竹林 → 渡月橋",
@@ -324,7 +366,9 @@
         "price": "約7,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "nara",
@@ -332,7 +376,10 @@
     "prefecture": "奈良県",
     "prefectureSlug": "nara",
     "description": "大仏と鹿の古都",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "東大寺（大仏殿） → 奈良公園で鹿と散策 → 春日大社 → ならまち",
       "興福寺 → 奈良公園 → 若草山 → 東大寺二月堂（夕景）"
@@ -370,7 +417,9 @@
         "price": "約5,000円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "kobe",
@@ -378,7 +427,10 @@
     "prefecture": "兵庫県",
     "prefectureSlug": "hyogo",
     "description": "港町グルメと異人館の街並み",
-    "themes": ["food", "view"],
+    "themes": [
+      "food",
+      "view"
+    ],
     "modelCourses": [
       "北野異人館街 → 南京町（中華街） → メリケンパーク → ハーバーランド",
       "三宮 → 生田神社 → 元町商店街 → 神戸牛ランチ → 神戸ポートタワー"
@@ -400,7 +452,9 @@
         "price": "約2,200円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 2
   },
   {
     "id": "himeji",
@@ -408,7 +462,9 @@
     "prefecture": "兵庫県",
     "prefectureSlug": "hyogo",
     "description": "世界遺産・白鷺城と好古園",
-    "themes": ["view"],
+    "themes": [
+      "view"
+    ],
     "modelCourses": [
       "姫路城 → 好古園（日本庭園） → 大手前商店街で姫路おでん",
       "姫路城 → 姫路市立動物園 → 書写山圓教寺（ロープウェイ）"
@@ -438,7 +494,9 @@
         "price": "約3,700円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "wakayama",
@@ -446,7 +504,10 @@
     "prefecture": "和歌山県",
     "prefectureSlug": "wakayama",
     "description": "和歌山城とラーメンの街",
-    "themes": ["food", "view"],
+    "themes": [
+      "food",
+      "view"
+    ],
     "modelCourses": [
       "和歌山城 → 和歌山ラーメン → 紀三井寺 → 和歌浦",
       "黒潮市場 → ポルトヨーロッパ → 和歌山ラーメン → 和歌山城"
@@ -460,7 +521,9 @@
         "price": "約4,800円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "koyasan",
@@ -468,7 +531,10 @@
     "prefecture": "和歌山県",
     "prefectureSlug": "wakayama",
     "description": "世界遺産の聖地・奥之院と精進料理",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "奥之院 → 金剛峯寺 → 壇上伽藍 → 精進料理ランチ",
       "大門 → 壇上伽藍 → 金剛峯寺 → 奥之院ナイトツアー"
@@ -482,7 +548,9 @@
         "price": "約5,200円（往復）",
         "ic": "南海線のみ利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "arima",
@@ -490,7 +558,10 @@
     "prefecture": "兵庫県",
     "prefectureSlug": "hyogo",
     "description": "日本三名泉・金泉銀泉の温泉街",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "金の湯 → 温泉街散策 → 炭酸せんべい → 銀の湯 → 有馬グルメ",
       "瑞宝寺公園 → 有馬玩具博物館 → 金の湯 → 温泉街で食べ歩き"
@@ -520,7 +591,9 @@
         "price": "約3,600円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "kamakura",
@@ -528,7 +601,10 @@
     "prefecture": "神奈川県",
     "prefectureSlug": "kanagawa",
     "description": "大仏と古都の海沿い散策",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "鶴岡八幡宮 → 小町通り → 高徳院（大仏） → 長谷寺 → 由比ヶ浜",
       "北鎌倉（円覚寺・明月院） → 建長寺 → 鶴岡八幡宮 → 小町通りグルメ",
@@ -551,7 +627,9 @@
         "price": "約700円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "hakone",
@@ -559,7 +637,10 @@
     "prefecture": "神奈川県",
     "prefectureSlug": "kanagawa",
     "description": "富士山の絶景と温泉リゾート",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "箱根湯本 → 登山電車 → 強羅 → ロープウェイ → 大涌谷 → 芦ノ湖遊覧",
       "箱根湯本温泉街散策 → 彫刻の森美術館 → 強羅公園 → 大涌谷"
@@ -581,7 +662,9 @@
         "price": "約3,000円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "nikko",
@@ -589,7 +672,10 @@
     "prefecture": "栃木県",
     "prefectureSlug": "tochigi",
     "description": "世界遺産の社寺と華厳の滝",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "東照宮 → 輪王寺 → 二荒山神社 → 神橋 → 日光グルメ",
       "いろは坂 → 中禅寺湖 → 華厳の滝 → 東照宮"
@@ -619,7 +705,9 @@
         "price": "約5,800円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 4
   },
   {
     "id": "kawagoe",
@@ -627,7 +715,10 @@
     "prefecture": "埼玉県",
     "prefectureSlug": "saitama",
     "description": "小江戸の蔵造りと菓子屋横丁",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "蔵造りの町並み → 時の鐘 → 菓子屋横丁 → 氷川神社",
       "喜多院 → 蔵造りの町並み → 菓子屋横丁 → 川越氷川神社（縁結び）"
@@ -641,7 +732,9 @@
         "price": "約960円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "yokohama",
@@ -649,7 +742,9 @@
     "prefecture": "神奈川県",
     "prefectureSlug": "kanagawa",
     "description": "日本最大の中華街と港町",
-    "themes": ["food"],
+    "themes": [
+      "food"
+    ],
     "modelCourses": [
       "中華街で食べ歩き → 山下公園 → 赤レンガ倉庫 → みなとみらい",
       "中華街ランチ → 元町商店街 → 港の見える丘公園 → 山下公園"
@@ -663,7 +758,9 @@
         "price": "約1,300円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "chichibu",
@@ -671,7 +768,10 @@
     "prefecture": "埼玉県",
     "prefectureSlug": "saitama",
     "description": "三十四観音霊場と長瀞の自然",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "長瀞ライン下り → 宝登山神社 → 秩父神社 → わらじかつ丼",
       "三峯神社 → 秩父まつり会館 → 秩父神社 → 西武秩父駅前温泉"
@@ -693,7 +793,9 @@
         "price": "約4,200円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "kurashiki",
@@ -701,7 +803,10 @@
     "prefecture": "岡山県",
     "prefectureSlug": "okayama",
     "description": "美観地区の白壁と大原美術館",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "美観地区 → 大原美術館 → 倉敷川沿い散策 → アイビースクエア",
       "大原美術館 → 日本郷土玩具館 → 倉敷デニムストリート → 美観地区カフェ"
@@ -739,7 +844,9 @@
         "price": "約7,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "onomichi",
@@ -747,7 +854,10 @@
     "prefecture": "広島県",
     "prefectureSlug": "hiroshima",
     "description": "坂の街と尾道ラーメンとしまなみ海道",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "千光寺ロープウェイ → 千光寺公園 → 猫の細道 → 尾道ラーメン",
       "しまなみ海道サイクリング → 因島 → 尾道ラーメン → 千光寺"
@@ -769,7 +879,9 @@
         "price": "約3,200円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "hiroshima",
@@ -777,7 +889,10 @@
     "prefecture": "広島県",
     "prefectureSlug": "hiroshima",
     "description": "平和記念公園と広島お好み焼き",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "平和記念公園 → 原爆ドーム → 広島お好み焼き → 縮景園",
       "宮島口 → 厳島神社 → 広島市内 → お好み焼き村"
@@ -799,7 +914,9 @@
         "price": "約9,000円（往復・自由席）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 4
   },
   {
     "id": "dazaifu",
@@ -807,7 +924,9 @@
     "prefecture": "福岡県",
     "prefectureSlug": "fukuoka",
     "description": "学問の神様と梅ヶ枝餅",
-    "themes": ["experience"],
+    "themes": [
+      "experience"
+    ],
     "modelCourses": [
       "太宰府天満宮 → 参道で梅ヶ枝餅 → 九州国立博物館 → 光明禅寺",
       "竈門神社 → 太宰府天満宮 → 参道散策 → スターバックス太宰府店"
@@ -829,7 +948,9 @@
         "price": "約6,000円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "yanagawa",
@@ -837,7 +958,10 @@
     "prefecture": "福岡県",
     "prefectureSlug": "fukuoka",
     "description": "川下りとうなぎのせいろ蒸し",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "柳川川下り → 御花（立花家旧邸） → うなぎのせいろ蒸し",
       "川下り → 北原白秋生家 → 柳川散策 → うなぎランチ"
@@ -859,7 +983,9 @@
         "price": "約4,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "mojiko",
@@ -867,7 +993,10 @@
     "prefecture": "福岡県",
     "prefectureSlug": "fukuoka",
     "description": "レトロな港町と焼きカレー",
-    "themes": ["food", "view"],
+    "themes": [
+      "food",
+      "view"
+    ],
     "modelCourses": [
       "門司港レトロ地区 → 焼きカレーランチ → 関門海峡ミュージアム → 関門トンネル人道",
       "九州鉄道記念館 → 門司港駅舎 → 焼きカレー → 関門連絡船で下関"
@@ -881,7 +1010,9 @@
         "price": "約3,100円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "beppu",
@@ -889,7 +1020,10 @@
     "prefecture": "大分県",
     "prefectureSlug": "oita",
     "description": "地獄めぐりと日本一の温泉郷",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "地獄めぐり（海地獄・血の池地獄） → 別府温泉 → 明礬温泉 → 地獄蒸し",
       "鉄輪温泉 → 地獄蒸し工房 → 地獄めぐり → 砂湯"
@@ -911,7 +1045,9 @@
         "price": "約6,800円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 4
   },
   {
     "id": "yufuin",
@@ -919,7 +1055,10 @@
     "prefecture": "大分県",
     "prefectureSlug": "oita",
     "description": "由布岳の麓の温泉とアートの街",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "金鱗湖 → 湯の坪街道散策 → 由布院温泉 → 由布岳展望",
       "由布院フローラルヴィレッジ → ステンドグラス美術館 → 金鱗湖 → 温泉"
@@ -941,7 +1080,9 @@
         "price": "約7,000円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 4
   },
   {
     "id": "otaru",
@@ -949,7 +1090,10 @@
     "prefecture": "北海道",
     "prefectureSlug": "hokkaido",
     "description": "運河とガラスとお寿司の港町",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "小樽運河散策 → 堺町通り（ガラス・オルゴール） → 小樽寿司",
       "小樽運河クルーズ → 北一硝子 → ルタオ本店 → 三角市場で海鮮丼"
@@ -963,7 +1107,9 @@
         "price": "約1,280円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "noboribetsu",
@@ -971,7 +1117,10 @@
     "prefecture": "北海道",
     "prefectureSlug": "hokkaido",
     "description": "地獄谷と多彩な泉質の温泉郷",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "地獄谷 → 大湯沼 → 天然足湯 → 登別温泉街散策",
       "のぼりべつクマ牧場 → 地獄谷 → 大湯沼川天然足湯 → 温泉"
@@ -985,7 +1134,9 @@
         "price": "約5,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "furano",
@@ -993,7 +1144,10 @@
     "prefecture": "北海道",
     "prefectureSlug": "hokkaido",
     "description": "ラベンダー畑と丘の絶景パッチワーク",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "ファーム富田（ラベンダー） → 四季彩の丘 → 青い池 → 白ひげの滝",
       "パッチワークの路 → ケンとメリーの木 → ファーム富田 → 富良野チーズ工房"
@@ -1007,7 +1161,9 @@
         "price": "約5,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 3
   },
   {
     "id": "hakodate",
@@ -1015,7 +1171,10 @@
     "prefecture": "北海道",
     "prefectureSlug": "hokkaido",
     "description": "百万ドルの夜景と朝市の海鮮",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "函館朝市 → 金森赤レンガ倉庫 → 元町散策 → 函館山ロープウェイ（夜景）",
       "五稜郭タワー → ベイエリア → 八幡坂 → 函館山夜景"
@@ -1029,7 +1188,9 @@
         "price": "約9,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 5,
+    "budgetLevel": 5
   },
   {
     "id": "asahiyama",
@@ -1037,7 +1198,10 @@
     "prefecture": "北海道",
     "prefectureSlug": "hokkaido",
     "description": "行動展示で人気の動物園と旭川ラーメン",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "旭山動物園（ペンギン・ホッキョクグマ） → 旭川ラーメン村",
       "旭山動物園 → 上野ファーム → 旭川ラーメン"
@@ -1051,7 +1215,9 @@
         "price": "約5,500円（往復・バス別）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "matsushima",
@@ -1059,7 +1225,10 @@
     "prefecture": "宮城県",
     "prefectureSlug": "miyagi",
     "description": "日本三景の島々と瑞巌寺",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "松島湾遊覧船 → 瑞巌寺 → 五大堂 → 松島さかな市場で牡蠣",
       "福浦島 → 円通院 → 瑞巌寺 → 牡蠣小屋 → 松島海岸散策"
@@ -1073,7 +1242,9 @@
         "price": "約840円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "yamadera",
@@ -1081,7 +1252,10 @@
     "prefecture": "山形県",
     "prefectureSlug": "yamagata",
     "description": "奥の細道・1015段の石段と絶景",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "立石寺（山寺）石段登り → 五大堂からの絶景 → 山寺芭蕉記念館 → 冷やしそば",
       "山寺 → 山形市内 → 蔵王温泉（日帰り入浴）"
@@ -1095,7 +1269,9 @@
         "price": "約1,700円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 2
   },
   {
     "id": "hiraizumi",
@@ -1103,7 +1279,10 @@
     "prefecture": "岩手県",
     "prefectureSlug": "iwate",
     "description": "世界遺産・中尊寺金色堂と浄土庭園",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "中尊寺（金色堂） → 毛越寺 → 平泉わんこそば",
       "毛越寺（浄土庭園） → 中尊寺 → 高館義経堂 → 前沢牛ランチ"
@@ -1117,7 +1296,9 @@
         "price": "約4,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 3
   },
   {
     "id": "aizuwakamatsu",
@@ -1125,7 +1306,10 @@
     "prefecture": "福島県",
     "prefectureSlug": "fukushima",
     "description": "鶴ヶ城と白虎隊の歴史ロマン",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "鶴ヶ城 → 飯盛山（白虎隊） → 七日町通り散策 → ソースカツ丼",
       "大内宿 → 鶴ヶ城 → 会津ラーメン → 東山温泉"
@@ -1147,7 +1331,9 @@
         "price": "約3,400円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 3
   },
   {
     "id": "echigoyuzawa",
@@ -1155,7 +1341,10 @@
     "prefecture": "新潟県",
     "prefectureSlug": "niigata",
     "description": "温泉と日本酒とスキーの雪国リゾート",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "ぽんしゅ館（日本酒試飲） → 越後湯沢温泉 → へぎそば → 湯沢高原ロープウェイ",
       "GALA湯沢 or 石打丸山スキー場 → 温泉 → 越後もち豚ランチ"
@@ -1177,7 +1366,9 @@
         "price": "約6,800円（往復・自由席）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "sado",
@@ -1185,7 +1376,10 @@
     "prefecture": "新潟県",
     "prefectureSlug": "niigata",
     "description": "たらい舟と金山の自然豊かな島",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "佐渡金山 → 北沢浮遊選鉱場跡 → たらい舟体験 → 夕日",
       "トキの森公園 → たらい舟 → 宿根木（千石船の里） → 佐渡海鮮"
@@ -1199,7 +1393,9 @@
         "price": "約5,000円（往復・2等）",
         "ic": "不可（窓口購入）"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 3
   },
   {
     "id": "yahiko",
@@ -1207,7 +1403,10 @@
     "prefecture": "新潟県",
     "prefectureSlug": "niigata",
     "description": "越後一宮・弥彦神社と山頂パノラマ",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "弥彦神社 → 弥彦山ロープウェイ → 山頂パノラマタワー → 弥彦温泉",
       "弥彦神社 → 弥彦公園 → おもてなし広場（食べ歩き） → 弥彦温泉"
@@ -1221,7 +1420,9 @@
         "price": "約1,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 1
   },
   {
     "id": "nagaoka",
@@ -1229,7 +1430,10 @@
     "prefecture": "新潟県",
     "prefectureSlug": "niigata",
     "description": "花火の街と魚のアメ横",
-    "themes": ["food", "experience"],
+    "themes": [
+      "food",
+      "experience"
+    ],
     "modelCourses": [
       "寺泊魚の市場通り（浜焼き） → 長岡花火ミュージアム → アオーレ長岡",
       "国営越後丘陵公園 → 寺泊で海鮮ランチ → 長岡の醸造蔵見学"
@@ -1243,7 +1447,9 @@
         "price": "約3,200円（往復・自由席）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 1,
+    "budgetLevel": 2
   },
   {
     "id": "enoshima",
@@ -1251,7 +1457,10 @@
     "prefecture": "神奈川県",
     "prefectureSlug": "kanagawa",
     "description": "湘南の海と島散策・しらすグルメ",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "江ノ島シーキャンドル → 岩屋洞窟 → しらす丼ランチ → 湘南海岸散策",
       "新江ノ島水族館 → 江ノ島神社 → サムエル・コッキング苑 → 海沿いカフェ"
@@ -1273,7 +1482,9 @@
         "price": "約1,200円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "inuyama",
@@ -1281,7 +1492,10 @@
     "prefecture": "愛知県",
     "prefectureSlug": "aichi",
     "description": "国宝犬山城と城下町の食べ歩き",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "犬山城 → 城下町食べ歩き（五平餅・田楽） → 三光稲荷神社 → 犬山温泉",
       "日本モンキーパーク → 犬山城 → 城下町散策 → からくり展示館"
@@ -1295,7 +1509,9 @@
         "price": "約1,180円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 1,
+    "budgetLevel": 1
   },
   {
     "id": "tokoname",
@@ -1303,7 +1519,10 @@
     "prefecture": "愛知県",
     "prefectureSlug": "aichi",
     "description": "招き猫と焼き物の坂道散策",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "やきもの散歩道 → とこなめ招き猫通り → 陶芸体験 → 常滑屋でランチ",
       "INAXライブミュージアム → やきもの散歩道 → 常滑焼ショッピング"
@@ -1317,7 +1536,9 @@
         "price": "約1,300円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "iseshima",
@@ -1325,7 +1546,10 @@
     "prefecture": "三重県",
     "prefectureSlug": "mie",
     "description": "お伊勢参りとおかげ横丁グルメ",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "伊勢神宮外宮 → 内宮 → おかげ横丁（赤福・伊勢うどん） → 夫婦岩",
       "伊勢神宮内宮 → おかげ横丁 → 鳥羽水族館 → 海女小屋で海鮮"
@@ -1347,7 +1571,9 @@
         "price": "約7,400円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 4
   },
   {
     "id": "gero",
@@ -1355,7 +1581,10 @@
     "prefecture": "岐阜県",
     "prefectureSlug": "gifu",
     "description": "日本三名泉のとろり美肌の湯",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "温泉寺 → 下呂温泉街散策 → 足湯めぐり → 飛騨牛ランチ → 噴泉池",
       "合掌村 → 温泉街食べ歩き → 日帰り温泉 → 飛騨牛コロッケ"
@@ -1369,7 +1598,9 @@
         "price": "約8,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 4
   },
   {
     "id": "takayama",
@@ -1377,7 +1608,10 @@
     "prefecture": "岐阜県",
     "prefectureSlug": "gifu",
     "description": "飛騨の小京都・古い町並みと朝市",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "宮川朝市 → 古い町並み散策 → 飛騨牛握り → 高山陣屋 → 飛騨の里",
       "古い町並み → 飛騨高山レトロミュージアム → 高山ラーメン → 中橋散策"
@@ -1399,7 +1633,9 @@
         "price": "約4,000円（往復）",
         "ic": "不可（事前予約）"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 4
   },
   {
     "id": "shirakawago",
@@ -1407,7 +1643,10 @@
     "prefecture": "岐阜県",
     "prefectureSlug": "gifu",
     "description": "世界遺産の合掌造り集落",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "荻町城跡展望台 → 和田家 → 合掌造り集落散策 → 白川郷の湯",
       "であい橋 → 長瀬家 → 明善寺 → 展望台 → 飛騨牛コロッケ"
@@ -1429,7 +1668,9 @@
         "price": "約4,400円（往復）",
         "ic": "不可（事前予約）"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 3
   },
   {
     "id": "tojinbo",
@@ -1437,7 +1678,10 @@
     "prefecture": "福井県",
     "prefectureSlug": "fukui",
     "description": "断崖絶壁の絶景と越前ガニ",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "東尋坊（遊覧船） → 越前松島水族館 → 芝政ワールド → 越前そば",
       "東尋坊 → 丸岡城 → 永平寺 → 越前おろしそば"
@@ -1451,7 +1695,9 @@
         "price": "約3,200円（往復・バス別）",
         "ic": "JR区間のみ利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "wakura",
@@ -1459,7 +1705,10 @@
     "prefecture": "石川県",
     "prefectureSlug": "ishikawa",
     "description": "能登の海沿い名湯と海鮮グルメ",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "総湯 → 辻口博啓美術館 → 能登島大橋 → のとじま水族館 → 海鮮ランチ",
       "和倉温泉街散策 → 足湯 → 能登食祭市場 → 七尾城跡"
@@ -1473,7 +1722,9 @@
         "price": "約2,600円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "uji",
@@ -1481,7 +1732,10 @@
     "prefecture": "京都府",
     "prefectureSlug": "kyoto",
     "description": "平等院鳳凰堂と宇治抹茶の街",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "平等院鳳凰堂 → 宇治上神社 → 宇治抹茶スイーツ → 中村藤吉本店",
       "平等院 → 源氏物語ミュージアム → 宇治川沿い散策 → 抹茶ソフト"
@@ -1503,7 +1757,9 @@
         "price": "約1,600円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "amanohashidate",
@@ -1511,7 +1767,10 @@
     "prefecture": "京都府",
     "prefectureSlug": "kyoto",
     "description": "日本三景・股のぞきの絶景",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "天橋立ビューランド（股のぞき） → 松並木散策 → 智恩寺 → 海鮮ランチ",
       "傘松公園リフト → 成相寺 → 天橋立松並木レンタサイクル → 廻旋橋"
@@ -1533,7 +1792,9 @@
         "price": "約6,000円（往復）",
         "ic": "JR区間のみ利用可"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 3
   },
   {
     "id": "kinosaki",
@@ -1541,7 +1802,10 @@
     "prefecture": "兵庫県",
     "prefectureSlug": "hyogo",
     "description": "七つの外湯めぐりと但馬の味覚",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "外湯めぐり（御所の湯・一の湯） → 城崎ロープウェイ → 温泉街散策 → カニ料理",
       "城崎マリンワールド → 外湯めぐり → 温泉街食べ歩き → 但馬牛"
@@ -1571,7 +1835,9 @@
         "price": "約6,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 4
   },
   {
     "id": "awajishima",
@@ -1579,7 +1845,10 @@
     "prefecture": "兵庫県",
     "prefectureSlug": "hyogo",
     "description": "花と海と淡路島バーガーの島",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "あわじ花さじき → 淡路島バーガー → 淡路ワールドパークONOKORO → 明石海峡大橋展望",
       "淡路夢舞台 → 国営明石海峡公園 → 生しらす丼 → うずしおクルーズ"
@@ -1601,7 +1870,9 @@
         "price": "約3,100円（往復）",
         "ic": "不可（事前購入）"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "tottori",
@@ -1609,7 +1880,10 @@
     "prefecture": "鳥取県",
     "prefectureSlug": "tottori",
     "description": "日本最大級の砂丘とらくだ体験",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "鳥取砂丘 → らくだ体験 → 砂の美術館 → 白兎神社 → 海鮮ランチ",
       "鳥取砂丘パラグライダー → 砂の美術館 → 鳥取市内でカニ料理"
@@ -1631,7 +1905,9 @@
         "price": "約3,800円（往復・バス別）",
         "ic": "不可（事前予約）"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 3
   },
   {
     "id": "miyajima",
@@ -1639,7 +1915,10 @@
     "prefecture": "広島県",
     "prefectureSlug": "hiroshima",
     "description": "海に浮かぶ朱色の大鳥居と厳島神社",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "厳島神社 → 大鳥居 → 表参道商店街（もみじ饅頭・穴子飯） → 弥山ロープウェイ",
       "弥山登山 → 厳島神社 → 五重塔 → 表参道で牡蠣 → 大鳥居ライトアップ"
@@ -1661,7 +1940,9 @@
         "price": "約8,000円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "kure",
@@ -1669,7 +1950,10 @@
     "prefecture": "広島県",
     "prefectureSlug": "hiroshima",
     "description": "大和ミュージアムと海軍カレーの港町",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "大和ミュージアム → てつのくじら館 → 海軍カレーランチ → 呉港クルーズ",
       "アレイからすこじま → 海軍カレー → 大和ミュージアム → 音戸の瀬戸"
@@ -1683,7 +1967,9 @@
         "price": "約1,000円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "iwakuni",
@@ -1691,7 +1977,10 @@
     "prefecture": "山口県",
     "prefectureSlug": "yamaguchi",
     "description": "日本三名橋・錦帯橋と岩国寿司",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "錦帯橋 → 吉香公園 → 岩国城ロープウェイ → 岩国寿司ランチ",
       "錦帯橋 → 白蛇の館 → 岩国城 → 岩国シロヘビの館 → 地酒試飲"
@@ -1705,7 +1994,9 @@
         "price": "約1,600円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 2
   },
   {
     "id": "izumo",
@@ -1713,7 +2004,10 @@
     "prefecture": "島根県",
     "prefectureSlug": "shimane",
     "description": "縁結びの聖地・出雲大社と出雲そば",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "出雲大社 → 神門通り（出雲そば・ぜんざい） → 稲佐の浜 → 島根ワイナリー",
       "出雲大社 → 古代出雲歴史博物館 → 出雲そば → 日御碕灯台"
@@ -1735,7 +2029,9 @@
         "price": "約7,000円（往復）",
         "ic": "不可（事前予約）"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 3
   },
   {
     "id": "sakaiminato",
@@ -1743,7 +2039,10 @@
     "prefecture": "鳥取県",
     "prefectureSlug": "tottori",
     "description": "ゲゲゲの鬼太郎ロードと海鮮",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "水木しげるロード → 水木しげる記念館 → 境港さかなセンター → 海鮮丼",
       "水木しげるロード → 妖怪神社 → 境港水産物直売センター → カニ料理"
@@ -1757,7 +2056,9 @@
         "price": "約1,200円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "yasugi",
@@ -1765,7 +2066,10 @@
     "prefecture": "島根県",
     "prefectureSlug": "shimane",
     "description": "日本一の庭園と横山大観コレクション",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "足立美術館（日本庭園・横山大観） → 安来節演芸館（どじょうすくい） → 月山富田城跡",
       "足立美術館 → 清水寺（安来市） → 安来節演芸館 → しじみ料理"
@@ -1779,7 +2083,9 @@
         "price": "約640円（往復・バス無料）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "imabari",
@@ -1787,7 +2093,10 @@
     "prefecture": "愛媛県",
     "prefectureSlug": "ehime",
     "description": "しまなみ海道サイクリングと来島海峡",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "サンライズ糸山 → しまなみ海道サイクリング → 大島 → 来島海峡大橋 → 焼豚玉子飯",
       "来島海峡急流観潮船 → 亀老山展望公園 → 今治城 → 焼き鳥ランチ"
@@ -1809,7 +2118,9 @@
         "price": "約4,600円（往復）",
         "ic": "不可（事前予約）"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "uchiko",
@@ -1817,7 +2128,10 @@
     "prefecture": "愛媛県",
     "prefectureSlug": "ehime",
     "description": "白壁の町並みと内子座の歴史ロマン",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "内子座（芝居小屋） → 八日市・護国の町並み → 木蝋資料館上芳我邸 → 内子豚ランチ",
       "町並み散策 → 商いと暮らし博物館 → 内子フレッシュパークからり → 大洲城"
@@ -1831,7 +2145,9 @@
         "price": "約2,600円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 1,
+    "budgetLevel": 2
   },
   {
     "id": "ozu",
@@ -1839,7 +2155,10 @@
     "prefecture": "愛媛県",
     "prefectureSlug": "ehime",
     "description": "伊予の小京都と肱川の城下町",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "大洲城 → おはなはん通り → 臥龍山荘 → 肱川沿い散策 → 大洲コロッケ",
       "ポコペン横丁 → 大洲城 → 臥龍山荘 → 鵜飼い（夏季）"
@@ -1853,7 +2172,9 @@
         "price": "約2,900円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 2
   },
   {
     "id": "shimanto",
@@ -1861,7 +2182,10 @@
     "prefecture": "高知県",
     "prefectureSlug": "kochi",
     "description": "日本最後の清流と沈下橋",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "佐田沈下橋 → 四万十川カヌー体験 → 四万十の天然うなぎランチ",
       "四万十川遊覧船 → 岩間沈下橋 → 安並水車の里 → 四万十うなぎ"
@@ -1875,7 +2199,9 @@
         "price": "約5,200円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "muroto",
@@ -1883,7 +2209,10 @@
     "prefecture": "高知県",
     "prefectureSlug": "kochi",
     "description": "世界ジオパークの断崖と深海",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "室戸岬灯台 → 中岡慎太郎像 → 室戸世界ジオパークセンター → 室戸海洋深層水アクア・ファーム",
       "御厨人窟 → 最御崎寺 → 室戸ドルフィンセンター → キンメ丼ランチ"
@@ -1897,7 +2226,9 @@
         "price": "約3,200円（往復）",
         "ic": "不可（現金のみ）"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 2
   },
   {
     "id": "niyodogawa",
@@ -1905,7 +2236,10 @@
     "prefecture": "高知県",
     "prefectureSlug": "kochi",
     "description": "仁淀ブルーの奇跡の清流",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "にこ淵 → 安居渓谷（水晶淵） → 仁淀川カヌー体験",
       "中津渓谷 → にこ淵 → 仁淀川沿いドライブ → 土佐和紙工芸村"
@@ -1919,7 +2253,9 @@
         "price": "約2,000円（往復・バス別）",
         "ic": "JR区間のみ利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "aso",
@@ -1927,7 +2263,10 @@
     "prefecture": "熊本県",
     "prefectureSlug": "kumamoto",
     "description": "世界最大級のカルデラと草千里",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "阿蘇山火口 → 草千里ヶ浜 → 阿蘇神社 → あか牛丼ランチ",
       "大観峰 → 草千里 → 阿蘇中岳火口 → 内牧温泉"
@@ -1957,7 +2296,9 @@
         "price": "約9,000円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 4
   },
   {
     "id": "nagasaki",
@@ -1965,7 +2306,10 @@
     "prefecture": "長崎県",
     "prefectureSlug": "nagasaki",
     "description": "異国情緒あふれる坂の街とちゃんぽん",
-    "themes": ["experience", "food"],
+    "themes": [
+      "experience",
+      "food"
+    ],
     "modelCourses": [
       "グラバー園 → 大浦天主堂 → 中華街（ちゃんぽん） → 稲佐山夜景",
       "平和公園 → 原爆資料館 → 出島 → 眼鏡橋 → トルコライス"
@@ -1987,7 +2331,9 @@
         "price": "約8,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 4
   },
   {
     "id": "amakusa",
@@ -1995,7 +2341,10 @@
     "prefecture": "熊本県",
     "prefectureSlug": "kumamoto",
     "description": "世界遺産の潜伏キリシタンとイルカウォッチング",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "天草五橋ドライブ → 崎津集落（世界遺産） → イルカウォッチング",
       "天草キリシタン館 → 崎津天主堂 → 大江天主堂 → 海鮮ランチ"
@@ -2009,7 +2358,9 @@
         "price": "約3,800円（往復）",
         "ic": "不可（現金 or 回数券）"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 3
   },
   {
     "id": "hitoyoshi",
@@ -2017,7 +2368,10 @@
     "prefecture": "熊本県",
     "prefectureSlug": "kumamoto",
     "description": "球磨焼酎と相良700年の城下町",
-    "themes": ["food", "experience"],
+    "themes": [
+      "food",
+      "experience"
+    ],
     "modelCourses": [
       "人吉城跡 → 球磨焼酎蔵めぐり → 鍛冶屋町通り → うなぎランチ",
       "青井阿蘇神社（国宝） → 人吉城跡 → 焼酎試飲 → 球磨川ラフティング"
@@ -2031,7 +2385,9 @@
         "price": "約3,600円（往復）",
         "ic": "不可（事前購入）"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "sakurajima",
@@ -2039,7 +2395,10 @@
     "prefecture": "鹿児島県",
     "prefectureSlug": "kagoshima",
     "description": "活火山の迫力と溶岩の絶景",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "桜島フェリー → 湯之平展望所 → 有村溶岩展望所 → 桜島溶岩なぎさ足湯",
       "桜島ビジターセンター → 烏島展望所 → 叫びの肖像 → 溶岩なぎさ遊歩道"
@@ -2053,7 +2412,9 @@
         "price": "約400円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 1,
+    "budgetLevel": 1
   },
   {
     "id": "ibusuki",
@@ -2061,7 +2422,10 @@
     "prefecture": "鹿児島県",
     "prefectureSlug": "kagoshima",
     "description": "砂むし温泉と開聞岳の絶景",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "砂むし会館砂楽 → 長崎鼻（開聞岳ビュー） → たまて箱温泉 → 池田湖",
       "JR特急指宿のたまて箱 → 砂むし温泉 → 知林ヶ島 → そうめん流し"
@@ -2075,7 +2439,9 @@
         "price": "約2,400円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 2
   },
   {
     "id": "kirishima",
@@ -2083,7 +2449,10 @@
     "prefecture": "鹿児島県",
     "prefectureSlug": "kagoshima",
     "description": "天孫降臨の神話と霧島温泉郷",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "霧島神宮 → 丸尾滝 → 霧島温泉郷（日帰り入浴） → 高千穂牧場",
       "えびの高原 → 大浪池トレッキング → 霧島温泉 → 黒豚ランチ"
@@ -2105,7 +2474,9 @@
         "price": "約8,500円（往復）",
         "ic": "利用可"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 3
   },
   {
     "id": "yakushima",
@@ -2113,7 +2484,10 @@
     "prefecture": "鹿児島県",
     "prefectureSlug": "kagoshima",
     "description": "世界遺産の太古の森と縄文杉",
-    "themes": ["view", "experience"],
+    "themes": [
+      "view",
+      "experience"
+    ],
     "modelCourses": [
       "白谷雲水峡（もののけの森） → 大川の滝 → 平内海中温泉",
       "縄文杉トレッキング（往復10時間） → 屋久島温泉"
@@ -2127,7 +2501,9 @@
         "price": "約10,800円（往復）",
         "ic": "不可（事前予約）"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 5
   },
   {
     "id": "chiran",
@@ -2135,7 +2511,10 @@
     "prefecture": "鹿児島県",
     "prefectureSlug": "kagoshima",
     "description": "武家屋敷庭園と特攻平和会館",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "知覧特攻平和会館 → 武家屋敷庭園群 → 知覧茶スイーツ",
       "武家屋敷通り → 知覧特攻平和会館 → 薩摩の里 → 知覧鶏飯ランチ"
@@ -2149,7 +2528,9 @@
         "price": "約1,600円（往復）",
         "ic": "不可（現金のみ）"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 2
   },
   {
     "id": "churaumi",
@@ -2157,7 +2538,10 @@
     "prefecture": "沖縄県",
     "prefectureSlug": "okinawa",
     "description": "世界最大級の水槽とエメラルドの海",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "美ら海水族館 → エメラルドビーチ → 備瀬のフクギ並木 → 古宇利大橋",
       "美ら海水族館 → 今帰仁城跡（世界遺産） → 古宇利島ハートロック"
@@ -2171,7 +2555,9 @@
         "price": "約4,000円（往復）",
         "ic": "不可（現金のみ）"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 3
   },
   {
     "id": "chatan",
@@ -2179,7 +2565,10 @@
     "prefecture": "沖縄県",
     "prefectureSlug": "okinawa",
     "description": "異国感あふれるシーサイドタウン",
-    "themes": ["food", "experience"],
+    "themes": [
+      "food",
+      "experience"
+    ],
     "modelCourses": [
       "アメリカンビレッジ → デポアイランド → サンセットビーチ → ステーキディナー",
       "アラハビーチ → アメリカンビレッジ → タコライス&ハンバーガー → 観覧車"
@@ -2193,7 +2582,9 @@
         "price": "約1,200円（往復）",
         "ic": "不可（現金のみ）"
       }
-    }
+    },
+    "distanceLevel": 2,
+    "budgetLevel": 1
   },
   {
     "id": "nanjo",
@@ -2201,7 +2592,10 @@
     "prefecture": "沖縄県",
     "prefectureSlug": "okinawa",
     "description": "琉球最高の聖地と絶景カフェ",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "斎場御嶽（世界遺産） → 知念岬公園 → カフェくるくま（絶景ランチ） → ニライカナイ橋",
       "おきなわワールド（玉泉洞） → 斎場御嶽 → 新原ビーチ → グラスボート"
@@ -2215,7 +2609,9 @@
         "price": "約1,400円（往復）",
         "ic": "不可（現金のみ）"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 1
   },
   {
     "id": "yomitan",
@@ -2223,7 +2619,10 @@
     "prefecture": "沖縄県",
     "prefectureSlug": "okinawa",
     "description": "焼き物の里と沖縄の原風景",
-    "themes": ["experience", "view"],
+    "themes": [
+      "experience",
+      "view"
+    ],
     "modelCourses": [
       "やちむんの里（陶芸工房めぐり） → 座喜味城跡（世界遺産） → 残波岬 → 沖縄そば",
       "体験王国むら咲むら → やちむんの里 → 座喜味城跡 → 御菓子御殿"
@@ -2237,7 +2636,9 @@
         "price": "約1,500円（往復）",
         "ic": "不可（現金のみ）"
       }
-    }
+    },
+    "distanceLevel": 3,
+    "budgetLevel": 1
   },
   {
     "id": "kouri",
@@ -2245,7 +2646,10 @@
     "prefecture": "沖縄県",
     "prefectureSlug": "okinawa",
     "description": "恋の島とエメラルドグリーンの海",
-    "themes": ["view", "food"],
+    "themes": [
+      "view",
+      "food"
+    ],
     "modelCourses": [
       "古宇利大橋 → ティーヌ浜（ハートロック） → 古宇利オーシャンタワー → 海鮮ランチ",
       "古宇利ビーチ → トケイ浜 → 古宇利オーシャンタワー → ウニ丼"
@@ -2259,6 +2663,8 @@
         "price": "約4,200円（往復）",
         "ic": "不可（現金のみ）"
       }
-    }
+    },
+    "distanceLevel": 4,
+    "budgetLevel": 3
   }
 ]
