@@ -6,6 +6,18 @@
 import { buildAffiliateUrl } from './affiliate.js';
 import { THEME_LABELS } from './config.js';
 
+/**
+ * レベル値(1〜5)を★☆で表示
+ */
+function renderStars(level, max = 5) {
+  const filled = Math.max(0, Math.min(max, level));
+  return '<span aria-hidden="true">' +
+    '<span class="star--filled">★</span>'.repeat(filled) +
+    '<span class="star--empty">☆</span>'.repeat(max - filled) +
+    '</span>' +
+    `<span class="sr-only">${filled}/${max}</span>`;
+}
+
 /** フォールバック時メッセージ */
 const RELAXED_MESSAGES = {
   theme: '条件に完全一致するプランがなかったため、テーマを広げて提案しています。',
@@ -67,6 +79,11 @@ export function renderResult(container, plan) {
       </div>
 
       <p class="result-description">${destination.description}</p>
+
+      <div class="level-row">
+        <span class="level-item"><span class="level-label">距離</span>${renderStars(destination.distanceLevel)}</span>
+        <span class="level-item"><span class="level-label">予算</span>${renderStars(destination.budgetLevel)}</span>
+      </div>
 
       <div class="result-section">
         <h3 class="section-title">アクセス</h3>
