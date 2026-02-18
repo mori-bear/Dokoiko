@@ -3,8 +3,8 @@
  * 楽天アフィリエイトIDやデータパスなど、環境ごとの設定を一元管理
  */
 export const RAKUTEN_AFFILIATE = {
-  baseUrl: 'https://hb.afl.rakuten.co.jp/hgc/511c83ed.a0afccf172.511c83ee.51331b19/',
-  paramKey: 'pc',
+  baseUrl: 'https://hb.afl.rakuten.co.jp/hgc/511c83ed.aa0fc172.511c83ee.51331b19/',
+paramKey: 'pc',
   travelUrlBase: 'https://travel.rakuten.co.jp/yado/'
 };
 
