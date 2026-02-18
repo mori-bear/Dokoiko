@@ -4,9 +4,10 @@
  */
 export const RAKUTEN_AFFILIATE = {
   baseUrl: 'https://hb.afl.rakuten.co.jp/hgc/511c83ed.aa0fc172.511c83ee.51331b19/',
-paramKey: 'pc',
+  paramKey: 'pc',
   travelUrlBase: 'https://travel.rakuten.co.jp/yado/'
 };
+
 
 export const DATA_PATH = './data';
 
@@ -20,3 +21,4 @@ export const DISTANCE_LABELS = {
   near: '近場',
   far: '遠出'
 };
+
