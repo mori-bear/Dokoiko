@@ -1,37 +1,20 @@
-/* ===== Variables ===== */
-:root {
-  --c-primary: #2563eb;
-  --c-primary-dark: #1d4ed8;
-  --c-accent: #f97316;
-  --c-accent-dark: #ea580c;
-  --c-bg: #f0f4f8;
-  --c-card: #ffffff;
-  --c-text: #1e293b;
-  --c-text-sub: #64748b;
-  --c-border: #e2e8f0;
-  --c-surface: #f8fafc;
-  --r-lg: 16px;
-  --r-md: 12px;
-  --r-sm: 8px;
-  --shadow-card: 0 4px 16px rgba(0,0,0,0.08);
-  --shadow-hover: 0 8px 24px rgba(0,0,0,0.12);
-  --font: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
-}
-
 /* ===== Reset ===== */
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* ===== Base ===== */
 body {
-  font-family: var(--font);
-  background: var(--c-bg);
-  color: var(--c-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  background: #f0f4f8;
+  color: #1e293b;
   min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
 }
 
-/* ===== App Shell ===== */
 .app {
   max-width: 480px;
   margin: 0 auto;
@@ -51,45 +34,47 @@ body {
   font-size: 36px;
   font-weight: 800;
   letter-spacing: -0.03em;
-  background: linear-gradient(135deg, var(--c-primary) 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .app-subtitle {
   margin-top: 10px;
   font-size: 14px;
-  color: var(--c-text-sub);
+  color: #64748b;
   line-height: 1.7;
 }
 
-/* ===== Form Card ===== */
-.form-card {
-  background: var(--c-card);
-  border-radius: var(--r-lg);
+/* ===== Card ===== */
+.form-card,
+.result-card {
+  background: #ffffff;
+  border-radius: 16px;
   padding: 24px;
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
 }
 
 .form-group {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .form-group label {
   display: block;
   font-size: 12px;
   font-weight: 700;
-  color: var(--c-text-sub);
+  color: #64748b;
   margin-bottom: 6px;
-  text-transform: uppercase;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 /* ===== Form Layout ===== */
 .form-row {
   display: flex;
   gap: 12px;
+  align-items: stretch;
 }
 
 .form-group--half {
@@ -97,7 +82,7 @@ body {
   min-width: 0;
 }
 
-/* ===== Select ===== */
+/* ===== Select Wrapper ===== */
 .select-wrap {
   position: relative;
 }
@@ -112,67 +97,62 @@ body {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 6px solid var(--c-text-sub);
+  border-top: 6px solid #64748b;
   pointer-events: none;
 }
 
-.select-wrap select {
-  width: 100%;
-  padding: 12px 36px 12px 14px;
-  border: 2px solid var(--c-border);
-  border-radius: var(--r-sm);
-  font-size: 15px;
-  font-family: var(--font);
-  color: var(--c-text);
-  background: var(--c-card);
-  appearance: none;
-  -webkit-appearance: none;
-  cursor: pointer;
-  transition: border-color 0.2s;
-}
-
-.select-wrap select:focus {
-  outline: none;
-  border-color: var(--c-primary);
-}
-
-/* ===== Date / Time Input ===== */
+/* ===== Unified Inputs ===== */
+select,
 .form-input {
   width: 100%;
-  padding: 12px 14px;
-  border: 2px solid var(--c-border);
-  border-radius: var(--r-sm);
+  height: 48px;
+  padding: 0 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
   font-size: 15px;
-  font-family: var(--font);
-  color: var(--c-text);
-  background: var(--c-card);
+  background: #ffffff;
+  color: #1e293b;
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-items: center;
   transition: border-color 0.2s;
 }
 
-.form-input:focus {
-  outline: none;
-  border-color: var(--c-primary);
+.select-wrap select {
+  padding: 0 36px 0 14px;
 }
 
-/* ===== Primary Button ===== */
+select:focus,
+.form-input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* iOS補正 */
+input[type="date"],
+input[type="time"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* ===== Button ===== */
 .primary-btn {
   width: 100%;
   padding: 16px;
-  margin-top: 8px;
   border: none;
-  border-radius: var(--r-md);
+  border-radius: 12px;
   font-size: 16px;
   font-weight: 700;
-  font-family: var(--font);
-  background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark));
-  color: #fff;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s;
 }
 
 .primary-btn:hover:not(:disabled) {
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 6px 16px rgba(37,99,235,0.35);
 }
 
 .primary-btn:disabled {
@@ -184,14 +164,7 @@ body {
 .result-container {
   margin-top: 20px;
   padding-bottom: 8px;
-  animation: slideUp 0.4s ease;
-}
-
-.result-card {
-  background: var(--c-card);
-  border-radius: var(--r-lg);
-  padding: 24px;
-  box-shadow: var(--shadow-card);
+  animation: slideUp 0.3s ease;
 }
 
 /* ===== Footer ===== */
@@ -203,32 +176,23 @@ body {
 
 .app-footer p {
   font-size: 11px;
-  color: var(--c-text-sub);
+  color: #64748b;
   line-height: 1.6;
+}
+
+.app-footer a {
+  color: #7c3aed;
+  text-decoration: none;
 }
 
 /* ===== Animations ===== */
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 380px) {
   .app-title { font-size: 28px; }
-  .form-row  { flex-direction: column; gap: 0; }
-}
-/* ===== Input高さ統一 ===== */
-
-select,
-.form-input {
-  height: 48px;
-  line-height: 48px;
-}
-
-/* iOSのdate/time微調整 */
-input[type="date"],
-input[type="time"] {
-  -webkit-appearance: none;
-  appearance: none;
+  .form-row { flex-direction: column; gap: 0; }
 }
