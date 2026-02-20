@@ -59,9 +59,11 @@ function handleGenerate() {
   const departureId = $('departure').value;
   const distance = $('distance').value;
   const theme = $('theme').value;
+  const difficulty = $('difficulty').value;
+  const stay = $('stay').value;
   const resultContainer = $('result');
 
-  const plan = generatePlan(destinations, departureId, distance, theme);
+  const plan = generatePlan(destinations, departureId, distance, theme, difficulty, stay);
 
   if (plan) {
     renderResult(resultContainer, plan);

@@ -43,6 +43,34 @@ function renderThemeTags(themes) {
     .join('');
 }
 
+/** JR予約・交通リンク生成 */
+const SUGGEST_LINKS = {
+  ekinet:    { label: 'えきねっと', url: 'https://www.eki-net.com/' },
+  e5489:     { label: 'e5489',      url: 'https://www.jr-odekake.net/goyoyaku/' },
+  jrkyushu:  { label: 'JR九州ネット予約', url: 'https://www.jrkyushu.co.jp/train/reserve/' },
+  ex:        { label: 'EX予約',     url: 'https://expy.jp/' },
+};
+
+function renderSuggestLinks(destination) {
+  const links = [];
+
+  // Yahoo!乗換案内は常に表示
+  links.push({ label: 'Yahoo!乗換案内', url: 'https://transit.yahoo.co.jp/' });
+
+  // recommendedJRに応じたJR予約リンク
+  const jr = SUGGEST_LINKS[destination.recommendedJR];
+  if (jr) links.push(jr);
+
+  // 飛行機が必要な場合スカイスキャナー
+  if (destination.transportType === 'air') {
+    links.push({ label: 'スカイスキャナー', url: 'https://www.skyscanner.jp/' });
+  }
+
+  return links.map(l =>
+    `<a href="${l.url}" target="_blank" rel="noopener" class="suggest-link">${l.label}</a>`
+  ).join('');
+}
+
 /**
  * プラン描画（改良版）
  */
@@ -81,6 +109,7 @@ export function renderResult(container, plan) {
       <p class="result-description">${destination.description}</p>
 
       <div class="level-row">
+        <span class="level-item"><span class="level-label">難易度</span>${renderStars(destination.difficulty)}</span>
         <span class="level-item"><span class="level-label">距離</span>${renderStars(destination.distanceLevel)}</span>
         <span class="level-item"><span class="level-label">予算</span>${renderStars(destination.budgetLevel)}</span>
       </div>
@@ -108,6 +137,13 @@ export function renderResult(container, plan) {
       <div class="result-section">
         <h3 class="section-title">モデルコース</h3>
         <p>${modelCourse}</p>
+      </div>
+
+      <div class="result-section">
+        <h3 class="section-title">交通・予約</h3>
+        <div class="suggest-links">
+          ${renderSuggestLinks(destination)}
+        </div>
       </div>
 
       <!-- 楽天アフィボタン -->

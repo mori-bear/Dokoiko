@@ -228,7 +228,8 @@ body {
 /* Level Stars */
 .level-row {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 12px 16px;
   margin-bottom: 18px;
   padding: 10px 14px;
   background: var(--c-surface);
@@ -247,7 +248,7 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: var(--c-text-sub);
-  min-width: 2em;
+  min-width: 3em;
 }
 
 .star--filled { color: #f59e0b; }
@@ -350,6 +351,30 @@ body {
   border-radius: var(--r-sm);
   padding: 10px 14px;
   margin-bottom: 16px;
+}
+
+/* ===== Suggest Links ===== */
+.suggest-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.suggest-link {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1.5px solid var(--c-primary);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--c-primary);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.suggest-link:hover {
+  background: var(--c-primary);
+  color: #fff;
 }
 
 /* ===== CTA Button ===== */

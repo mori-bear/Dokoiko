@@ -48,7 +48,15 @@
       }
     },
     "distanceLevel": 5,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "四国",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "tokushima",
@@ -91,7 +99,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "四国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "shodoshima",
@@ -126,7 +141,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "四国",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "none"
   },
   {
     "id": "matsuyama",
@@ -169,7 +192,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "四国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "kotohira",
@@ -212,7 +243,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "四国",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "naruto",
@@ -239,7 +277,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "四国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "iyakei",
@@ -273,7 +318,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "四国",
+    "difficulty": 4,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "e5489"
   },
   {
     "id": "naoshima",
@@ -308,7 +361,15 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "四国",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "none"
   },
   {
     "id": "kyoto",
@@ -368,7 +429,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "関西",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "nara",
@@ -419,7 +488,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "関西",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "kobe",
@@ -454,7 +530,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "関西",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "himeji",
@@ -496,7 +579,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "関西",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "wakayama",
@@ -523,7 +613,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "関西",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "koyasan",
@@ -550,7 +647,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "関西",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "arima",
@@ -593,7 +698,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "関西",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "kamakura",
@@ -629,7 +741,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "関東",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "hakone",
@@ -664,7 +783,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "関東",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "nikko",
@@ -707,7 +834,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "関東",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "kawagoe",
@@ -734,7 +869,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "関東",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "yokohama",
@@ -760,7 +902,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "関東",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "chichibu",
@@ -795,7 +944,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "関東",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "kurashiki",
@@ -846,7 +1002,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "中国",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "onomichi",
@@ -881,7 +1044,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "中国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "hiroshima",
@@ -916,7 +1087,15 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "中国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "shinkansen",
+    "recommendedJR": "e5489"
   },
   {
     "id": "dazaifu",
@@ -950,7 +1129,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "九州",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "yanagawa",
@@ -985,7 +1171,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "九州",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "mojiko",
@@ -1012,7 +1205,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "九州",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "beppu",
@@ -1047,7 +1247,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "九州",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "yufuin",
@@ -1082,7 +1290,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "九州",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "otaru",
@@ -1109,7 +1325,15 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "北海道",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "noboribetsu",
@@ -1136,7 +1360,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "北海道",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "furano",
@@ -1163,7 +1395,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "北海道",
+    "difficulty": 4,
+    "staySupport": [
+      "1night",
+      "2night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "hakodate",
@@ -1190,7 +1430,15 @@
       }
     },
     "distanceLevel": 5,
-    "budgetLevel": 5
+    "budgetLevel": 5,
+    "region": "北海道",
+    "difficulty": 3,
+    "staySupport": [
+      "1night",
+      "2night"
+    ],
+    "transportType": "shinkansen",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "asahiyama",
@@ -1217,7 +1465,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "北海道",
+    "difficulty": 4,
+    "staySupport": [
+      "1night",
+      "2night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "matsushima",
@@ -1244,7 +1500,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "東北",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "yamadera",
@@ -1271,7 +1534,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "東北",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "hiraizumi",
@@ -1298,7 +1568,15 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "東北",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "shinkansen",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "aizuwakamatsu",
@@ -1333,7 +1611,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "東北",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "echigoyuzawa",
@@ -1368,7 +1654,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "甲信越",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "shinkansen",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "sado",
@@ -1395,7 +1689,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "甲信越",
+    "difficulty": 5,
+    "staySupport": [
+      "1night",
+      "2night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "yahiko",
@@ -1422,7 +1724,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "甲信越",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "nagaoka",
@@ -1449,7 +1758,14 @@
       }
     },
     "distanceLevel": 1,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "甲信越",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "shinkansen",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "enoshima",
@@ -1484,7 +1800,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "関東",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ekinet"
   },
   {
     "id": "inuyama",
@@ -1511,7 +1834,14 @@
       }
     },
     "distanceLevel": 1,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "東海",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ex"
   },
   {
     "id": "tokoname",
@@ -1538,7 +1868,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "東海",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ex"
   },
   {
     "id": "iseshima",
@@ -1573,7 +1910,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "東海",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ex"
   },
   {
     "id": "gero",
@@ -1600,7 +1945,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "東海",
+    "difficulty": 3,
+    "staySupport": [
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ex"
   },
   {
     "id": "takayama",
@@ -1635,7 +1987,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "東海",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "ex"
   },
   {
     "id": "shirakawago",
@@ -1670,7 +2030,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "北陸",
+    "difficulty": 4,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "e5489"
   },
   {
     "id": "tojinbo",
@@ -1697,7 +2065,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "北陸",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "wakura",
@@ -1724,7 +2099,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "北陸",
+    "difficulty": 3,
+    "staySupport": [
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "uji",
@@ -1759,7 +2141,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "関西",
+    "difficulty": 1,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "amanohashidate",
@@ -1794,7 +2183,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "関西",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "kinosaki",
@@ -1837,7 +2234,14 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "関西",
+    "difficulty": 3,
+    "staySupport": [
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "awajishima",
@@ -1872,7 +2276,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "関西",
+    "difficulty": 4,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "none"
   },
   {
     "id": "tottori",
@@ -1907,7 +2319,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "中国",
+    "difficulty": 4,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "miyajima",
@@ -1942,7 +2362,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "中国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "kure",
@@ -1969,7 +2396,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "中国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "iwakuni",
@@ -1996,7 +2430,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "中国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "izumo",
@@ -2031,7 +2472,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "中国",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "sakaiminato",
@@ -2058,7 +2507,15 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "中国",
+    "difficulty": 4,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "yasugi",
@@ -2085,7 +2542,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "中国",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "imabari",
@@ -2120,7 +2584,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "四国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "uchiko",
@@ -2147,7 +2618,14 @@
       }
     },
     "distanceLevel": 1,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "四国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "ozu",
@@ -2174,7 +2652,14 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "四国",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "shimanto",
@@ -2201,7 +2686,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "四国",
+    "difficulty": 4,
+    "staySupport": [
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "e5489"
   },
   {
     "id": "muroto",
@@ -2228,7 +2720,14 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "四国",
+    "difficulty": 5,
+    "staySupport": [
+      "1night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "none"
   },
   {
     "id": "niyodogawa",
@@ -2255,7 +2754,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "四国",
+    "difficulty": 4,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "none"
   },
   {
     "id": "aso",
@@ -2298,7 +2805,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "九州",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "nagasaki",
@@ -2333,7 +2848,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 4
+    "budgetLevel": 4,
+    "region": "九州",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "shinkansen",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "amakusa",
@@ -2360,7 +2883,14 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "九州",
+    "difficulty": 4,
+    "staySupport": [
+      "1night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "hitoyoshi",
@@ -2387,7 +2917,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "九州",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "sakurajima",
@@ -2414,7 +2952,14 @@
       }
     },
     "distanceLevel": 1,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "九州",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "ibusuki",
@@ -2441,7 +2986,15 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "九州",
+    "difficulty": 2,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "kirishima",
@@ -2476,7 +3029,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "九州",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "yakushima",
@@ -2503,7 +3064,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 5
+    "budgetLevel": 5,
+    "region": "九州",
+    "difficulty": 5,
+    "staySupport": [
+      "2night"
+    ],
+    "transportType": "air",
+    "recommendedJR": "none"
   },
   {
     "id": "chiran",
@@ -2530,7 +3098,14 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 2
+    "budgetLevel": 2,
+    "region": "九州",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip"
+    ],
+    "transportType": "rail+car",
+    "recommendedJR": "jrkyushu"
   },
   {
     "id": "churaumi",
@@ -2557,7 +3132,15 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "沖縄",
+    "difficulty": 3,
+    "staySupport": [
+      "1night",
+      "2night"
+    ],
+    "transportType": "air",
+    "recommendedJR": "none"
   },
   {
     "id": "chatan",
@@ -2584,7 +3167,15 @@
       }
     },
     "distanceLevel": 2,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "沖縄",
+    "difficulty": 3,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "air",
+    "recommendedJR": "none"
   },
   {
     "id": "nanjo",
@@ -2611,7 +3202,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "沖縄",
+    "difficulty": 4,
+    "staySupport": [
+      "daytrip",
+      "1night"
+    ],
+    "transportType": "air",
+    "recommendedJR": "none"
   },
   {
     "id": "yomitan",
@@ -2638,7 +3237,15 @@
       }
     },
     "distanceLevel": 3,
-    "budgetLevel": 1
+    "budgetLevel": 1,
+    "region": "沖縄",
+    "difficulty": 4,
+    "staySupport": [
+      "1night",
+      "2night"
+    ],
+    "transportType": "air",
+    "recommendedJR": "none"
   },
   {
     "id": "kouri",
@@ -2665,6 +3272,14 @@
       }
     },
     "distanceLevel": 4,
-    "budgetLevel": 3
+    "budgetLevel": 3,
+    "region": "沖縄",
+    "difficulty": 4,
+    "staySupport": [
+      "1night",
+      "2night"
+    ],
+    "transportType": "air",
+    "recommendedJR": "none"
   }
 ]
