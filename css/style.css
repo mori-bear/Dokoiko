@@ -1,73 +1,220 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
-  background: #f0f4f8;
-  margin: 0;
+/* ===== Variables ===== */
+:root {
+  --c-primary: #2563eb;
+  --c-primary-dark: #1d4ed8;
+  --c-accent: #f97316;
+  --c-accent-dark: #ea580c;
+  --c-bg: #f0f4f8;
+  --c-card: #ffffff;
+  --c-text: #1e293b;
+  --c-text-sub: #64748b;
+  --c-border: #e2e8f0;
+  --c-surface: #f8fafc;
+  --r-lg: 16px;
+  --r-md: 12px;
+  --r-sm: 8px;
+  --shadow-card: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-hover: 0 8px 24px rgba(0,0,0,0.12);
+  --font: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
 }
 
+/* ===== Reset ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ===== Base ===== */
+body {
+  font-family: var(--font);
+  background: var(--c-bg);
+  color: var(--c-text);
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== App Shell ===== */
 .app {
   max-width: 480px;
   margin: 0 auto;
-  padding: 16px;
-}
-
-.form-card,
-.result-card {
-  background: white;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-}
-
-.primary-btn {
-  width: 100%;
-  padding: 16px;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: white;
-}
-
-.suggest-btns {
+  padding: 0 16px;
+  min-height: 100dvh;
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+.app-header {
+  text-align: center;
+  padding: 48px 0 28px;
+}
+
+.app-title {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--c-primary) 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app-subtitle {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--c-text-sub);
+  line-height: 1.7;
+}
+
+/* ===== Form Card ===== */
+.form-card {
+  background: var(--c-card);
+  border-radius: var(--r-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.form-group {
   margin-bottom: 16px;
 }
 
-.suggest-btn {
-  flex: 1;
-  padding: 14px;
-  border-radius: 12px;
-  text-align: center;
-  text-decoration: none;
+.form-group label {
+  display: block;
+  font-size: 12px;
   font-weight: 700;
-  color: white;
+  color: var(--c-text-sub);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
-.suggest-btn--yahoo { background: #ff0033; }
-.suggest-btn--e5489 { background: #0072bc; }
-.suggest-btn--ekinet { background: #00a651; }
-.suggest-btn--ex { background: #f47321; }
+/* ===== Form Layout ===== */
+.form-row {
+  display: flex;
+  gap: 12px;
+}
 
-.cta-btn {
-  display: block;
+.form-group--half {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ===== Select ===== */
+.select-wrap {
+  position: relative;
+}
+
+.select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--c-text-sub);
+  pointer-events: none;
+}
+
+.select-wrap select {
+  width: 100%;
+  padding: 12px 36px 12px 14px;
+  border: 2px solid var(--c-border);
+  border-radius: var(--r-sm);
+  font-size: 15px;
+  font-family: var(--font);
+  color: var(--c-text);
+  background: var(--c-card);
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.select-wrap select:focus {
+  outline: none;
+  border-color: var(--c-primary);
+}
+
+/* ===== Date / Time Input ===== */
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid var(--c-border);
+  border-radius: var(--r-sm);
+  font-size: 15px;
+  font-family: var(--font);
+  color: var(--c-text);
+  background: var(--c-card);
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--c-primary);
+}
+
+/* ===== Primary Button ===== */
+.primary-btn {
   width: 100%;
   padding: 16px;
-  border-radius: 12px;
-  text-align: center;
-  text-decoration: none;
+  margin-top: 8px;
+  border: none;
+  border-radius: var(--r-md);
+  font-size: 16px;
   font-weight: 700;
-  background: linear-gradient(135deg, #f97316, #ea580c);
-  color: white;
-  margin-bottom: 12px;
+  font-family: var(--font);
+  background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark));
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 
-.retry-btn {
-  width: 100%;
-  padding: 14px;
-  border: 2px solid #ddd;
-  border-radius: 12px;
-  background: white;
+.primary-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
+
+.primary-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== Result ===== */
+.result-container {
+  margin-top: 20px;
+  padding-bottom: 8px;
+  animation: slideUp 0.4s ease;
+}
+
+.result-card {
+  background: var(--c-card);
+  border-radius: var(--r-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+/* ===== Footer ===== */
+.app-footer {
+  text-align: center;
+  padding: 28px 0 20px;
+  margin-top: auto;
+}
+
+.app-footer p {
+  font-size: 11px;
+  color: var(--c-text-sub);
+  line-height: 1.6;
+}
+
+/* ===== Animations ===== */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 380px) {
+  .app-title { font-size: 28px; }
+  .form-row  { flex-direction: column; gap: 0; }
 }
