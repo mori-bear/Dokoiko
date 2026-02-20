@@ -3,7 +3,7 @@
  * 条件フィルタリング＋完全ランダム抽選（履歴管理・フォールバック付き）
  */
 
-import { DIFFICULTY_RANGES } from './config.js';
+import { DIFFICULTY_RANGES, getRegionMultiplier, calcDistanceLevel } from './config.js';
 
 /** 直近の抽選履歴（連続重複を防ぐ） */
 let _history = [];
@@ -130,14 +130,15 @@ function filterWithFallback(destinations, departureId, distance, theme, difficul
 /**
  * 条件からプランをランダム生成
  * @param {Array} destinations - 全目的地データ
- * @param {string} departureId - 出発地ID
+ * @param {Object} departure - 出発地オブジェクト { id, label, region }
  * @param {string} distance - 距離感
  * @param {string} theme - テーマ
  * @param {string} difficulty - 難易度
  * @param {string} stay - 滞在タイプ
  * @returns {Object|null} 生成されたプラン、該当なしならnull
  */
-export function generatePlan(destinations, departureId, distance, theme, difficulty = 'any', stay = 'any') {
+export function generatePlan(destinations, departure, distance, theme, difficulty = 'any', stay = 'any') {
+  const departureId = departure.id;
   console.log('[Dokoiko] === 抽選開始 ===');
   console.log('[Dokoiko] 条件:', { departureId, distance, theme, difficulty, stay });
   console.log('[Dokoiko] 全データ件数:', destinations.length);
@@ -161,6 +162,20 @@ export function generatePlan(destinations, departureId, distance, theme, difficu
   const courseIndex = Math.floor(Math.random() * dest.modelCourses.length);
   const modelCourse = dest.modelCourses[courseIndex];
 
+  // 動的距離★算出
+  const multiplier = getRegionMultiplier(departure.region, dest.region);
+  const estimatedHours = Math.round(dest.baseTravelHours * multiplier * 10) / 10;
+  const dynamicDistanceLevel = calcDistanceLevel(estimatedHours);
+
+  console.log('[Dokoiko] 距離算出:', {
+    depRegion: departure.region,
+    destRegion: dest.region,
+    baseTravelHours: dest.baseTravelHours,
+    multiplier,
+    estimatedHours,
+    dynamicDistanceLevel
+  });
+
   console.log('[Dokoiko] 抽選結果:', {
     destination: dest.city,
     prefecture: dest.prefecture,
@@ -173,9 +188,12 @@ export function generatePlan(destinations, departureId, distance, theme, difficu
 
   return {
     destination: dest,
+    departure,
     access,
     modelCourse,
     candidateCount: candidates.length,
-    relaxed
+    relaxed,
+    estimatedHours,
+    dynamicDistanceLevel
   };
 }

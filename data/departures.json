@@ -1,22 +1,102 @@
 [
-  { "id": "sapporo", "label": "札幌", "region": "北海道" },
-  { "id": "sendai", "label": "仙台", "region": "東北" },
-  { "id": "niigata", "label": "新潟", "region": "甲信越" },
-  { "id": "tokyo", "label": "東京", "region": "関東" },
-  { "id": "yokohama", "label": "横浜", "region": "関東" },
-  { "id": "nagoya", "label": "名古屋", "region": "東海" },
-  { "id": "kanazawa", "label": "金沢", "region": "北陸" },
-  { "id": "osaka", "label": "大阪", "region": "関西" },
-  { "id": "kyoto", "label": "京都", "region": "関西" },
-  { "id": "kobe", "label": "神戸", "region": "関西" },
-  { "id": "okayama", "label": "岡山", "region": "中国" },
-  { "id": "hiroshima", "label": "広島", "region": "中国" },
-  { "id": "matsue", "label": "松江", "region": "中国" },
-  { "id": "takamatsu", "label": "高松", "region": "四国" },
-  { "id": "matsuyama", "label": "松山", "region": "四国" },
-  { "id": "kochi", "label": "高知", "region": "四国" },
-  { "id": "fukuoka", "label": "福岡", "region": "九州" },
-  { "id": "kumamoto", "label": "熊本", "region": "九州" },
-  { "id": "kagoshima", "label": "鹿児島", "region": "九州" },
-  { "id": "naha", "label": "那覇", "region": "沖縄" }
+  {
+    "id": "sapporo",
+    "label": "札幌",
+    "region": "北海道"
+  },
+  {
+    "id": "sendai",
+    "label": "仙台",
+    "region": "東北"
+  },
+  {
+    "id": "niigata",
+    "label": "新潟",
+    "region": "中部"
+  },
+  {
+    "id": "tokyo",
+    "label": "東京",
+    "region": "関東"
+  },
+  {
+    "id": "yokohama",
+    "label": "横浜",
+    "region": "関東"
+  },
+  {
+    "id": "nagoya",
+    "label": "名古屋",
+    "region": "中部"
+  },
+  {
+    "id": "kanazawa",
+    "label": "金沢",
+    "region": "中部"
+  },
+  {
+    "id": "osaka",
+    "label": "大阪",
+    "region": "近畿"
+  },
+  {
+    "id": "kyoto",
+    "label": "京都",
+    "region": "近畿"
+  },
+  {
+    "id": "kobe",
+    "label": "神戸",
+    "region": "近畿"
+  },
+  {
+    "id": "okayama",
+    "label": "岡山",
+    "region": "中国"
+  },
+  {
+    "id": "hiroshima",
+    "label": "広島",
+    "region": "中国"
+  },
+  {
+    "id": "matsue",
+    "label": "松江",
+    "region": "中国"
+  },
+  {
+    "id": "takamatsu",
+    "label": "高松",
+    "region": "四国"
+  },
+  {
+    "id": "matsuyama",
+    "label": "松山",
+    "region": "四国"
+  },
+  {
+    "id": "kochi",
+    "label": "高知",
+    "region": "四国"
+  },
+  {
+    "id": "fukuoka",
+    "label": "福岡",
+    "region": "九州"
+  },
+  {
+    "id": "kumamoto",
+    "label": "熊本",
+    "region": "九州"
+  },
+  {
+    "id": "kagoshima",
+    "label": "鹿児島",
+    "region": "九州"
+  },
+  {
+    "id": "naha",
+    "label": "那覇",
+    "region": "九州"
+  }
 ]
