@@ -10,17 +10,23 @@
   --c-text-sub: #64748b;
   --c-border: #e2e8f0;
   --c-surface: #f8fafc;
+
   --r-lg: 16px;
   --r-md: 12px;
   --r-sm: 8px;
+
   --shadow-card: 0 4px 16px rgba(0,0,0,0.08);
-  --shadow-hover: 0 8px 24px rgba(0,0,0,0.12);
+
   --font: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
     "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
 }
 
 /* ===== Reset ===== */
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* ===== Base ===== */
 body {
@@ -48,13 +54,12 @@ body {
 }
 
 .app-title {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 800;
   letter-spacing: -0.03em;
-  background: linear-gradient(135deg, var(--c-primary) 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, var(--c-primary), #7c3aed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .app-subtitle {
@@ -73,7 +78,7 @@ body {
 }
 
 .form-group {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .form-group label {
@@ -86,17 +91,16 @@ body {
   letter-spacing: 0.08em;
 }
 
+/* ★ 日時は縦固定（横並びしない） */
 .form-row {
-  display: flex;
-  gap: 12px;
+  display: block;
 }
 
 .form-group--half {
-  flex: 1;
-  min-width: 0;
+  width: 100%;
 }
 
-/* Select */
+/* ===== Select ===== */
 .select-wrap {
   position: relative;
 }
@@ -107,8 +111,6 @@ body {
   right: 14px;
   top: 50%;
   transform: translateY(-50%);
-  width: 0;
-  height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 6px solid var(--c-text-sub);
@@ -117,17 +119,15 @@ body {
 
 .select-wrap select {
   width: 100%;
-  padding: 12px 36px 12px 14px;
+  height: 44px;
+  padding: 0 36px 0 14px;
   border: 2px solid var(--c-border);
   border-radius: var(--r-sm);
   font-size: 15px;
   font-family: var(--font);
-  color: var(--c-text);
   background: var(--c-card);
   appearance: none;
   -webkit-appearance: none;
-  cursor: pointer;
-  transition: border-color 0.2s;
 }
 
 .select-wrap select:focus {
@@ -135,17 +135,16 @@ body {
   border-color: var(--c-primary);
 }
 
-/* Input (date, time) */
+/* ===== Input (date & time) ===== */
 .form-input {
   width: 100%;
-  padding: 12px 14px;
+  height: 44px;
+  padding: 0 14px;
   border: 2px solid var(--c-border);
   border-radius: var(--r-sm);
   font-size: 15px;
   font-family: var(--font);
-  color: var(--c-text);
   background: var(--c-card);
-  transition: border-color 0.2s;
 }
 
 .form-input:focus {
@@ -166,16 +165,6 @@ body {
   background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark));
   color: #fff;
   cursor: pointer;
-  transition: transform 0.15s, box-shadow 0.15s;
-}
-
-.primary-btn:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
-}
-
-.primary-btn:active:not(:disabled) {
-  transform: translateY(0);
 }
 
 .primary-btn:disabled {
@@ -186,8 +175,6 @@ body {
 /* ===== Result ===== */
 .result-container {
   margin-top: 20px;
-  padding-bottom: 8px;
-  animation: slideUp 0.4s ease;
 }
 
 .result-card {
@@ -195,227 +182,6 @@ body {
   border-radius: var(--r-lg);
   padding: 24px;
   box-shadow: var(--shadow-card);
-}
-
-/* Header */
-.result-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 6px;
-}
-
-.result-city {
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-.result-prefecture {
-  font-size: 12px;
-  color: var(--c-text-sub);
-}
-
-.result-tags {
-  display: flex;
-  gap: 6px;
-  flex-shrink: 0;
-}
-
-.tag {
-  display: inline-block;
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.tag--view       { background: #dbeafe; color: #1e40af; }
-.tag--food       { background: #fef3c7; color: #92400e; }
-.tag--experience { background: #dcfce7; color: #166534; }
-
-.result-description {
-  font-size: 14px;
-  color: var(--c-text-sub);
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-/* Level Stars */
-.level-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 16px;
-  margin-bottom: 18px;
-  padding: 10px 14px;
-  background: var(--c-surface);
-  border-radius: var(--r-sm);
-}
-
-.level-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  letter-spacing: 0.04em;
-}
-
-.level-label {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--c-text-sub);
-  min-width: 3em;
-}
-
-.star--filled { color: #f59e0b; }
-.star--empty  { color: #d1d5db; }
-
-.sr-only {
-  position: absolute;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
-
-/* ===== Relaxed Banner ===== */
-.relaxed-banner {
-  font-size: 12px;
-  line-height: 1.6;
-  color: #92400e;
-  background: #fef3c7;
-  border-radius: var(--r-sm);
-  padding: 10px 14px;
-  margin-bottom: 16px;
-}
-
-/* ===== Suggest Buttons (交通・予約) ===== */
-.suggest-btns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.suggest-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 16px;
-  border-radius: var(--r-md);
-  font-size: 15px;
-  font-weight: 700;
-  font-family: var(--font);
-  text-decoration: none;
-  color: #fff;
-  transition: opacity 0.2s, transform 0.15s, box-shadow 0.15s;
-  flex: 1 1 calc(50% - 5px);
-  min-width: 0;
-  text-align: center;
-}
-
-.suggest-btn:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* Yahoo!乗換案内 - 赤系 */
-.suggest-btn--yahoo    { background: #ff0033; }
-/* EX予約 - 青系（JR東海） */
-.suggest-btn--ex       { background: #f47321; }
-/* えきねっと - 緑系（JR東日本） */
-.suggest-btn--ekinet   { background: #00a651; }
-/* e5489 - 青系（JR西日本） */
-.suggest-btn--e5489    { background: #0072bc; }
-/* JR九州ネット予約 - 赤系 */
-.suggest-btn--jrkyushu { background: #e60012; }
-/* スカイスキャナー - 水色 */
-.suggest-btn--sky      { background: #0770e3; }
-
-/* 距離サブテキスト */
-.level-sub {
-  font-size: 11px;
-  color: var(--c-text-sub);
-  margin-left: 4px;
-}
-
-/* ===== CTA Button ===== */
-.cta-btn {
-  display: block;
-  width: 100%;
-  padding: 16px;
-  border: none;
-  border-radius: var(--r-md);
-  font-size: 16px;
-  font-weight: 700;
-  font-family: var(--font);
-  text-align: center;
-  text-decoration: none;
-  background: linear-gradient(135deg, var(--c-accent), var(--c-accent-dark));
-  color: #fff;
-  cursor: pointer;
-  transition: transform 0.15s, box-shadow 0.15s;
-  margin-top: 4px;
-}
-
-.cta-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 14px rgba(249, 115, 22, 0.35);
-}
-
-/* ===== Retry Button ===== */
-.retry-btn {
-  display: block;
-  width: 100%;
-  padding: 14px;
-  margin-top: 10px;
-  border: 2px solid var(--c-border);
-  border-radius: var(--r-md);
-  font-size: 14px;
-  font-weight: 600;
-  font-family: var(--font);
-  background: var(--c-card);
-  color: var(--c-text-sub);
-  cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
-}
-
-.retry-btn:hover {
-  border-color: var(--c-primary);
-  color: var(--c-primary);
-}
-
-/* ===== Empty / Error / Loading ===== */
-.result-card--empty,
-.result-card--error,
-.result-card--loading {
-  text-align: center;
-  padding: 36px 24px;
-}
-
-.empty-message,
-.error-message {
-  font-size: 14px;
-  line-height: 1.8;
-  color: var(--c-text-sub);
-}
-
-.error-message {
-  color: #dc2626;
-}
-
-.spinner {
-  width: 32px;
-  height: 32px;
-  border: 3px solid var(--c-border);
-  border-top-color: var(--c-primary);
-  border-radius: 50%;
-  margin: 0 auto 14px;
-  animation: spin 0.7s linear infinite;
 }
 
 /* ===== Footer ===== */
@@ -431,42 +197,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===== Animations ===== */
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
 /* ===== Responsive ===== */
 @media (max-width: 380px) {
   .app-title { font-size: 28px; }
-  .form-row  { flex-direction: column; gap: 0; }
-  .result-header { flex-direction: column; }
-  .suggest-btn { flex: 1 1 100%; }
-}
-
-/* ===== 日時レイアウト修正 ===== */
-
-.form-row.datetime-row {
-  display: flex;
-  gap: 12px;
-}
-
-.form-row.datetime-row .form-group {
-  flex: 1;
-}
-
-.form-row.datetime-row input {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-@media (max-width: 600px) {
-  .form-row.datetime-row {
-    flex-direction: column;
-  }
 }
