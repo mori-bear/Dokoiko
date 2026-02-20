@@ -218,3 +218,17 @@ body {
   .app-title { font-size: 28px; }
   .form-row  { flex-direction: column; gap: 0; }
 }
+/* ===== Input高さ統一 ===== */
+
+select,
+.form-input {
+  height: 48px;
+  line-height: 48px;
+}
+
+/* iOSのdate/time微調整 */
+input[type="date"],
+input[type="time"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
