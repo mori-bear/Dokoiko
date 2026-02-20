@@ -97,7 +97,7 @@ function renderSuggestButtons(plan) {
  */
 export function renderResult(container, plan) {
 
-  const { destination, modelCourse, candidateCount, relaxed,
+  const { destination, candidateCount, relaxed,
           estimatedHours, dynamicDistanceLevel } = plan;
 
   // アフィURL生成
@@ -135,11 +135,6 @@ export function renderResult(container, plan) {
       <div class="level-row">
         <span class="level-item"><span class="level-label">距離</span>${distanceStars}<span class="level-sub">${hoursText}</span></span>
         <span class="level-item"><span class="level-label">予算</span>${renderStars(destination.budgetLevel)}</span>
-      </div>
-
-      <div class="result-section">
-        <h3 class="section-title">モデルコース</h3>
-        <p>${modelCourse}</p>
       </div>
 
       <div class="suggest-btns">

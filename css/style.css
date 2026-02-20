@@ -281,33 +281,6 @@ body {
   border: 0;
 }
 
-/* Sections */
-.result-section {
-  margin-bottom: 20px;
-}
-
-.section-title {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--c-text);
-  margin-bottom: 10px;
-  padding-bottom: 6px;
-  border-bottom: 2px solid var(--c-primary);
-  display: inline-block;
-}
-
-/* Model Course */
-.model-course {
-  font-size: 15px;
-  line-height: 1.8;
-  color: var(--c-text);
-  padding: 14px 16px;
-  background: linear-gradient(135deg, #fef9c3 0%, #fde68a 100%);
-  border-radius: var(--r-sm);
-  font-weight: 600;
-  letter-spacing: 0.01em;
-}
-
 /* ===== Relaxed Banner ===== */
 .relaxed-banner {
   font-size: 12px;
