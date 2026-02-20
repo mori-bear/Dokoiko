@@ -296,58 +296,6 @@ body {
   display: inline-block;
 }
 
-/* Access Card */
-.access-card {
-  background: var(--c-surface);
-  border-radius: var(--r-sm);
-  padding: 14px;
-}
-
-.access-row {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 8px;
-  font-size: 13px;
-  line-height: 1.6;
-}
-
-.access-row:last-of-type {
-  margin-bottom: 0;
-}
-
-.access-label {
-  font-weight: 700;
-  color: var(--c-primary);
-  min-width: 28px;
-  flex-shrink: 0;
-}
-
-.access-value {
-  color: var(--c-text);
-  word-break: break-all;
-}
-
-.access-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 12px;
-  padding-top: 10px;
-  border-top: 1px solid var(--c-border);
-}
-
-.meta-item {
-  font-size: 12px;
-  color: var(--c-text-sub);
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
-
-.meta-icon {
-  font-size: 14px;
-}
-
 /* Model Course */
 .model-course {
   font-size: 15px;
@@ -375,29 +323,31 @@ body {
 .suggest-btns {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
+  margin-bottom: 12px;
 }
 
 .suggest-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 16px;
-  border-radius: var(--r-sm);
-  font-size: 13px;
+  padding: 14px 16px;
+  border-radius: var(--r-md);
+  font-size: 15px;
   font-weight: 700;
   font-family: var(--font);
   text-decoration: none;
   color: #fff;
-  transition: opacity 0.2s, transform 0.15s;
-  flex: 1 1 auto;
-  min-width: 120px;
+  transition: opacity 0.2s, transform 0.15s, box-shadow 0.15s;
+  flex: 1 1 calc(50% - 5px);
+  min-width: 0;
   text-align: center;
 }
 
 .suggest-btn:hover {
-  opacity: 0.85;
+  opacity: 0.9;
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Yahoo!乗換案内 - 赤系 */
@@ -523,5 +473,5 @@ body {
   .app-title { font-size: 28px; }
   .form-row  { flex-direction: column; gap: 0; }
   .result-header { flex-direction: column; }
-  .access-meta { flex-direction: column; gap: 6px; }
+  .suggest-btn { flex: 1 1 100%; }
 }
