@@ -135,6 +135,24 @@ body {
   border-color: var(--c-primary);
 }
 
+/* Input (date, time) */
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid var(--c-border);
+  border-radius: var(--r-sm);
+  font-size: 15px;
+  font-family: var(--font);
+  color: var(--c-text);
+  background: var(--c-card);
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--c-primary);
+}
+
 /* ===== Primary Button ===== */
 .primary-btn {
   width: 100%;
@@ -353,28 +371,53 @@ body {
   margin-bottom: 16px;
 }
 
-/* ===== Suggest Links ===== */
-.suggest-links {
+/* ===== Suggest Buttons (交通・予約) ===== */
+.suggest-btns {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.suggest-link {
-  display: inline-block;
-  padding: 6px 14px;
-  border: 1.5px solid var(--c-primary);
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--c-primary);
+.suggest-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: var(--r-sm);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--font);
   text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  color: #fff;
+  transition: opacity 0.2s, transform 0.15s;
+  flex: 1 1 auto;
+  min-width: 120px;
+  text-align: center;
 }
 
-.suggest-link:hover {
-  background: var(--c-primary);
-  color: #fff;
+.suggest-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* Yahoo!乗換案内 - 赤系 */
+.suggest-btn--yahoo    { background: #ff0033; }
+/* EX予約 - 青系（JR東海） */
+.suggest-btn--ex       { background: #f47321; }
+/* えきねっと - 緑系（JR東日本） */
+.suggest-btn--ekinet   { background: #00a651; }
+/* e5489 - 青系（JR西日本） */
+.suggest-btn--e5489    { background: #0072bc; }
+/* JR九州ネット予約 - 赤系 */
+.suggest-btn--jrkyushu { background: #e60012; }
+/* スカイスキャナー - 水色 */
+.suggest-btn--sky      { background: #0770e3; }
+
+/* 距離サブテキスト */
+.level-sub {
+  font-size: 11px;
+  color: var(--c-text-sub);
+  margin-left: 4px;
 }
 
 /* ===== CTA Button ===== */

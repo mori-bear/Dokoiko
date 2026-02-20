@@ -56,7 +56,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3
   },
   {
     "id": "tokushima",
@@ -106,7 +107,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1.5
   },
   {
     "id": "shodoshima",
@@ -149,7 +151,8 @@
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 2.5
   },
   {
     "id": "matsuyama",
@@ -200,7 +203,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 2.5
   },
   {
     "id": "kotohira",
@@ -250,7 +254,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1.5
   },
   {
     "id": "naruto",
@@ -284,7 +289,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1.5
   },
   {
     "id": "iyakei",
@@ -326,7 +332,8 @@
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 4
   },
   {
     "id": "naoshima",
@@ -369,7 +376,8 @@
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 2
   },
   {
     "id": "kyoto",
@@ -430,14 +438,15 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 3,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 1,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1.5
   },
   {
     "id": "nara",
@@ -489,13 +498,14 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 2,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1
   },
   {
     "id": "kobe",
@@ -531,13 +541,14 @@
     },
     "distanceLevel": 2,
     "budgetLevel": 2,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1
   },
   {
     "id": "himeji",
@@ -580,13 +591,14 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 2,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1.5
   },
   {
     "id": "wakayama",
@@ -614,13 +626,14 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 3,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 2
   },
   {
     "id": "koyasan",
@@ -648,14 +661,15 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 3,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3
   },
   {
     "id": "arima",
@@ -699,13 +713,14 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 2,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1
   },
   {
     "id": "kamakura",
@@ -748,7 +763,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 1
   },
   {
     "id": "hakone",
@@ -791,7 +807,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 2
   },
   {
     "id": "nikko",
@@ -842,7 +859,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 2.5
   },
   {
     "id": "kawagoe",
@@ -876,7 +894,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 1
   },
   {
     "id": "yokohama",
@@ -909,7 +928,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 0.5
   },
   {
     "id": "chichibu",
@@ -951,7 +971,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 2.5
   },
   {
     "id": "kurashiki",
@@ -1009,7 +1030,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1.5
   },
   {
     "id": "onomichi",
@@ -1052,7 +1074,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 2
   },
   {
     "id": "hiroshima",
@@ -1095,7 +1118,8 @@
       "1night"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 2
   },
   {
     "id": "dazaifu",
@@ -1136,7 +1160,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 1
   },
   {
     "id": "yanagawa",
@@ -1178,7 +1203,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 1.5
   },
   {
     "id": "mojiko",
@@ -1212,7 +1238,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 1.5
   },
   {
     "id": "beppu",
@@ -1255,7 +1282,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 2.5
   },
   {
     "id": "yufuin",
@@ -1298,7 +1326,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 2.5
   },
   {
     "id": "otaru",
@@ -1333,7 +1362,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 1
   },
   {
     "id": "noboribetsu",
@@ -1368,7 +1398,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 2
   },
   {
     "id": "furano",
@@ -1403,7 +1434,8 @@
       "2night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 3.5
   },
   {
     "id": "hakodate",
@@ -1438,7 +1470,8 @@
       "2night"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 4
   },
   {
     "id": "asahiyama",
@@ -1473,7 +1506,8 @@
       "2night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 3.5
   },
   {
     "id": "matsushima",
@@ -1507,7 +1541,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 1
   },
   {
     "id": "yamadera",
@@ -1541,7 +1576,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 1.5
   },
   {
     "id": "hiraizumi",
@@ -1576,7 +1612,8 @@
       "1night"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 2.5
   },
   {
     "id": "aizuwakamatsu",
@@ -1619,7 +1656,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 2.5
   },
   {
     "id": "echigoyuzawa",
@@ -1655,14 +1693,15 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 3,
-    "region": "甲信越",
+    "region": "中部",
     "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 2
   },
   {
     "id": "sado",
@@ -1690,14 +1729,15 @@
     },
     "distanceLevel": 4,
     "budgetLevel": 3,
-    "region": "甲信越",
+    "region": "中部",
     "difficulty": 5,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 5
   },
   {
     "id": "yahiko",
@@ -1725,13 +1765,14 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 1,
-    "region": "甲信越",
+    "region": "中部",
     "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 2
   },
   {
     "id": "nagaoka",
@@ -1759,13 +1800,14 @@
     },
     "distanceLevel": 1,
     "budgetLevel": 2,
-    "region": "甲信越",
+    "region": "中部",
     "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 2
   },
   {
     "id": "enoshima",
@@ -1807,7 +1849,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet"
+    "recommendedJR": "ekinet",
+    "baseTravelHours": 1
   },
   {
     "id": "inuyama",
@@ -1835,13 +1878,14 @@
     },
     "distanceLevel": 1,
     "budgetLevel": 1,
-    "region": "東海",
+    "region": "中部",
     "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ex"
+    "recommendedJR": "ex",
+    "baseTravelHours": 1
   },
   {
     "id": "tokoname",
@@ -1869,13 +1913,14 @@
     },
     "distanceLevel": 2,
     "budgetLevel": 1,
-    "region": "東海",
+    "region": "中部",
     "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ex"
+    "recommendedJR": "ex",
+    "baseTravelHours": 1
   },
   {
     "id": "iseshima",
@@ -1911,14 +1956,15 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 4,
-    "region": "東海",
+    "region": "中部",
     "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ex"
+    "recommendedJR": "ex",
+    "baseTravelHours": 3
   },
   {
     "id": "gero",
@@ -1946,13 +1992,14 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 4,
-    "region": "東海",
+    "region": "中部",
     "difficulty": 3,
     "staySupport": [
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ex"
+    "recommendedJR": "ex",
+    "baseTravelHours": 3
   },
   {
     "id": "takayama",
@@ -1988,14 +2035,15 @@
     },
     "distanceLevel": 4,
     "budgetLevel": 4,
-    "region": "東海",
+    "region": "中部",
     "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ex"
+    "recommendedJR": "ex",
+    "baseTravelHours": 3.5
   },
   {
     "id": "shirakawago",
@@ -2031,14 +2079,15 @@
     },
     "distanceLevel": 4,
     "budgetLevel": 3,
-    "region": "北陸",
+    "region": "中部",
     "difficulty": 4,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 4
   },
   {
     "id": "tojinbo",
@@ -2066,13 +2115,14 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 2,
-    "region": "北陸",
+    "region": "中部",
     "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 2
   },
   {
     "id": "wakura",
@@ -2100,13 +2150,14 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 2,
-    "region": "北陸",
+    "region": "中部",
     "difficulty": 3,
     "staySupport": [
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3
   },
   {
     "id": "uji",
@@ -2142,13 +2193,14 @@
     },
     "distanceLevel": 2,
     "budgetLevel": 1,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1
   },
   {
     "id": "amanohashidate",
@@ -2184,14 +2236,15 @@
     },
     "distanceLevel": 4,
     "budgetLevel": 3,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3.5
   },
   {
     "id": "kinosaki",
@@ -2235,13 +2288,14 @@
     },
     "distanceLevel": 4,
     "budgetLevel": 4,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 3,
     "staySupport": [
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3.5
   },
   {
     "id": "awajishima",
@@ -2277,14 +2331,15 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 2,
-    "region": "関西",
+    "region": "近畿",
     "difficulty": 4,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 2.5
   },
   {
     "id": "tottori",
@@ -2327,7 +2382,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3
   },
   {
     "id": "miyajima",
@@ -2369,7 +2425,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 2.5
   },
   {
     "id": "kure",
@@ -2403,7 +2460,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 1.5
   },
   {
     "id": "iwakuni",
@@ -2437,7 +2495,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 2
   },
   {
     "id": "izumo",
@@ -2480,7 +2539,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3.5
   },
   {
     "id": "sakaiminato",
@@ -2515,7 +2575,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3.5
   },
   {
     "id": "yasugi",
@@ -2549,7 +2610,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3
   },
   {
     "id": "imabari",
@@ -2591,7 +2653,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 2.5
   },
   {
     "id": "uchiko",
@@ -2625,7 +2688,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3
   },
   {
     "id": "ozu",
@@ -2659,7 +2723,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 3
   },
   {
     "id": "shimanto",
@@ -2693,7 +2758,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489"
+    "recommendedJR": "e5489",
+    "baseTravelHours": 4.5
   },
   {
     "id": "muroto",
@@ -2727,7 +2793,8 @@
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 4.5
   },
   {
     "id": "niyodogawa",
@@ -2762,7 +2829,8 @@
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 3.5
   },
   {
     "id": "aso",
@@ -2813,7 +2881,8 @@
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 3
   },
   {
     "id": "nagasaki",
@@ -2856,7 +2925,8 @@
       "1night"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 2.5
   },
   {
     "id": "amakusa",
@@ -2890,7 +2960,8 @@
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 4
   },
   {
     "id": "hitoyoshi",
@@ -2925,7 +2996,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 3
   },
   {
     "id": "sakurajima",
@@ -2959,7 +3031,8 @@
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 2.5
   },
   {
     "id": "ibusuki",
@@ -2994,7 +3067,8 @@
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 3
   },
   {
     "id": "kirishima",
@@ -3037,7 +3111,8 @@
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 2.5
   },
   {
     "id": "yakushima",
@@ -3071,7 +3146,8 @@
       "2night"
     ],
     "transportType": "air",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 6
   },
   {
     "id": "chiran",
@@ -3105,7 +3181,8 @@
       "daytrip"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "jrkyushu"
+    "recommendedJR": "jrkyushu",
+    "baseTravelHours": 2.5
   },
   {
     "id": "churaumi",
@@ -3133,14 +3210,15 @@
     },
     "distanceLevel": 4,
     "budgetLevel": 3,
-    "region": "沖縄",
+    "region": "九州",
     "difficulty": 3,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "air",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 4
   },
   {
     "id": "chatan",
@@ -3168,14 +3246,15 @@
     },
     "distanceLevel": 2,
     "budgetLevel": 1,
-    "region": "沖縄",
+    "region": "九州",
     "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "air",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 2.5
   },
   {
     "id": "nanjo",
@@ -3203,14 +3282,15 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 1,
-    "region": "沖縄",
+    "region": "九州",
     "difficulty": 4,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "air",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 2.5
   },
   {
     "id": "yomitan",
@@ -3238,14 +3318,15 @@
     },
     "distanceLevel": 3,
     "budgetLevel": 1,
-    "region": "沖縄",
+    "region": "九州",
     "difficulty": 4,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "air",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 3
   },
   {
     "id": "kouri",
@@ -3273,13 +3354,14 @@
     },
     "distanceLevel": 4,
     "budgetLevel": 3,
-    "region": "沖縄",
+    "region": "九州",
     "difficulty": 4,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "air",
-    "recommendedJR": "none"
+    "recommendedJR": "none",
+    "baseTravelHours": 4.5
   }
 ]

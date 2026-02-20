@@ -23,6 +23,13 @@ async function init() {
   const resultContainer = $('result');
   const departureSelect = $('departure');
 
+  // 出発日にデフォルト値（今日）をセット
+  const depDateInput = $('dep-date');
+  if (depDateInput && !depDateInput.value) {
+    const today = new Date();
+    depDateInput.value = today.toISOString().slice(0, 10);
+  }
+
   try {
     [departures, destinations] = await Promise.all([
       loadDepartures(),
@@ -57,15 +64,23 @@ async function init() {
 
 function handleGenerate() {
   const departureId = $('departure').value;
+  const departure = departures.find(d => d.id === departureId);
   const distance = $('distance').value;
   const theme = $('theme').value;
   const difficulty = $('difficulty').value;
   const stay = $('stay').value;
   const resultContainer = $('result');
 
-  const plan = generatePlan(destinations, departureId, distance, theme, difficulty, stay);
+  // 日時取得（未入力は現在日時）
+  const now = new Date();
+  const depDate = $('dep-date').value || now.toISOString().slice(0, 10);
+  const depTime = $('dep-time').value || now.toTimeString().slice(0, 5);
+
+  const plan = generatePlan(destinations, departure, distance, theme, difficulty, stay);
 
   if (plan) {
+    plan.depDate = depDate;
+    plan.depTime = depTime;
     renderResult(resultContainer, plan);
   } else {
     renderEmpty(resultContainer);

@@ -43,32 +43,54 @@ function renderThemeTags(themes) {
     .join('');
 }
 
-/** JR予約・交通リンク生成 */
-const SUGGEST_LINKS = {
-  ekinet:    { label: 'えきねっと', url: 'https://www.eki-net.com/' },
-  e5489:     { label: 'e5489',      url: 'https://www.jr-odekake.net/goyoyaku/' },
-  jrkyushu:  { label: 'JR九州ネット予約', url: 'https://www.jrkyushu.co.jp/train/reserve/' },
-  ex:        { label: 'EX予約',     url: 'https://expy.jp/' },
+/** JR予約・交通リンク定義（ブランドカラーはCSS class で指定） */
+const JR_LINKS = {
+  ekinet:   { label: 'えきねっと',       url: 'https://www.eki-net.com/',                   css: 'suggest-btn--ekinet' },
+  e5489:    { label: 'e5489',            url: 'https://www.jr-odekake.net/goyoyaku/',       css: 'suggest-btn--e5489' },
+  jrkyushu: { label: 'JR九州ネット予約',  url: 'https://www.jrkyushu.co.jp/train/reserve/', css: 'suggest-btn--jrkyushu' },
+  ex:       { label: 'EX予約',           url: 'https://expy.jp/',                           css: 'suggest-btn--ex' },
 };
 
-function renderSuggestLinks(destination) {
-  const links = [];
+/** Yahoo!乗換案内URLを組み立てる */
+function buildYahooTransitUrl(departureLabel, destCity, depDate, depTime) {
+  const d = new Date(depDate + 'T' + (depTime || '09:00'));
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  const hh = String(d.getHours()).padStart(2, '0');
+  const mm = String(d.getMinutes()).padStart(2, '0');
+  const from = encodeURIComponent(departureLabel);
+  const to = encodeURIComponent(destCity);
+  return `https://transit.yahoo.co.jp/search/result?from=${from}&to=${to}&y=${y}&m=${m}&d=${day}&hh=${hh}&m1=${mm[0]}&m2=${mm[1]}&type=1&ticket=ic&shin=1`;
+}
 
-  // Yahoo!乗換案内は常に表示
-  links.push({ label: 'Yahoo!乗換案内', url: 'https://transit.yahoo.co.jp/' });
+/** 交通・予約ボタン一覧を生成 */
+function renderSuggestButtons(plan) {
+  const { destination, departure, depDate, depTime, dynamicDistanceLevel } = plan;
+  const btns = [];
 
-  // recommendedJRに応じたJR予約リンク
-  const jr = SUGGEST_LINKS[destination.recommendedJR];
-  if (jr) links.push(jr);
+  // Yahoo!乗換案内（常時）
+  const yahooUrl = buildYahooTransitUrl(departure.label, destination.city, depDate, depTime);
+  btns.push(`<a href="${yahooUrl}" target="_blank" rel="noopener" class="suggest-btn suggest-btn--yahoo">Yahoo!乗換案内</a>`);
 
-  // 飛行機が必要な場合スカイスキャナー
-  if (destination.transportType === 'air') {
-    links.push({ label: 'スカイスキャナー', url: 'https://www.skyscanner.jp/' });
+  // 新幹線 → EX予約
+  if (destination.transportType === 'shinkansen') {
+    const link = JR_LINKS.ex;
+    btns.push(`<a href="${link.url}" target="_blank" rel="noopener" class="suggest-btn ${link.css}">${link.label}</a>`);
   }
 
-  return links.map(l =>
-    `<a href="${l.url}" target="_blank" rel="noopener" class="suggest-link">${l.label}</a>`
-  ).join('');
+  // recommendedJR に応じたJR予約
+  const jr = JR_LINKS[destination.recommendedJR];
+  if (jr) {
+    btns.push(`<a href="${jr.url}" target="_blank" rel="noopener" class="suggest-btn ${jr.css}">${jr.label}</a>`);
+  }
+
+  // 航空 or 距離★5 → スカイスキャナー
+  if (destination.transportType === 'air' || dynamicDistanceLevel === 5) {
+    btns.push(`<a href="https://www.skyscanner.jp/" target="_blank" rel="noopener" class="suggest-btn suggest-btn--sky">スカイスキャナー</a>`);
+  }
+
+  return btns.join('');
 }
 
 /**
@@ -76,9 +98,10 @@ function renderSuggestLinks(destination) {
  */
 export function renderResult(container, plan) {
 
-  const { destination, access, modelCourse, candidateCount, relaxed } = plan;
+  const { destination, access, modelCourse, candidateCount, relaxed,
+          estimatedHours, dynamicDistanceLevel } = plan;
 
-  // ⭐ アフィURL生成
+  // アフィURL生成
   let affiliateUrl = "#";
   try {
     affiliateUrl = buildAffiliateUrl(destination.prefectureSlug);
@@ -86,11 +109,13 @@ export function renderResult(container, plan) {
     console.error("[Dokoiko] affiliate生成失敗:", e);
   }
 
-  console.log("[Dokoiko] 最終アフィURL:", affiliateUrl);
-
   const relaxedBanner = relaxed
     ? `<div class="relaxed-banner">${RELAXED_MESSAGES[relaxed]}</div>`
     : '';
+
+  // 距離表示：動的★＋推定片道時間
+  const distanceStars = renderStars(dynamicDistanceLevel);
+  const hoursText = `（推定片道 約${estimatedHours}時間）`;
 
   container.innerHTML = `
     <div class="result-card" role="article">
@@ -110,7 +135,7 @@ export function renderResult(container, plan) {
 
       <div class="level-row">
         <span class="level-item"><span class="level-label">難易度</span>${renderStars(destination.difficulty)}</span>
-        <span class="level-item"><span class="level-label">距離</span>${renderStars(destination.distanceLevel)}</span>
+        <span class="level-item"><span class="level-label">距離</span>${distanceStars}<span class="level-sub">${hoursText}</span></span>
         <span class="level-item"><span class="level-label">予算</span>${renderStars(destination.budgetLevel)}</span>
       </div>
 
@@ -141,16 +166,16 @@ export function renderResult(container, plan) {
 
       <div class="result-section">
         <h3 class="section-title">交通・予約</h3>
-        <div class="suggest-links">
-          ${renderSuggestLinks(destination)}
+        <div class="suggest-btns">
+          ${renderSuggestButtons(plan)}
         </div>
       </div>
 
       <!-- 楽天アフィボタン -->
-      <a 
-        href="${affiliateUrl}" 
-        target="_blank" 
-        rel="nofollow sponsored noopener" 
+      <a
+        href="${affiliateUrl}"
+        target="_blank"
+        rel="nofollow sponsored noopener"
         class="cta-btn"
       >
         この街の宿を楽天で探す
