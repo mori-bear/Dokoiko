@@ -228,7 +228,8 @@ body {
 /* Level Stars */
 .level-row {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 12px 16px;
   margin-bottom: 18px;
   padding: 10px 14px;
   background: var(--c-surface);
@@ -247,7 +248,7 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: var(--c-text-sub);
-  min-width: 2em;
+  min-width: 3em;
 }
 
 .star--filled { color: #f59e0b; }

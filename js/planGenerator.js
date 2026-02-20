@@ -3,6 +3,8 @@
  * 条件フィルタリング＋完全ランダム抽選（履歴管理・フォールバック付き）
  */
 
+import { DIFFICULTY_RANGES } from './config.js';
+
 /** 直近の抽選履歴（連続重複を防ぐ） */
 let _history = [];
 const MAX_HISTORY = 5;
@@ -13,14 +15,17 @@ const MAX_HISTORY = 5;
  * @param {string} departureId - 出発地ID
  * @param {string} distance - 距離感（"near" | "far" | "any"）
  * @param {string} theme - テーマ（"view" | "food" | "experience" | "any"）
+ * @param {string} difficulty - 難易度（"easy" | "normal" | "hard" | "any"）
  * @returns {Array} 条件に合致する目的地の配列
  */
-export function filterDestinations(destinations, departureId, distance, theme) {
+export function filterDestinations(destinations, departureId, distance, theme, difficulty = 'any') {
+  const diffRange = difficulty !== 'any' ? DIFFICULTY_RANGES[difficulty] : null;
   return destinations.filter(dest => {
     const access = dest.access[departureId];
     if (!access) return false;
     if (distance !== 'any' && access.distance !== distance) return false;
     if (theme !== 'any' && !dest.themes.includes(theme)) return false;
+    if (diffRange && (dest.difficulty < diffRange[0] || dest.difficulty > diffRange[1])) return false;
     return true;
   });
 }
@@ -75,9 +80,9 @@ export function resetHistory() {
  * 段階的に条件を緩和して候補を探す
  * @returns {{ candidates: Array, relaxed: string|null }}
  */
-function filterWithFallback(destinations, departureId, distance, theme) {
+function filterWithFallback(destinations, departureId, distance, theme, difficulty) {
   // Step 1: 完全一致
-  let candidates = filterDestinations(destinations, departureId, distance, theme);
+  let candidates = filterDestinations(destinations, departureId, distance, theme, difficulty);
   if (candidates.length > 0) {
     console.log('[Dokoiko] フィルタ: 完全一致 →', candidates.length, '件');
     return { candidates, relaxed: null };
@@ -85,7 +90,7 @@ function filterWithFallback(destinations, departureId, distance, theme) {
 
   // Step 2: テーマを緩和
   if (theme !== 'any') {
-    candidates = filterDestinations(destinations, departureId, distance, 'any');
+    candidates = filterDestinations(destinations, departureId, distance, 'any', difficulty);
     if (candidates.length > 0) {
       console.log('[Dokoiko] フィルタ: テーマ緩和 →', candidates.length, '件');
       return { candidates, relaxed: 'theme' };
@@ -94,21 +99,30 @@ function filterWithFallback(destinations, departureId, distance, theme) {
 
   // Step 3: 距離を緩和
   if (distance !== 'any') {
-    candidates = filterDestinations(destinations, departureId, 'any', theme);
+    candidates = filterDestinations(destinations, departureId, 'any', theme, difficulty);
     if (candidates.length > 0) {
       console.log('[Dokoiko] フィルタ: 距離緩和 →', candidates.length, '件');
       return { candidates, relaxed: 'distance' };
     }
   }
 
-  // Step 4: テーマ・距離両方を緩和
-  candidates = filterDestinations(destinations, departureId, 'any', 'any');
+  // Step 4: テーマ・距離両方を緩和（難易度は維持）
+  candidates = filterDestinations(destinations, departureId, 'any', 'any', difficulty);
   if (candidates.length > 0) {
-    console.log('[Dokoiko] フィルタ: 全条件緩和 →', candidates.length, '件');
+    console.log('[Dokoiko] フィルタ: テーマ+距離緩和 →', candidates.length, '件');
     return { candidates, relaxed: 'both' };
   }
 
-  // Step 5: この出発地から行ける場所がゼロ
+  // Step 5: 難易度も緩和
+  if (difficulty !== 'any') {
+    candidates = filterDestinations(destinations, departureId, 'any', 'any', 'any');
+    if (candidates.length > 0) {
+      console.log('[Dokoiko] フィルタ: 全条件緩和 →', candidates.length, '件');
+      return { candidates, relaxed: 'both' };
+    }
+  }
+
+  // Step 6: この出発地から行ける場所がゼロ
   console.warn('[Dokoiko] フィルタ: 該当なし（出発地に紐づくデータなし）');
   return { candidates: [], relaxed: null };
 }
@@ -119,15 +133,16 @@ function filterWithFallback(destinations, departureId, distance, theme) {
  * @param {string} departureId - 出発地ID
  * @param {string} distance - 距離感
  * @param {string} theme - テーマ
+ * @param {string} difficulty - 難易度
  * @returns {Object|null} 生成されたプラン、該当なしならnull
  */
-export function generatePlan(destinations, departureId, distance, theme) {
+export function generatePlan(destinations, departureId, distance, theme, difficulty = 'any') {
   console.log('[Dokoiko] === 抽選開始 ===');
-  console.log('[Dokoiko] 条件:', { departureId, distance, theme });
+  console.log('[Dokoiko] 条件:', { departureId, distance, theme, difficulty });
   console.log('[Dokoiko] 全データ件数:', destinations.length);
 
   const { candidates, relaxed } = filterWithFallback(
-    destinations, departureId, distance, theme
+    destinations, departureId, distance, theme, difficulty
   );
 
   if (candidates.length === 0) {

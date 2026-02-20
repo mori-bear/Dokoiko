@@ -81,6 +81,7 @@ export function renderResult(container, plan) {
       <p class="result-description">${destination.description}</p>
 
       <div class="level-row">
+        <span class="level-item"><span class="level-label">難易度</span>${renderStars(destination.difficulty)}</span>
         <span class="level-item"><span class="level-label">距離</span>${renderStars(destination.distanceLevel)}</span>
         <span class="level-item"><span class="level-label">予算</span>${renderStars(destination.budgetLevel)}</span>
       </div>

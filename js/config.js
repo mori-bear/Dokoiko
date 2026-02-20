@@ -22,3 +22,9 @@ export const DISTANCE_LABELS = {
   far: '遠出'
 };
 
+export const DIFFICULTY_RANGES = {
+  easy: [1, 2],
+  normal: [3, 3],
+  hard: [4, 5]
+};
+
