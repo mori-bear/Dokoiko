@@ -196,3 +196,23 @@ input[type="time"] {
   .app-title { font-size: 28px; }
   .form-row { flex-direction: column; gap: 0; }
 }
+/* ===== iOS Safari 強制テキスト表示修正 ===== */
+
+select,
+input[type="date"],
+input[type="time"] {
+  color: #1e293b !important;
+  -webkit-text-fill-color: #1e293b !important;
+  opacity: 1 !important;
+}
+
+/* ダークモードでも白背景維持 */
+@media (prefers-color-scheme: dark) {
+  select,
+  input[type="date"],
+  input[type="time"] {
+    background-color: #ffffff !important;
+    color: #1e293b !important;
+    -webkit-text-fill-color: #1e293b !important;
+  }
+}
