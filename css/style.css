@@ -448,3 +448,25 @@ body {
   .result-header { flex-direction: column; }
   .suggest-btn { flex: 1 1 100%; }
 }
+
+/* ===== 日時レイアウト修正 ===== */
+
+.form-row.datetime-row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-row.datetime-row .form-group {
+  flex: 1;
+}
+
+.form-row.datetime-row input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .form-row.datetime-row {
+    flex-direction: column;
+  }
+}
