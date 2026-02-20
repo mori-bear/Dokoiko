@@ -9,14 +9,12 @@
   --c-text: #1e293b;
   --c-text-sub: #64748b;
   --c-border: #e2e8f0;
-  --c-surface: #f8fafc;
 
   --r-lg: 16px;
   --r-md: 12px;
   --r-sm: 8px;
 
   --shadow-card: 0 4px 16px rgba(0,0,0,0.08);
-
   --font: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
     "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
 }
@@ -75,6 +73,7 @@ body {
   border-radius: var(--r-lg);
   padding: 24px;
   box-shadow: var(--shadow-card);
+  overflow: hidden; /* はみ出し防止 */
 }
 
 .form-group {
@@ -89,15 +88,6 @@ body {
   margin-bottom: 6px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-}
-
-/* ★ 日時は縦固定（横並びしない） */
-.form-row {
-  display: block;
-}
-
-.form-group--half {
-  width: 100%;
 }
 
 /* ===== Select ===== */
@@ -119,37 +109,35 @@ body {
 
 .select-wrap select {
   width: 100%;
-  height: 44px;
-  padding: 0 36px 0 14px;
+  padding: 12px 36px 12px 14px;
   border: 2px solid var(--c-border);
   border-radius: var(--r-sm);
-  font-size: 15px;
+  font-size: 16px;
   font-family: var(--font);
   background: var(--c-card);
   appearance: none;
   -webkit-appearance: none;
 }
 
-.select-wrap select:focus {
-  outline: none;
-  border-color: var(--c-primary);
-}
-
-/* ===== Input (date & time) ===== */
+/* ===== Date & Time Fix (iOS安定版) ===== */
 .form-input {
+  display: block;
   width: 100%;
-  height: 44px;
-  padding: 0 14px;
+  max-width: 100%;
+  padding: 12px 14px;
   border: 2px solid var(--c-border);
   border-radius: var(--r-sm);
-  font-size: 15px;
+  font-size: 16px; /* iOSズーム防止 */
   font-family: var(--font);
   background: var(--c-card);
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.form-input:focus {
-  outline: none;
-  border-color: var(--c-primary);
+input[type="date"],
+input[type="time"] {
+  min-height: 44px;
 }
 
 /* ===== Primary Button ===== */
@@ -172,18 +160,6 @@ body {
   cursor: not-allowed;
 }
 
-/* ===== Result ===== */
-.result-container {
-  margin-top: 20px;
-}
-
-.result-card {
-  background: var(--c-card);
-  border-radius: var(--r-lg);
-  padding: 24px;
-  box-shadow: var(--shadow-card);
-}
-
 /* ===== Footer ===== */
 .app-footer {
   text-align: center;
@@ -195,9 +171,4 @@ body {
   font-size: 11px;
   color: var(--c-text-sub);
   line-height: 1.6;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 380px) {
-  .app-title { font-size: 28px; }
 }
