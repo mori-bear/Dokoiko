@@ -22,12 +22,6 @@ export const DISTANCE_LABELS = {
   far: '遠出'
 };
 
-export const DIFFICULTY_RANGES = {
-  easy: [1, 2],
-  normal: [3, 3],
-  hard: [4, 5]
-};
-
 /** 8地方区分の隣接関係 */
 export const REGION_ADJACENCY = {
   '北海道': ['東北'],

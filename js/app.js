@@ -67,7 +67,6 @@ function handleGenerate() {
   const departure = departures.find(d => d.id === departureId);
   const distance = $('distance').value;
   const theme = $('theme').value;
-  const difficulty = $('difficulty').value;
   const stay = $('stay').value;
   const resultContainer = $('result');
 
@@ -76,7 +75,7 @@ function handleGenerate() {
   const depDate = $('dep-date').value || now.toISOString().slice(0, 10);
   const depTime = $('dep-time').value || now.toTimeString().slice(0, 5);
 
-  const plan = generatePlan(destinations, departure, distance, theme, difficulty, stay);
+  const plan = generatePlan(destinations, departure, distance, theme, stay);
 
   if (plan) {
     plan.depDate = depDate;
