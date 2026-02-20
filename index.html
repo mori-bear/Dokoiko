@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="出発地・距離感・テーマ・難易度・滞在タイプから旅行プランをランダム提案。迷ったらまかせて。">
+  <meta name="description" content="出発地・距離感・テーマ・滞在タイプから旅行プランをランダム提案。迷ったらまかせて。">
   <meta name="theme-color" content="#2563eb">
   <title>どこ行こ？ - 日帰り旅プラン提案</title>
   <link rel="stylesheet" href="css/style.css">
@@ -44,8 +44,11 @@
             <div class="select-wrap">
               <select id="distance">
                 <option value="any">こだわらない</option>
-                <option value="near">近場</option>
-                <option value="far">遠出</option>
+                <option value="1">★（近場）</option>
+                <option value="2">★★</option>
+                <option value="3">★★★</option>
+                <option value="4">★★★★</option>
+                <option value="5">★★★★★（遠方）</option>
               </select>
             </div>
           </div>
@@ -63,29 +66,15 @@
           </div>
         </div>
 
-        <div class="form-row">
-          <div class="form-group form-group--half">
-            <label for="difficulty">難易度</label>
-            <div class="select-wrap">
-              <select id="difficulty">
-                <option value="any">こだわらない</option>
-                <option value="easy">かんたん（★1〜2）</option>
-                <option value="normal">ふつう（★3）</option>
-                <option value="hard">上級者向け（★4〜5）</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group form-group--half">
-            <label for="stay">滞在タイプ</label>
-            <div class="select-wrap">
-              <select id="stay">
-                <option value="any">こだわらない</option>
-                <option value="daytrip">日帰り</option>
-                <option value="1night">1泊2日</option>
-                <option value="2night">2泊3日</option>
-              </select>
-            </div>
+        <div class="form-group">
+          <label for="stay">滞在タイプ</label>
+          <div class="select-wrap">
+            <select id="stay">
+              <option value="any">こだわらない</option>
+              <option value="daytrip">日帰り</option>
+              <option value="1night">1泊2日</option>
+              <option value="2night">2泊3日</option>
+            </select>
           </div>
         </div>
 
