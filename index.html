@@ -3,30 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="出発地・距離感・テーマ・滞在タイプから旅行プランをランダム提案。迷ったらまかせて。">
+  <meta name="description" content="出発地・距離感・テーマ・難易度・滞在タイプから旅行プランをランダム提案。迷ったらまかせて。">
   <meta name="theme-color" content="#2563eb">
-  <title>どこ行こ？ - 旅プラン提案</title>
-  <link rel="stylesheet" href="./css/style.css?v=999">
+  <title>どこ行こ？ - 日帰り旅プラン提案</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <div class="app">
 
-    <!-- ===== Header ===== -->
     <header class="app-header">
       <h1 class="app-title">どこ行こ？</h1>
-      <p class="app-subtitle">
-        迷ったら、まかせて。<br>
-        旅プランをランダム提案。
-      </p>
+      <p class="app-subtitle">迷ったら、まかせて。<br>日帰り旅プランをランダム提案。</p>
     </header>
 
-    <!-- ===== Main ===== -->
     <main class="app-main">
-
       <div class="form-card">
-
-        <!-- 出発地 -->
         <div class="form-group">
           <label for="departure">出発地</label>
           <div class="select-wrap">
@@ -36,19 +27,17 @@
           </div>
         </div>
 
-        <!-- 出発日 -->
-        <div class="form-group">
-          <label for="dep-date">出発日</label>
-          <input type="date" id="dep-date" class="form-input">
+        <div class="form-row">
+          <div class="form-group form-group--half">
+            <label for="dep-date">出発日</label>
+            <input type="date" id="dep-date" class="form-input">
+          </div>
+          <div class="form-group form-group--half">
+            <label for="dep-time">出発時間</label>
+            <input type="time" id="dep-time" class="form-input" value="09:00">
+          </div>
         </div>
 
-        <!-- 出発時間 -->
-        <div class="form-group">
-          <label for="dep-time">出発時間</label>
-          <input type="time" id="dep-time" class="form-input">
-        </div>
-
-        <!-- 距離・テーマ -->
         <div class="form-row">
           <div class="form-group form-group--half">
             <label for="distance">距離感</label>
@@ -74,42 +63,42 @@
           </div>
         </div>
 
-        <!-- 滞在タイプ -->
-        <div class="form-group">
-          <label for="stay">滞在タイプ</label>
-          <div class="select-wrap">
-            <select id="stay">
-              <option value="any">こだわらない</option>
-              <option value="daytrip">日帰り</option>
-              <option value="1night">1泊2日</option>
-              <option value="2night">2泊3日</option>
-            </select>
+        <div class="form-row">
+          <div class="form-group form-group--half">
+            <label for="difficulty">難易度</label>
+            <div class="select-wrap">
+              <select id="difficulty">
+                <option value="any">こだわらない</option>
+                <option value="easy">かんたん（★1〜2）</option>
+                <option value="normal">ふつう（★3）</option>
+                <option value="hard">上級者向け（★4〜5）</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group form-group--half">
+            <label for="stay">滞在タイプ</label>
+            <div class="select-wrap">
+              <select id="stay">
+                <option value="any">こだわらない</option>
+                <option value="daytrip">日帰り</option>
+                <option value="1night">1泊2日</option>
+                <option value="2night">2泊3日</option>
+              </select>
+            </div>
           </div>
         </div>
 
-        <!-- ボタン -->
         <button id="generate-btn" class="primary-btn" disabled>
           読み込み中...
         </button>
-
       </div>
 
-      <!-- 結果 -->
       <div id="result" class="result-container" style="display:none;"></div>
-
     </main>
 
-    <!-- ===== Footer ===== -->
     <footer class="app-footer">
-      <p>
-        掲載情報は変更の可能性があります。<br>
-        お出かけ前に最新情報をご確認ください。
-      </p>
-
-      <p style="margin-top:12px;">
-        <a href="terms.html">利用規約</a> |
-        <a href="privacy.html">プライバシーポリシー</a>
-      </p>
+      <p>掲載情報は変更の可能性があります。お出かけ前に最新情報をご確認ください。</p>
     </footer>
 
   </div>
@@ -117,3 +106,7 @@
   <script type="module" src="js/app.js"></script>
 </body>
 </html>
+<footer style="text-align:center;margin-top:40px;font-size:12px;color:#888;">
+  <a href="terms.html">利用規約</a> |
+  <a href="privacy.html">プライバシーポリシー</a>
+</footer>
