@@ -117,7 +117,8 @@ body {
 
 .select-wrap select {
   width: 100%;
-  padding: 12px 36px 12px 14px;
+  height: 48px;
+  padding: 0 36px 0 14px;
   border: 2px solid var(--c-border);
   border-radius: var(--r-sm);
   font-size: 15px;
@@ -138,7 +139,8 @@ body {
 /* Input (date, time) */
 .form-input {
   width: 100%;
-  padding: 12px 14px;
+  height: 48px;
+  padding: 0 14px;
   border: 2px solid var(--c-border);
   border-radius: var(--r-sm);
   font-size: 15px;
@@ -146,6 +148,9 @@ body {
   color: var(--c-text);
   background: var(--c-card);
   transition: border-color 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
+  line-height: 44px;
 }
 
 .form-input:focus {
