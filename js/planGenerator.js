@@ -23,12 +23,15 @@ export function filterDestinations(destinations, departureId, distanceLevel, the
   return destinations.filter(dest => {
     const access = dest.access[departureId];
     if (!access) return false;
-    if (distanceLevel !== 'any' && depRegion) {
+    if (distanceLevel !== 'any') {
       const level = parseInt(distanceLevel);
-      const multiplier = getRegionMultiplier(depRegion, dest.region);
-      const hours = Math.round(dest.baseTravelHours * multiplier * 10) / 10;
-      const dynLevel = calcDistanceLevel(hours);
-      if (dynLevel < level - 1 || dynLevel > level + 1) return false;
+      if (!isNaN(level) && depRegion) {
+        const multiplier = getRegionMultiplier(depRegion, dest.region);
+        const baseHours = dest.baseTravelHours != null ? dest.baseTravelHours : 2.5;
+        const hours = Math.round(baseHours * multiplier * 10) / 10;
+        const dynLevel = calcDistanceLevel(hours);
+        if (dynLevel < level - 1 || dynLevel > level + 1) return false;
+      }
     }
     if (theme !== 'any' && !dest.themes.includes(theme)) return false;
     if (stay !== 'any' && (!dest.staySupport || !dest.staySupport.includes(stay))) return false;
