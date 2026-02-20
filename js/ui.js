@@ -51,17 +51,16 @@ const JR_LINKS = {
   ex:       { label: 'EX予約',           url: 'https://expy.jp/',                           css: 'suggest-btn--ex' },
 };
 
-/** Yahoo!乗換案内URLを組み立てる */
+/** Yahoo!乗換案内URLを組み立てる（date=YYYYMMDD&time=HHMM形式） */
 function buildYahooTransitUrl(departureLabel, destCity, depDate, depTime) {
-  const d = new Date(depDate + 'T' + (depTime || '09:00'));
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  const hh = String(d.getHours()).padStart(2, '0');
-  const mm = String(d.getMinutes()).padStart(2, '0');
+  const now = new Date();
+  const dateStr = depDate || now.toISOString().slice(0, 10);
+  const timeStr = depTime || now.toTimeString().slice(0, 5);
+  const date = dateStr.replace(/-/g, '');
+  const time = timeStr.replace(/:/g, '').slice(0, 4);
   const from = encodeURIComponent(departureLabel);
   const to = encodeURIComponent(destCity);
-  return `https://transit.yahoo.co.jp/search/result?from=${from}&to=${to}&y=${y}&m=${m}&d=${day}&hh=${hh}&m1=${mm[0]}&m2=${mm[1]}&type=1&ticket=ic&shin=1`;
+  return `https://transit.yahoo.co.jp/search/result?from=${from}&to=${to}&date=${date}&time=${time}&type=1&ticket=ic&shin=1`;
 }
 
 /** 交通・予約ボタン一覧を生成 */
@@ -98,7 +97,7 @@ function renderSuggestButtons(plan) {
  */
 export function renderResult(container, plan) {
 
-  const { destination, access, modelCourse, candidateCount, relaxed,
+  const { destination, modelCourse, candidateCount, relaxed,
           estimatedHours, dynamicDistanceLevel } = plan;
 
   // アフィURL生成
@@ -134,29 +133,8 @@ export function renderResult(container, plan) {
       <p class="result-description">${destination.description}</p>
 
       <div class="level-row">
-        <span class="level-item"><span class="level-label">難易度</span>${renderStars(destination.difficulty)}</span>
         <span class="level-item"><span class="level-label">距離</span>${distanceStars}<span class="level-sub">${hoursText}</span></span>
         <span class="level-item"><span class="level-label">予算</span>${renderStars(destination.budgetLevel)}</span>
-      </div>
-
-      <div class="result-section">
-        <h3 class="section-title">アクセス</h3>
-        <div class="access-card">
-          <div class="access-row">
-            <span class="access-label">行き</span>
-            <span>${access.outbound}</span>
-          </div>
-          <div class="access-row">
-            <span class="access-label">帰り</span>
-            <span>${access.return}</span>
-          </div>
-
-          <div class="access-meta">
-            <span>⏱ ${access.time}</span>
-            <span>💰 ${access.price}</span>
-            <span>💳 IC：${access.ic}</span>
-          </div>
-        </div>
       </div>
 
       <div class="result-section">
@@ -164,11 +142,8 @@ export function renderResult(container, plan) {
         <p>${modelCourse}</p>
       </div>
 
-      <div class="result-section">
-        <h3 class="section-title">交通・予約</h3>
-        <div class="suggest-btns">
-          ${renderSuggestButtons(plan)}
-        </div>
+      <div class="suggest-btns">
+        ${renderSuggestButtons(plan)}
       </div>
 
       <!-- 楽天アフィボタン -->
