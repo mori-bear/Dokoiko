@@ -353,6 +353,30 @@ body {
   margin-bottom: 16px;
 }
 
+/* ===== Suggest Links ===== */
+.suggest-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.suggest-link {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1.5px solid var(--c-primary);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--c-primary);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.suggest-link:hover {
+  background: var(--c-primary);
+  color: #fff;
+}
+
 /* ===== CTA Button ===== */
 .cta-btn {
   display: block;
