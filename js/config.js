@@ -17,10 +17,20 @@ export const THEME_LABELS = {
   experience: '体験'
 };
 
-export const DISTANCE_LABELS = {
-  near: '近場',
-  far: '遠出'
+/** 出発地の地方 → JR予約サービスキー */
+export const JR_REGION_MAP = {
+  '北海道': 'ekinet',
+  '東北':   'ekinet',
+  '関東':   'ekinet',
+  '中部':   'e5489',
+  '近畿':   'e5489',
+  '中国':   'e5489',
+  '四国':   'e5489',
+  '九州':   'jrkyushu',
 };
+
+/** EX予約対象エリア（東海道・山陽新幹線沿線） */
+export const EX_REGIONS = ['関東', '中部', '近畿', '中国'];
 
 /** 8地方区分の隣接関係 */
 export const REGION_ADJACENCY = {
