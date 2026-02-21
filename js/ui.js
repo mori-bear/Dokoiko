@@ -4,7 +4,7 @@
  */
 
 import { buildAffiliateUrl } from './affiliate.js';
-import { THEME_LABELS } from './config.js';
+import { THEME_LABELS, JR_REGION_MAP, EX_REGIONS } from './config.js';
 
 /**
  * レベル値(1〜5)を★☆で表示
@@ -72,14 +72,17 @@ function renderSuggestButtons(plan) {
   const yahooUrl = buildYahooTransitUrl(departure.label, destination.city, depDate, depTime);
   btns.push(`<a href="${yahooUrl}" target="_blank" rel="noopener" class="suggest-btn suggest-btn--yahoo">Yahoo!乗換案内</a>`);
 
-  // 新幹線 → EX予約
-  if (destination.transportType === 'shinkansen') {
+  // EX予約: shinkansen かつ 東海道・山陽エリア同士の場合のみ
+  if (destination.transportType === 'shinkansen' &&
+      EX_REGIONS.includes(departure.region) &&
+      EX_REGIONS.includes(destination.region)) {
     const link = JR_LINKS.ex;
     btns.push(`<a href="${link.url}" target="_blank" rel="noopener" class="suggest-btn ${link.css}">${link.label}</a>`);
   }
 
-  // recommendedJR に応じたJR予約
-  const jr = JR_LINKS[destination.recommendedJR];
+  // departure.region に応じたJR予約
+  const jrKey = JR_REGION_MAP[departure.region];
+  const jr = jrKey ? JR_LINKS[jrKey] : null;
   if (jr) {
     btns.push(`<a href="${jr.url}" target="_blank" rel="noopener" class="suggest-btn ${jr.css}">${jr.label}</a>`);
   }

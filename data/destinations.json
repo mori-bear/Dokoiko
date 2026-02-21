@@ -15,7 +15,6 @@
     ],
     "access": {
       "takamatsu": {
-        "distance": "far",
         "outbound": "高松 7:12発 → 特急南風3号 → 高知 9:43着",
         "return": "高知 17:26発 → 特急南風22号 → 高松 19:52着",
         "time": "約2時間30分",
@@ -23,7 +22,6 @@
         "ic": "利用可"
       },
       "okayama": {
-        "distance": "far",
         "outbound": "岡山 7:05発 → 特急南風1号 → 高知 9:43着",
         "return": "高知 17:26発 → 特急南風22号 → 岡山 19:55着",
         "time": "約2時間40分",
@@ -31,7 +29,6 @@
         "ic": "利用可"
       },
       "osaka": {
-        "distance": "far",
         "outbound": "大阪 7:30発 → 高速バス → 高知 12:00着",
         "return": "高知 16:00発 → 高速バス → 大阪 20:30着",
         "time": "約4時間30分",
@@ -39,7 +36,6 @@
         "ic": "不可（事前予約）"
       },
       "matsuyama": {
-        "distance": "far",
         "outbound": "松山 7:30発 → JR特急しおかぜ → 多度津乗換 → 特急南風 → 高知 10:30着",
         "return": "高知 16:30発 → 特急南風 → 多度津乗換 → JR特急いしづち → 松山 19:30着",
         "time": "約3時間",
@@ -47,16 +43,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 5,
     "budgetLevel": 4,
     "region": "四国",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3
   },
   {
@@ -75,7 +68,6 @@
     ],
     "access": {
       "takamatsu": {
-        "distance": "near",
         "outbound": "高松 8:00発 → 特急うずしお5号 → 徳島 9:15着",
         "return": "徳島 18:00発 → 特急うずしお28号 → 高松 19:12着",
         "time": "約1時間15分",
@@ -83,7 +75,6 @@
         "ic": "利用可"
       },
       "osaka": {
-        "distance": "far",
         "outbound": "大阪 8:00発 → 高速バス → 徳島 10:40着",
         "return": "徳島 17:30発 → 高速バス → 大阪 20:10着",
         "time": "約2時間40分",
@@ -91,7 +82,6 @@
         "ic": "不可（事前予約）"
       },
       "kobe": {
-        "distance": "far",
         "outbound": "三ノ宮BT 8:20発 → 高速バス → 徳島 10:20着",
         "return": "徳島 17:30発 → 高速バス → 三ノ宮BT 19:30着",
         "time": "約2時間",
@@ -99,15 +89,12 @@
         "ic": "不可（事前予約）"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "四国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1.5
   },
   {
@@ -126,7 +113,6 @@
     ],
     "access": {
       "takamatsu": {
-        "distance": "near",
         "outbound": "高松港 9:00発 → フェリー → 土庄港 10:00着",
         "return": "土庄港 17:00発 → フェリー → 高松港 18:00着",
         "time": "約1時間",
@@ -134,7 +120,6 @@
         "ic": "不可（現金のみ）"
       },
       "okayama": {
-        "distance": "near",
         "outbound": "新岡山港 9:00発 → フェリー → 土庄港 10:10着",
         "return": "土庄港 17:00発 → フェリー → 新岡山港 18:10着",
         "time": "約1時間10分",
@@ -142,16 +127,13 @@
         "ic": "不可（現金のみ）"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "四国",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "none",
     "baseTravelHours": 2.5
   },
   {
@@ -170,7 +152,6 @@
     ],
     "access": {
       "takamatsu": {
-        "distance": "far",
         "outbound": "高松 7:27発 → 特急いしづち3号 → 松山 10:03着",
         "return": "松山 17:25発 → 特急いしづち26号 → 高松 19:56着",
         "time": "約2時間30分",
@@ -178,7 +159,6 @@
         "ic": "利用可"
       },
       "hiroshima": {
-        "distance": "far",
         "outbound": "広島港 8:00発 → スーパージェット → 松山観光港 9:10着",
         "return": "松山観光港 17:30発 → スーパージェット → 広島港 18:40着",
         "time": "約1時間10分",
@@ -186,7 +166,6 @@
         "ic": "不可（窓口購入）"
       },
       "okayama": {
-        "distance": "far",
         "outbound": "岡山 7:05発 → 特急しおかぜ1号 → 松山 9:45着",
         "return": "松山 17:25発 → 特急しおかぜ26号 → 岡山 20:02着",
         "time": "約2時間40分",
@@ -194,16 +173,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 4,
     "region": "四国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 2.5
   },
   {
@@ -222,7 +198,6 @@
     ],
     "access": {
       "takamatsu": {
-        "distance": "near",
         "outbound": "高松 8:15発 → JR土讃線 → 琴平 9:12着",
         "return": "琴平 17:30発 → JR土讃線 → 高松 18:25着",
         "time": "約1時間",
@@ -230,7 +205,6 @@
         "ic": "利用可"
       },
       "okayama": {
-        "distance": "near",
         "outbound": "岡山 8:05発 → 特急南風3号 → 琴平 9:12着",
         "return": "琴平 17:42発 → 特急南風20号 → 岡山 18:55着",
         "time": "約1時間10分",
@@ -238,7 +212,6 @@
         "ic": "利用可"
       },
       "kochi": {
-        "distance": "near",
         "outbound": "高知 8:30発 → JR土讃線特急 → 琴平 9:40着",
         "return": "琴平 17:30発 → JR土讃線特急 → 高知 18:40着",
         "time": "約1時間10分",
@@ -246,15 +219,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "四国",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1.5
   },
   {
@@ -273,7 +243,6 @@
     ],
     "access": {
       "takamatsu": {
-        "distance": "near",
         "outbound": "高松 8:00発 → 特急うずしお → 徳島乗換 → 鳴門 10:00着",
         "return": "鳴門 17:30発 → 徳島乗換 → 特急うずしお → 高松 19:30着",
         "time": "約2時間",
@@ -281,15 +250,12 @@
         "ic": "一部区間のみ"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "四国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1.5
   },
   {
@@ -307,7 +273,6 @@
     ],
     "access": {
       "takamatsu": {
-        "distance": "far",
         "outbound": "高松 7:12発 → 特急南風3号 → 大歩危 8:55着 → バス → 祖谷",
         "return": "祖谷 → バス → 大歩危 16:50発 → 特急南風 → 高松 18:30着",
         "time": "約2時間30分（バス含む）",
@@ -315,7 +280,6 @@
         "ic": "JR区間のみ利用可"
       },
       "kochi": {
-        "distance": "near",
         "outbound": "高知 7:58発 → 特急南風 → 大歩危 8:55着 → バス → 祖谷",
         "return": "祖谷 → バス → 大歩危 16:50発 → 特急南風 → 高知 17:50着",
         "time": "約1時間30分（バス含む）",
@@ -323,16 +287,13 @@
         "ic": "JR区間のみ利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "四国",
-    "difficulty": 4,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "e5489",
     "baseTravelHours": 4
   },
   {
@@ -351,7 +312,6 @@
     ],
     "access": {
       "takamatsu": {
-        "distance": "near",
         "outbound": "高松港 8:12発 → フェリー → 直島（宮浦港）9:02着",
         "return": "直島（宮浦港）17:35発 → フェリー → 高松港 18:25着",
         "time": "約50分",
@@ -359,7 +319,6 @@
         "ic": "不可（現金のみ）"
       },
       "okayama": {
-        "distance": "near",
         "outbound": "宇野港 9:22発 → フェリー → 直島（宮浦港）9:42着",
         "return": "直島（宮浦港）17:00発 → フェリー → 宇野港 17:20着",
         "time": "約20分（宇野港から）",
@@ -367,16 +326,13 @@
         "ic": "不可（現金のみ）"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "四国",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "none",
     "baseTravelHours": 2
   },
   {
@@ -396,7 +352,6 @@
     ],
     "access": {
       "osaka": {
-        "distance": "near",
         "outbound": "大阪 8:00発 → JR新快速 → 京都 8:29着",
         "return": "京都 18:30発 → JR新快速 → 大阪 18:59着",
         "time": "約30分",
@@ -404,7 +359,6 @@
         "ic": "利用可"
       },
       "nagoya": {
-        "distance": "near",
         "outbound": "名古屋 8:00発 → 新幹線のぞみ → 京都 8:35着",
         "return": "京都 18:30発 → 新幹線のぞみ → 名古屋 19:05着",
         "time": "約35分",
@@ -412,7 +366,6 @@
         "ic": "利用可"
       },
       "tokyo": {
-        "distance": "far",
         "outbound": "東京 7:33発 → 新幹線のぞみ → 京都 9:48着",
         "return": "京都 18:16発 → 新幹線のぞみ → 東京 20:30着",
         "time": "約2時間15分",
@@ -420,7 +373,6 @@
         "ic": "利用可"
       },
       "kobe": {
-        "distance": "near",
         "outbound": "三ノ宮 8:00発 → JR新快速 → 京都 8:51着",
         "return": "京都 18:30発 → JR新快速 → 三ノ宮 19:21着",
         "time": "約51分",
@@ -428,7 +380,6 @@
         "ic": "利用可"
       },
       "kanazawa": {
-        "distance": "far",
         "outbound": "金沢 8:00発 → 特急サンダーバード → 京都 10:09着",
         "return": "京都 17:50発 → 特急サンダーバード → 金沢 19:59着",
         "time": "約2時間10分",
@@ -436,16 +387,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "近畿",
-    "difficulty": 1,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1.5
   },
   {
@@ -464,7 +412,6 @@
     ],
     "access": {
       "osaka": {
-        "distance": "near",
         "outbound": "大阪難波 8:10発 → 近鉄特急 → 近鉄奈良 8:47着",
         "return": "近鉄奈良 18:20発 → 近鉄特急 → 大阪難波 18:57着",
         "time": "約37分",
@@ -472,7 +419,6 @@
         "ic": "利用可"
       },
       "kyoto": {
-        "distance": "near",
         "outbound": "京都 8:30発 → 近鉄特急 → 近鉄奈良 9:04着",
         "return": "近鉄奈良 18:00発 → 近鉄特急 → 京都 18:34着",
         "time": "約35分",
@@ -480,7 +426,6 @@
         "ic": "利用可"
       },
       "kobe": {
-        "distance": "near",
         "outbound": "三ノ宮 8:15発 → 阪神 → 大阪難波乗換 → 近鉄 → 近鉄奈良 9:25着",
         "return": "近鉄奈良 18:00発 → 近鉄 → 大阪難波 → 阪神 → 三ノ宮 19:10着",
         "time": "約1時間10分",
@@ -488,7 +433,6 @@
         "ic": "利用可"
       },
       "nagoya": {
-        "distance": "far",
         "outbound": "近鉄名古屋 8:00発 → 近鉄特急 → 大和八木乗換 → 近鉄奈良 10:10着",
         "return": "近鉄奈良 17:30発 → 大和八木乗換 → 近鉄特急 → 近鉄名古屋 19:40着",
         "time": "約2時間10分",
@@ -496,15 +440,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "近畿",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1
   },
   {
@@ -523,7 +464,6 @@
     ],
     "access": {
       "osaka": {
-        "distance": "near",
         "outbound": "大阪 8:15発 → JR新快速 → 三ノ宮 8:36着",
         "return": "三ノ宮 18:45発 → JR新快速 → 大阪 19:06着",
         "time": "約21分",
@@ -531,7 +471,6 @@
         "ic": "利用可"
       },
       "kyoto": {
-        "distance": "near",
         "outbound": "京都 8:00発 → JR新快速 → 三ノ宮 8:51着",
         "return": "三ノ宮 18:30発 → JR新快速 → 京都 19:21着",
         "time": "約51分",
@@ -539,15 +478,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 2,
     "region": "近畿",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1
   },
   {
@@ -565,7 +501,6 @@
     ],
     "access": {
       "osaka": {
-        "distance": "near",
         "outbound": "大阪 8:00発 → JR新快速 → 姫路 9:02着",
         "return": "姫路 18:00発 → JR新快速 → 大阪 19:02着",
         "time": "約1時間",
@@ -573,7 +508,6 @@
         "ic": "利用可"
       },
       "kobe": {
-        "distance": "near",
         "outbound": "三ノ宮 8:15発 → JR新快速 → 姫路 8:55着",
         "return": "姫路 18:00発 → JR新快速 → 三ノ宮 18:40着",
         "time": "約40分",
@@ -581,7 +515,6 @@
         "ic": "利用可"
       },
       "okayama": {
-        "distance": "near",
         "outbound": "岡山 8:20発 → JR山陽本線 → 姫路 9:50着",
         "return": "姫路 18:00発 → JR山陽本線 → 岡山 19:30着",
         "time": "約1時間30分",
@@ -589,15 +522,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "近畿",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1.5
   },
   {
@@ -616,7 +546,6 @@
     ],
     "access": {
       "osaka": {
-        "distance": "far",
         "outbound": "大阪 7:45発 → 特急くろしお1号 → 和歌山 8:57着",
         "return": "和歌山 18:06発 → 特急くろしお28号 → 大阪 19:18着",
         "time": "約1時間12分",
@@ -624,15 +553,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "近畿",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 2
   },
   {
@@ -651,7 +577,6 @@
     ],
     "access": {
       "osaka": {
-        "distance": "far",
         "outbound": "なんば 7:50発 → 南海特急こうや → 極楽橋 → ケーブル → 高野山 9:33着",
         "return": "高野山 17:15発 → ケーブル → 南海特急 → なんば 19:07着",
         "time": "約1時間45分",
@@ -659,16 +584,13 @@
         "ic": "南海線のみ利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "近畿",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3
   },
   {
@@ -687,7 +609,6 @@
     ],
     "access": {
       "osaka": {
-        "distance": "near",
         "outbound": "大阪 8:30発 → JR → 三ノ宮 → 神戸電鉄 → 有馬温泉 9:50着",
         "return": "有馬温泉 17:30発 → 神戸電鉄 → 三ノ宮 → JR → 大阪 18:50着",
         "time": "約1時間20分",
@@ -695,7 +616,6 @@
         "ic": "利用可"
       },
       "kobe": {
-        "distance": "near",
         "outbound": "三ノ宮 8:30発 → 神戸電鉄 → 有馬温泉 9:10着",
         "return": "有馬温泉 17:30発 → 神戸電鉄 → 三ノ宮 18:10着",
         "time": "約40分",
@@ -703,7 +623,6 @@
         "ic": "利用可"
       },
       "kyoto": {
-        "distance": "far",
         "outbound": "京都 8:00発 → JR新快速 → 三ノ宮 → 神戸電鉄 → 有馬温泉 9:50着",
         "return": "有馬温泉 17:00発 → 神戸電鉄 → 三ノ宮 → JR新快速 → 京都 18:50着",
         "time": "約1時間50分",
@@ -711,15 +630,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "近畿",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1
   },
   {
@@ -739,7 +655,6 @@
     ],
     "access": {
       "tokyo": {
-        "distance": "near",
         "outbound": "東京 8:15発 → JR横須賀線 → 鎌倉 9:13着",
         "return": "鎌倉 18:00発 → JR横須賀線 → 東京 18:58着",
         "time": "約58分",
@@ -747,7 +662,6 @@
         "ic": "利用可"
       },
       "yokohama": {
-        "distance": "near",
         "outbound": "横浜 8:30発 → JR横須賀線 → 鎌倉 8:54着",
         "return": "鎌倉 18:00発 → JR横須賀線 → 横浜 18:24着",
         "time": "約24分",
@@ -755,15 +669,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "関東",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 1
   },
   {
@@ -782,7 +693,6 @@
     ],
     "access": {
       "tokyo": {
-        "distance": "near",
         "outbound": "新宿 7:30発 → 小田急ロマンスカー → 箱根湯本 9:03着",
         "return": "箱根湯本 18:18発 → 小田急ロマンスカー → 新宿 19:50着",
         "time": "約1時間33分",
@@ -790,7 +700,6 @@
         "ic": "利用可"
       },
       "yokohama": {
-        "distance": "near",
         "outbound": "横浜 8:00発 → 小田急線（町田乗換） → 箱根湯本 9:40着",
         "return": "箱根湯本 18:00発 → 小田急線 → 横浜 19:40着",
         "time": "約1時間40分",
@@ -798,16 +707,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "関東",
-    "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 2
   },
   {
@@ -826,7 +732,6 @@
     ],
     "access": {
       "tokyo": {
-        "distance": "far",
         "outbound": "浅草 7:30発 → 東武特急リバティ → 東武日光 9:22着",
         "return": "東武日光 17:35発 → 東武特急リバティ → 浅草 19:27着",
         "time": "約1時間52分",
@@ -834,7 +739,6 @@
         "ic": "東武線のみ利用可"
       },
       "sendai": {
-        "distance": "far",
         "outbound": "仙台 7:40発 → 東北新幹線 → 宇都宮 → JR日光線 → 日光 10:00着",
         "return": "日光 17:00発 → JR日光線 → 宇都宮 → 東北新幹線 → 仙台 19:10着",
         "time": "約2時間20分",
@@ -842,7 +746,6 @@
         "ic": "利用可"
       },
       "yokohama": {
-        "distance": "far",
         "outbound": "横浜 7:20発 → JR湘南新宿ライン → 大宮乗換 → 東武日光線 → 東武日光 10:10着",
         "return": "東武日光 17:00発 → 東武日光線 → 大宮 → JR → 横浜 19:50着",
         "time": "約2時間50分",
@@ -850,16 +753,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 4,
     "region": "関東",
-    "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 2.5
   },
   {
@@ -878,7 +778,6 @@
     ],
     "access": {
       "tokyo": {
-        "distance": "near",
         "outbound": "池袋 8:00発 → 東武東上線急行 → 川越 8:32着",
         "return": "川越 18:00発 → 東武東上線急行 → 池袋 18:32着",
         "time": "約32分",
@@ -886,15 +785,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "関東",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 1
   },
   {
@@ -912,7 +808,6 @@
     ],
     "access": {
       "tokyo": {
-        "distance": "near",
         "outbound": "東京 8:20発 → JR東海道線 → 横浜 8:46着 → みなとみらい線 → 元町・中華街 9:00着",
         "return": "元町・中華街 18:30発 → みなとみらい線 → 横浜 → JR → 東京 19:15着",
         "time": "約40分",
@@ -920,15 +815,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "関東",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 0.5
   },
   {
@@ -947,7 +839,6 @@
     ],
     "access": {
       "tokyo": {
-        "distance": "far",
         "outbound": "池袋 7:30発 → 西武特急ラビュー → 西武秩父 8:48着",
         "return": "西武秩父 18:05発 → 西武特急ラビュー → 池袋 19:23着",
         "time": "約1時間18分",
@@ -955,7 +846,6 @@
         "ic": "利用可"
       },
       "yokohama": {
-        "distance": "far",
         "outbound": "横浜 7:20発 → JR湘南新宿ライン → 池袋乗換 → 西武特急ラビュー → 西武秩父 9:23着",
         "return": "西武秩父 18:05発 → 西武特急ラビュー → 池袋 → JR → 横浜 20:00着",
         "time": "約2時間",
@@ -963,15 +853,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "関東",
-    "difficulty": 3,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 2.5
   },
   {
@@ -990,7 +877,6 @@
     ],
     "access": {
       "okayama": {
-        "distance": "near",
         "outbound": "岡山 8:42発 → JR山陽本線 → 倉敷 8:59着",
         "return": "倉敷 18:15発 → JR山陽本線 → 岡山 18:32着",
         "time": "約17分",
@@ -998,7 +884,6 @@
         "ic": "利用可"
       },
       "takamatsu": {
-        "distance": "near",
         "outbound": "高松 7:25発 → 快速マリンライナー → 岡山乗換 → 倉敷 9:00着",
         "return": "倉敷 18:15発 → 岡山乗換 → 快速マリンライナー → 高松 19:40着",
         "time": "約1時間35分",
@@ -1006,7 +891,6 @@
         "ic": "利用可"
       },
       "hiroshima": {
-        "distance": "near",
         "outbound": "広島 8:00発 → 新幹線こだま → 新倉敷 8:35着 → 倉敷 8:45着",
         "return": "新倉敷 18:00発 → 新幹線こだま → 広島 18:35着",
         "time": "約45分",
@@ -1014,7 +898,6 @@
         "ic": "利用可"
       },
       "matsue": {
-        "distance": "far",
         "outbound": "松江 7:30発 → 特急やくも → 岡山乗換 → 倉敷 10:30着",
         "return": "倉敷 17:00発 → 岡山乗換 → 特急やくも → 松江 20:00着",
         "time": "約3時間",
@@ -1022,15 +905,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "中国",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1.5
   },
   {
@@ -1049,7 +929,6 @@
     ],
     "access": {
       "okayama": {
-        "distance": "near",
         "outbound": "岡山 8:17発 → JR山陽本線 → 尾道 9:46着",
         "return": "尾道 17:50発 → JR山陽本線 → 岡山 19:20着",
         "time": "約1時間30分",
@@ -1057,7 +936,6 @@
         "ic": "利用可"
       },
       "hiroshima": {
-        "distance": "near",
         "outbound": "広島 8:20発 → JR山陽本線 → 尾道 9:50着",
         "return": "尾道 17:50発 → JR山陽本線 → 広島 19:20着",
         "time": "約1時間30分",
@@ -1065,16 +943,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "中国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 2
   },
   {
@@ -1093,7 +968,6 @@
     ],
     "access": {
       "okayama": {
-        "distance": "far",
         "outbound": "岡山 8:08発 → 新幹線のぞみ → 広島 8:46着",
         "return": "広島 18:15発 → 新幹線のぞみ → 岡山 18:53着",
         "time": "約38分（新幹線）",
@@ -1101,7 +975,6 @@
         "ic": "利用可"
       },
       "fukuoka": {
-        "distance": "far",
         "outbound": "博多 8:00発 → 新幹線のぞみ → 広島 9:05着",
         "return": "広島 18:15発 → 新幹線のぞみ → 博多 19:20着",
         "time": "約1時間5分（新幹線）",
@@ -1109,16 +982,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 4,
     "region": "中国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "e5489",
     "baseTravelHours": 2
   },
   {
@@ -1136,7 +1006,6 @@
     ],
     "access": {
       "fukuoka": {
-        "distance": "near",
         "outbound": "天神 8:30発 → 西鉄電車 → 太宰府 9:05着",
         "return": "太宰府 17:30発 → 西鉄電車 → 天神 18:05着",
         "time": "約35分",
@@ -1144,7 +1013,6 @@
         "ic": "利用可"
       },
       "kumamoto": {
-        "distance": "far",
         "outbound": "熊本 8:00発 → 九州新幹線 → 博多 → 西鉄 → 太宰府 9:45着",
         "return": "太宰府 17:00発 → 西鉄 → 博多 → 九州新幹線 → 熊本 18:40着",
         "time": "約1時間45分",
@@ -1152,15 +1020,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "九州",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 1
   },
   {
@@ -1179,7 +1044,6 @@
     ],
     "access": {
       "fukuoka": {
-        "distance": "near",
         "outbound": "天神 8:20発 → 西鉄特急 → 柳川 9:08着",
         "return": "柳川 17:45発 → 西鉄特急 → 天神 18:33着",
         "time": "約48分",
@@ -1187,7 +1051,6 @@
         "ic": "利用可"
       },
       "kumamoto": {
-        "distance": "near",
         "outbound": "熊本 8:00発 → 九州新幹線 → 新大牟田 → 西鉄 → 柳川 9:30着",
         "return": "柳川 17:30発 → 西鉄 → 新大牟田 → 九州新幹線 → 熊本 19:00着",
         "time": "約1時間30分",
@@ -1195,15 +1058,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "九州",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 1.5
   },
   {
@@ -1222,7 +1082,6 @@
     ],
     "access": {
       "fukuoka": {
-        "distance": "near",
         "outbound": "博多 8:15発 → JR鹿児島本線快速 → 門司港 9:42着",
         "return": "門司港 17:45発 → JR快速 → 博多 19:10着",
         "time": "約1時間25分",
@@ -1230,15 +1089,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "九州",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 1.5
   },
   {
@@ -1257,7 +1113,6 @@
     ],
     "access": {
       "fukuoka": {
-        "distance": "far",
         "outbound": "博多 8:24発 → 特急ソニック11号 → 別府 10:14着",
         "return": "別府 17:47発 → 特急ソニック42号 → 博多 19:43着",
         "time": "約1時間50分",
@@ -1265,7 +1120,6 @@
         "ic": "利用可"
       },
       "kumamoto": {
-        "distance": "far",
         "outbound": "熊本 7:45発 → JR豊肥本線特急あそ → 大分乗換 → 別府 10:20着",
         "return": "別府 17:00発 → 大分乗換 → JR豊肥本線 → 熊本 19:40着",
         "time": "約2時間30分",
@@ -1273,16 +1127,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 4,
     "region": "九州",
-    "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 2.5
   },
   {
@@ -1301,7 +1152,6 @@
     ],
     "access": {
       "fukuoka": {
-        "distance": "far",
         "outbound": "博多 8:24発 → 特急ゆふいんの森1号 → 由布院 10:36着",
         "return": "由布院 16:48発 → 特急ゆふいんの森6号 → 博多 19:08着",
         "time": "約2時間12分",
@@ -1309,7 +1159,6 @@
         "ic": "利用可"
       },
       "kumamoto": {
-        "distance": "far",
         "outbound": "熊本 7:45発 → JR豊肥本線特急あそ → 大分乗換 → 由布院 10:40着",
         "return": "由布院 16:30発 → 大分乗換 → JR豊肥本線 → 熊本 19:20着",
         "time": "約2時間50分",
@@ -1317,16 +1166,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 4,
     "region": "九州",
-    "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 2.5
   },
   {
@@ -1345,7 +1191,6 @@
     ],
     "access": {
       "sapporo": {
-        "distance": "near",
         "outbound": "札幌 8:00発 → JR快速エアポート → 小樽 8:32着",
         "return": "小樽 18:00発 → JR快速エアポート → 札幌 18:32着",
         "time": "約32分",
@@ -1353,16 +1198,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "北海道",
-    "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 1
   },
   {
@@ -1381,7 +1223,6 @@
     ],
     "access": {
       "sapporo": {
-        "distance": "near",
         "outbound": "札幌 8:00発 → 特急すずらん → 登別 9:15着 → バス → 登別温泉",
         "return": "登別温泉 → バス → 登別 17:30発 → 特急すずらん → 札幌 18:45着",
         "time": "約1時間30分（バス含む）",
@@ -1389,16 +1230,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "北海道",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 2
   },
   {
@@ -1417,7 +1255,6 @@
     ],
     "access": {
       "sapporo": {
-        "distance": "far",
         "outbound": "札幌 7:30発 → JR特急ライラック → 旭川乗換 → 富良野線 → 富良野 10:10着",
         "return": "富良野 17:00発 → 富良野線 → 旭川乗換 → 特急ライラック → 札幌 19:30着",
         "time": "約2時間40分",
@@ -1425,16 +1262,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 3,
     "region": "北海道",
-    "difficulty": 4,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 3.5
   },
   {
@@ -1453,7 +1287,6 @@
     ],
     "access": {
       "sapporo": {
-        "distance": "far",
         "outbound": "札幌 7:49発 → 特急北斗 → 函館 11:28着",
         "return": "函館 17:33発 → 特急北斗 → 札幌 21:12着",
         "time": "約3時間40分",
@@ -1461,16 +1294,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 5,
     "budgetLevel": 5,
     "region": "北海道",
-    "difficulty": 3,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 4
   },
   {
@@ -1489,7 +1319,6 @@
     ],
     "access": {
       "sapporo": {
-        "distance": "far",
         "outbound": "札幌 7:30発 → 特急ライラック → 旭川 8:55着 → バス → 旭山動物園",
         "return": "旭山動物園 → バス → 旭川 17:00発 → 特急ライラック → 札幌 18:25着",
         "time": "約2時間（バス含む）",
@@ -1497,16 +1326,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "北海道",
-    "difficulty": 4,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 3.5
   },
   {
@@ -1525,7 +1351,6 @@
     ],
     "access": {
       "sendai": {
-        "distance": "near",
         "outbound": "仙台 8:15発 → JR仙石線 → 松島海岸 8:55着",
         "return": "松島海岸 17:30発 → JR仙石線 → 仙台 18:10着",
         "time": "約40分",
@@ -1533,15 +1358,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "東北",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 1
   },
   {
@@ -1560,7 +1382,6 @@
     ],
     "access": {
       "sendai": {
-        "distance": "near",
         "outbound": "仙台 8:00発 → JR仙山線 → 山寺 8:55着",
         "return": "山寺 17:00発 → JR仙山線 → 仙台 17:55着",
         "time": "約55分",
@@ -1568,15 +1389,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 2,
     "region": "東北",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 1.5
   },
   {
@@ -1595,7 +1413,6 @@
     ],
     "access": {
       "sendai": {
-        "distance": "near",
         "outbound": "仙台 8:00発 → 東北新幹線 → 一ノ関 8:30着 → JR → 平泉 8:38着",
         "return": "平泉 17:30発 → JR → 一ノ関 → 東北新幹線 → 仙台 18:15着",
         "time": "約40分",
@@ -1603,16 +1420,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 3,
     "region": "東北",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 2.5
   },
   {
@@ -1631,7 +1445,6 @@
     ],
     "access": {
       "sendai": {
-        "distance": "far",
         "outbound": "仙台 7:40発 → 東北新幹線 → 郡山乗換 → 磐越西線 → 会津若松 10:00着",
         "return": "会津若松 17:00発 → 磐越西線 → 郡山 → 東北新幹線 → 仙台 19:10着",
         "time": "約2時間20分",
@@ -1639,7 +1452,6 @@
         "ic": "利用可"
       },
       "niigata": {
-        "distance": "far",
         "outbound": "新潟 7:30発 → 磐越西線SLばんえつ物語or快速 → 会津若松 10:00着",
         "return": "会津若松 16:30発 → 磐越西線 → 新潟 19:00着",
         "time": "約2時間30分",
@@ -1647,16 +1459,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 3,
     "region": "東北",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 2.5
   },
   {
@@ -1675,7 +1484,6 @@
     ],
     "access": {
       "niigata": {
-        "distance": "near",
         "outbound": "新潟 8:30発 → 上越新幹線 → 越後湯沢 9:20着",
         "return": "越後湯沢 18:00発 → 上越新幹線 → 新潟 18:50着",
         "time": "約50分",
@@ -1683,7 +1491,6 @@
         "ic": "利用可"
       },
       "tokyo": {
-        "distance": "far",
         "outbound": "東京 8:08発 → 上越新幹線 → 越後湯沢 9:25着",
         "return": "越後湯沢 18:12発 → 上越新幹線 → 東京 19:28着",
         "time": "約1時間17分",
@@ -1691,16 +1498,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "中部",
-    "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 2
   },
   {
@@ -1719,7 +1523,6 @@
     ],
     "access": {
       "niigata": {
-        "distance": "far",
         "outbound": "新潟港 8:05発 → カーフェリー → 両津港 10:35着",
         "return": "両津港 16:00発 → カーフェリー → 新潟港 18:30着",
         "time": "約2時間30分",
@@ -1727,16 +1530,13 @@
         "ic": "不可（窓口購入）"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 3,
     "region": "中部",
-    "difficulty": 5,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 5
   },
   {
@@ -1755,7 +1555,6 @@
     ],
     "access": {
       "niigata": {
-        "distance": "near",
         "outbound": "新潟 8:15発 → JR弥彦線（吉田乗換） → 弥彦 9:30着",
         "return": "弥彦 17:15発 → JR弥彦線 → 新潟 18:30着",
         "time": "約1時間15分",
@@ -1763,15 +1562,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 1,
     "region": "中部",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 2
   },
   {
@@ -1790,7 +1586,6 @@
     ],
     "access": {
       "niigata": {
-        "distance": "near",
         "outbound": "新潟 8:00発 → 上越新幹線 → 長岡 8:25着",
         "return": "長岡 18:00発 → 上越新幹線 → 新潟 18:25着",
         "time": "約25分",
@@ -1798,15 +1593,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 1,
     "budgetLevel": 2,
     "region": "中部",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 2
   },
   {
@@ -1825,7 +1617,6 @@
     ],
     "access": {
       "tokyo": {
-        "distance": "near",
         "outbound": "新宿 8:00発 → 小田急線 → 片瀬江ノ島 9:10着",
         "return": "片瀬江ノ島 18:00発 → 小田急線 → 新宿 19:10着",
         "time": "約1時間10分",
@@ -1833,7 +1624,6 @@
         "ic": "利用可"
       },
       "yokohama": {
-        "distance": "near",
         "outbound": "横浜 8:30発 → JR東海道線 → 藤沢乗換 → 江ノ電 → 江ノ島 9:20着",
         "return": "江ノ島 18:00発 → 江ノ電 → 藤沢 → JR → 横浜 18:50着",
         "time": "約50分",
@@ -1841,15 +1631,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "関東",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ekinet",
     "baseTravelHours": 1
   },
   {
@@ -1868,7 +1655,6 @@
     ],
     "access": {
       "nagoya": {
-        "distance": "near",
         "outbound": "名鉄名古屋 8:15発 → 名鉄犬山線 → 犬山 8:41着",
         "return": "犬山 18:00発 → 名鉄犬山線 → 名鉄名古屋 18:26着",
         "time": "約26分",
@@ -1876,15 +1662,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 1,
     "budgetLevel": 1,
     "region": "中部",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ex",
     "baseTravelHours": 1
   },
   {
@@ -1903,7 +1686,6 @@
     ],
     "access": {
       "nagoya": {
-        "distance": "near",
         "outbound": "名鉄名古屋 8:30発 → 名鉄常滑線 → 常滑 9:08着",
         "return": "常滑 18:00発 → 名鉄常滑線 → 名鉄名古屋 18:38着",
         "time": "約38分",
@@ -1911,15 +1693,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "中部",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "ex",
     "baseTravelHours": 1
   },
   {
@@ -1938,7 +1717,6 @@
     ],
     "access": {
       "nagoya": {
-        "distance": "far",
         "outbound": "近鉄名古屋 8:00発 → 近鉄特急 → 伊勢市 9:20着",
         "return": "伊勢市 17:30発 → 近鉄特急 → 近鉄名古屋 18:50着",
         "time": "約1時間20分",
@@ -1946,7 +1724,6 @@
         "ic": "利用可"
       },
       "osaka": {
-        "distance": "far",
         "outbound": "大阪難波 8:00発 → 近鉄特急 → 伊勢市 9:50着",
         "return": "伊勢市 17:30発 → 近鉄特急 → 大阪難波 19:20着",
         "time": "約1時間50分",
@@ -1954,16 +1731,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 4,
     "region": "中部",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ex",
     "baseTravelHours": 3
   },
   {
@@ -1982,7 +1756,6 @@
     ],
     "access": {
       "nagoya": {
-        "distance": "far",
         "outbound": "名古屋 7:43発 → 特急ひだ → 下呂 9:22着",
         "return": "下呂 17:33発 → 特急ひだ → 名古屋 19:09着",
         "time": "約1時間40分",
@@ -1990,15 +1763,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 4,
     "region": "中部",
-    "difficulty": 3,
     "staySupport": [
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ex",
     "baseTravelHours": 3
   },
   {
@@ -2017,7 +1787,6 @@
     ],
     "access": {
       "nagoya": {
-        "distance": "far",
         "outbound": "名古屋 7:43発 → 特急ひだ → 高山 10:07着",
         "return": "高山 17:08発 → 特急ひだ → 名古屋 19:39着",
         "time": "約2時間24分",
@@ -2025,7 +1794,6 @@
         "ic": "利用可"
       },
       "kanazawa": {
-        "distance": "far",
         "outbound": "金沢 8:00発 → 高速バス → 高山 10:15着",
         "return": "高山 17:00発 → 高速バス → 金沢 19:15着",
         "time": "約2時間15分",
@@ -2033,16 +1801,13 @@
         "ic": "不可（事前予約）"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 4,
     "region": "中部",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "ex",
     "baseTravelHours": 3.5
   },
   {
@@ -2061,7 +1826,6 @@
     ],
     "access": {
       "kanazawa": {
-        "distance": "near",
         "outbound": "金沢 8:10発 → 高速バス → 白川郷 9:25着",
         "return": "白川郷 16:30発 → 高速バス → 金沢 17:45着",
         "time": "約1時間15分",
@@ -2069,7 +1833,6 @@
         "ic": "不可（事前予約）"
       },
       "nagoya": {
-        "distance": "far",
         "outbound": "名古屋 8:00発 → 高速バス → 白川郷 10:50着",
         "return": "白川郷 15:30発 → 高速バス → 名古屋 18:20着",
         "time": "約2時間50分",
@@ -2077,16 +1840,13 @@
         "ic": "不可（事前予約）"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 3,
     "region": "中部",
-    "difficulty": 4,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "e5489",
     "baseTravelHours": 4
   },
   {
@@ -2105,7 +1865,6 @@
     ],
     "access": {
       "kanazawa": {
-        "distance": "near",
         "outbound": "金沢 8:00発 → JR北陸本線 → 芦原温泉 8:40着 → バス → 東尋坊",
         "return": "東尋坊 → バス → 芦原温泉 17:30発 → JR → 金沢 18:10着",
         "time": "約1時間20分（バス含む）",
@@ -2113,15 +1872,12 @@
         "ic": "JR区間のみ利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "中部",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 2
   },
   {
@@ -2140,7 +1896,6 @@
     ],
     "access": {
       "kanazawa": {
-        "distance": "near",
         "outbound": "金沢 8:00発 → JR七尾線 → 和倉温泉 9:20着",
         "return": "和倉温泉 17:30発 → JR七尾線 → 金沢 18:50着",
         "time": "約1時間20分",
@@ -2148,15 +1903,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "中部",
-    "difficulty": 3,
     "staySupport": [
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3
   },
   {
@@ -2175,7 +1927,6 @@
     ],
     "access": {
       "kyoto": {
-        "distance": "near",
         "outbound": "京都 8:30発 → JR奈良線 → 宇治 8:47着",
         "return": "宇治 18:00発 → JR奈良線 → 京都 18:17着",
         "time": "約17分",
@@ -2183,7 +1934,6 @@
         "ic": "利用可"
       },
       "osaka": {
-        "distance": "near",
         "outbound": "大阪 8:15発 → JR → 京都乗換 → JR奈良線 → 宇治 9:10着",
         "return": "宇治 18:00発 → JR奈良線 → 京都 → JR → 大阪 18:55着",
         "time": "約55分",
@@ -2191,15 +1941,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "近畿",
-    "difficulty": 1,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1
   },
   {
@@ -2218,7 +1965,6 @@
     ],
     "access": {
       "kyoto": {
-        "distance": "far",
         "outbound": "京都 8:25発 → 特急はしだて → 天橋立 10:30着",
         "return": "天橋立 17:15発 → 特急はしだて → 京都 19:19着",
         "time": "約2時間5分",
@@ -2226,7 +1972,6 @@
         "ic": "JR区間のみ利用可"
       },
       "osaka": {
-        "distance": "far",
         "outbound": "大阪 8:00発 → JR → 福知山乗換 → 京都丹後鉄道 → 天橋立 10:30着",
         "return": "天橋立 17:00発 → 京都丹後鉄道 → 福知山 → JR → 大阪 19:30着",
         "time": "約2時間30分",
@@ -2234,16 +1979,13 @@
         "ic": "JR区間のみ利用可"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 3,
     "region": "近畿",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3.5
   },
   {
@@ -2262,7 +2004,6 @@
     ],
     "access": {
       "kyoto": {
-        "distance": "far",
         "outbound": "京都 8:37発 → 特急きのさき → 城崎温泉 11:12着",
         "return": "城崎温泉 17:01発 → 特急きのさき → 京都 19:32着",
         "time": "約2時間35分",
@@ -2270,7 +2011,6 @@
         "ic": "利用可"
       },
       "osaka": {
-        "distance": "far",
         "outbound": "大阪 8:11発 → 特急こうのとり → 城崎温泉 10:52着",
         "return": "城崎温泉 17:01発 → 特急こうのとり → 大阪 19:40着",
         "time": "約2時間40分",
@@ -2278,7 +2018,6 @@
         "ic": "利用可"
       },
       "kobe": {
-        "distance": "far",
         "outbound": "三ノ宮 8:00発 → JR → 大阪乗換 → 特急こうのとり → 城崎温泉 10:52着",
         "return": "城崎温泉 17:01発 → 特急こうのとり → 大阪 → JR → 三ノ宮 19:55着",
         "time": "約2時間50分",
@@ -2286,15 +2025,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 4,
     "region": "近畿",
-    "difficulty": 3,
     "staySupport": [
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3.5
   },
   {
@@ -2313,7 +2049,6 @@
     ],
     "access": {
       "kobe": {
-        "distance": "near",
         "outbound": "三ノ宮BT 8:30発 → 高速バス → 淡路IC 9:15着",
         "return": "淡路IC 17:30発 → 高速バス → 三ノ宮BT 18:15着",
         "time": "約45分",
@@ -2321,7 +2056,6 @@
         "ic": "不可（窓口 or 事前購入）"
       },
       "osaka": {
-        "distance": "far",
         "outbound": "大阪 8:30発 → 高速バス → 淡路IC 10:00着",
         "return": "淡路IC 17:00発 → 高速バス → 大阪 18:30着",
         "time": "約1時間30分",
@@ -2329,16 +2063,13 @@
         "ic": "不可（事前購入）"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "近畿",
-    "difficulty": 4,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "none",
     "baseTravelHours": 2.5
   },
   {
@@ -2357,7 +2088,6 @@
     ],
     "access": {
       "matsue": {
-        "distance": "far",
         "outbound": "松江 8:00発 → 特急スーパーまつかぜ → 鳥取 9:50着 → バス → 砂丘",
         "return": "砂丘 → バス → 鳥取 17:00発 → 特急スーパーまつかぜ → 松江 18:50着",
         "time": "約2時間10分（バス含む）",
@@ -2365,7 +2095,6 @@
         "ic": "JR区間のみ利用可"
       },
       "kobe": {
-        "distance": "far",
         "outbound": "三ノ宮 8:00発 → 高速バス → 鳥取 10:40着 → バス → 砂丘",
         "return": "砂丘 → バス → 鳥取 16:30発 → 高速バス → 三ノ宮 19:10着",
         "time": "約3時間（バス含む）",
@@ -2373,16 +2102,13 @@
         "ic": "不可（事前予約）"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 3,
     "region": "中国",
-    "difficulty": 4,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3
   },
   {
@@ -2401,7 +2127,6 @@
     ],
     "access": {
       "hiroshima": {
-        "distance": "near",
         "outbound": "広島 8:15発 → JR山陽本線 → 宮島口 8:43着 → フェリー → 宮島 8:53着",
         "return": "宮島 18:00発 → フェリー → 宮島口 → JR → 広島 18:40着",
         "time": "約40分（フェリー含む）",
@@ -2409,7 +2134,6 @@
         "ic": "利用可"
       },
       "okayama": {
-        "distance": "far",
         "outbound": "岡山 8:08発 → 新幹線 → 広島 → JR → 宮島口 → フェリー → 宮島 9:40着",
         "return": "宮島 17:30発 → フェリー → 宮島口 → JR → 広島 → 新幹線 → 岡山 19:10着",
         "time": "約1時間30分",
@@ -2417,15 +2141,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "中国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 2.5
   },
   {
@@ -2444,7 +2165,6 @@
     ],
     "access": {
       "hiroshima": {
-        "distance": "near",
         "outbound": "広島 8:20発 → JR呉線 → 呉 9:00着",
         "return": "呉 18:00発 → JR呉線 → 広島 18:40着",
         "time": "約40分",
@@ -2452,15 +2172,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "中国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 1.5
   },
   {
@@ -2479,7 +2196,6 @@
     ],
     "access": {
       "hiroshima": {
-        "distance": "near",
         "outbound": "広島 8:00発 → JR山陽本線 → 岩国 8:50着",
         "return": "岩国 18:00発 → JR山陽本線 → 広島 18:50着",
         "time": "約50分",
@@ -2487,15 +2203,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 2,
     "region": "中国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 2
   },
   {
@@ -2514,7 +2227,6 @@
     ],
     "access": {
       "matsue": {
-        "distance": "near",
         "outbound": "松江 8:00発 → 一畑電車 → 出雲大社前 9:00着",
         "return": "出雲大社前 17:30発 → 一畑電車 → 松江 18:30着",
         "time": "約1時間",
@@ -2522,7 +2234,6 @@
         "ic": "不可（現金のみ）"
       },
       "hiroshima": {
-        "distance": "far",
         "outbound": "広島 7:15発 → 高速バス → 出雲市 10:50着 → 一畑電車 → 出雲大社前",
         "return": "出雲市 16:50発 → 高速バス → 広島 20:20着",
         "time": "約3時間40分",
@@ -2530,16 +2241,13 @@
         "ic": "不可（事前予約）"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 3,
     "region": "中国",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3.5
   },
   {
@@ -2558,7 +2266,6 @@
     ],
     "access": {
       "matsue": {
-        "distance": "near",
         "outbound": "松江 8:30発 → JR境線 → 境港 9:15着",
         "return": "境港 17:30発 → JR境線 → 松江 18:15着",
         "time": "約45分",
@@ -2566,16 +2273,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "中国",
-    "difficulty": 4,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3.5
   },
   {
@@ -2594,7 +2298,6 @@
     ],
     "access": {
       "matsue": {
-        "distance": "near",
         "outbound": "松江 8:15発 → JR山陰本線 → 安来 8:40着 → 無料シャトルバス → 足立美術館",
         "return": "足立美術館 → シャトルバス → 安来 17:10発 → JR → 松江 17:35着",
         "time": "約40分（バス含む）",
@@ -2602,15 +2305,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "中国",
-    "difficulty": 3,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3
   },
   {
@@ -2629,7 +2329,6 @@
     ],
     "access": {
       "matsuyama": {
-        "distance": "near",
         "outbound": "松山 8:15発 → JR予讃線特急 → 今治 8:52着",
         "return": "今治 18:00発 → JR予讃線特急 → 松山 18:37着",
         "time": "約37分",
@@ -2637,7 +2336,6 @@
         "ic": "利用可"
       },
       "hiroshima": {
-        "distance": "far",
         "outbound": "広島 8:00発 → 高速バス（しまなみライナー） → 今治 10:20着",
         "return": "今治 17:00発 → 高速バス → 広島 19:20着",
         "time": "約2時間20分",
@@ -2645,15 +2343,12 @@
         "ic": "不可（事前予約）"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "四国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 2.5
   },
   {
@@ -2672,7 +2367,6 @@
     ],
     "access": {
       "matsuyama": {
-        "distance": "near",
         "outbound": "松山 8:20発 → JR特急宇和海 → 内子 8:45着",
         "return": "内子 17:30発 → JR特急宇和海 → 松山 17:55着",
         "time": "約25分",
@@ -2680,15 +2374,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 1,
     "budgetLevel": 2,
     "region": "四国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3
   },
   {
@@ -2707,7 +2398,6 @@
     ],
     "access": {
       "matsuyama": {
-        "distance": "near",
         "outbound": "松山 8:20発 → JR特急宇和海 → 伊予大洲 9:00着",
         "return": "伊予大洲 17:45発 → JR特急宇和海 → 松山 18:25着",
         "time": "約40分",
@@ -2715,15 +2405,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 2,
     "region": "四国",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 3
   },
   {
@@ -2742,7 +2429,6 @@
     ],
     "access": {
       "kochi": {
-        "distance": "far",
         "outbound": "高知 7:58発 → 特急あしずり → 中村 9:40着",
         "return": "中村 17:00発 → 特急あしずり → 高知 18:42着",
         "time": "約1時間42分",
@@ -2750,15 +2436,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "四国",
-    "difficulty": 4,
     "staySupport": [
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "e5489",
     "baseTravelHours": 4.5
   },
   {
@@ -2777,7 +2460,6 @@
     ],
     "access": {
       "kochi": {
-        "distance": "far",
         "outbound": "高知 7:30発 → 高知東部交通バス → 室戸岬 10:10着",
         "return": "室戸岬 16:00発 → 高知東部交通バス → 高知 18:40着",
         "time": "約2時間40分",
@@ -2785,15 +2467,12 @@
         "ic": "不可（現金のみ）"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 2,
     "region": "四国",
-    "difficulty": 5,
     "staySupport": [
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "none",
     "baseTravelHours": 4.5
   },
   {
@@ -2812,7 +2491,6 @@
     ],
     "access": {
       "kochi": {
-        "distance": "near",
         "outbound": "高知 8:30発 → JR → 伊野 → バス → にこ淵 10:00着",
         "return": "にこ淵 16:00発 → バス → 伊野 → JR → 高知 17:30着",
         "time": "約1時間30分（バス含む）",
@@ -2820,16 +2498,13 @@
         "ic": "JR区間のみ利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "四国",
-    "difficulty": 4,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "none",
     "baseTravelHours": 3.5
   },
   {
@@ -2848,7 +2523,6 @@
     ],
     "access": {
       "kumamoto": {
-        "distance": "near",
         "outbound": "熊本 8:00発 → JR豊肥本線特急あそ → 阿蘇 9:15着",
         "return": "阿蘇 17:30発 → JR豊肥本線 → 熊本 18:55着",
         "time": "約1時間15分",
@@ -2856,7 +2530,6 @@
         "ic": "利用可"
       },
       "fukuoka": {
-        "distance": "far",
         "outbound": "博多 8:00発 → 九州新幹線 → 熊本乗換 → JR特急あそ → 阿蘇 10:15着",
         "return": "阿蘇 17:00発 → JR → 熊本 → 九州新幹線 → 博多 19:15着",
         "time": "約2時間15分",
@@ -2864,7 +2537,6 @@
         "ic": "利用可"
       },
       "kagoshima": {
-        "distance": "far",
         "outbound": "鹿児島中央 7:30発 → 九州新幹線 → 熊本乗換 → JR特急あそ → 阿蘇 10:15着",
         "return": "阿蘇 17:00発 → JR → 熊本 → 九州新幹線 → 鹿児島中央 19:30着",
         "time": "約2時間45分",
@@ -2872,16 +2544,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 4,
     "region": "九州",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 3
   },
   {
@@ -2900,7 +2569,6 @@
     ],
     "access": {
       "fukuoka": {
-        "distance": "far",
         "outbound": "博多 8:15発 → 西九州新幹線かもめ → 長崎 9:37着",
         "return": "長崎 18:00発 → 西九州新幹線かもめ → 博多 19:22着",
         "time": "約1時間22分",
@@ -2908,7 +2576,6 @@
         "ic": "利用可"
       },
       "kumamoto": {
-        "distance": "far",
         "outbound": "熊本 7:30発 → 九州新幹線 → 新鳥栖乗換 → 西九州新幹線 → 長崎 9:30着",
         "return": "長崎 17:30発 → 西九州新幹線 → 新鳥栖 → 九州新幹線 → 熊本 19:30着",
         "time": "約2時間",
@@ -2916,16 +2583,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 4,
     "region": "九州",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "shinkansen",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 2.5
   },
   {
@@ -2944,7 +2608,6 @@
     ],
     "access": {
       "kumamoto": {
-        "distance": "far",
         "outbound": "熊本 8:00発 → 快速バスあまくさ号 → 本渡BT 10:20着",
         "return": "本渡BT 16:30発 → 快速バス → 熊本 18:50着",
         "time": "約2時間20分",
@@ -2952,15 +2615,12 @@
         "ic": "不可（現金 or 回数券）"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 3,
     "region": "九州",
-    "difficulty": 4,
     "staySupport": [
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 4
   },
   {
@@ -2979,7 +2639,6 @@
     ],
     "access": {
       "kumamoto": {
-        "distance": "near",
         "outbound": "熊本 8:30発 → 高速バス → 人吉IC 10:00着",
         "return": "人吉IC 17:00発 → 高速バス → 熊本 18:30着",
         "time": "約1時間30分",
@@ -2987,16 +2646,13 @@
         "ic": "不可（事前購入）"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "九州",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 3
   },
   {
@@ -3015,7 +2671,6 @@
     ],
     "access": {
       "kagoshima": {
-        "distance": "near",
         "outbound": "鹿児島港 8:30発 → 桜島フェリー → 桜島港 8:45着",
         "return": "桜島港 17:30発 → 桜島フェリー → 鹿児島港 17:45着",
         "time": "約15分",
@@ -3023,15 +2678,12 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 1,
     "budgetLevel": 1,
     "region": "九州",
-    "difficulty": 2,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 2.5
   },
   {
@@ -3050,7 +2702,6 @@
     ],
     "access": {
       "kagoshima": {
-        "distance": "near",
         "outbound": "鹿児島中央 8:56発 → 特急指宿のたまて箱 → 指宿 9:47着",
         "return": "指宿 17:56発 → 特急指宿のたまて箱 → 鹿児島中央 18:47着",
         "time": "約51分",
@@ -3058,16 +2709,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 2,
     "region": "九州",
-    "difficulty": 2,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 3
   },
   {
@@ -3086,7 +2734,6 @@
     ],
     "access": {
       "kagoshima": {
-        "distance": "near",
         "outbound": "鹿児島中央 8:15発 → JR日豊本線 → 霧島神宮 9:30着",
         "return": "霧島神宮 17:30発 → JR日豊本線 → 鹿児島中央 18:45着",
         "time": "約1時間15分",
@@ -3094,7 +2741,6 @@
         "ic": "利用可"
       },
       "kumamoto": {
-        "distance": "far",
         "outbound": "熊本 8:00発 → 九州新幹線 → 鹿児島中央乗換 → JR → 霧島神宮 10:30着",
         "return": "霧島神宮 17:00発 → JR → 鹿児島中央 → 九州新幹線 → 熊本 19:20着",
         "time": "約2時間30分",
@@ -3102,16 +2748,13 @@
         "ic": "利用可"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 3,
     "region": "九州",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 2.5
   },
   {
@@ -3130,7 +2773,6 @@
     ],
     "access": {
       "kagoshima": {
-        "distance": "far",
         "outbound": "鹿児島港 7:45発 → 高速船トッピー → 宮之浦港 9:45着",
         "return": "宮之浦港 16:00発 → 高速船トッピー → 鹿児島港 18:00着",
         "time": "約2時間",
@@ -3138,15 +2780,12 @@
         "ic": "不可（事前予約）"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 5,
     "region": "九州",
-    "difficulty": 5,
     "staySupport": [
       "2night"
     ],
     "transportType": "air",
-    "recommendedJR": "none",
     "baseTravelHours": 6
   },
   {
@@ -3165,7 +2804,6 @@
     ],
     "access": {
       "kagoshima": {
-        "distance": "near",
         "outbound": "鹿児島中央 8:30発 → バス → 知覧 9:40着",
         "return": "知覧 17:00発 → バス → 鹿児島中央 18:10着",
         "time": "約1時間10分",
@@ -3173,15 +2811,12 @@
         "ic": "不可（現金のみ）"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 2,
     "region": "九州",
-    "difficulty": 3,
     "staySupport": [
       "daytrip"
     ],
     "transportType": "rail+car",
-    "recommendedJR": "jrkyushu",
     "baseTravelHours": 2.5
   },
   {
@@ -3200,7 +2835,6 @@
     ],
     "access": {
       "naha": {
-        "distance": "far",
         "outbound": "那覇BT 8:00発 → 高速バス117番 → 美ら海水族館 10:30着",
         "return": "美ら海水族館 16:00発 → 高速バス → 那覇BT 18:30着",
         "time": "約2時間30分",
@@ -3208,16 +2842,13 @@
         "ic": "不可（現金のみ）"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 3,
     "region": "九州",
-    "difficulty": 3,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "air",
-    "recommendedJR": "none",
     "baseTravelHours": 4
   },
   {
@@ -3236,7 +2867,6 @@
     ],
     "access": {
       "naha": {
-        "distance": "near",
         "outbound": "那覇BT 9:00発 → 路線バス28番 → 北谷 9:50着",
         "return": "北谷 18:00発 → 路線バス → 那覇BT 18:50着",
         "time": "約50分",
@@ -3244,16 +2874,13 @@
         "ic": "不可（現金のみ）"
       }
     },
-    "distanceLevel": 2,
     "budgetLevel": 1,
     "region": "九州",
-    "difficulty": 3,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "air",
-    "recommendedJR": "none",
     "baseTravelHours": 2.5
   },
   {
@@ -3272,7 +2899,6 @@
     ],
     "access": {
       "naha": {
-        "distance": "near",
         "outbound": "那覇BT 8:30発 → 路線バス38番 → 斎場御嶽入口 9:40着",
         "return": "斎場御嶽入口 17:00発 → 路線バス → 那覇BT 18:10着",
         "time": "約1時間10分",
@@ -3280,16 +2906,13 @@
         "ic": "不可（現金のみ）"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 1,
     "region": "九州",
-    "difficulty": 4,
     "staySupport": [
       "daytrip",
       "1night"
     ],
     "transportType": "air",
-    "recommendedJR": "none",
     "baseTravelHours": 2.5
   },
   {
@@ -3308,7 +2931,6 @@
     ],
     "access": {
       "naha": {
-        "distance": "near",
         "outbound": "那覇BT 8:15発 → 路線バス28番 → 読谷 9:30着",
         "return": "読谷 17:30発 → 路線バス → 那覇BT 18:45着",
         "time": "約1時間15分",
@@ -3316,16 +2938,13 @@
         "ic": "不可（現金のみ）"
       }
     },
-    "distanceLevel": 3,
     "budgetLevel": 1,
     "region": "九州",
-    "difficulty": 4,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "air",
-    "recommendedJR": "none",
     "baseTravelHours": 3
   },
   {
@@ -3344,7 +2963,6 @@
     ],
     "access": {
       "naha": {
-        "distance": "far",
         "outbound": "那覇 8:00発 → 高速道路経由バス（やんばる急行バス） → 古宇利島 10:30着",
         "return": "古宇利島 16:30発 → バス → 那覇 19:00着",
         "time": "約2時間30分",
@@ -3352,16 +2970,13 @@
         "ic": "不可（現金のみ）"
       }
     },
-    "distanceLevel": 4,
     "budgetLevel": 3,
     "region": "九州",
-    "difficulty": 4,
     "staySupport": [
       "1night",
       "2night"
     ],
     "transportType": "air",
-    "recommendedJR": "none",
     "baseTravelHours": 4.5
   }
 ]
