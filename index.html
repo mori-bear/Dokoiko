@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>どこいこ？</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">どこ行こ？</h1>
+      <p class="site-tagline">知らない街と出会い、納得して、予約まで。</p>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="search-card">
+
+      <!-- 距離を選ぶ -->
+      <div class="field-block">
+        <p class="field-label">どのくらい遠い街へ？</p>
+        <div class="distance-row">
+          <button class="distance-btn" type="button" data-value="1">
+            <span class="d-stars">★</span>
+            <span class="d-label">近め</span>
+          </button>
+          <button class="distance-btn" type="button" data-value="2">
+            <span class="d-stars">★★</span>
+            <span class="d-label">日帰り</span>
+          </button>
+          <button class="distance-btn" type="button" data-value="3">
+            <span class="d-stars">★★★</span>
+            <span class="d-label">少し遠め</span>
+          </button>
+          <button class="distance-btn" type="button" data-value="4">
+            <span class="d-stars">★★★★</span>
+            <span class="d-label">遠い</span>
+          </button>
+          <button class="distance-btn" type="button" data-value="5">
+            <span class="d-stars">★★★★★</span>
+            <span class="d-label">かなり遠い</span>
+          </button>
+        </div>
+      </div>
+
+      <hr class="card-divider">
+
+      <!-- オプション（縦並び） -->
+      <div class="form-stack">
+        <div class="form-row">
+          <label class="field-label" for="departure-select">出発地</label>
+          <select id="departure-select" class="form-input">
+            <option value="東京">東京</option>
+            <option value="大阪">大阪</option>
+            <option value="名古屋">名古屋</option>
+            <option value="札幌">札幌</option>
+            <option value="博多">福岡（博多）</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <p class="field-label">出発日</p>
+          <div class="date-mode-row">
+            <label class="date-mode-btn active" data-mode="today">
+              <input type="radio" name="date-mode" value="today" checked>今日
+            </label>
+            <label class="date-mode-btn" data-mode="tomorrow">
+              <input type="radio" name="date-mode" value="tomorrow">明日
+            </label>
+            <label class="date-mode-btn" data-mode="custom">
+              <input type="radio" name="date-mode" value="custom">日付指定
+            </label>
+          </div>
+          <div id="date-custom-wrap" hidden>
+            <input type="date" id="date-input" class="form-input">
+          </div>
+        </div>
+        <div class="form-row">
+          <label class="field-label" for="stay-select">滞在タイプ</label>
+          <select id="stay-select" class="form-input">
+            <option value="daytrip">日帰り</option>
+            <option value="1night">1泊2日</option>
+            <option value="2night">2泊3日</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 抽選ボタン -->
+      <div class="generate-row">
+        <button type="button" id="generatePlanBtn" class="generate-btn">
+          プランを生成する
+        </button>
+      </div>
+
+    </div>
+
+    <!-- 街リスト（手動選択フロー） -->
+    <div id="city-cards"></div>
+
+    <!-- プランブロック -->
+    <div id="plan"></div>
+
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

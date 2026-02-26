@@ -1,0 +1,163 @@
+[
+  {
+    "id": "hakone",
+    "city": "箱根",
+    "prefecture": "神奈川県",
+    "region": "関東",
+    "mainStation": "箱根湯本駅",
+    "railType": "private",
+    "jrArea": "none",
+    "transportType": ["rail"],
+    "intercityAlternatives": ["highwaybus"],
+    "distanceLevel": 1,
+    "staySupport": ["daytrip", "1night"],
+    "appeal": [
+      "週末のふらっとに、ちょうどいい距離感。",
+      "湯煙と山の静けさが、都市の疲れを溶かしてくれる。",
+      "温泉、美術館、自然。ぜんぶが小さな圏内に収まっている。"
+    ],
+    "highlights": [
+      { "name": "箱根美術館", "url": "https://www.moa-hakone.or.jp/" },
+      { "name": "芦ノ湖", "url": "https://www.hakone.or.jp/" }
+    ],
+    "departure": { "label": "新宿" }
+  },
+  {
+    "id": "nikko",
+    "city": "日光",
+    "prefecture": "栃木県",
+    "region": "関東",
+    "mainStation": "東武日光駅",
+    "railType": "private",
+    "jrArea": "none",
+    "transportType": ["rail"],
+    "intercityAlternatives": ["highwaybus"],
+    "distanceLevel": 1,
+    "staySupport": ["daytrip", "1night"],
+    "appeal": [
+      "日本の「豪華」が、山の中に静かに残っている。",
+      "世界遺産の社殿群。その密度に、ただ圧倒される。",
+      "奥日光まで足を伸ばせば、また別の顔が待っている。"
+    ],
+    "highlights": [
+      { "name": "日光東照宮", "url": "https://www.toshogu.jp/" },
+      { "name": "華厳の滝", "url": "https://www.kegon.jp/" }
+    ],
+    "departure": { "label": "浅草" }
+  },
+  {
+    "id": "sendai",
+    "city": "仙台",
+    "prefecture": "宮城県",
+    "region": "東北",
+    "mainStation": "仙台駅",
+    "railType": "jr",
+    "jrArea": "east",
+    "transportType": ["rail"],
+    "intercityAlternatives": ["highwaybus"],
+    "distanceLevel": 2,
+    "staySupport": ["1night", "2night"],
+    "appeal": [
+      "東北の玄関口。都市と自然が混在するちょうどいい街。",
+      "牛タン、海鮮、ずんだ。食べるだけで一日が終わる。",
+      "松島、蔵王、鳴子。街を起点にした旅の幅が広い。"
+    ],
+    "highlights": [
+      { "name": "松島", "url": "https://www.matsushima-kanko.com/" },
+      { "name": "仙台城跡（青葉城）", "url": "https://www.aoba-castle.co.jp/" }
+    ],
+    "departure": { "label": "東京" }
+  },
+  {
+    "id": "kanazawa",
+    "city": "金沢",
+    "prefecture": "石川県",
+    "region": "北陸",
+    "mainStation": "金沢駅",
+    "railType": "jr",
+    "jrArea": "west",
+    "transportType": ["rail"],
+    "intercityAlternatives": ["highwaybus"],
+    "distanceLevel": 3,
+    "staySupport": ["1night", "2night"],
+    "appeal": [
+      "北陸の空気は、少し違う。時間の流れが静かに感じられる。",
+      "兼六園、東茶屋街、近江町市場。歩けば街が語りかけてくる。",
+      "加賀料理と地酒。食の密度が異常に高い街。"
+    ],
+    "highlights": [
+      { "name": "兼六園", "url": "https://www.pref.ishikawa.jp/siro-niwa/kenrokuen/" },
+      { "name": "ひがし茶屋街", "url": "https://www.kanazawa-tourism.com/" }
+    ],
+    "departure": { "label": "東京" }
+  },
+  {
+    "id": "hiroshima",
+    "city": "広島",
+    "prefecture": "広島県",
+    "region": "中国",
+    "mainStation": "広島駅",
+    "railType": "jr",
+    "jrArea": "west",
+    "transportType": ["rail", "flight"],
+    "intercityAlternatives": ["highwaybus"],
+    "distanceLevel": 3,
+    "staySupport": ["1night", "2night"],
+    "appeal": [
+      "歴史の重さと、人の温かさが共存している街。",
+      "お好み焼きと牡蠣。カープと路面電車。",
+      "宮島は、できれば夜に渡ってほしい。"
+    ],
+    "highlights": [
+      { "name": "厳島神社（宮島）", "url": "https://www.miyajima.or.jp/" },
+      { "name": "広島平和記念資料館", "url": "https://hpmmuseum.jp/" }
+    ],
+    "departure": { "label": "東京" }
+  },
+  {
+    "id": "sapporo",
+    "city": "札幌",
+    "prefecture": "北海道",
+    "region": "北海道",
+    "mainStation": "札幌駅",
+    "railType": "jr",
+    "jrArea": "none",
+    "transportType": ["flight", "car"],
+    "intercityAlternatives": [],
+    "distanceLevel": 5,
+    "staySupport": ["1night", "2night"],
+    "appeal": [
+      "広さがちがう。空が広く、道が広く、景色がでかい。",
+      "スープカレー、ジンギスカン、海産物。食の多様性は日本随一。",
+      "小樽、富良野、知床。札幌を起点にした先も面白い。"
+    ],
+    "highlights": [
+      { "name": "大通公園", "url": "https://www.sapporo-park.or.jp/odori/" },
+      { "name": "狸小路商店街", "url": "https://www.tanukikoji.or.jp/" }
+    ],
+    "departure": { "label": "東京" }
+  },
+  {
+    "id": "okinawa",
+    "city": "那覇",
+    "prefecture": "沖縄県",
+    "region": "沖縄",
+    "mainStation": "那覇空港",
+    "railType": "none",
+    "jrArea": "none",
+    "transportType": ["flight", "car"],
+    "intercityAlternatives": [],
+    "distanceLevel": 5,
+    "staySupport": ["1night", "2night"],
+    "appeal": [
+      "空の青さが、本土とはぜんぜんちがう。",
+      "首里城、国際通り、離島。どこを選んでも外れがない。",
+      "沖縄料理とオリオンビール。夜の気温が、旅の記憶を変える。"
+    ],
+    "highlights": [
+      { "name": "首里城", "url": "https://oki-park.jp/shurijo/" },
+      { "name": "美ら海水族館", "url": "https://churaumi.okinawa/" }
+    ],
+    "departure": { "label": "東京" }
+  }
+]
