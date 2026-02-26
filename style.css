@@ -32,8 +32,8 @@
   /* Structure */
   --r-card:    22px;
   --r-btn:     12px;
-  --shadow-sm: 0 1px 4px rgba(0,0,0,0.04), 0 2px 14px rgba(0,0,0,0.05);
-  --shadow-lg: 0 6px 28px rgba(0,0,0,0.11), 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-lg: 0 4px 18px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
 }
 
 /* ── Base ── */
@@ -78,7 +78,7 @@ body {
 main {
   max-width: 600px;
   margin: 0 auto;
-  padding: 36px 16px 120px;
+  padding: 48px 16px 120px;
 }
 
 /* ── Search card ── */
@@ -86,8 +86,8 @@ main {
   background: var(--card);
   border-radius: var(--r-card);
   box-shadow: var(--shadow-sm);
-  padding: 32px 28px;
-  margin-bottom: 28px;
+  padding: 36px 32px;
+  margin-bottom: 32px;
 }
 
 .field-block {
@@ -137,21 +137,18 @@ main {
 }
 
 
-.distance-btn:hover {
+.distance-btn:hover:not(.active) {
   border-color: var(--accent);
   background: #eff6ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(37,99,235,0.12);
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.1);
 }
 
-/* active: border + 二重シャドウで明確化 */
+/* active: グラデーション + リング */
 .distance-btn.active {
   background: linear-gradient(145deg, #1d4ed8 0%, #3b82f6 100%);
-  border-color: #60a5fa;
-  box-shadow:
-    0 0 0 3px rgba(37,99,235,0.22),
-    0 4px 20px rgba(37,99,235,0.4);
-  transform: translateY(-2px);
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.18);
+  transform: none;
 }
 
 .d-stars {
@@ -182,7 +179,7 @@ main {
 .form-stack {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 22px;
 }
 
 .form-row {
@@ -364,7 +361,7 @@ main {
 
 .city-card-name {
   display: block;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 800;
   color: var(--text);
   line-height: 1.15;
@@ -399,26 +396,20 @@ main {
 #plan {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
-@keyframes fadeSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .block {
   background: var(--card);
   border-radius: var(--r-card);
-  padding: 36px 30px;
+  padding: 52px 36px;
   box-shadow: var(--shadow-sm);
-  animation: fadeSlideIn 0.45s ease both;
+  animation: fadeIn 0.25s ease both;
 }
 
 .block-eyebrow {
@@ -436,7 +427,7 @@ main {
 .block-draw {
   background: linear-gradient(140deg, #0f172a 0%, #1e3a5f 60%, #1e3569 100%);
   text-align: center;
-  padding: 48px 30px;
+  padding: 72px 36px;
 }
 
 .draw-label {
@@ -467,14 +458,15 @@ main {
 .appeal {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 22px;
+  gap: 6px;
+  margin-bottom: 32px;
 }
 
 .appeal p {
-  font-size: 15px;
-  line-height: 1.9;
-  color: var(--text-sub);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 2;
+  color: var(--muted);
 }
 
 .meet-city {
@@ -547,13 +539,9 @@ main {
 .link-car     { background: linear-gradient(135deg, var(--car)       0%, #1d4ed8 100%); }
 .link-highwaybus { background: linear-gradient(135deg, var(--highwaybus) 0%, #7c3aed 100%); }
 
-/* JR予約: 視覚的に二次ボタン（右端揃え） */
+/* JR予約: 縦統一・全幅 */
 .link-jr {
   background: linear-gradient(135deg, var(--jr) 0%, #166534 100%);
-  padding: 12px 20px;
-  font-size: 13px;
-  align-self: flex-end;
-  width: 80%;
 }
 
 .local-text {
@@ -581,8 +569,8 @@ main {
 @media (max-width: 480px) {
   .site-title    { font-size: 28px; }
   .site-tagline  { font-size: 13px; }
-  .search-card   { padding: 24px 20px; }
-  .block         { padding: 28px 20px; }
+  .search-card   { padding: 28px 20px; }
+  .block         { padding: 40px 20px; }
   .meet-city     { font-size: 34px; }
   .draw-city     { font-size: 42px; }
   .d-label       { font-size: 8px; }
