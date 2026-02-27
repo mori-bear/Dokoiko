@@ -3,13 +3,14 @@ import { resolveTransportLinks } from './src/transport/transportRenderer.js';
 import { buildHotelLinks } from './src/affiliate/hotel.js';
 import { renderResult } from './src/ui/render.js';
 import { bindHandlers } from './src/ui/handlers.js';
-import { DISTANCE_LABELS, BUDGET_LABELS } from './src/config/constants.js';
+import { DISTANCE_LABELS } from './src/config/constants.js';
 
 const state = {
   destinations: [],
   departure: '札幌',
   distanceLevel: null,
-  budgetLevel: null,
+  stayType: null,      // 'daytrip' | '1night'
+  datetime: buildDefaultDatetime(),
 };
 
 async function init() {
@@ -32,8 +33,8 @@ function go() {
     showFormError('距離を選んでください。');
     return;
   }
-  if (state.budgetLevel === null) {
-    showFormError('予算を選んでください。');
+  if (state.stayType === null) {
+    showFormError('日帰り・宿泊を選んでください。');
     return;
   }
   clearFormError();
@@ -50,18 +51,19 @@ function draw() {
     state.destinations,
     state.departure,
     state.distanceLevel,
-    state.budgetLevel
+    state.stayType
   );
 
-  const transportLinks = resolveTransportLinks(city, state.departure);
-  const hotelLinks = buildHotelLinks(city, null);
+  const transportLinks = resolveTransportLinks(city, state.departure, state.datetime);
+  const hotelLinks = state.stayType === '1night'
+    ? buildHotelLinks(city, state.datetime?.split('T')[0])
+    : [];
 
   renderResult({
     city,
     transportLinks,
     hotelLinks,
     distanceLabel: DISTANCE_LABELS[state.distanceLevel],
-    budgetLabel: BUDGET_LABELS[state.budgetLevel],
   });
 
   const resultEl = document.getElementById('result');
@@ -77,6 +79,14 @@ function showFormError(msg) {
 function clearFormError() {
   const el = document.getElementById('form-error');
   if (el) { el.hidden = true; el.textContent = ''; }
+}
+
+/** 現在時刻 + 30分 を datetime-local 形式で返す */
+function buildDefaultDatetime() {
+  const d = new Date();
+  d.setMinutes(d.getMinutes() + 30);
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
 }
 
 init();

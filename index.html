@@ -24,7 +24,7 @@
     <div class="container">
 
       <section class="hero">
-        <p class="hero-text">旅行先を決めるのがいちばん難しい。その時間を減らしたくて、このサイトを作りました。距離と予算だけ選べば、行き先をひとつ提案します。気に入らなければ、引き直してください。</p>
+        <p class="hero-text">旅行先を決めるのがいちばん難しい。その時間を減らしたくて、このサイトを作りました。距離と日程だけ選べば、行き先をひとつ提案します。気に入らなければ、引き直してください。</p>
       </section>
 
       <section class="controls">
@@ -56,16 +56,19 @@
           </div>
         </div>
 
-        <!-- 予算 -->
+        <!-- 日帰り / 1泊2日 -->
         <div class="control-group">
-          <label class="control-label">予算（交通＋宿の目安）</label>
+          <label class="control-label">日程</label>
           <div class="btn-group">
-            <button class="sel-btn" data-group="budget" data-value="1">～1万円</button>
-            <button class="sel-btn" data-group="budget" data-value="2">～2万円</button>
-            <button class="sel-btn" data-group="budget" data-value="3">～3.5万円</button>
-            <button class="sel-btn" data-group="budget" data-value="4">～5万円</button>
-            <button class="sel-btn" data-group="budget" data-value="5">～8万円</button>
+            <button class="sel-btn" data-group="stay" data-value="daytrip">日帰り</button>
+            <button class="sel-btn" data-group="stay" data-value="1night">1泊2日</button>
           </div>
+        </div>
+
+        <!-- 出発日時 -->
+        <div class="control-group">
+          <label class="control-label" for="departure-dt">出発日時</label>
+          <input type="datetime-local" id="departure-dt" class="datetime-input">
         </div>
 
         <!-- エラー -->

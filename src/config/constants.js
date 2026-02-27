@@ -8,34 +8,16 @@ export const DISTANCE_LABELS = {
   5: '6時間以上',
 };
 
-export const BUDGET_LABELS = {
-  1: '～1万円',
-  2: '～2万円',
-  3: '～3.5万円',
-  4: '～5万円',
-  5: '～8万円',
-};
-
-export const DEPARTURE_STATIONS = {
-  '東京':  '東京',
-  '大阪':  '大阪',
-  '名古屋': '名古屋',
-  '福岡':  '博多',
-  '札幌':  '札幌',
-  '仙台':  '仙台',
-  '広島':  '広島',
-  '高松':  '高松',
-};
-
-export const DEPARTURE_AIRPORT_CODES = {
-  '東京':  'TYO',
-  '大阪':  'OSA',
-  '名古屋': 'NGO',
-  '福岡':  'FUK',
-  '札幌':  'CTS',
-  '仙台':  'SDJ',
-  '広島':  'HIJ',
-  '高松':  'TAK',
+/** 各出発地の交通属性。destinations.json と同じ形式で使用する。 */
+export const DEPARTURE_CITY_INFO = {
+  '東京':  { hasJR: true, hasAirport: true,  gateways: { rail: '東京',  air: 'TYO' } },
+  '大阪':  { hasJR: true, hasAirport: true,  gateways: { rail: '大阪',  air: 'OSA' } },
+  '名古屋': { hasJR: true, hasAirport: true,  gateways: { rail: '名古屋', air: 'NGO' } },
+  '福岡':  { hasJR: true, hasAirport: true,  gateways: { rail: '博多',  air: 'FUK' } },
+  '札幌':  { hasJR: true, hasAirport: true,  gateways: { rail: '札幌',  air: 'CTS' } },
+  '仙台':  { hasJR: true, hasAirport: true,  gateways: { rail: '仙台',  air: 'SDJ' } },
+  '広島':  { hasJR: true, hasAirport: true,  gateways: { rail: '広島',  air: 'HIJ' } },
+  '高松':  { hasJR: true, hasAirport: true,  gateways: { rail: '高松',  air: 'TAK' } },
 };
 
 export const RAKUTEN_AFF_ID = '511c83ed.aa0fc172.511c83ee.51331b19';

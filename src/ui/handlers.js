@@ -15,13 +15,22 @@ export function bindHandlers(state, onGo, onRetry) {
     });
   });
 
-  // 予算ボタン
-  document.querySelectorAll('[data-group="budget"]').forEach((btn) => {
+  // 日帰り / 1泊2日 ボタン
+  document.querySelectorAll('[data-group="stay"]').forEach((btn) => {
     btn.addEventListener('click', () => {
-      setActive('[data-group="budget"]', btn);
-      state.budgetLevel = parseInt(btn.dataset.value, 10);
+      setActive('[data-group="stay"]', btn);
+      state.stayType = btn.dataset.value;
     });
   });
+
+  // 出発日時
+  const dtInput = document.getElementById('departure-dt');
+  if (dtInput) {
+    dtInput.value = state.datetime;
+    dtInput.addEventListener('change', (e) => {
+      if (e.target.value) state.datetime = e.target.value;
+    });
+  }
 
   // GOボタン
   document.getElementById('go-btn').addEventListener('click', onGo);

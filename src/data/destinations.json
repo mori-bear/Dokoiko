@@ -6,7 +6,10 @@
     "region": "関東",
     "departures": ["東京"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "横浜駅", "air": null },
     "themes": ["港町", "中華街", "夜景"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -14,9 +17,6 @@
       "中華街の路地を歩いていると、ここが東京のとなりであることを忘れる。",
       "港を背にした丘の住宅街は、日本で最初に異国文化が溶け込んだ場所だ。"
     ],
-    "gateway": {
-      "rail": { "station": "横浜駅" }
-    },
     "affiliate": { "hotelArea": "横浜" }
   },
   {
@@ -26,7 +26,10 @@
     "region": "関東",
     "departures": ["東京"],
     "distanceLevel": 1,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "鎌倉駅", "air": null },
     "themes": ["寺社", "海", "古都"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -34,9 +37,6 @@
       "大仏を囲む森は、海が近いことと山が深いことを同時に感じさせる。",
       "東京から1時間で、江戸より古い時代の空気に切り替わる。"
     ],
-    "gateway": {
-      "rail": { "station": "鎌倉駅" }
-    },
     "affiliate": { "hotelArea": "鎌倉" }
   },
   {
@@ -46,7 +46,10 @@
     "region": "中部",
     "departures": ["東京"],
     "distanceLevel": 1,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "熱海駅", "air": null },
     "themes": ["温泉", "海", "リゾート"],
     "staySupport": ["1night"],
     "appeal": [
@@ -54,10 +57,6 @@
       "温泉宿で迎える朝は、都市の疲れとは別の時間の流れ方をする。",
       "夜の熱海銀座と昼の海岸は、同じ街とは思えないほど表情が違う。"
     ],
-    "gateway": {
-      "rail": { "station": "熱海駅" },
-      "bus": { "terminal": "熱海" }
-    },
     "affiliate": { "hotelArea": "熱海" }
   },
   {
@@ -67,7 +66,10 @@
     "region": "関東",
     "departures": ["東京"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "日光駅", "air": null },
     "themes": ["世界遺産", "自然", "温泉"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -75,9 +77,6 @@
       "中禅寺湖への道は、高度を上げるたびに空気が変わる。",
       "日光の紅葉は関東随一とも言われるが、冬の静けさも格別だ。"
     ],
-    "gateway": {
-      "rail": { "station": "日光駅" }
-    },
     "affiliate": { "hotelArea": "日光" }
   },
   {
@@ -87,7 +86,10 @@
     "region": "中部",
     "departures": ["東京"],
     "distanceLevel": 2,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "軽井沢駅", "air": null },
     "themes": ["高原", "リゾート", "アウトレット"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -95,10 +97,6 @@
       "旧軽井沢の別荘地は、日本の避暑文化の原点を今も保っている。",
       "秋の落葉松林は、日本の紅葉とは異なる北欧的な美しさがある。"
     ],
-    "gateway": {
-      "rail": { "station": "軽井沢駅" },
-      "bus": { "terminal": "軽井沢" }
-    },
     "affiliate": { "hotelArea": "軽井沢" }
   },
   {
@@ -108,7 +106,10 @@
     "region": "中部",
     "departures": ["東京"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "河口湖駅", "air": null },
     "themes": ["富士山", "湖", "温泉"],
     "staySupport": ["1night"],
     "appeal": [
@@ -116,10 +117,6 @@
       "山梨のワイナリーと富士山の組み合わせは、意外なほど相性がいい。",
       "雲海が出た日の富士五合目は、普段とまったく別の山に見える。"
     ],
-    "gateway": {
-      "rail": { "station": "河口湖駅" },
-      "bus": { "terminal": "富士河口湖" }
-    },
     "affiliate": { "hotelArea": "富士河口湖" }
   },
   {
@@ -129,7 +126,10 @@
     "region": "中部",
     "departures": ["東京"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "名古屋駅", "air": null },
     "themes": ["城下町", "グルメ", "ものづくり"],
     "staySupport": ["1night"],
     "appeal": [
@@ -137,10 +137,6 @@
       "名古屋城の金鯱は、権力の象徴というより街のマスコットとして機能している。",
       "トヨタ産業技術記念館は、工業都市の自負を丁寧に見せてくれる。"
     ],
-    "gateway": {
-      "rail": { "station": "名古屋駅" },
-      "bus": { "terminal": "名古屋" }
-    },
     "affiliate": { "hotelArea": "名古屋" }
   },
   {
@@ -150,7 +146,10 @@
     "region": "東北",
     "departures": ["東京"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "仙台駅", "air": null },
     "themes": ["城下町", "海鮮", "杜の都"],
     "staySupport": ["1night"],
     "appeal": [
@@ -158,10 +157,6 @@
       "松島を含む宮城の海は、牡蠣・ホタテ・ウニを同時に味わえる稀な場所。",
       "「杜の都」という異名は、街路樹が多いだけでなく川と緑が都市に溶けている。"
     ],
-    "gateway": {
-      "rail": { "station": "仙台駅" },
-      "bus": { "terminal": "仙台" }
-    },
     "affiliate": { "hotelArea": "仙台" }
   },
   {
@@ -171,7 +166,10 @@
     "region": "中部",
     "departures": ["東京"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "金沢駅", "air": null },
     "themes": ["工芸", "兼六園", "海の幸"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -179,10 +177,6 @@
       "近江町市場の鮮魚は、日本海側の豊かさを一か所で実感させてくれる。",
       "東茶屋街は観光地化されていても、路地の奥に生活の気配が残っている。"
     ],
-    "gateway": {
-      "rail": { "station": "金沢駅" },
-      "bus": { "terminal": "金沢" }
-    },
     "affiliate": { "hotelArea": "金沢" }
   },
   {
@@ -192,7 +186,10 @@
     "region": "近畿",
     "departures": ["東京"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "新大阪駅", "air": null },
     "themes": ["グルメ", "エンタメ", "下町"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -200,10 +197,6 @@
       "道頓堀から一本路地を入ると、昭和の居酒屋文化がそのままの形で残っている。",
       "新世界と梅田が同じ市内にあることが、大阪の階層の多様さを物語る。"
     ],
-    "gateway": {
-      "rail": { "station": "新大阪駅" },
-      "bus": { "terminal": "大阪" }
-    },
     "affiliate": { "hotelArea": "大阪" }
   },
   {
@@ -213,7 +206,10 @@
     "region": "近畿",
     "departures": ["東京"],
     "distanceLevel": 3,
-    "budgetLevel": 4,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "京都駅", "air": null },
     "themes": ["寺社", "歴史", "町家"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -221,10 +217,6 @@
       "祇園の石畳は夜歩きに向いている。昼間とは別の静けさがそこにある。",
       "寺の庭は日本語で「枯山水」と呼ぶが、見るたびに言葉の意味が深くなる。"
     ],
-    "gateway": {
-      "rail": { "station": "京都駅" },
-      "bus": { "terminal": "京都" }
-    },
     "affiliate": { "hotelArea": "京都" }
   },
   {
@@ -234,7 +226,10 @@
     "region": "中国",
     "departures": ["東京"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "広島駅", "air": null },
     "themes": ["平和", "牡蠣", "宮島"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -242,10 +237,6 @@
       "広島のお好み焼きは、大阪とは別の食べ物と割り切って味わうべきだ。",
       "宮島への船上から見る厳島神社は、どの写真よりも実物のほうが驚く。"
     ],
-    "gateway": {
-      "rail": { "station": "広島駅" },
-      "bus": { "terminal": "広島" }
-    },
     "affiliate": { "hotelArea": "広島" }
   },
   {
@@ -255,7 +246,10 @@
     "region": "九州",
     "departures": ["東京"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "博多駅", "air": null },
     "themes": ["ラーメン", "屋台", "活気"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -263,10 +257,6 @@
       "中洲の夜は、九州最大の繁華街の密度を一身に感じさせる。",
       "福岡はアジアに最も近い日本の大都市であることが、街の空気に出ている。"
     ],
-    "gateway": {
-      "rail": { "station": "博多駅" },
-      "bus": { "terminal": "福岡" }
-    },
     "affiliate": { "hotelArea": "福岡" }
   },
   {
@@ -276,7 +266,10 @@
     "region": "北海道",
     "departures": ["東京"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "CTS" },
     "themes": ["グルメ", "自然", "雪まつり"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -284,9 +277,6 @@
       "ジンギスカンとラーメンと海鮮を一度の旅で全部食べたくなる。",
       "冬の大通公園の雪まつりは、冷気が作品の一部として機能している。"
     ],
-    "gateway": {
-      "air": { "code": "CTS" }
-    },
     "affiliate": { "hotelArea": "札幌" }
   },
   {
@@ -296,7 +286,10 @@
     "region": "沖縄",
     "departures": ["東京"],
     "distanceLevel": 5,
-    "budgetLevel": 5,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "OKA" },
     "themes": ["海", "リゾート", "琉球文化"],
     "staySupport": ["2night"],
     "appeal": [
@@ -304,9 +297,6 @@
       "沖縄の海の色は本土では再現できない。透明度と青の濃度が別次元だ。",
       "国際通りから一本入ると、観光と生活が重なった独自の商店街文化がある。"
     ],
-    "gateway": {
-      "air": { "code": "OKA" }
-    },
     "affiliate": { "hotelArea": "沖縄" }
   },
   {
@@ -316,7 +306,10 @@
     "region": "近畿",
     "departures": ["大阪", "名古屋"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "奈良駅", "air": null },
     "themes": ["世界遺産", "鹿", "古都"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -324,9 +317,6 @@
       "東大寺の大仏は、何度見ても正面から見上げた時の大きさに更新される。",
       "春日大社から山に入ると、市街地の喧騒が消えて千年前の空気が戻る。"
     ],
-    "gateway": {
-      "rail": { "station": "奈良駅" }
-    },
     "affiliate": { "hotelArea": "奈良" }
   },
   {
@@ -336,7 +326,10 @@
     "region": "近畿",
     "departures": ["大阪"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "三ノ宮駅", "air": null },
     "themes": ["港町", "異人館", "スイーツ"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -344,9 +337,6 @@
       "北野の異人館は観光地だが、坂を登る行為そのものが神戸らしい体験だ。",
       "神戸牛は価格の高さより、その繊細な脂の甘さに驚く。"
     ],
-    "gateway": {
-      "rail": { "station": "三ノ宮駅" }
-    },
     "affiliate": { "hotelArea": "神戸" }
   },
   {
@@ -356,7 +346,10 @@
     "region": "近畿",
     "departures": ["大阪"],
     "distanceLevel": 1,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "京都駅", "air": null },
     "themes": ["寺社", "歴史", "町家"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -364,9 +357,6 @@
       "祇園の石畳は夜歩きに向いている。昼間とは別の静けさがそこにある。",
       "嵐山の竹林は、写真より実物のほうが音と香りで別次元の体験になる。"
     ],
-    "gateway": {
-      "rail": { "station": "京都駅" }
-    },
     "affiliate": { "hotelArea": "京都" }
   },
   {
@@ -376,7 +366,10 @@
     "region": "近畿",
     "departures": ["大阪"],
     "distanceLevel": 1,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "姫路駅", "air": null },
     "themes": ["城", "世界遺産", "播磨"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -384,9 +377,6 @@
       "城下町の痕跡が現代の街区に残っており、地図と照らすと江戸の設計が見えてくる。",
       "好古園の日本庭園は、城を借景にした構成が見事で滞在時間を忘れる。"
     ],
-    "gateway": {
-      "rail": { "station": "姫路駅" }
-    },
     "affiliate": { "hotelArea": "姫路" }
   },
   {
@@ -396,7 +386,10 @@
     "region": "近畿",
     "departures": ["大阪"],
     "distanceLevel": 1,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "和歌山駅", "air": null },
     "themes": ["高野山", "温泉", "海"],
     "staySupport": ["1night"],
     "appeal": [
@@ -404,9 +397,6 @@
       "白浜の海は関西圏でありながら沖縄に近い透明度がある。",
       "熊野古道は歩く速度でしか感じられない時間の厚さを持っている。"
     ],
-    "gateway": {
-      "rail": { "station": "和歌山駅" }
-    },
     "affiliate": { "hotelArea": "和歌山" }
   },
   {
@@ -416,7 +406,10 @@
     "region": "中国",
     "departures": ["大阪"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "岡山駅", "air": null },
     "themes": ["後楽園", "倉敷", "桃"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -424,9 +417,6 @@
       "倉敷美観地区は観光地化が進んでいるが、白壁の路地は本物の趣が残る。",
       "岡山は晴れの国と呼ばれ、天候に恵まれた日の後楽園は格別だ。"
     ],
-    "gateway": {
-      "rail": { "station": "岡山駅" }
-    },
     "affiliate": { "hotelArea": "岡山" }
   },
   {
@@ -436,7 +426,10 @@
     "region": "中部",
     "departures": ["大阪"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "名古屋駅", "air": null },
     "themes": ["城下町", "グルメ", "ものづくり"],
     "staySupport": ["1night"],
     "appeal": [
@@ -444,10 +437,6 @@
       "名古屋城本丸御殿の復元は、日本の宮殿建築の精巧さを現代の技術で体験できる。",
       "大須商店街のカオスな雑多さは、東京の秋葉原とは異なる独自の熱量がある。"
     ],
-    "gateway": {
-      "rail": { "station": "名古屋駅" },
-      "bus": { "terminal": "名古屋" }
-    },
     "affiliate": { "hotelArea": "名古屋" }
   },
   {
@@ -457,7 +446,10 @@
     "region": "中部",
     "departures": ["大阪"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "金沢駅", "air": null },
     "themes": ["工芸", "兼六園", "海の幸"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -465,10 +457,6 @@
       "近江町市場の活気は、日本海の食文化の豊かさをそのまま反映している。",
       "兼六園の雪吊りは、美しさと機能性が融合した日本的な冬の風景だ。"
     ],
-    "gateway": {
-      "rail": { "station": "金沢駅" },
-      "bus": { "terminal": "金沢" }
-    },
     "affiliate": { "hotelArea": "金沢" }
   },
   {
@@ -478,7 +466,10 @@
     "region": "中国",
     "departures": ["大阪"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "広島駅", "air": null },
     "themes": ["平和", "牡蠣", "宮島"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -486,10 +477,6 @@
       "宮島の鹿は奈良の鹿より少なく、神聖な空気の中にひっそりと存在する。",
       "広島の牡蠣は量・質ともに圧倒的で、季節を合わせて食べに来る価値がある。"
     ],
-    "gateway": {
-      "rail": { "station": "広島駅" },
-      "bus": { "terminal": "広島" }
-    },
     "affiliate": { "hotelArea": "広島" }
   },
   {
@@ -499,7 +486,10 @@
     "region": "関東",
     "departures": ["大阪"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "東京駅", "air": null },
     "themes": ["都市", "グルメ", "エンタメ"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -507,10 +497,6 @@
       "新宿と谷根千が同じ都市にあることが、東京のスケールと多様性を証明する。",
       "築地外市場の朝は観光地でありながら、本物の仕事の場でもある。"
     ],
-    "gateway": {
-      "rail": { "station": "東京駅" },
-      "bus": { "terminal": "東京" }
-    },
     "affiliate": { "hotelArea": "東京" }
   },
   {
@@ -520,7 +506,10 @@
     "region": "九州",
     "departures": ["大阪"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "博多駅", "air": null },
     "themes": ["ラーメン", "屋台", "活気"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -528,10 +517,6 @@
       "中洲屋台は夜の博多に溶け込む独特の食文化で、屋外席の解放感が独自だ。",
       "天神の地下街は雨の日でも完結する都市設計で、福岡の都市力を感じる。"
     ],
-    "gateway": {
-      "rail": { "station": "博多駅" },
-      "bus": { "terminal": "福岡" }
-    },
     "affiliate": { "hotelArea": "福岡" }
   },
   {
@@ -541,7 +526,10 @@
     "region": "北海道",
     "departures": ["大阪"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "CTS" },
     "themes": ["グルメ", "自然", "雪まつり"],
     "staySupport": ["2night"],
     "appeal": [
@@ -549,9 +537,6 @@
       "狸小路から時計台まで歩ける街のコンパクトさが、観光を楽にする。",
       "夏の北海道は本州の夏の概念を覆す。湿度が低く、空が広い。"
     ],
-    "gateway": {
-      "air": { "code": "CTS" }
-    },
     "affiliate": { "hotelArea": "札幌" }
   },
   {
@@ -561,7 +546,10 @@
     "region": "沖縄",
     "departures": ["大阪"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "OKA" },
     "themes": ["海", "リゾート", "琉球文化"],
     "staySupport": ["2night"],
     "appeal": [
@@ -569,9 +557,6 @@
       "首里城は琉球王国の建築様式が本土とは異なり、独立した文化の重みがある。",
       "沖縄の食文化はゴーヤーチャンプルーだけでなく、ソーキそばの奥深さも発見がある。"
     ],
-    "gateway": {
-      "air": { "code": "OKA" }
-    },
     "affiliate": { "hotelArea": "沖縄" }
   },
   {
@@ -581,7 +566,10 @@
     "region": "沖縄",
     "departures": ["大阪"],
     "distanceLevel": 5,
-    "budgetLevel": 5,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": true,
+    "gateways": { "rail": null, "air": "ISG" },
     "themes": ["離島", "サンゴ礁", "星空"],
     "staySupport": ["2night"],
     "appeal": [
@@ -589,10 +577,6 @@
       "夜の星空は、光害のない島でしか見られない天の川の密度がある。",
       "竹富島へのフェリーで15分。時間の流れがさらにもう一段階ゆっくりになる。"
     ],
-    "gateway": {
-      "air": { "code": "ISG" },
-      "requiresLocalTransport": true
-    },
     "affiliate": { "hotelArea": "石垣島" }
   },
   {
@@ -602,7 +586,10 @@
     "region": "中部",
     "departures": ["名古屋"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "岐阜駅", "air": null },
     "themes": ["城", "長良川", "鵜飼"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -610,9 +597,6 @@
       "長良川の鵜飼は夏の夜、篝火と鵜匠の技が川面に映える非日常の体験だ。",
       "名古屋から20分の距離だが、街のスケールと温度感は明確に別の都市だ。"
     ],
-    "gateway": {
-      "rail": { "station": "岐阜駅" }
-    },
     "affiliate": { "hotelArea": "岐阜" }
   },
   {
@@ -622,7 +606,10 @@
     "region": "近畿",
     "departures": ["名古屋"],
     "distanceLevel": 1,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "京都駅", "air": null },
     "themes": ["寺社", "歴史", "町家"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -630,9 +617,6 @@
       "伏見稲荷の千本鳥居は朝早い時間に行くと、観光地の顔が消えて信仰の場になる。",
       "錦市場は短い通路に京都の食文化が凝縮されており、歩くだけで勉強になる。"
     ],
-    "gateway": {
-      "rail": { "station": "京都駅" }
-    },
     "affiliate": { "hotelArea": "京都" }
   },
   {
@@ -642,7 +626,10 @@
     "region": "中部",
     "departures": ["名古屋"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "伊勢市駅", "air": null },
     "themes": ["神宮", "おかげ横丁", "海の幸"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -650,9 +637,6 @@
       "おかげ横丁は観光地だが、伊勢うどんと赤福を食べる場所としての機能は本物だ。",
       "志摩の海産物は伊勢海老・真珠・牡蠣が揃う、日本の漁業文化の縮図だ。"
     ],
-    "gateway": {
-      "rail": { "station": "伊勢市駅" }
-    },
     "affiliate": { "hotelArea": "伊勢" }
   },
   {
@@ -662,7 +646,10 @@
     "region": "近畿",
     "departures": ["名古屋"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "新大阪駅", "air": null },
     "themes": ["グルメ", "エンタメ", "下町"],
     "staySupport": ["1night"],
     "appeal": [
@@ -670,10 +657,6 @@
       "通天閣周辺の新世界は、昭和の大衆文化が色濃く残るエリアだ。",
       "梅田の地下街は迷路のようだが、迷いながらでも面白い店に出会える。"
     ],
-    "gateway": {
-      "rail": { "station": "新大阪駅" },
-      "bus": { "terminal": "大阪" }
-    },
     "affiliate": { "hotelArea": "大阪" }
   },
   {
@@ -683,7 +666,10 @@
     "region": "中部",
     "departures": ["名古屋"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "金沢駅", "air": null },
     "themes": ["工芸", "兼六園", "海の幸"],
     "staySupport": ["1night"],
     "appeal": [
@@ -691,9 +677,6 @@
       "21世紀美術館は「見に行く」より「中を歩く」美術館として機能している。",
       "金沢の地酒は海産物と合わせると、料理の余韻が格段に長くなる。"
     ],
-    "gateway": {
-      "rail": { "station": "金沢駅" }
-    },
     "affiliate": { "hotelArea": "金沢" }
   },
   {
@@ -703,7 +686,10 @@
     "region": "関東",
     "departures": ["名古屋"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "東京駅", "air": null },
     "themes": ["都市", "グルメ", "エンタメ"],
     "staySupport": ["1night"],
     "appeal": [
@@ -711,10 +697,6 @@
       "渋谷スクランブルは何度見ても現代都市の密度として新鮮な驚きがある。",
       "上野・浅草エリアは下町の文脈で東京の原点を体験できる地区だ。"
     ],
-    "gateway": {
-      "rail": { "station": "東京駅" },
-      "bus": { "terminal": "東京" }
-    },
     "affiliate": { "hotelArea": "東京" }
   },
   {
@@ -724,7 +706,10 @@
     "region": "中国",
     "departures": ["名古屋"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "広島駅", "air": null },
     "themes": ["平和", "牡蠣", "宮島"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -732,9 +717,6 @@
       "お好み焼きは広島風を本場で食べると、鉄板の前で食べる文化の理由がわかる。",
       "平和記念資料館は訪れるべき場所だが、入館前の心の準備をしてから行くべきだ。"
     ],
-    "gateway": {
-      "rail": { "station": "広島駅" }
-    },
     "affiliate": { "hotelArea": "広島" }
   },
   {
@@ -744,7 +726,10 @@
     "region": "東北",
     "departures": ["名古屋"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "仙台駅", "air": null },
     "themes": ["城下町", "海鮮", "杜の都"],
     "staySupport": ["1night"],
     "appeal": [
@@ -752,9 +737,6 @@
       "七夕まつりの飾りは、紙と竹だけでここまで華やかになるかという巧みさがある。",
       "青葉山から見る仙台市街は「杜の都」の異名の意味を地図で理解させてくれる。"
     ],
-    "gateway": {
-      "rail": { "station": "仙台駅" }
-    },
     "affiliate": { "hotelArea": "仙台" }
   },
   {
@@ -764,7 +746,10 @@
     "region": "九州",
     "departures": ["名古屋"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "博多駅", "air": null },
     "themes": ["ラーメン", "屋台", "活気"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -772,10 +757,6 @@
       "博多と天神が徒歩圏内にある地理的な集約が、福岡の使いやすさを生んでいる。",
       "屋台でラーメンを食べながら隣の見知らぬ人と話す経験は、博多でしか起きにくい。"
     ],
-    "gateway": {
-      "rail": { "station": "博多駅" },
-      "bus": { "terminal": "福岡" }
-    },
     "affiliate": { "hotelArea": "福岡" }
   },
   {
@@ -785,7 +766,10 @@
     "region": "北海道",
     "departures": ["名古屋"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "CTS" },
     "themes": ["グルメ", "自然", "雪まつり"],
     "staySupport": ["2night"],
     "appeal": [
@@ -793,9 +777,6 @@
       "すすきのの夜は、北海道の食材とクラフトビールの組み合わせが際立つ。",
       "円山公園周辺の住宅街は、北海道の都市生活の豊かさを静かに見せてくれる。"
     ],
-    "gateway": {
-      "air": { "code": "CTS" }
-    },
     "affiliate": { "hotelArea": "札幌" }
   },
   {
@@ -805,7 +786,10 @@
     "region": "沖縄",
     "departures": ["名古屋"],
     "distanceLevel": 5,
-    "budgetLevel": 5,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "OKA" },
     "themes": ["海", "リゾート", "琉球文化"],
     "staySupport": ["2night"],
     "appeal": [
@@ -813,9 +797,6 @@
       "恩納村のビーチは開発と自然のバランスが保たれており、リゾートとして完成度が高い。",
       "泡盛は島ごとに銘柄が違い、飲み比べること自体が沖縄文化の体験になる。"
     ],
-    "gateway": {
-      "air": { "code": "OKA" }
-    },
     "affiliate": { "hotelArea": "沖縄" }
   },
   {
@@ -825,7 +806,10 @@
     "region": "九州",
     "departures": ["福岡"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "佐賀駅", "air": null },
     "themes": ["陶芸", "バルーン", "温泉"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -833,9 +817,6 @@
       "吉野ヶ里遺跡は教科書で見た弥生時代を、風の中で体感できる場所だ。",
       "嬉野温泉のお茶は、入浴後の一杯が単なる飲み物を超えた体験になる。"
     ],
-    "gateway": {
-      "rail": { "station": "佐賀駅" }
-    },
     "affiliate": { "hotelArea": "佐賀" }
   },
   {
@@ -845,7 +826,10 @@
     "region": "九州",
     "departures": ["福岡"],
     "distanceLevel": 1,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "熊本駅", "air": null },
     "themes": ["城", "阿蘇", "グルメ"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -853,9 +837,6 @@
       "阿蘇の草千里は、カルデラの規模が視野に収まらないほど広大だ。",
       "馬刺しは熊本で食べると品質と価格のバランスが圧倒的に地元有利だ。"
     ],
-    "gateway": {
-      "rail": { "station": "熊本駅" }
-    },
     "affiliate": { "hotelArea": "熊本" }
   },
   {
@@ -865,7 +846,10 @@
     "region": "九州",
     "departures": ["福岡"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "長崎駅", "air": null },
     "themes": ["坂の街", "異国情緒", "歴史"],
     "staySupport": ["1night"],
     "appeal": [
@@ -873,9 +857,6 @@
       "中華街・出島・グラバー園が徒歩圏内にある歴史の密度は九州随一だ。",
       "ちゃんぽんは長崎で食べると、他の都市のそれとは全く別の食べ物だとわかる。"
     ],
-    "gateway": {
-      "rail": { "station": "長崎駅" }
-    },
     "affiliate": { "hotelArea": "長崎" }
   },
   {
@@ -885,7 +866,10 @@
     "region": "九州",
     "departures": ["福岡"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "別府駅", "air": null },
     "themes": ["温泉", "地獄めぐり", "海の幸"],
     "staySupport": ["1night"],
     "appeal": [
@@ -893,9 +877,6 @@
       "地獄めぐりの地熱の色は、自然が作り出した絵の具のような鮮烈さがある。",
       "関あじ・関さばは別府湾で獲れる高級魚で、漁師町の食堂で食べると価値が倍になる。"
     ],
-    "gateway": {
-      "rail": { "station": "別府駅" }
-    },
     "affiliate": { "hotelArea": "別府" }
   },
   {
@@ -905,7 +886,10 @@
     "region": "九州",
     "departures": ["福岡"],
     "distanceLevel": 2,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "鹿児島中央駅", "air": null },
     "themes": ["桜島", "温泉", "薩摩"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -913,9 +897,6 @@
       "黒豚・黒牛・地鶏・焼酎。九州の食材が最も集まる都市は鹿児島かもしれない。",
       "天文館の夜は、九州の最南端の大都市としての繁華街の活気がある。"
     ],
-    "gateway": {
-      "rail": { "station": "鹿児島中央駅" }
-    },
     "affiliate": { "hotelArea": "鹿児島" }
   },
   {
@@ -925,7 +906,10 @@
     "region": "九州",
     "departures": ["福岡"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "宮崎駅", "air": "KMI" },
     "themes": ["海", "神話", "地鶏"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -933,10 +917,6 @@
       "宮崎地鶏の炭火焼きは、シンプルな調理が素材の品質を証明している。",
       "日向岬の「馬ヶ背」は垂直の断崖と青い海のコントラストが圧倒的だ。"
     ],
-    "gateway": {
-      "rail": { "station": "宮崎駅" },
-      "air": { "code": "KMI" }
-    },
     "affiliate": { "hotelArea": "宮崎" }
   },
   {
@@ -946,7 +926,10 @@
     "region": "中国",
     "departures": ["福岡"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "広島駅", "air": null },
     "themes": ["平和", "牡蠣", "宮島"],
     "staySupport": ["1night"],
     "appeal": [
@@ -954,9 +937,6 @@
       "平和記念公園は静謐な場所で、人が多くても喧噪が起きない特別な空気がある。",
       "宮島の厳島神社は干潮と満潮で表情がまったく変わるため、時間を選ぶ楽しさがある。"
     ],
-    "gateway": {
-      "rail": { "station": "広島駅" }
-    },
     "affiliate": { "hotelArea": "広島" }
   },
   {
@@ -966,7 +946,10 @@
     "region": "近畿",
     "departures": ["福岡"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "新大阪駅", "air": null },
     "themes": ["グルメ", "エンタメ", "下町"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -974,10 +957,6 @@
       "難波・心斎橋のエリアは一日いても全部回れない情報量がある。",
       "黒門市場の活気は観光地化しているが、食材の品質は本物だ。"
     ],
-    "gateway": {
-      "rail": { "station": "新大阪駅" },
-      "bus": { "terminal": "大阪" }
-    },
     "affiliate": { "hotelArea": "大阪" }
   },
   {
@@ -987,7 +966,10 @@
     "region": "関東",
     "departures": ["福岡"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": true,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "東京駅", "air": "TYO" },
     "themes": ["都市", "グルメ", "エンタメ"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -995,10 +977,6 @@
       "六本木・銀座・下北沢が同じ都市にある振れ幅が、東京の奇妙さを生んでいる。",
       "豊洲市場の早朝競りは、日本の食流通の最前線を間近で見られる。"
     ],
-    "gateway": {
-      "rail": { "station": "東京駅" },
-      "air": { "code": "TYO" }
-    },
     "affiliate": { "hotelArea": "東京" }
   },
   {
@@ -1008,7 +986,10 @@
     "region": "沖縄",
     "departures": ["福岡"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "OKA" },
     "themes": ["海", "リゾート", "琉球文化"],
     "staySupport": ["2night"],
     "appeal": [
@@ -1016,9 +997,6 @@
       "本部半島の美ら海水族館は、水槽の大きさより展示の密度に驚く。",
       "沖縄本島北部のやんばるは、観光地化されていない原生林の静けさがある。"
     ],
-    "gateway": {
-      "air": { "code": "OKA" }
-    },
     "affiliate": { "hotelArea": "沖縄" }
   },
   {
@@ -1028,7 +1006,10 @@
     "region": "北海道",
     "departures": ["福岡"],
     "distanceLevel": 5,
-    "budgetLevel": 5,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "CTS" },
     "themes": ["グルメ", "自然", "雪まつり"],
     "staySupport": ["2night"],
     "appeal": [
@@ -1036,9 +1017,6 @@
       "北海道の食材は量・質ともに別格で、特に海産物は旅の満足度に直結する。",
       "大通公園のビアガーデンは夏の北海道の開放感を最もシンプルに体験できる場所だ。"
     ],
-    "gateway": {
-      "air": { "code": "CTS" }
-    },
     "affiliate": { "hotelArea": "札幌" }
   },
   {
@@ -1048,7 +1026,10 @@
     "region": "北海道",
     "departures": ["札幌"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "小樽駅", "air": null },
     "themes": ["運河", "海の幸", "ガラス工芸"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -1056,9 +1037,6 @@
       "三角市場の海鮮丼は、朝の新鮮さと価格のバランスが道内でも屈指だ。",
       "札幌から30分の距離感が、日帰りの選択肢として使いやすい街を作っている。"
     ],
-    "gateway": {
-      "rail": { "station": "小樽駅" }
-    },
     "affiliate": { "hotelArea": "小樽" }
   },
   {
@@ -1068,7 +1046,10 @@
     "region": "北海道",
     "departures": ["札幌"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "旭川駅", "air": null },
     "themes": ["動物園", "ラーメン", "自然"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1076,9 +1057,6 @@
       "旭川ラーメンは醤油ベースの澄んだスープが特徴で、札幌とは別系統の完成度がある。",
       "美瑛・富良野への起点として使うと、北海道の風景の多様性が一度の旅で体験できる。"
     ],
-    "gateway": {
-      "rail": { "station": "旭川駅" }
-    },
     "affiliate": { "hotelArea": "旭川" }
   },
   {
@@ -1088,7 +1066,10 @@
     "region": "北海道",
     "departures": ["札幌"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": true,
+    "gateways": { "rail": "富良野駅", "air": null },
     "themes": ["ラベンダー", "農場", "スキー"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1096,10 +1077,6 @@
       "美瑛の丘は写真で見た北海道の原風景そのもので、現実感が薄いほどに美しい。",
       "冬のニセコや富良野のパウダースノーは、世界的なスキーリゾートとして通用する品質だ。"
     ],
-    "gateway": {
-      "rail": { "station": "富良野駅" },
-      "requiresLocalTransport": true
-    },
     "affiliate": { "hotelArea": "富良野" }
   },
   {
@@ -1109,7 +1086,10 @@
     "region": "北海道",
     "departures": ["札幌"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "釧路駅", "air": "KUH" },
     "themes": ["湿原", "丹頂鶴", "炉端焼き"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -1117,10 +1097,6 @@
       "冬に飛来する丹頂鶴は、雪の中に佇む姿が絵画的な完成度を持っている。",
       "釧路の炉端焼きは道内でも別格で、北海道の海産物文化の精華が一か所に集まる。"
     ],
-    "gateway": {
-      "rail": { "station": "釧路駅" },
-      "air": { "code": "KUH" }
-    },
     "affiliate": { "hotelArea": "釧路" }
   },
   {
@@ -1130,7 +1106,10 @@
     "region": "北海道",
     "departures": ["札幌"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "函館駅", "air": null },
     "themes": ["夜景", "朝市", "洋館"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -1138,9 +1117,6 @@
       "函館朝市は早朝から活気があり、北海道の海産物を最も身近に体験できる市場だ。",
       "元町の洋館街は明治・大正の建築が現役で使われており、北の異国情緒がある。"
     ],
-    "gateway": {
-      "rail": { "station": "函館駅" }
-    },
     "affiliate": { "hotelArea": "函館" }
   },
   {
@@ -1150,7 +1126,10 @@
     "region": "関東",
     "departures": ["札幌"],
     "distanceLevel": 3,
-    "budgetLevel": 4,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "TYO" },
     "themes": ["都市", "グルメ", "エンタメ"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -1158,9 +1137,6 @@
       "東京の密度は北海道の広大さとの対比で、より強烈な印象として残る。",
       "築地・豊洲・浅草を起点にすると、東京の食と歴史が効率よく体験できる。"
     ],
-    "gateway": {
-      "air": { "code": "TYO" }
-    },
     "affiliate": { "hotelArea": "東京" }
   },
   {
@@ -1170,7 +1146,10 @@
     "region": "近畿",
     "departures": ["札幌"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "OSA" },
     "themes": ["グルメ", "エンタメ", "下町"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -1178,9 +1157,6 @@
       "道頓堀の夜は大阪の消費文化の熱量が最も凝縮した時間だ。",
       "心斎橋から難波まで歩くと、大阪の商業的なDNAが路地に透けて見える。"
     ],
-    "gateway": {
-      "air": { "code": "OSA" }
-    },
     "affiliate": { "hotelArea": "大阪" }
   },
   {
@@ -1190,7 +1166,10 @@
     "region": "九州",
     "departures": ["札幌"],
     "distanceLevel": 5,
-    "budgetLevel": 5,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "FUK" },
     "themes": ["ラーメン", "屋台", "活気"],
     "staySupport": ["2night"],
     "appeal": [
@@ -1198,9 +1177,6 @@
       "博多屋台の気軽さと質の高さは、札幌のすすきのとは全く異なる夜の文化だ。",
       "天神と博多が近い福岡の街構造は、初めての旅先として動きやすい設計だ。"
     ],
-    "gateway": {
-      "air": { "code": "FUK" }
-    },
     "affiliate": { "hotelArea": "福岡" }
   },
   {
@@ -1210,7 +1186,10 @@
     "region": "沖縄",
     "departures": ["札幌"],
     "distanceLevel": 5,
-    "budgetLevel": 5,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "OKA" },
     "themes": ["海", "リゾート", "琉球文化"],
     "staySupport": ["2night"],
     "appeal": [
@@ -1218,9 +1197,6 @@
       "雪の札幌を朝に発って、午後には青い海の沖縄に立っている落差は格別だ。",
       "沖縄の砂浜は北海道の砂浜とは砂の細かさも色も海水温も別次元だ。"
     ],
-    "gateway": {
-      "air": { "code": "OKA" }
-    },
     "affiliate": { "hotelArea": "沖縄" }
   },
   {
@@ -1230,7 +1206,10 @@
     "region": "東北",
     "departures": ["仙台"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "松島海岸駅", "air": null },
     "themes": ["日本三景", "海", "牡蠣"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -1238,9 +1217,6 @@
       "松島の牡蠣は仙台港の質に並ぶレベルで、殻付きを炭火で焼いて食べると最高だ。",
       "瑞巌寺の杉並木は、寺社林として東北最大級の存在感がある。"
     ],
-    "gateway": {
-      "rail": { "station": "松島海岸駅" }
-    },
     "affiliate": { "hotelArea": "松島" }
   },
   {
@@ -1250,7 +1226,10 @@
     "region": "東北",
     "departures": ["仙台"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "山形駅", "air": null },
     "themes": ["山寺", "温泉", "芋煮"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -1258,9 +1237,6 @@
       "山形の冬の芋煮会は、川原でやる鍋文化として東北の食の共同体意識を表している。",
       "米沢牛は上質な肉の甘さという点で、他の和牛と比べても独自の評価を持つ。"
     ],
-    "gateway": {
-      "rail": { "station": "山形駅" }
-    },
     "affiliate": { "hotelArea": "山形" }
   },
   {
@@ -1270,7 +1246,10 @@
     "region": "東北",
     "departures": ["仙台"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "盛岡駅", "air": null },
     "themes": ["わんこそば", "冷麺", "城跡"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1278,9 +1257,6 @@
       "岩手山を望む盛岡の市街地は、規模の割に生活密度が高く落ち着いた雰囲気だ。",
       "盛岡城跡の石垣は、東北の城としては珍しく精緻な積み方で残っている。"
     ],
-    "gateway": {
-      "rail": { "station": "盛岡駅" }
-    },
     "affiliate": { "hotelArea": "盛岡" }
   },
   {
@@ -1290,7 +1266,10 @@
     "region": "関東",
     "departures": ["仙台"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "東京駅", "air": null },
     "themes": ["都市", "グルメ", "エンタメ"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1298,10 +1277,6 @@
       "秋葉原・上野・浅草は仙台人には異文化体験に近い刺激量がある。",
       "新宿の夜は、日本最大規模の繁華街の正直な熱量がそこにある。"
     ],
-    "gateway": {
-      "rail": { "station": "東京駅" },
-      "bus": { "terminal": "東京" }
-    },
     "affiliate": { "hotelArea": "東京" }
   },
   {
@@ -1311,7 +1286,10 @@
     "region": "中部",
     "departures": ["仙台"],
     "distanceLevel": 3,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "新潟駅", "air": null },
     "themes": ["コシヒカリ", "日本酒", "海の幸"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1319,9 +1297,6 @@
       "日本海側の冬の新潟は、雪と海と地酒の組み合わせが旅情を最大化する。",
       "萬代橋と信濃川の夕景は、港湾都市の落ち着いた美しさを持っている。"
     ],
-    "gateway": {
-      "rail": { "station": "新潟駅" }
-    },
     "affiliate": { "hotelArea": "新潟" }
   },
   {
@@ -1331,7 +1306,10 @@
     "region": "中部",
     "departures": ["仙台"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "金沢駅", "air": null },
     "themes": ["工芸", "兼六園", "海の幸"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -1339,9 +1317,6 @@
       "金沢21世紀美術館は無料エリアだけでも十分に現代アートの空気が体験できる。",
       "片町・香林坊の繁華街は、金沢の都市としての層の厚さを夜に感じさせる。"
     ],
-    "gateway": {
-      "rail": { "station": "金沢駅" }
-    },
     "affiliate": { "hotelArea": "金沢" }
   },
   {
@@ -1351,7 +1326,10 @@
     "region": "近畿",
     "departures": ["仙台"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "新大阪駅", "air": null },
     "themes": ["グルメ", "エンタメ", "下町"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -1359,9 +1337,6 @@
       "たこ焼き・串カツ・お好み焼きを梯子すると、粉もの文化の奥深さに気づく。",
       "大阪城公園は広く、歴史と現代の公共空間が違和感なく共存している。"
     ],
-    "gateway": {
-      "rail": { "station": "新大阪駅" }
-    },
     "affiliate": { "hotelArea": "大阪" }
   },
   {
@@ -1371,7 +1346,10 @@
     "region": "九州",
     "departures": ["仙台"],
     "distanceLevel": 5,
-    "budgetLevel": 5,
+    "hasJR": true,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "博多駅", "air": "FUK" },
     "themes": ["ラーメン", "屋台", "活気"],
     "staySupport": ["2night"],
     "appeal": [
@@ -1379,10 +1357,6 @@
       "博多の屋台は冬の寒い夜でも外で食べることで成立する文化的な強さがある。",
       "太宰府天満宮は梅の季節に来ると、九州の春の始まりが鮮やかに体験できる。"
     ],
-    "gateway": {
-      "rail": { "station": "博多駅" },
-      "air": { "code": "FUK" }
-    },
     "affiliate": { "hotelArea": "福岡" }
   },
   {
@@ -1392,7 +1366,10 @@
     "region": "中国",
     "departures": ["広島"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "宮島口駅", "air": null },
     "themes": ["厳島神社", "世界遺産", "鹿"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -1400,10 +1377,6 @@
       "島内の鹿は奈良より数が少なく、観光地の中に野生の気配が残っている。",
       "もみじ饅頭は土産品だが、宮島で焼きたてを食べると別の食べ物になる。"
     ],
-    "gateway": {
-      "rail": { "station": "宮島口駅" },
-      "ferry": { "url": "https://www.jr-miyajimaferry.co.jp/" }
-    },
     "affiliate": { "hotelArea": "宮島" }
   },
   {
@@ -1413,7 +1386,10 @@
     "region": "中国",
     "departures": ["広島"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "尾道駅", "air": null },
     "themes": ["坂の街", "映画の街", "瀬戸内"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -1421,9 +1397,6 @@
       "しまなみ海道の起点として使うと、橋と島と海の連続する景観が広がる。",
       "映画監督・小津安二郎と大林宣彦が愛した街という事実が、その風情を物語る。"
     ],
-    "gateway": {
-      "rail": { "station": "尾道駅" }
-    },
     "affiliate": { "hotelArea": "尾道" }
   },
   {
@@ -1433,7 +1406,10 @@
     "region": "中国",
     "departures": ["広島"],
     "distanceLevel": 1,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "岡山駅", "air": null },
     "themes": ["後楽園", "倉敷", "桃"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -1441,9 +1417,6 @@
       "倉敷の美観地区は川沿いの白壁が観光地として完成されており、歩く楽しさがある。",
       "岡山の白桃とマスカットは、この土地の温暖な気候が生む品質の代表格だ。"
     ],
-    "gateway": {
-      "rail": { "station": "岡山駅" }
-    },
     "affiliate": { "hotelArea": "岡山" }
   },
   {
@@ -1453,7 +1426,10 @@
     "region": "四国",
     "departures": ["広島"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": false,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": null },
     "themes": ["道後温泉", "松山城", "坊っちゃん"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1461,9 +1437,6 @@
       "松山城は山の上にあり、ロープウェイで登ると市街地と瀬戸内海が一望できる。",
       "坊っちゃん列車が今も走る松山は、明治の文学と現代が静かに共存している。"
     ],
-    "gateway": {
-      "ferry": { "url": "https://www.setonaikaikisen.co.jp/" }
-    },
     "affiliate": { "hotelArea": "松山" }
   },
   {
@@ -1473,7 +1446,10 @@
     "region": "近畿",
     "departures": ["広島"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "新大阪駅", "air": null },
     "themes": ["グルメ", "エンタメ", "下町"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1481,10 +1457,6 @@
       "心斎橋の商店街は昔と今が混在した独特のアーケードで、歩くだけで時間が経つ。",
       "中之島の夜景は水都大阪の別名の意味を、光の反射で証明している。"
     ],
-    "gateway": {
-      "rail": { "station": "新大阪駅" },
-      "bus": { "terminal": "大阪" }
-    },
     "affiliate": { "hotelArea": "大阪" }
   },
   {
@@ -1494,7 +1466,10 @@
     "region": "九州",
     "departures": ["広島"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "博多駅", "air": null },
     "themes": ["ラーメン", "屋台", "活気"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1502,9 +1477,6 @@
       "中洲の屋台街と長浜のラーメン横丁は、博多の夜食文化の二大拠点だ。",
       "モツ鍋は博多の鍋文化の核心で、濃い出汁と野菜の組み合わせが完成されている。"
     ],
-    "gateway": {
-      "rail": { "station": "博多駅" }
-    },
     "affiliate": { "hotelArea": "福岡" }
   },
   {
@@ -1514,7 +1486,10 @@
     "region": "近畿",
     "departures": ["広島"],
     "distanceLevel": 2,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "京都駅", "air": null },
     "themes": ["寺社", "歴史", "町家"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -1522,9 +1497,6 @@
       "京都の老舗料亭は予約困難だが、近くの食堂でも京料理の文脈を体験できる。",
       "哲学の道の朝は観光地らしくなく、地元の人が散歩する日常の美しさがある。"
     ],
-    "gateway": {
-      "rail": { "station": "京都駅" }
-    },
     "affiliate": { "hotelArea": "京都" }
   },
   {
@@ -1534,7 +1506,10 @@
     "region": "中部",
     "departures": ["広島"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "名古屋駅", "air": null },
     "themes": ["城下町", "グルメ", "ものづくり"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1542,9 +1517,6 @@
       "名古屋めしの独自性は全国屈指で、味噌煮込みうどんと広島お好み焼きの対比が面白い。",
       "名古屋城の復元天守と金鯱は、徳川家の威信を現代に伝えるランドマークだ。"
     ],
-    "gateway": {
-      "rail": { "station": "名古屋駅" }
-    },
     "affiliate": { "hotelArea": "名古屋" }
   },
   {
@@ -1554,7 +1526,10 @@
     "region": "関東",
     "departures": ["広島"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "東京駅", "air": null },
     "themes": ["都市", "グルメ", "エンタメ"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -1562,10 +1537,6 @@
       "丸の内・銀座エリアは広島では体験できない商業の密度と歴史が共存している。",
       "東京のラーメン多様性は、博多・広島の地域ラーメンとは別の方向性で面白い。"
     ],
-    "gateway": {
-      "rail": { "station": "東京駅" },
-      "bus": { "terminal": "東京" }
-    },
     "affiliate": { "hotelArea": "東京" }
   },
   {
@@ -1575,7 +1546,10 @@
     "region": "沖縄",
     "departures": ["広島"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "OKA" },
     "themes": ["海", "リゾート", "琉球文化"],
     "staySupport": ["2night"],
     "appeal": [
@@ -1583,9 +1557,6 @@
       "沖縄の戦争遺跡は広島とは別の文脈の歴史を持ち、両方を訪れる旅には意味がある。",
       "ちんすこうと泡盛のセットは、沖縄土産の定番でありながら本場で食べると格別だ。"
     ],
-    "gateway": {
-      "air": { "code": "OKA" }
-    },
     "affiliate": { "hotelArea": "沖縄" }
   },
   {
@@ -1595,7 +1566,10 @@
     "region": "北海道",
     "departures": ["広島"],
     "distanceLevel": 5,
-    "budgetLevel": 5,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "CTS" },
     "themes": ["グルメ", "自然", "雪まつり"],
     "staySupport": ["2night"],
     "appeal": [
@@ -1603,9 +1577,6 @@
       "北海道の食材は広島のものとは産地の性質が全く異なり、食べ比べの旅になる。",
       "すすきのの規模は北日本最大級で、夜の賑わいが北海道の都市力を見せる。"
     ],
-    "gateway": {
-      "air": { "code": "CTS" }
-    },
     "affiliate": { "hotelArea": "札幌" }
   },
   {
@@ -1615,7 +1586,10 @@
     "region": "四国",
     "departures": ["高松"],
     "distanceLevel": 1,
-    "budgetLevel": 1,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "徳島駅", "air": null },
     "themes": ["阿波踊り", "鳴門", "すだち"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -1623,10 +1597,6 @@
       "阿波踊りは8月の徳島全体が会場になり、観客と踊り手の境界が消える祭りだ。",
       "すだちの香りは徳島の食文化の根底にあり、魚・鍋・うどんに万能に合う。"
     ],
-    "gateway": {
-      "rail": { "station": "徳島駅" },
-      "bus": { "terminal": "徳島" }
-    },
     "affiliate": { "hotelArea": "徳島" }
   },
   {
@@ -1636,7 +1606,10 @@
     "region": "中国",
     "departures": ["高松"],
     "distanceLevel": 1,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "岡山駅", "air": null },
     "themes": ["後楽園", "倉敷", "桃"],
     "staySupport": ["daytrip", "1night"],
     "appeal": [
@@ -1644,9 +1617,6 @@
       "倉敷美観地区の川と白壁は、讃岐の風景とはまったく異なる静謐さがある。",
       "後楽園は日本庭園の教科書的な美しさを持ち、縮景の技法がよくわかる。"
     ],
-    "gateway": {
-      "rail": { "station": "岡山駅" }
-    },
     "affiliate": { "hotelArea": "岡山" }
   },
   {
@@ -1656,7 +1626,10 @@
     "region": "四国",
     "departures": ["高松"],
     "distanceLevel": 1,
-    "budgetLevel": 2,
+    "hasJR": false,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": null },
     "themes": ["オリーブ", "醤油", "映画の舞台"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1664,9 +1637,6 @@
       "醤油蔵が今も現役で稼働しており、醤油の香りが島の風に溶けている。",
       "二十四の瞳の舞台として知られる海岸線は、昭和初期の四国の農村風景を今も持つ。"
     ],
-    "gateway": {
-      "ferry": { "url": "https://www.shikokuferry.com/" }
-    },
     "affiliate": { "hotelArea": "小豆島" }
   },
   {
@@ -1676,7 +1646,10 @@
     "region": "四国",
     "departures": ["高松"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "高知駅", "air": null },
     "themes": ["カツオ", "よさこい", "坂本龍馬"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1684,9 +1657,6 @@
       "ひろめ市場は地元の人も観光客も混在するフードコートで、高知の食が凝縮している。",
       "桂浜の波は荒く、太平洋の広さを龍馬像越しに感じる場所として唯一無二だ。"
     ],
-    "gateway": {
-      "rail": { "station": "高知駅" }
-    },
     "affiliate": { "hotelArea": "高知" }
   },
   {
@@ -1696,7 +1666,10 @@
     "region": "四国",
     "departures": ["高松"],
     "distanceLevel": 2,
-    "budgetLevel": 2,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "松山駅", "air": null },
     "themes": ["道後温泉", "松山城", "坊っちゃん"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1704,9 +1677,6 @@
       "道後温泉本館は国の重要文化財で、今も現役の温泉施設として機能している。",
       "松山は俳句の街でもあり、正岡子規ゆかりの地が市内に点在している。"
     ],
-    "gateway": {
-      "rail": { "station": "松山駅" }
-    },
     "affiliate": { "hotelArea": "松山" }
   },
   {
@@ -1716,7 +1686,10 @@
     "region": "近畿",
     "departures": ["高松"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "新大阪駅", "air": null },
     "themes": ["グルメ", "エンタメ", "下町"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1724,10 +1697,6 @@
       "大阪の食の振れ幅は讃岐とはまったく異なり、大衆から高級まで全部揃う。",
       "USJは非日常体験として完成されており、四国では体験できない規模のエンタメだ。"
     ],
-    "gateway": {
-      "rail": { "station": "新大阪駅" },
-      "bus": { "terminal": "大阪" }
-    },
     "affiliate": { "hotelArea": "大阪" }
   },
   {
@@ -1737,7 +1706,10 @@
     "region": "中国",
     "departures": ["高松"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "広島駅", "air": null },
     "themes": ["平和", "牡蠣", "宮島"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1745,9 +1717,6 @@
       "宮島は高松からの旅程に加えると、瀬戸内の島文化を両端から体験できる。",
       "広島風お好み焼きのそば入りは、高松のうどん文化とは全く異なる食の豊かさだ。"
     ],
-    "gateway": {
-      "rail": { "station": "広島駅" }
-    },
     "affiliate": { "hotelArea": "広島" }
   },
   {
@@ -1757,7 +1726,10 @@
     "region": "九州",
     "departures": ["高松"],
     "distanceLevel": 3,
-    "budgetLevel": 3,
+    "hasJR": true,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "博多駅", "air": "FUK" },
     "themes": ["ラーメン", "屋台", "活気"],
     "staySupport": ["1night"],
     "appeal": [
@@ -1765,10 +1737,6 @@
       "博多の食文化は香川の讃岐うどん文化とは対照的な濃さと量のある世界だ。",
       "福岡タワーからの夜景は、博多湾を含む九州最大都市の夜の広がりを見せる。"
     ],
-    "gateway": {
-      "air": { "code": "FUK" },
-      "rail": { "station": "博多駅" }
-    },
     "affiliate": { "hotelArea": "福岡" }
   },
   {
@@ -1778,7 +1746,10 @@
     "region": "関東",
     "departures": ["高松"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": true,
+    "hasAirport": false,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": "東京駅", "air": null },
     "themes": ["都市", "グルメ", "エンタメ"],
     "staySupport": ["1night", "2night"],
     "appeal": [
@@ -1786,9 +1757,6 @@
       "讃岐と東京のうどんを比べる楽しみは、四国出身者ならではの旅の視点だ。",
       "渋谷・原宿・表参道のエリアは、高松では体験できないトレンドの密度がある。"
     ],
-    "gateway": {
-      "rail": { "station": "東京駅" }
-    },
     "affiliate": { "hotelArea": "東京" }
   },
   {
@@ -1798,7 +1766,10 @@
     "region": "沖縄",
     "departures": ["高松"],
     "distanceLevel": 4,
-    "budgetLevel": 4,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "OKA" },
     "themes": ["海", "リゾート", "琉球文化"],
     "staySupport": ["2night"],
     "appeal": [
@@ -1806,9 +1777,6 @@
       "国際通りのアーケードは観光化されているが、路地を入ると本物の沖縄がある。",
       "沖縄の海は四国の海と同じ日本の海とは思えないほど透明度と色が違う。"
     ],
-    "gateway": {
-      "air": { "code": "OKA" }
-    },
     "affiliate": { "hotelArea": "沖縄" }
   },
   {
@@ -1818,7 +1786,10 @@
     "region": "北海道",
     "departures": ["高松"],
     "distanceLevel": 5,
-    "budgetLevel": 5,
+    "hasJR": false,
+    "hasAirport": true,
+    "requiresLocalTransport": false,
+    "gateways": { "rail": null, "air": "CTS" },
     "themes": ["グルメ", "自然", "雪まつり"],
     "staySupport": ["2night"],
     "appeal": [
@@ -1826,9 +1797,6 @@
       "北海道の食材と香川のうどんは、日本の食多様性を両端から体験できる対比だ。",
       "大通公園のビアガーデンの夏、雪まつりの冬、どちらも本州とは別の季節感がある。"
     ],
-    "gateway": {
-      "air": { "code": "CTS" }
-    },
     "affiliate": { "hotelArea": "札幌" }
   }
 ]
