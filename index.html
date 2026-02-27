@@ -3,74 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>どこいこ？</title>
-  <link rel="stylesheet" href="style.css">
+  <title>どこいこ — 距離と予算で街を引く</title>
+  <meta name="description" content="距離と予算を選ぶだけで、次の旅先を1都市提案します。交通から宿泊まで一画面で完結。">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="header-inner">
-      <h1 class="site-title">どこ行こ？</h1>
-      <p class="site-tagline">知らない街と出会いませんか？</p>
+      <a class="site-logo" href="./index.html">どこいこ</a>
+      <nav class="site-nav">
+        <a href="./pages/about.html">About</a>
+        <a href="./pages/privacy.html">プライバシー</a>
+        <a href="./pages/disclaimer.html">免責</a>
+      </nav>
     </div>
   </header>
 
-  <main>
+  <main class="main">
+    <div class="container">
 
-    <div class="search-card">
+      <section class="hero">
+        <h1 class="hero-title">どこ行こうか、迷っているなら。</h1>
+        <p class="hero-sub">距離と予算を選ぶと、1つの街を提案します。</p>
+      </section>
 
-      <!-- 距離を選ぶ -->
-      <div class="field-block">
-        <p class="field-label">どのくらい遠い街へ？</p>
-        <div class="distance-row">
-          <button class="distance-btn" type="button" data-value="1">
-            <span class="d-stars">★</span>
-            <span class="d-label">近め</span>
-          </button>
-          <button class="distance-btn" type="button" data-value="2">
-            <span class="d-stars">★★</span>
-            <span class="d-label">日帰り</span>
-          </button>
-          <button class="distance-btn" type="button" data-value="3">
-            <span class="d-stars">★★★</span>
-            <span class="d-label">少し遠め</span>
-          </button>
-          <button class="distance-btn" type="button" data-value="4">
-            <span class="d-stars">★★★★</span>
-            <span class="d-label">遠い</span>
-          </button>
-          <button class="distance-btn" type="button" data-value="5">
-            <span class="d-stars">★★★★★</span>
-            <span class="d-label">かなり遠い</span>
-          </button>
-        </div>
-      </div>
+      <section class="controls">
 
-      <hr class="card-divider">
-
-      <!-- 地方フィルタ -->
-      <div class="field-block">
-        <p class="field-label">地方</p>
-        <div class="region-row">
-          <button class="region-btn active" type="button" data-value="全国">全国</button>
-          <button class="region-btn" type="button" data-value="北海道">北海道</button>
-          <button class="region-btn" type="button" data-value="東北">東北</button>
-          <button class="region-btn" type="button" data-value="関東">関東</button>
-          <button class="region-btn" type="button" data-value="中部">中部</button>
-          <button class="region-btn" type="button" data-value="近畿">近畿</button>
-          <button class="region-btn" type="button" data-value="中国">中国</button>
-          <button class="region-btn" type="button" data-value="四国">四国</button>
-          <button class="region-btn" type="button" data-value="九州">九州</button>
-        </div>
-      </div>
-
-      <hr class="card-divider">
-
-      <!-- オプション（縦並び） -->
-      <div class="form-stack">
-        <div class="form-row">
-          <label class="field-label" for="departure-select">出発地</label>
-          <select id="departure-select" class="form-input">
+        <!-- 出発地 -->
+        <div class="control-group">
+          <label class="control-label" for="departure-select">出発地</label>
+          <select id="departure-select" class="departure-select">
             <option value="東京">東京</option>
             <option value="大阪">大阪</option>
             <option value="名古屋">名古屋</option>
@@ -81,88 +44,72 @@
             <option value="高松">高松</option>
           </select>
         </div>
-        <div class="form-row">
-          <p class="field-label">出発日</p>
-          <div class="date-mode-row">
-            <label class="date-mode-btn active" data-mode="today">
-              <input type="radio" name="date-mode" value="today" checked>今日
-            </label>
-            <label class="date-mode-btn" data-mode="tomorrow">
-              <input type="radio" name="date-mode" value="tomorrow">明日
-            </label>
-            <label class="date-mode-btn" data-mode="custom">
-              <input type="radio" name="date-mode" value="custom">日付指定
-            </label>
-          </div>
-          <div id="date-custom-wrap" hidden>
-            <input type="date" id="date-input" class="form-input">
-          </div>
-        </div>
-        <div class="form-row">
-          <label class="field-label" for="time-select">出発時刻</label>
-          <select id="time-select" class="form-input">
-            <option value="06:00">06:00</option>
-            <option value="08:00">08:00</option>
-            <option value="10:00" selected>10:00</option>
-            <option value="12:00">12:00</option>
-            <option value="14:00">14:00</option>
-            <option value="16:00">16:00</option>
-            <option value="18:00">18:00</option>
-            <option value="20:00">20:00</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label class="field-label" for="stay-select">滞在タイプ</label>
-          <select id="stay-select" class="form-input">
-            <option value="daytrip">日帰り</option>
-            <option value="1night">1泊2日</option>
-            <option value="2night">2泊3日</option>
-          </select>
-        </div>
-        <div class="form-row budget-row">
-          <p class="field-label">予算（交通＋宿の目安）</p>
-          <div class="budget-chips">
-            <button class="budget-btn active" type="button" data-value="">指定なし</button>
-            <button class="budget-btn" type="button" data-value="~2">〜2万円</button>
-            <button class="budget-btn" type="button" data-value="2-5">2〜5万円</button>
-            <button class="budget-btn" type="button" data-value="5+">5万円以上</button>
-          </div>
-        </div>
-      </div>
 
-      <!-- 抽選ボタン -->
-      <div class="generate-row">
-        <button type="button" id="generatePlanBtn" class="generate-btn">
-          どこ行こ？
-        </button>
-      </div>
+        <!-- 距離 -->
+        <div class="control-group">
+          <label class="control-label">どのくらい遠い？</label>
+          <div class="btn-group">
+            <button class="sel-btn" data-group="distance" data-value="1">～1時間</button>
+            <button class="sel-btn" data-group="distance" data-value="2">～2時間</button>
+            <button class="sel-btn" data-group="distance" data-value="3">～4時間</button>
+            <button class="sel-btn" data-group="distance" data-value="4">～6時間</button>
+            <button class="sel-btn" data-group="distance" data-value="5">6時間以上</button>
+          </div>
+        </div>
+
+        <!-- 予算 -->
+        <div class="control-group">
+          <label class="control-label">予算（交通＋宿の目安）</label>
+          <div class="btn-group">
+            <button class="sel-btn" data-group="budget" data-value="1">～1.5万円</button>
+            <button class="sel-btn" data-group="budget" data-value="2">～3万円</button>
+            <button class="sel-btn" data-group="budget" data-value="3">～5万円</button>
+          </div>
+        </div>
+
+        <!-- 日付・時刻 -->
+        <div class="control-group">
+          <label class="control-label">いつ？</label>
+          <div class="datetime-row">
+            <div class="btn-group">
+              <button class="sel-btn active" data-group="date" data-mode="today">今日</button>
+              <button class="sel-btn" data-group="date" data-mode="tomorrow">明日</button>
+              <button class="sel-btn" data-group="date" data-mode="custom">日付指定</button>
+            </div>
+            <input type="date" id="date-input" class="date-input" hidden>
+            <select id="time-select" class="time-select" aria-label="出発時刻"></select>
+          </div>
+        </div>
+
+        <!-- エラー -->
+        <p id="form-error" class="form-error" hidden></p>
+
+        <!-- GOボタン -->
+        <button id="go-btn" class="go-btn">どこ行こ？</button>
+
+      </section>
+
+      <!-- 結果 -->
+      <section id="result" class="result" hidden>
+        <div id="result-inner"></div>
+        <button id="retry-btn" class="retry-btn">もう一度引く</button>
+      </section>
 
     </div>
-
-    <!-- 街リスト（手動選択フロー） -->
-    <div id="city-cards"></div>
-
-    <!-- プランブロック -->
-    <div id="plan"></div>
-
-    <!-- このサイトについて -->
-    <section class="about-section">
-      <h2 class="about-title">このサイトについて</h2>
-      <p class="about-text">「どこ行こ？」は、次の旅先を見つけるための情報サイトです。交通・宿泊リンクは各社の公式サイトに遷移します。料金・時刻は変動する場合があります。必ず公式情報をご確認ください。当サイトでは楽天アフィリエイトプログラムを使用しています。</p>
-    </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p class="footer-copy">© 2025 どこ行こ？</p>
+      <p>本サイトはアフィリエイト広告（楽天トラベル等）を利用しています。</p>
+      <p>交通・料金・運行情報は各社公式サイトでご確認ください。</p>
       <nav class="footer-nav">
-        <a href="privacy.html">プライバシーポリシー</a>
-        <a href="terms.html">免責事項</a>
+        <a href="./pages/about.html">About</a>
+        <a href="./pages/privacy.html">プライバシーポリシー</a>
+        <a href="./pages/disclaimer.html">免責事項</a>
       </nav>
     </div>
   </footer>
 
-  <script type="module" src="app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>

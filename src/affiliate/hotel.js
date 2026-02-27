@@ -1,20 +1,33 @@
+import { RAKUTEN_AFF_ID } from '../config/constants.js';
+
 /**
- * 楽天トラベル アフィリエイトURL生成
- * stayType が "1night" / "2night" のときのみ呼ばれる前提
- * prefectureベース検索で404を防ぐ
+ * 楽天トラベル + じゃらん 宿泊リンク
  */
-const RAKUTEN_AFF_ID = '511c83ed.aa0fc172.511c83ee.51331b19';
-
-export function buildRakutenUrl(destination, date, stayType) {
-  const nights = stayType === '2night' ? 2 : 1;
+export function buildHotelLinks(city, date) {
   const checkIn = resolveCheckIn(date);
-  const checkOut = addDays(checkIn, nights);
+  const checkOut = addDays(checkIn, 1);
+  const area = city.affiliate.hotelArea;
 
+  return [
+    {
+      type: 'rakuten',
+      label: '楽天トラベルで宿を探す',
+      url: buildRakutenUrl(area, checkIn, checkOut),
+    },
+    {
+      type: 'jalan',
+      label: 'じゃらんで宿を探す',
+      url: `https://www.jalan.net/uw/uwp2011/uww2011init.do?keyword=${encodeURIComponent(area)}`,
+    },
+  ];
+}
+
+function buildRakutenUrl(area, checkIn, checkOut) {
   const searchUrl =
     'https://travel.rakuten.co.jp/yado/search/' +
     `?f_nen1=${checkIn.y}&f_tuki1=${checkIn.m}&f_hi1=${checkIn.d}` +
     `&f_nen2=${checkOut.y}&f_tuki2=${checkOut.m}&f_hi2=${checkOut.d}` +
-    `&f_heya_su=1&f_otona_su=2&f_keyword=${encodeURIComponent(destination.prefecture)}`;
+    `&f_heya_su=1&f_otona_su=2&f_keyword=${encodeURIComponent(area)}`;
 
   return (
     `https://hb.afl.rakuten.co.jp/hgc/${RAKUTEN_AFF_ID}/` +
