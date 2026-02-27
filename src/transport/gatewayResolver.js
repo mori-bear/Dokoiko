@@ -1,43 +1,28 @@
-import { DEPARTURE_STATIONS, DEPARTURE_AIRPORT_CODES } from '../config/constants.js';
+import { DEPARTURE_STATIONS } from '../config/constants.js';
 
 /**
- * 出発地 × 目的地から gateway アイテムを解決する。
- * 存在するカテゴリのみ返す（嘘の交通手段を出さない）。
+ * 交通アイテムを解決する。
+ *
+ * 常に返すもの:
+ *   - yahoo: 経路検索（Yahoo乗換案内）
+ *   - jr: JR予約（出発地で振り分け）
+ *
+ * 条件付き:
+ *   - rental: requiresLocalTransport === true の都市のみ
  */
 export function resolveGateway(city, departure) {
   const { gateway } = city;
   const items = [];
 
-  if (gateway.rail) {
-    items.push({
-      type: 'rail',
-      from: DEPARTURE_STATIONS[departure] ?? departure,
-      to: gateway.rail.station,
-    });
-  }
+  const toStation = gateway.rail ? gateway.rail.station : city.name;
 
-  if (gateway.air) {
-    items.push({
-      type: 'air',
-      fromCode: (DEPARTURE_AIRPORT_CODES[departure] ?? 'TYO').toLowerCase(),
-      toCode: gateway.air.code.toLowerCase(),
-    });
-  }
+  items.push({
+    type: 'yahoo',
+    from: DEPARTURE_STATIONS[departure] ?? departure,
+    to: toStation,
+  });
 
-  if (gateway.bus) {
-    items.push({
-      type: 'bus',
-      from: DEPARTURE_STATIONS[departure] ?? departure,
-      to: gateway.bus.terminal,
-    });
-  }
-
-  if (gateway.ferry) {
-    items.push({
-      type: 'ferry',
-      url: gateway.ferry.url ?? null,
-    });
-  }
+  items.push({ type: 'jr', departure });
 
   if (gateway.requiresLocalTransport) {
     items.push({ type: 'rental' });

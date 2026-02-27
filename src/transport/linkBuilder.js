@@ -1,48 +1,32 @@
 /**
  * gatewayResolver が返したアイテムを { type, label, url } に変換する。
  *
- * 表示文言（絵文字なし）:
- *   鉄道で調べる / 航空券を探す / バスで調べる / フェリーで調べる / レンタカーを探す
+ * 表示文言:
+ *   経路を調べる / JRで予約する / レンタカーを探す
  *
- * Yahoo: date/time パラメータは付与しない（"今すぐ" 検索で十分）。
+ * JR予約サイトは出発地で振り分ける:
+ *   えきねっと  : 札幌・仙台・東京
+ *   e5489      : 名古屋・大阪・広島・高松
+ *   JR九州     : 福岡
  */
+
+const JR_EAST = ['札幌', '仙台', '東京'];
+const JR_WEST = ['名古屋', '大阪', '広島', '高松'];
+
 export function buildLink(item) {
   switch (item.type) {
-    case 'rail':
+    case 'yahoo':
       return {
-        type: 'rail',
-        label: '鉄道で調べる',
+        type: 'yahoo',
+        label: '経路を調べる',
         url:
           'https://transit.yahoo.co.jp/search/result' +
           `?from=${encodeURIComponent(item.from)}` +
-          `&to=${encodeURIComponent(item.to)}` +
-          '&type=1&exp=1',
+          `&to=${encodeURIComponent(item.to)}`,
       };
 
-    case 'air':
-      return {
-        type: 'air',
-        label: '航空券を探す',
-        url: `https://www.skyscanner.jp/transport/flights/${item.fromCode}/${item.toCode}/`,
-      };
-
-    case 'bus':
-      return {
-        type: 'bus',
-        label: 'バスで調べる',
-        url:
-          'https://transit.yahoo.co.jp/search/result' +
-          `?from=${encodeURIComponent(item.from)}` +
-          `&to=${encodeURIComponent(item.to)}` +
-          '&type=4',
-      };
-
-    case 'ferry':
-      return {
-        type: 'ferry',
-        label: 'フェリーで調べる',
-        url: item.url,
-      };
+    case 'jr':
+      return buildJrLink(item.departure);
 
     case 'rental':
       return {
@@ -54,4 +38,26 @@ export function buildLink(item) {
     default:
       return null;
   }
+}
+
+function buildJrLink(departure) {
+  if (JR_EAST.includes(departure)) {
+    return {
+      type: 'jr-east',
+      label: 'JRで予約する',
+      url: 'https://www.eki-net.com/',
+    };
+  }
+  if (JR_WEST.includes(departure)) {
+    return {
+      type: 'jr-west',
+      label: 'JRで予約する',
+      url: 'https://www.jr-odekake.net/goyoyaku/e5489/',
+    };
+  }
+  return {
+    type: 'jr-kyushu',
+    label: 'JRで予約する',
+    url: 'https://train.yoyaku.jrkyushu.co.jp/',
+  };
 }

@@ -1,14 +1,13 @@
 import { selectDestination } from './src/engine/selectionEngine.js';
 import { resolveTransportLinks } from './src/transport/transportRenderer.js';
 import { buildHotelLinks } from './src/affiliate/hotel.js';
-import { buildExperienceLinks } from './src/affiliate/experience.js';
-import { renderResult, clearResult } from './src/ui/render.js';
+import { renderResult } from './src/ui/render.js';
 import { bindHandlers } from './src/ui/handlers.js';
 import { DISTANCE_LABELS, BUDGET_LABELS } from './src/config/constants.js';
 
 const state = {
   destinations: [],
-  departure: '東京',
+  departure: '札幌',
   distanceLevel: null,
   budgetLevel: null,
 };
@@ -56,13 +55,11 @@ function draw() {
 
   const transportLinks = resolveTransportLinks(city, state.departure);
   const hotelLinks = buildHotelLinks(city, null);
-  const experienceLinks = buildExperienceLinks(city);
 
   renderResult({
     city,
     transportLinks,
     hotelLinks,
-    experienceLinks,
     distanceLabel: DISTANCE_LABELS[state.distanceLevel],
     budgetLabel: BUDGET_LABELS[state.budgetLevel],
   });
