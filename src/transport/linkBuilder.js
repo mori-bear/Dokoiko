@@ -70,6 +70,14 @@ export function buildJrLink(railCompany) {
   }
 }
 
+export function buildJrExLink() {
+  return {
+    type: 'jr-ex',
+    label: '新幹線を予約する（EX）',
+    url: 'https://expy.jp/',
+  };
+}
+
 /* ── 航空 ── */
 
 export function buildSkyscannerLink(fromCode, toCode) {
@@ -92,10 +100,12 @@ export function buildFerryLink(portName) {
 
 /* ── レンタカー ── */
 
-export function buildRentalLink() {
+export function buildRentalLink(airportName) {
   return {
     type: 'rental',
-    label: 'レンタカーを探す（じゃらん）',
+    label: airportName
+      ? `${airportName}でレンタカーを探す（じゃらん）`
+      : 'レンタカーを探す（じゃらん）',
     url: 'https://www.jalan.net/rentacar/',
   };
 }

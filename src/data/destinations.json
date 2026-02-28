@@ -1798,5 +1798,62 @@
       "大通公園のビアガーデンの夏、雪まつりの冬、どちらも本州とは別の季節感がある。"
     ],
     "affiliate": { "hotelArea": "札幌" }
+  },
+  {
+    "id": "mihonoseki",
+    "name": "美保関",
+    "region": "中国",
+    "departures": ["大阪", "広島"],
+    "distanceLevel": 3,
+    "staySupport": ["1night"],
+    "atmosphere": [
+      "神話の舞台となった岬に、白い灯台と漁村が静かに共存する。",
+      "境港まで続く中海の水面は、夕方になると橙に染まる。",
+      "青石畳の参道を歩くと、都市とは別の時間の密度がある。"
+    ],
+    "gateways": {
+      "rail": [{ "name": "境港駅", "region": "central_west_shikoku" }],
+      "air": [{ "name": "米子空港", "region": "central_west_shikoku" }],
+      "bus": []
+    },
+    "affiliate": { "hotelArea": "境港・美保関" }
+  },
+  {
+    "id": "ryujin-onsen",
+    "name": "龍神温泉",
+    "region": "近畿",
+    "departures": ["大阪"],
+    "distanceLevel": 3,
+    "staySupport": ["1night"],
+    "atmosphere": [
+      "日本三美人の湯として知られる山中の温泉地は、深い杉林に守られている。",
+      "龍神スカイラインの険しい山道を越えると、別世界の静けさが待っている。",
+      "宿の露天風呂から聞こえる渓流の音が、夜を長くする。"
+    ],
+    "gateways": {
+      "rail": [{ "name": "紀伊田辺駅", "region": "central_west_shikoku" }],
+      "air": [],
+      "bus": []
+    },
+    "affiliate": { "hotelArea": "龍神温泉" }
+  },
+  {
+    "id": "tokashiki-jima",
+    "name": "渡嘉敷島",
+    "region": "沖縄",
+    "departures": ["東京", "大阪", "福岡"],
+    "distanceLevel": 5,
+    "staySupport": ["1night"],
+    "atmosphere": [
+      "阿波連ビーチの透明な海は、南国の光を受けてエメラルドに輝く。",
+      "フェリーで那覇から35分。島に着くと、本島の喧騒が別世界に感じる。",
+      "夜は星が降るように見える。島の暗さが空をその分だけ広げる。"
+    ],
+    "gateways": {
+      "rail": [],
+      "air": [{ "name": "那覇空港", "region": "kyushu" }],
+      "bus": [{ "name": "那覇港", "region": "kyushu" }]
+    },
+    "affiliate": { "hotelArea": "渡嘉敷島" }
   }
 ]

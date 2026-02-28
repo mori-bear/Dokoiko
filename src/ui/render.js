@@ -5,7 +5,9 @@
  *   1. 都市ブロック（空気感3行）
  *   2. 交通ブロック
  *   3. 宿泊ブロック（目的地 / ハブ / 両方）
- *   4. なし（レンタカーは交通ブロック内に含む）
+ *
+ * 新ゲートウェイ形式（city.atmosphere）と
+ * 旧形式（city.appeal / city.themes / city.type）の両方に対応。
  */
 
 export function renderResult({ city, transportLinks, hotelLinks, distanceLabel }) {
@@ -30,18 +32,32 @@ export function clearResult() {
 /* ── 各ブロック ── */
 
 function buildCityBlock(city, distanceLabel) {
-  const appealHtml = city.appeal
+  const isNewFormat = Array.isArray(city.atmosphere);
+  const appealLines = (isNewFormat ? city.atmosphere : city.appeal) || [];
+  const appealHtml = appealLines
     .map((line) => `<p class="appeal-line">${line}</p>`)
-    .join('');
-
-  const themesHtml = city.themes
-    .map((t) => `<span class="theme-tag">${t}</span>`)
     .join('');
 
   const distanceMeta = distanceLabel
     ? `<span class="meta-label">距離</span><span class="meta-value">${distanceLabel}</span>`
     : '';
 
+  if (isNewFormat) {
+    return `
+    <div class="city-block">
+      <div class="city-header">
+        <h2 class="city-name">${city.name}</h2>
+        <p class="city-sub">${city.region}</p>
+      </div>
+      <div class="city-meta-row">${distanceMeta}</div>
+      <div class="city-appeal">${appealHtml}</div>
+    </div>
+  `;
+  }
+
+  const themesHtml = (city.themes || [])
+    .map((t) => `<span class="theme-tag">${t}</span>`)
+    .join('');
   const typeBadge = buildTypeBadge(city.type);
 
   return `
@@ -50,13 +66,9 @@ function buildCityBlock(city, distanceLabel) {
         <h2 class="city-name">${city.name}</h2>
         <p class="city-sub">${city.prefecture}　${city.region}${typeBadge}</p>
       </div>
-      <div class="city-meta-row">
-        ${distanceMeta}
-      </div>
+      <div class="city-meta-row">${distanceMeta}</div>
       <div class="themes-row">${themesHtml}</div>
-      <div class="city-appeal">
-        ${appealHtml}
-      </div>
+      <div class="city-appeal">${appealHtml}</div>
     </div>
   `;
 }

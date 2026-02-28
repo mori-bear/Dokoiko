@@ -16,6 +16,9 @@ export function buildHotelLinks(city, date, stayType) {
   if (stayType !== '1night') {
     return { destination: [], hub: [] };
   }
+  if (!city.affiliate?.hotelArea) {
+    return { destination: [], hub: [] };
+  }
 
   const area = city.affiliate.hotelArea;
   const checkIn = resolveCheckIn(date);
