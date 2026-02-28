@@ -1,31 +1,17 @@
 /**
- * イベントハンドラ
+ * イベントハンドラ — イベント委任方式
+ *
+ * sel-btn / go-btn / retry-btn のクリックはすべて document 委任。
+ * DOM再描画後も確実に動作する。
  */
 export function bindHandlers(state, onGo, onRetry) {
-  // 出発地
+
+  /* ── change系（委任不要） ── */
+
   document.getElementById('departure-select').addEventListener('change', (e) => {
     state.departure = e.target.value;
   });
 
-  // 距離ボタン
-  document.querySelectorAll('[data-group="distance"]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      if (btn.classList.contains('hidden')) return;
-      setActive('[data-group="distance"]', btn);
-      state.distance = parseInt(btn.dataset.value, 10);
-    });
-  });
-
-  // 日帰り / 1泊2日 ボタン
-  document.querySelectorAll('[data-group="stay"]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      setActive('[data-group="stay"]', btn);
-      state.stayType = btn.dataset.value;
-      updateDistanceButtons(state.stayType, state);
-    });
-  });
-
-  // 出発日時
   const dtInput = document.getElementById('departure-dt');
   if (dtInput) {
     dtInput.value = state.datetime;
@@ -34,19 +20,48 @@ export function bindHandlers(state, onGo, onRetry) {
     });
   }
 
-  // 人数ボタン
-  document.querySelectorAll('[data-group="people"]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      setActive('[data-group="people"]', btn);
-      state.people = btn.dataset.value;
-    });
+  /* ── クリック委任（document 一本化） ── */
+
+  document.addEventListener('click', (e) => {
+
+    // sel-btn
+    const selBtn = e.target.closest('.sel-btn[data-group]');
+    if (selBtn) {
+      const { group, value } = selBtn.dataset;
+
+      if (group === 'distance') {
+        if (selBtn.classList.contains('hidden')) return;
+        setActive('[data-group="distance"]', selBtn);
+        state.distance = parseInt(value, 10);
+        return;
+      }
+
+      if (group === 'stay') {
+        setActive('[data-group="stay"]', selBtn);
+        state.stayType = value;
+        updateDistanceButtons(value, state);
+        return;
+      }
+
+      if (group === 'people') {
+        setActive('[data-group="people"]', selBtn);
+        state.people = value;
+        return;
+      }
+    }
+
+    // GOボタン
+    if (e.target.closest('#go-btn')) {
+      onGo();
+      return;
+    }
+
+    // リトライボタン
+    if (e.target.closest('#retry-btn')) {
+      onRetry();
+      return;
+    }
   });
-
-  // GOボタン
-  document.getElementById('go-btn').addEventListener('click', onGo);
-
-  // リトライボタン
-  document.getElementById('retry-btn').addEventListener('click', onRetry);
 }
 
 function setActive(selector, target) {
@@ -54,7 +69,7 @@ function setActive(selector, target) {
   target.classList.add('active');
 }
 
-/** 日帰り選択時は D4/D5 を非表示にし、選択中なら解除 */
+/** 日帰り選択時は ★4・★5 を非表示にし、選択中なら解除 */
 function updateDistanceButtons(stayType, state) {
   const isDaytrip = stayType === 'daytrip';
   document.querySelectorAll('[data-group="distance"]').forEach((btn) => {
