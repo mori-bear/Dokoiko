@@ -9,26 +9,30 @@ const state = {
   destinations: [],
   departure:    '東京',
   distance:     null,
-  stayType:     null,      // 'daytrip' | '1night'
+  stayType:     null,
   datetime:     buildDefaultDatetime(),
   people:       '1',
-  pool:         [],        // 条件に合う全destinationをシャッフルした配列
-  poolIndex:    0,         // 現在表示中のインデックス
+  pool:         [],
+  poolIndex:    0,
 };
 
 async function init() {
+  // イベントバインドは即時実行（データ読み込みを待たない）
+  // これにより: ボタン反応・出発日時初期化が確実に行われる
+  bindHandlers(state, go, retry);
+
+  // destinations.json 読み込み
   try {
     const res = await fetch('./src/data/destinations.json');
-    if (!res.ok) throw new Error('データ読み込み失敗');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     state.destinations = await res.json();
-  } catch {
+  } catch (err) {
     const btn = document.getElementById('go-btn');
-    btn.disabled = true;
-    btn.textContent = 'データ読み込み失敗';
-    return;
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'データ読み込み失敗';
+    }
   }
-
-  bindHandlers(state, go, retry);
 }
 
 function go() {
@@ -40,18 +44,19 @@ function go() {
     showFormError('日帰り・宿泊を選んでください。');
     return;
   }
+  if (state.destinations.length === 0) {
+    showFormError('データを読み込み中です。しばらくお待ちください。');
+    return;
+  }
   clearFormError();
 
-  // プールを再構築（新しい条件で引き直し）
   state.pool      = buildPool(state.destinations, state.departure, state.distance, state.stayType);
   state.poolIndex = 0;
-
   draw();
 }
 
 function retry() {
   if (state.poolIndex >= state.pool.length - 1) {
-    // 最後まで見た → プールを再シャッフルして最初から
     state.pool      = buildPool(state.destinations, state.departure, state.distance, state.stayType);
     state.poolIndex = 0;
   } else {
