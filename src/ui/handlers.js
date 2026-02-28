@@ -10,8 +10,7 @@ export function bindHandlers(state, onGo, onRetry) {
   // 距離ボタン
   document.querySelectorAll('[data-group="distance"]').forEach((btn) => {
     btn.addEventListener('click', () => {
-      // 日帰りの場合 D4/D5 は無効
-      if (state.stayType === 'daytrip' && parseInt(btn.dataset.value, 10) >= 4) return;
+      if (btn.classList.contains('hidden')) return;
       setActive('[data-group="distance"]', btn);
       state.distanceLevel = parseInt(btn.dataset.value, 10);
     });
@@ -35,15 +34,13 @@ export function bindHandlers(state, onGo, onRetry) {
     });
   }
 
-  // 人数
-  const peopleInput = document.getElementById('people-count');
-  if (peopleInput) {
-    peopleInput.value = state.people;
-    peopleInput.addEventListener('change', (e) => {
-      const v = parseInt(e.target.value, 10);
-      if (v >= 1 && v <= 10) state.people = v;
+  // 人数ボタン
+  document.querySelectorAll('[data-group="people"]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      setActive('[data-group="people"]', btn);
+      state.people = btn.dataset.value;
     });
-  }
+  });
 
   // GOボタン
   document.getElementById('go-btn').addEventListener('click', onGo);
@@ -57,21 +54,19 @@ function setActive(selector, target) {
   target.classList.add('active');
 }
 
-/** 日帰り選択時に D4/D5 ボタンを無効化し、選択中なら解除 */
+/** 日帰り選択時は D4/D5 を非表示にし、選択中なら解除 */
 function updateDistanceButtons(stayType, state) {
   const isDaytrip = stayType === 'daytrip';
   document.querySelectorAll('[data-group="distance"]').forEach((btn) => {
     const dl = parseInt(btn.dataset.value, 10);
     if (isDaytrip && dl >= 4) {
-      btn.classList.add('disabled');
-      btn.setAttribute('aria-disabled', 'true');
+      btn.classList.add('hidden');
       if (state.distanceLevel >= 4) {
         btn.classList.remove('active');
         state.distanceLevel = null;
       }
     } else {
-      btn.classList.remove('disabled');
-      btn.removeAttribute('aria-disabled');
+      btn.classList.remove('hidden');
     }
   });
 }

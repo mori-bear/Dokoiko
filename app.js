@@ -11,7 +11,7 @@ const state = {
   distanceLevel: null,
   stayType: null,      // 'daytrip' | '1night'
   datetime: buildDefaultDatetime(),
-  people: 2,
+  people: '1',
 };
 
 async function init() {

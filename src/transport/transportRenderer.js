@@ -1,10 +1,10 @@
 import { DEPARTURE_CITY_INFO } from '../config/constants.js';
 import {
-  buildYahooLink,
-  buildJrLink,
-  buildSkyscannerLink,
+  buildGoogleMapsTransitLink,
   buildGoogleMapsAirLink,
   buildGoogleMapsBusLink,
+  buildJrLink,
+  buildSkyscannerLink,
   buildFerryLink,
   buildRentalLink,
 } from './linkBuilder.js';
@@ -12,14 +12,12 @@ import {
 /**
  * 交通リンクを組み立てる。
  *
- * 表示順:
- *   1. 鉄道（Yahoo乗換 + JR予約）
- *   2. 航空（Skyscanner + Googleマップ）
- *   3. 高速バス（Googleマップ）
- *   4. フェリー（Google検索）
- *   5. レンタカー（航空または島の場合）
- *
- * transportHubs に存在する手段のみ表示。
+ * 表示順（transportHubs に存在する手段のみ表示）:
+ *   1. 鉄道  — Googleマップ経路 + JR予約
+ *   2. 航空  — Skyscanner + Googleマップ（出発地→空港）
+ *   3. 高速バス — Googleマップ
+ *   4. フェリー — Google検索
+ *   5. レンタカー — 航空/フェリー/island/rural 時
  */
 export function resolveTransportLinks(city, departure, datetime) {
   const fromCity = DEPARTURE_CITY_INFO[departure];
@@ -29,7 +27,7 @@ export function resolveTransportLinks(city, departure, datetime) {
   // 1. 鉄道
   if (hubs.rail) {
     const fromRail = fromCity.gateways.rail || departure;
-    links.push(buildYahooLink(fromRail, hubs.rail, datetime));
+    links.push(buildGoogleMapsTransitLink(fromRail, hubs.rail, datetime));
     if (city.railCompany) {
       links.push(buildJrLink(city.railCompany));
     }
@@ -38,7 +36,6 @@ export function resolveTransportLinks(city, departure, datetime) {
   // 2. 航空
   if (hubs.air && fromCity.gateways.air) {
     links.push(buildSkyscannerLink(fromCity.gateways.air, hubs.air));
-    // 出発地→空港へのGoogleマップ（空港名で検索）
     const airportLabel = getAirportLabel(hubs.air);
     links.push(buildGoogleMapsAirLink(fromCity.gateways.rail || departure, airportLabel, datetime));
   }
@@ -53,7 +50,7 @@ export function resolveTransportLinks(city, departure, datetime) {
     links.push(buildFerryLink(hubs.ferry));
   }
 
-  // 5. レンタカー（航空利用または島・フェリー）
+  // 5. レンタカー（航空利用・フェリー・島・自然系）
   if (hubs.air || hubs.ferry || city.type === 'island' || city.type === 'rural') {
     links.push(buildRentalLink());
   }

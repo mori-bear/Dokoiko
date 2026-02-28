@@ -27,7 +27,6 @@
   --radius-lg: 14px;
 
   /* transport link colors */
-  --c-yahoo:         #2c2c2c;
   --c-jr-east:       #1e7a3a;
   --c-jr-west:       #1a52a0;
   --c-jr-kyushu:     #c0392b;
@@ -180,37 +179,6 @@ body {
   outline-offset: 1px;
 }
 
-/* 人数 */
-
-.people-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.people-input {
-  appearance: none;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 10px 14px;
-  font-size: 15px;
-  font-family: inherit;
-  color: var(--text);
-  width: 80px;
-  text-align: center;
-}
-
-.people-input:focus {
-  outline: 2px solid var(--accent);
-  outline-offset: 1px;
-}
-
-.people-unit {
-  font-size: 14px;
-  color: var(--text-sub);
-}
-
 /* ボタングループ */
 
 .btn-group {
@@ -247,6 +215,10 @@ body {
   color: var(--btn-disabled-text);
   cursor: not-allowed;
   pointer-events: none;
+}
+
+.sel-btn.hidden {
+  display: none;
 }
 
 /* エラー */
@@ -440,7 +412,6 @@ body {
 }
 
 /* 交通リンクの色 */
-.link-yahoo        { background: var(--c-yahoo); }
 .link-jr-east      { background: var(--c-jr-east); }
 .link-jr-west      { background: var(--c-jr-west); }
 .link-jr-kyushu    { background: var(--c-jr-kyushu); }

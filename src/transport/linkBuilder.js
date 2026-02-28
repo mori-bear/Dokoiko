@@ -1,25 +1,33 @@
 /**
  * 交通リンクビルダー
  *
- * 1. 鉄道: Yahoo乗換 + JR予約（railCompany分岐）
+ * 1. 鉄道: Googleマップ（経路） + JR予約（railCompany分岐）
  * 2. 航空: Skyscanner + Googleマップ（出発地→空港）
  * 3. 高速バス: Googleマップ（出発地→目的地）
  * 4. フェリー: Google検索（港名）
  * 5. レンタカー: じゃらん
+ *
+ * Googleマップリンク共通仕様:
+ *   https://www.google.com/maps/dir/?api=1
+ *     &origin={from}
+ *     &destination={to}
+ *     &travelmode=transit
+ *     &departure_time={UNIX秒}
  */
 
 /* ── 鉄道 ── */
 
-export function buildYahooLink(from, to, datetime) {
-  const { dateStr, timeStr } = parseDatetime(datetime);
+export function buildGoogleMapsTransitLink(from, to, datetime) {
+  const unixSec = toUnixSec(datetime);
   return {
-    type: 'yahoo',
-    label: '経路を調べる（Yahoo乗換）',
+    type: 'google-maps',
+    label: '経路を調べる（Googleマップ）',
     url:
-      'https://transit.yahoo.co.jp/search/result' +
-      `?from=${encodeURIComponent(from)}` +
-      `&to=${encodeURIComponent(to)}` +
-      `&date=${dateStr}&time=${timeStr}&exp=1`,
+      'https://www.google.com/maps/dir/?api=1' +
+      `&origin=${encodeURIComponent(from)}` +
+      `&destination=${encodeURIComponent(to)}` +
+      '&travelmode=transit' +
+      `&departure_time=${unixSec}`,
   };
 }
 
@@ -28,19 +36,19 @@ export function buildJrLink(railCompany) {
     case 'east':
       return {
         type: 'jr-east',
-        label: 'JRで予約する（えきねっと）',
-        url: 'https://www.eki-net.com/top/pc/index.html',
+        label: 'JRを予約する（えきねっと）',
+        url: 'https://www.eki-net.com/',
       };
     case 'central_west_shikoku':
       return {
         type: 'jr-west',
-        label: 'JRで予約する（e5489）',
-        url: 'https://www.jr-odekake.net/goyoyaku/e5489/',
+        label: 'JRを予約する（e5489）',
+        url: 'https://www.jr-odekake.net/goyoyaku/',
       };
     case 'kyushu':
       return {
         type: 'jr-kyushu',
-        label: 'JRで予約する（九州ネット予約）',
+        label: 'JRを予約する（九州ネット予約）',
         url: 'https://train.yoyaku.jrkyushu.co.jp/',
       };
     default:
@@ -59,32 +67,32 @@ export function buildSkyscannerLink(fromCode, toCode) {
 }
 
 export function buildGoogleMapsAirLink(fromStation, toAirportName, datetime) {
-  const { dateStr, timeStr } = parseDatetime(datetime);
-  const timeLabel = `${dateStr.slice(0, 4)}年${dateStr.slice(4, 6)}月${dateStr.slice(6, 8)}日 ${timeStr.slice(0, 2)}:${timeStr.slice(2, 4)}発`;
+  const unixSec = toUnixSec(datetime);
   return {
     type: 'google-maps',
-    label: `空港への経路（${timeLabel}）`,
+    label: `空港への経路（Googleマップ）`,
     url:
       'https://www.google.com/maps/dir/?api=1' +
       `&origin=${encodeURIComponent(fromStation)}` +
       `&destination=${encodeURIComponent(toAirportName)}` +
-      '&travelmode=transit',
+      '&travelmode=transit' +
+      `&departure_time=${unixSec}`,
   };
 }
 
 /* ── 高速バス ── */
 
 export function buildGoogleMapsBusLink(fromCity, toBusTerminal, datetime) {
-  const { dateStr, timeStr } = parseDatetime(datetime);
-  const timeLabel = `${dateStr.slice(0, 4)}年${dateStr.slice(4, 6)}月${dateStr.slice(6, 8)}日 ${timeStr.slice(0, 2)}:${timeStr.slice(2, 4)}発`;
+  const unixSec = toUnixSec(datetime);
   return {
     type: 'bus',
-    label: `高速バスで行く（${timeLabel}）`,
+    label: '高速バスを探す（Googleマップ）',
     url:
       'https://www.google.com/maps/dir/?api=1' +
       `&origin=${encodeURIComponent(fromCity)}` +
       `&destination=${encodeURIComponent(toBusTerminal)}` +
-      '&travelmode=transit',
+      '&travelmode=transit' +
+      `&departure_time=${unixSec}`,
   };
 }
 
@@ -93,7 +101,7 @@ export function buildGoogleMapsBusLink(fromCity, toBusTerminal, datetime) {
 export function buildFerryLink(portName) {
   return {
     type: 'ferry',
-    label: `フェリー時刻表を調べる（${portName}）`,
+    label: `フェリー情報を見る（${portName}）`,
     url: `https://www.google.com/search?q=${encodeURIComponent(portName + ' フェリー 時刻表')}`,
   };
 }
@@ -108,29 +116,12 @@ export function buildRentalLink() {
   };
 }
 
-/* ── 日時パース ── */
+/* ── 日時ユーティリティ ── */
 
-export function parseDatetime(datetime) {
+/** datetime-local 文字列 → Unix秒（未入力時は現在+30分） */
+export function toUnixSec(datetime) {
   if (datetime) {
-    const [datePart, timePart] = datetime.split('T');
-    return {
-      dateStr: datePart.replace(/-/g, ''),
-      timeStr: (timePart ?? '0000').replace(':', '').slice(0, 4),
-    };
+    return Math.floor(new Date(datetime).getTime() / 1000);
   }
-  const d = new Date();
-  d.setMinutes(d.getMinutes() + 30);
-  return { dateStr: fmtDate(d), timeStr: fmtTime(d) };
-}
-
-function fmtDate(d) {
-  return `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}`;
-}
-
-function fmtTime(d) {
-  return `${pad(d.getHours())}${pad(d.getMinutes())}`;
-}
-
-function pad(n) {
-  return String(n).padStart(2, '0');
+  return Math.floor((Date.now() + 30 * 60 * 1000) / 1000);
 }
