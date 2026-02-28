@@ -19,7 +19,7 @@ import {
  *   4. フェリー — Google検索
  *   5. レンタカー — 航空/フェリー/island/rural 時
  */
-export function resolveTransportLinks(city, departure, datetime) {
+export function resolveTransportLinks(city, departure) {
   const fromCity = DEPARTURE_CITY_INFO[departure];
   const hubs = city.transportHubs;
   const links = [];
@@ -27,7 +27,7 @@ export function resolveTransportLinks(city, departure, datetime) {
   // 1. 鉄道
   if (hubs.rail) {
     const fromRail = fromCity.gateways.rail || departure;
-    links.push(buildGoogleMapsTransitLink(fromRail, hubs.rail, datetime));
+    links.push(buildGoogleMapsTransitLink(fromRail, hubs.rail));
     if (city.railCompany) {
       links.push(buildJrLink(city.railCompany));
     }
@@ -37,12 +37,12 @@ export function resolveTransportLinks(city, departure, datetime) {
   if (hubs.air && fromCity.gateways.air) {
     links.push(buildSkyscannerLink(fromCity.gateways.air, hubs.air));
     const airportLabel = getAirportLabel(hubs.air);
-    links.push(buildGoogleMapsAirLink(fromCity.gateways.rail || departure, airportLabel, datetime));
+    links.push(buildGoogleMapsAirLink(fromCity.gateways.rail || departure, airportLabel));
   }
 
   // 3. 高速バス
   if (hubs.bus) {
-    links.push(buildGoogleMapsBusLink(departure, hubs.bus, datetime));
+    links.push(buildGoogleMapsBusLink(departure, hubs.bus));
   }
 
   // 4. フェリー

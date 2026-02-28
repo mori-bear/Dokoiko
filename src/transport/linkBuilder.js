@@ -1,35 +1,49 @@
 /**
  * 交通リンクビルダー
  *
- * 1. 鉄道: Googleマップ（経路） + JR予約（railCompany分岐）
- * 2. 航空: Skyscanner + Googleマップ（出発地→空港）
- * 3. 高速バス: Googleマップ（出発地→目的地）
- * 4. フェリー: Google検索（港名）
- * 5. レンタカー: じゃらん
- *
- * Googleマップリンク共通仕様:
- *   https://www.google.com/maps/dir/?api=1
- *     &origin={from}
- *     &destination={to}
- *     &travelmode=transit
- *     &departure_time={UNIX秒}
+ * 経路: Googleマップ transit のみ（Yahoo廃止）
+ * JR: トップページ誘導のみ（検索結果直リンク禁止）
+ * departure_time: 現在時刻+30分 UNIX秒
  */
 
-/* ── 鉄道 ── */
+/* ── Google Maps ── */
 
-export function buildGoogleMapsTransitLink(from, to, datetime) {
-  const unixSec = toUnixSec(datetime);
+function googleMapsUrl(origin, destination) {
+  const departure_time = Math.floor((Date.now() + 1800000) / 1000);
+  return (
+    'https://www.google.com/maps/dir/?api=1' +
+    `&origin=${encodeURIComponent(origin)}` +
+    `&destination=${encodeURIComponent(destination)}` +
+    '&travelmode=transit' +
+    `&departure_time=${departure_time}`
+  );
+}
+
+export function buildGoogleMapsTransitLink(from, to) {
   return {
     type: 'google-maps',
     label: '経路を調べる（Googleマップ）',
-    url:
-      'https://www.google.com/maps/dir/?api=1' +
-      `&origin=${encodeURIComponent(from)}` +
-      `&destination=${encodeURIComponent(to)}` +
-      '&travelmode=transit' +
-      `&departure_time=${unixSec}`,
+    url: googleMapsUrl(from, to),
   };
 }
+
+export function buildGoogleMapsAirLink(fromStation, toAirportName) {
+  return {
+    type: 'google-maps',
+    label: '空港への経路（Googleマップ）',
+    url: googleMapsUrl(fromStation, toAirportName),
+  };
+}
+
+export function buildGoogleMapsBusLink(fromCity, toBusTerminal) {
+  return {
+    type: 'bus',
+    label: '高速バスを探す（Googleマップ）',
+    url: googleMapsUrl(fromCity, toBusTerminal),
+  };
+}
+
+/* ── JR ── */
 
 export function buildJrLink(railCompany) {
   switch (railCompany) {
@@ -66,42 +80,12 @@ export function buildSkyscannerLink(fromCode, toCode) {
   };
 }
 
-export function buildGoogleMapsAirLink(fromStation, toAirportName, datetime) {
-  const unixSec = toUnixSec(datetime);
-  return {
-    type: 'google-maps',
-    label: `空港への経路（Googleマップ）`,
-    url:
-      'https://www.google.com/maps/dir/?api=1' +
-      `&origin=${encodeURIComponent(fromStation)}` +
-      `&destination=${encodeURIComponent(toAirportName)}` +
-      '&travelmode=transit' +
-      `&departure_time=${unixSec}`,
-  };
-}
-
-/* ── 高速バス ── */
-
-export function buildGoogleMapsBusLink(fromCity, toBusTerminal, datetime) {
-  const unixSec = toUnixSec(datetime);
-  return {
-    type: 'bus',
-    label: '高速バスを探す（Googleマップ）',
-    url:
-      'https://www.google.com/maps/dir/?api=1' +
-      `&origin=${encodeURIComponent(fromCity)}` +
-      `&destination=${encodeURIComponent(toBusTerminal)}` +
-      '&travelmode=transit' +
-      `&departure_time=${unixSec}`,
-  };
-}
-
 /* ── フェリー ── */
 
 export function buildFerryLink(portName) {
   return {
     type: 'ferry',
-    label: `フェリー情報を見る（${portName}）`,
+    label: `フェリーを見る（${portName}）`,
     url: `https://www.google.com/search?q=${encodeURIComponent(portName + ' フェリー 時刻表')}`,
   };
 }
@@ -114,14 +98,4 @@ export function buildRentalLink() {
     label: 'レンタカーを探す（じゃらん）',
     url: 'https://www.jalan.net/rentacar/',
   };
-}
-
-/* ── 日時ユーティリティ ── */
-
-/** datetime-local 文字列 → Unix秒（未入力時は現在+30分） */
-export function toUnixSec(datetime) {
-  if (datetime) {
-    return Math.floor(new Date(datetime).getTime() / 1000);
-  }
-  return Math.floor((Date.now() + 30 * 60 * 1000) / 1000);
 }

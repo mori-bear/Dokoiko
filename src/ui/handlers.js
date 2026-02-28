@@ -12,7 +12,7 @@ export function bindHandlers(state, onGo, onRetry) {
     btn.addEventListener('click', () => {
       if (btn.classList.contains('hidden')) return;
       setActive('[data-group="distance"]', btn);
-      state.distanceLevel = parseInt(btn.dataset.value, 10);
+      state.distance = parseInt(btn.dataset.value, 10);
     });
   });
 
@@ -61,9 +61,9 @@ function updateDistanceButtons(stayType, state) {
     const dl = parseInt(btn.dataset.value, 10);
     if (isDaytrip && dl >= 4) {
       btn.classList.add('hidden');
-      if (state.distanceLevel >= 4) {
+      if (state.distance >= 4) {
         btn.classList.remove('active');
-        state.distanceLevel = null;
+        state.distance = null;
       }
     } else {
       btn.classList.remove('hidden');
