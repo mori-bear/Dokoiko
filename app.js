@@ -7,10 +7,11 @@ import { DISTANCE_LABELS } from './src/config/constants.js';
 
 const state = {
   destinations: [],
-  departure: '札幌',
+  departure: '東京',
   distanceLevel: null,
   stayType: null,      // 'daytrip' | '1night'
   datetime: buildDefaultDatetime(),
+  people: 2,
 };
 
 async function init() {
@@ -55,9 +56,7 @@ function draw() {
   );
 
   const transportLinks = resolveTransportLinks(city, state.departure, state.datetime);
-  const hotelLinks = state.stayType === '1night'
-    ? buildHotelLinks(city, state.datetime?.split('T')[0])
-    : [];
+  const hotelLinks = buildHotelLinks(city, state.datetime?.split('T')[0], state.stayType);
 
   renderResult({
     city,

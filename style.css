@@ -19,20 +19,26 @@
   --btn-hover: #dedede;
   --btn-active-bg: #1c1c1c;
   --btn-active-text: #ffffff;
+  --btn-disabled-bg: #f0f0f0;
+  --btn-disabled-text: #c0c0c0;
   --border: #e0dfd9;
   --shadow: 0 1px 3px rgba(0,0,0,.07);
   --radius: 8px;
   --radius-lg: 14px;
 
   /* transport link colors */
-  --c-yahoo:       #2c2c2c;
-  --c-jr-east:     #1e7a3a;
-  --c-jr-west:     #1a52a0;
-  --c-jr-kyushu:   #c0392b;
-  --c-skyscanner:  #0770e3;
-  --c-rental:      #7a7a7a;
-  --c-rakuten:     #bf0000;
-  --c-jalan:       #c85a00;
+  --c-yahoo:         #2c2c2c;
+  --c-jr-east:       #1e7a3a;
+  --c-jr-west:       #1a52a0;
+  --c-jr-kyushu:     #c0392b;
+  --c-skyscanner:    #0770e3;
+  --c-google-maps:   #4285f4;
+  --c-bus:           #5a8a2a;
+  --c-ferry:         #1a7a8a;
+  --c-rental:        #7a7a7a;
+  --c-rakuten:       #bf0000;
+  --c-jalan:         #c85a00;
+  --c-jalan-rental:  #9a4500;
 }
 
 body {
@@ -174,6 +180,37 @@ body {
   outline-offset: 1px;
 }
 
+/* 人数 */
+
+.people-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.people-input {
+  appearance: none;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--text);
+  width: 80px;
+  text-align: center;
+}
+
+.people-input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.people-unit {
+  font-size: 14px;
+  color: var(--text-sub);
+}
+
 /* ボタングループ */
 
 .btn-group {
@@ -193,6 +230,7 @@ body {
   cursor: pointer;
   transition: background .1s;
   white-space: nowrap;
+  user-select: none;
 }
 
 .sel-btn:hover {
@@ -202,6 +240,13 @@ body {
 .sel-btn.active {
   background: var(--btn-active-bg);
   color: var(--btn-active-text);
+}
+
+.sel-btn.disabled {
+  background: var(--btn-disabled-bg);
+  color: var(--btn-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 /* エラー */
@@ -278,7 +323,23 @@ body {
   margin-top: 6px;
   font-size: 13px;
   color: var(--text-sub);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
 }
+
+.type-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.type-onsen  { background: #fff0e8; color: #c05a00; }
+.type-island { background: #e8f4ff; color: #0070b8; }
+.type-rural  { background: #eaf5e8; color: #3a7a20; }
+.type-town   { background: #f0eeff; color: #5a3ab0; }
 
 .city-meta-row {
   display: flex;
@@ -332,7 +393,7 @@ body {
   border-left: 2px solid var(--border);
 }
 
-/* 結果ブロック（交通・宿泊・体験） */
+/* 結果ブロック（交通・宿泊） */
 
 .result-block {
   background: var(--white);
@@ -352,11 +413,6 @@ body {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   margin-bottom: 12px;
-}
-
-.block-empty {
-  font-size: 13px;
-  color: var(--text-sub);
 }
 
 .link-list {
@@ -383,22 +439,21 @@ body {
   opacity: .85;
 }
 
-.link-nourl {
-  cursor: default;
-  opacity: .6;
-}
-
 /* 交通リンクの色 */
-.link-yahoo       { background: var(--c-yahoo); }
-.link-jr-east     { background: var(--c-jr-east); }
-.link-jr-west     { background: var(--c-jr-west); }
-.link-jr-kyushu   { background: var(--c-jr-kyushu); }
-.link-skyscanner  { background: var(--c-skyscanner); }
-.link-rental      { background: var(--c-rental); }
+.link-yahoo        { background: var(--c-yahoo); }
+.link-jr-east      { background: var(--c-jr-east); }
+.link-jr-west      { background: var(--c-jr-west); }
+.link-jr-kyushu    { background: var(--c-jr-kyushu); }
+.link-skyscanner   { background: var(--c-skyscanner); }
+.link-google-maps  { background: var(--c-google-maps); }
+.link-bus          { background: var(--c-bus); }
+.link-ferry        { background: var(--c-ferry); }
+.link-rental       { background: var(--c-rental); }
 
 /* 宿泊リンクの色 */
-.link-rakuten { background: var(--c-rakuten); }
-.link-jalan   { background: var(--c-jalan); }
+.link-rakuten      { background: var(--c-rakuten); }
+.link-jalan        { background: var(--c-jalan); }
+.link-jalan-rental { background: var(--c-jalan-rental); }
 
 /* リトライボタン */
 

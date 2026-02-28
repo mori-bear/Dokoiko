@@ -7,7 +7,7 @@
  *   3. departure 一致のみ
  *   4. 全国フォールバック
  *
- * stayType === 'daytrip' の場合、distanceLevel 5 を除外する。
+ * stayType === 'daytrip' の場合、distanceLevel 4・5 を除外する。
  * 常に 1 件を返す。
  */
 function pick(pool) {
@@ -15,7 +15,7 @@ function pick(pool) {
 }
 
 export function selectDestination(destinations, departure, distanceLevel, stayType) {
-  const maxDL = stayType === 'daytrip' ? 4 : 5;
+  const maxDL = stayType === 'daytrip' ? 3 : 5;
 
   const eligible = destinations.filter((d) => d.distanceLevel <= maxDL);
   const byDeparture = eligible.filter((d) => d.departures.includes(departure));

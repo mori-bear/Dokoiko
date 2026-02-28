@@ -1,20 +1,14 @@
-# どこいこ 2.0
+# どこいこ 5.0
 
-> 知らない街と出会い、納得して、予約まで。
+> 目的地が主役。ハブは裏方。交通と宿は統一ロジックで管理。
 
 ---
 
 ## 思想
 
-Dokoikoは交通検索サイトでも、宿比較サイトでもない。
+距離と日程だけで未知の街と出会い、そのまま予約完了まで。
 
-**主役は「街との出会い」。**
-
-距離感だけを手がかりに、知らない街を提示する。
-その街の空気感を3行で伝え、行き方を"納得装置"として見せ、
-宿は「背中を押す最後の一歩」として添える。
-
-上から順に読めば予約まで完了できる縦導線が、唯一の設計原則。
+目的地はつねに1都市のみ。選択肢は距離（1〜5）・日程（日帰り/1泊2日）・出発日時・人数のみ。ポエム禁止、実用重視。
 
 ---
 
@@ -32,30 +26,16 @@ npx serve .
 ## ディレクトリ構成
 
 ```
-core/planEngine.js        プラン生成 + 距離フィルタ
-links/yahoo.js            Yahoo!路線情報 URL生成
-links/rakuten.js          楽天トラベル アフィリエイトURL生成
-links/jalan.js            じゃらん URL生成（アフィリエイト差し替え可）
-ui/render.js              DOM描画（全ブロック）
-data/destinations.json   目的地マスター
-index.html
-style.css
-app.js                    状態管理・起動
-```
-
----
-
-## ユーザーフロー
-
-```
-① 距離（★1〜5）を選択
-② 該当する街の一覧が表示される
-③ 街を選ぶ
-    ↓
-  [ 出会いブロック  ] 都道府県・街名・appeal 3行・highlights
-  [ 行き方ブロック  ] Yahoo乗換 / えきねっと（JRのみ）
-  [ 現地移動ブロック] レンタカー / フェリー（該当する場合）
-  [ 宿泊ブロック    ] 楽天トラベル / じゃらん（泊まり時のみ）
+src/config/constants.js           出発地情報・ラベル・アフィリエイトID
+src/engine/selectionEngine.js     抽選ロジック（departure + DL → 1件）
+src/transport/transportRenderer.js 交通リンクアセンブラ
+src/transport/linkBuilder.js      Yahoo/JR/Skyscanner/GoogleMaps/Ferry/Rental
+src/affiliate/hotel.js            宿泊リンク（楽天・じゃらん・じゃらんレンタカー）
+src/data/destinations.json        90都市（新構造）
+src/ui/render.js                  DOM描画（都市→交通→宿泊）
+src/ui/handlers.js                イベントバインド
+pages/about.html / privacy.html / disclaimer.html
+index.html / style.css / app.js
 ```
 
 ---
@@ -64,37 +44,67 @@ app.js                    状態管理・起動
 
 | フィールド | 型 | 説明 |
 |---|---|---|
-| id | string | 一意のID |
-| city | string | 街名 |
+| id | string | 一意のID（出発地suffix付き） |
+| name | string | 都市名 |
 | prefecture | string | 都道府県 |
 | region | string | 地方 |
-| mainStation | string | 主要駅（Yahoo URL の `to`）|
-| railType | `"jr"` / `"private"` / `"none"` | 鉄道種別 |
-| transportType | string[] | `rail` / `fly` / `drive` / `ferry` |
-| distanceLevel | 1〜5 | 遠さ（1=近い, 5=遠い）|
-| staySupport | string[] | `daytrip` / `1night` / `2night` |
-| appeal | string[3] | 空気感を伝える3行 |
-| highlights | `{name, url}`[] | 見どころ（最大3件）|
-| departure.label | string | 出発駅（Yahoo URL の `from`）|
+| departures | string[] | 対象出発地 |
+| distanceLevel | 1〜5 | 遠さ（1=近い, 5=遠い） |
+| type | city/town/rural/onsen/island | 目的地の性格 |
+| stayPolicy | destination/hub/both | 宿泊先の方針 |
+| transportHubs | { rail?, air?, ferry?, bus? } | 利用可能な交通手段 |
+| railCompany | east/central_west_shikoku/kyushu/null | JR予約サービス分岐 |
+| themes | string[3] | テーマタグ |
+| staySupport | string[] | daytrip / 1night |
+| appeal | string[3] | 空気感3行 |
+| affiliate | { hotelArea } | 宿泊検索エリア名 |
 
 ---
 
-## 表示ルール
+## 交通ロジック
 
-| 条件 | 表示 |
+### 表示順
+
+1. **鉄道** — Yahoo乗換 + JR予約（railCompany分岐）
+2. **航空** — Skyscanner比較 + Googleマップ（出発地→空港）
+3. **高速バス** — Googleマップ（日時反映）
+4. **フェリー** — Google検索（港名）
+5. **レンタカー** — じゃらん（航空・フェリー・island・rural時）
+
+### railCompany 分岐
+
+| 値 | サービス |
 |---|---|
-| `railType: "jr"` | Yahoo乗換 + えきねっとリンク |
-| `railType: "private"` | Yahoo乗換のみ |
-| `railType: "none"` | 鉄道導線なし |
-| `transportType` に `"drive"` | レンタカー導線 |
-| `transportType` に `"ferry"` | フェリー導線 |
-| `stayType: "1night" / "2night"` | 楽天トラベル + じゃらんリンク |
+| east | えきねっと（JR東日本） |
+| central_west_shikoku | e5489（JR西日本・四国） |
+| kyushu | 九州ネット予約（JR九州） |
+| null | 鉄道なし |
 
 ---
 
-## アフィリエイトID管理
+## 宿泊ロジック（stayPolicy）
 
-| サービス | ファイル | 定数 |
-|---|---|---|
-| 楽天トラベル | `links/rakuten.js` | `RAKUTEN_AFF_ID` |
-| じゃらん | `links/jalan.js` | `JALAN_AFF_ID` |
+| 値 | 表示 |
+|---|---|
+| destination | 目的地の宿のみ |
+| hub | ハブ都市の宿のみ |
+| both | 目的地 + ハブ 両方 |
+
+stayType === 'daytrip' の場合は宿泊リンクを表示しない。
+
+---
+
+## 特殊処理
+
+- 沖縄県目的地: railCompany = null（鉄道なし）
+- type = "onsen": stayPolicy = "destination"
+- type = "island": stayPolicy = "both"
+- 日帰り時: distanceLevel 4・5 を除外
+
+---
+
+## アフィリエイトID
+
+| サービス | 場所 |
+|---|---|
+| 楽天トラベル | src/config/constants.js: RAKUTEN_AFF_ID |

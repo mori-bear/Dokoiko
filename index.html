@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>どこいこ — 距離と予算で旅先を決める</title>
-  <meta name="description" content="距離と予算を選ぶだけで、次の旅先を1都市提案します。迷う時間を減らすためのサイトです。">
+  <title>どこいこ — 距離と日程で旅先を決める</title>
+  <meta name="description" content="距離と日程を選ぶだけで、次の旅先を1都市提案します。迷う時間を減らすためのサイトです。">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
     <div class="container">
 
       <section class="hero">
-        <p class="hero-text">旅行先を決めるのがいちばん難しい。その時間を減らしたくて、このサイトを作りました。距離と日程だけ選べば、行き先をひとつ提案します。気に入らなければ、引き直してください。</p>
+        <p class="hero-text">距離と日程を選ぶだけで、旅先を1か所提案します。気に入らなければ引き直してください。</p>
       </section>
 
       <section class="controls">
@@ -35,7 +35,7 @@
           <select id="departure-select" class="departure-select">
             <option value="札幌">札幌</option>
             <option value="仙台">仙台</option>
-            <option value="東京">東京</option>
+            <option value="東京" selected>東京</option>
             <option value="名古屋">名古屋</option>
             <option value="大阪">大阪</option>
             <option value="広島">広島</option>
@@ -56,7 +56,7 @@
           </div>
         </div>
 
-        <!-- 日帰り / 1泊2日 -->
+        <!-- 日程 -->
         <div class="control-group">
           <label class="control-label">日程</label>
           <div class="btn-group">
@@ -69,6 +69,15 @@
         <div class="control-group">
           <label class="control-label" for="departure-dt">出発日時</label>
           <input type="datetime-local" id="departure-dt" class="datetime-input">
+        </div>
+
+        <!-- 人数 -->
+        <div class="control-group">
+          <label class="control-label" for="people-count">人数</label>
+          <div class="people-row">
+            <input type="number" id="people-count" class="people-input" min="1" max="10" value="2">
+            <span class="people-unit">名</span>
+          </div>
         </div>
 
         <!-- エラー -->
@@ -90,7 +99,7 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>本サイトはアフィリエイト広告（楽天トラベル等）を利用しています。</p>
+      <p>本サイトはアフィリエイト広告（楽天トラベル・じゃらん等）を利用しています。</p>
       <p>交通・料金・運行情報は各社公式サイトでご確認ください。</p>
       <nav class="footer-nav">
         <a href="./pages/about.html">About</a>
