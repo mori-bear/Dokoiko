@@ -3,14 +3,9 @@ import { RAKUTEN_AFF_ID } from '../config/constants.js';
 /**
  * 宿泊リンクを組み立てる。
  *
- * stayPolicy:
- *   "destination" → 目的地の宿のみ
- *   "hub"         → ハブ都市の宿のみ（hubArea が必要）
- *   "both"        → 目的地とハブ両方を表示
+ * stayType === '1night' かつ affiliate.hotelArea が存在する場合のみ返す。
  *
- * 返り値:
- *   { destination: Link[], hub: Link[] }
- *   (stayType === 'daytrip' の場合は両方空)
+ * 返り値: { destination: Link[], hub: Link[] }
  */
 export function buildHotelLinks(city, date, stayType) {
   if (stayType !== '1night') {
@@ -21,39 +16,15 @@ export function buildHotelLinks(city, date, stayType) {
   }
 
   const area = city.affiliate.hotelArea;
-  const checkIn = resolveCheckIn(date);
+  const checkIn  = resolveCheckIn(date);
   const checkOut = addDays(checkIn, 1);
 
   const destLinks = [
     buildRakutenLink(area, checkIn, checkOut),
     buildJalanLink(area),
-    buildJalanRentalLink(area),
   ];
 
-  const policy = city.stayPolicy || 'destination';
-
-  if (policy === 'destination') {
-    return { destination: destLinks, hub: [] };
-  }
-
-  if (policy === 'hub') {
-    const hubArea = city.affiliate.hubArea || area;
-    const hubLinks = [
-      buildRakutenLink(hubArea, checkIn, checkOut),
-      buildJalanLink(hubArea),
-      buildJalanRentalLink(hubArea),
-    ];
-    return { destination: [], hub: hubLinks };
-  }
-
-  // both
-  const hubArea = city.affiliate.hubArea || area;
-  const hubLinks = [
-    buildRakutenLink(hubArea, checkIn, checkOut),
-    buildJalanLink(hubArea),
-    buildJalanRentalLink(hubArea),
-  ];
-  return { destination: destLinks, hub: hubLinks };
+  return { destination: destLinks, hub: [] };
 }
 
 function buildRakutenLink(area, checkIn, checkOut) {
@@ -75,14 +46,6 @@ function buildJalanLink(area) {
     type: 'jalan',
     label: `じゃらんで宿を探す（${area}）`,
     url: `https://www.jalan.net/uw/uwp2011/uww2011init.do?keyword=${encodeURIComponent(area)}`,
-  };
-}
-
-function buildJalanRentalLink(area) {
-  return {
-    type: 'jalan-rental',
-    label: `じゃらんレンタカー（${area}）`,
-    url: `https://www.jalan.net/rentacar/`,
   };
 }
 

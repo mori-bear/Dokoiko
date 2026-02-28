@@ -1,52 +1,52 @@
 /**
  * 交通リンクビルダー
  *
- * 経路: Googleマップ transit のみ（Yahoo廃止）
- * JR: トップページ誘導のみ（検索結果直リンク禁止）
- * departure_time: 現在時刻+30分 UNIX秒
+ * 鉄道・バス・フェリー: travelmode=transit（現在時刻+30分 UNIX秒）
+ * 航空:               travelmode=driving（出発空港 → 目的空港）
+ * JR予約:             各社トップページのみ（直リンク禁止）
+ * EX:                東海道・山陽新幹線エリア
  */
 
-/* ── Google Maps ── */
+/* ── 内部ユーティリティ ── */
 
-function googleMapsUrl(origin, destination) {
-  const departure_time = Math.floor((Date.now() + 1800000) / 1000);
+function unixSec() {
+  return Math.floor((Date.now() + 1800000) / 1000);
+}
+
+function transitUrl(origin, destination) {
   return (
     'https://www.google.com/maps/dir/?api=1' +
     `&origin=${encodeURIComponent(origin)}` +
     `&destination=${encodeURIComponent(destination)}` +
     '&travelmode=transit' +
-    `&departure_time=${departure_time}`
+    `&departure_time=${unixSec()}`
   );
 }
 
-export function buildGoogleMapsTransitLink(from, to) {
+function drivingUrl(origin, destination) {
+  return (
+    'https://www.google.com/maps/dir/?api=1' +
+    `&origin=${encodeURIComponent(origin)}` +
+    `&destination=${encodeURIComponent(destination)}` +
+    '&travelmode=driving' +
+    `&departure_time=${unixSec()}`
+  );
+}
+
+/* ── 鉄道 ── */
+
+export function buildRailLink(fromStation, toStation) {
   return {
     type: 'google-maps',
-    label: '経路を調べる（Googleマップ）',
-    url: googleMapsUrl(from, to),
+    label: `経路を調べる（${toStation} / Googleマップ）`,
+    url: transitUrl(fromStation, toStation),
   };
 }
 
-export function buildGoogleMapsAirLink(fromStation, toAirportName) {
-  return {
-    type: 'google-maps',
-    label: '空港への経路（Googleマップ）',
-    url: googleMapsUrl(fromStation, toAirportName),
-  };
-}
+/* ── JR予約 ── */
 
-export function buildGoogleMapsBusLink(fromCity, toBusTerminal) {
-  return {
-    type: 'bus',
-    label: '高速バスを探す（Googleマップ）',
-    url: googleMapsUrl(fromCity, toBusTerminal),
-  };
-}
-
-/* ── JR ── */
-
-export function buildJrLink(railCompany) {
-  switch (railCompany) {
+export function buildJrLink(region) {
+  switch (region) {
     case 'east':
       return {
         type: 'jr-east',
@@ -70,6 +70,8 @@ export function buildJrLink(railCompany) {
   }
 }
 
+/* ── EX（東海道・山陽新幹線） ── */
+
 export function buildJrExLink() {
   return {
     type: 'jr-ex',
@@ -80,21 +82,31 @@ export function buildJrExLink() {
 
 /* ── 航空 ── */
 
-export function buildSkyscannerLink(fromCode, toCode) {
+export function buildAirLink(fromAirport, toAirport) {
   return {
-    type: 'skyscanner',
-    label: '航空券を比較する（Skyscanner）',
-    url: `https://www.skyscanner.jp/transport/flights/${fromCode.toLowerCase()}/${toCode.toLowerCase()}/`,
+    type: 'google-maps',
+    label: `フライト経路を確認する（${toAirport} / Googleマップ）`,
+    url: drivingUrl(fromAirport, toAirport),
+  };
+}
+
+/* ── 高速バス ── */
+
+export function buildBusLink(fromCity, toBusTerminal) {
+  return {
+    type: 'bus',
+    label: `高速バスを探す（${toBusTerminal} / Googleマップ）`,
+    url: transitUrl(fromCity, toBusTerminal),
   };
 }
 
 /* ── フェリー ── */
 
-export function buildFerryLink(portName) {
+export function buildFerryLink(fromStation, toTerminal) {
   return {
     type: 'ferry',
-    label: `フェリーを見る（${portName}）`,
-    url: `https://www.google.com/search?q=${encodeURIComponent(portName + ' フェリー 時刻表')}`,
+    label: `フェリー乗り場へ（${toTerminal} / Googleマップ）`,
+    url: transitUrl(fromStation, toTerminal),
   };
 }
 

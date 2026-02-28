@@ -4,23 +4,20 @@
  * 表示順:
  *   1. 都市ブロック（空気感3行）
  *   2. 交通ブロック
- *   3. 宿泊ブロック（目的地 / ハブ / 両方）
- *
- * 新ゲートウェイ形式（city.atmosphere）と
- * 旧形式（city.appeal / city.themes / city.type）の両方に対応。
+ *   3. 宿泊ブロック（stayType=1night 時のみ）
  */
 
 export function renderResult({ city, transportLinks, hotelLinks, distanceLabel }) {
   const hasDestHotel = hotelLinks.destination.length > 0;
-  const hasHubHotel = hotelLinks.hub.length > 0;
+  const hasHubHotel  = hotelLinks.hub.length > 0;
   const isLast = !hasDestHotel && !hasHubHotel;
 
   const el = document.getElementById('result-inner');
   el.innerHTML = [
     buildCityBlock(city, distanceLabel),
     buildTransportBlock(transportLinks, isLast),
-    hasDestHotel ? buildHotelBlock(hotelLinks.destination, city.name, !hasHubHotel) : '',
-    hasHubHotel ? buildHotelBlock(hotelLinks.hub, 'ハブ拠点', true) : '',
+    hasDestHotel ? buildHotelBlock(hotelLinks.destination, city.name,  !hasHubHotel) : '',
+    hasHubHotel  ? buildHotelBlock(hotelLinks.hub,         'ハブ拠点', true) : '',
   ].join('');
 }
 
@@ -29,62 +26,49 @@ export function clearResult() {
   if (el) el.innerHTML = '';
 }
 
-/* ── 各ブロック ── */
+/* ── 都市ブロック ── */
 
 function buildCityBlock(city, distanceLabel) {
-  const isNewFormat = Array.isArray(city.atmosphere);
-  const appealLines = (isNewFormat ? city.atmosphere : city.appeal) || [];
-  const appealHtml = appealLines
+  const atmosphereHtml = (city.atmosphere || [])
     .map((line) => `<p class="appeal-line">${line}</p>`)
     .join('');
+
+  const themesHtml = Array.isArray(city.themes) && city.themes.length
+    ? city.themes.map((t) => `<span class="theme-tag">${t}</span>`).join('')
+    : '';
 
   const distanceMeta = distanceLabel
     ? `<span class="meta-label">距離</span><span class="meta-value">${distanceLabel}</span>`
     : '';
 
-  if (isNewFormat) {
-    return `
-    <div class="city-block">
-      <div class="city-header">
-        <h2 class="city-name">${city.name}</h2>
-        <p class="city-sub">${city.region}</p>
-      </div>
-      <div class="city-meta-row">${distanceMeta}</div>
-      <div class="city-appeal">${appealHtml}</div>
-    </div>
-  `;
-  }
-
-  const themesHtml = (city.themes || [])
-    .map((t) => `<span class="theme-tag">${t}</span>`)
-    .join('');
-  const typeBadge = buildTypeBadge(city.type);
+  const categoryBadge = buildCategoryBadge(city.category);
 
   return `
     <div class="city-block">
       <div class="city-header">
         <h2 class="city-name">${city.name}</h2>
-        <p class="city-sub">${city.prefecture}　${city.region}${typeBadge}</p>
+        <p class="city-sub">${city.region}${categoryBadge}</p>
       </div>
       <div class="city-meta-row">${distanceMeta}</div>
-      <div class="themes-row">${themesHtml}</div>
-      <div class="city-appeal">${appealHtml}</div>
+      ${themesHtml ? `<div class="themes-row">${themesHtml}</div>` : ''}
+      <div class="city-appeal">${atmosphereHtml}</div>
     </div>
   `;
 }
 
-function buildTypeBadge(type) {
+function buildCategoryBadge(category) {
   const labels = {
-    onsen: '♨ 温泉',
+    onsen:  '♨ 温泉',
     island: '🏝 島',
-    rural: '🌿 自然',
-    town: '🏘 町',
-    city: '',
+    rural:  '🌿 自然',
+    town:   '🏘 町',
   };
-  const label = labels[type] || '';
+  const label = labels[category] || '';
   if (!label) return '';
-  return `　<span class="type-badge type-${type}">${label}</span>`;
+  return `　<span class="type-badge type-${category}">${label}</span>`;
 }
+
+/* ── 交通ブロック ── */
 
 function buildTransportBlock(links, isLast) {
   const lastClass = isLast ? ' result-block-last' : '';
@@ -96,6 +80,8 @@ function buildTransportBlock(links, isLast) {
     </div>
   `;
 }
+
+/* ── 宿泊ブロック ── */
 
 function buildHotelBlock(links, areaLabel, isLast) {
   const lastClass = isLast ? ' result-block-last' : '';

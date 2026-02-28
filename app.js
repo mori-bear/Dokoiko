@@ -62,7 +62,7 @@ function draw() {
     city,
     transportLinks,
     hotelLinks,
-    distanceLabel: DISTANCE_LABELS[state.distanceLevel],
+    distanceLabel: DISTANCE_LABELS[state.distance],
   });
 
   const resultEl = document.getElementById('result');
