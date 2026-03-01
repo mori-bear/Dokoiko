@@ -17,6 +17,7 @@ const state = {
 };
 
 async function init() {
+  initIntro();
   bindHandlers(state, go, retry);
 
   try {
@@ -68,7 +69,7 @@ function draw() {
   if (!city) return;
 
   const transportLinks = resolveTransportLinks(city, state.departure, state.datetime);
-  const hotelLinks     = buildHotelLinks(city, state.datetime?.split('T')[0], state.stayType);
+  const hotelLinks     = buildHotelLinks(city, state.datetime?.split('T')[0], state.stayType, state.people);
 
   renderResult({
     city,
@@ -115,6 +116,22 @@ function buildDefaultDatetime() {
   d.setMinutes(d.getMinutes() + 30);
   const pad = (n) => String(n).padStart(2, '0');
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+/* ── イントロ演出 ── */
+
+function initIntro() {
+  const overlay = document.getElementById('intro-overlay');
+  if (!overlay) return;
+
+  // インラインスクリプトで既に非表示になっている場合はスキップ
+  if (overlay.style.display === 'none') return;
+
+  // アニメーション終了後にDOMから除去してlocalStorageに記録
+  overlay.addEventListener('animationend', () => {
+    overlay.remove();
+    localStorage.setItem('dokoiko-intro-v1', '1');
+  }, { once: true });
 }
 
 init();

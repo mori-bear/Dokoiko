@@ -50,6 +50,32 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ── イントロ演出（初回のみ） ── */
+
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: introFadeOut 1.2s ease-out 0.5s both;
+}
+
+.intro-text {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+@keyframes introFadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; visibility: hidden; }
+}
+
 /* ── ヘッダー ── */
 
 .site-header {

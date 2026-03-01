@@ -9,6 +9,17 @@
 </head>
 <body>
 
+  <!-- イントロ演出（初回のみ表示） -->
+  <div id="intro-overlay" class="intro-overlay" aria-hidden="true">
+    <p class="intro-text">知らない街へ、逢いに行こう。</p>
+  </div>
+  <script>
+    // 再訪問者向けに即座に非表示（フリック防止）
+    if (localStorage.getItem('dokoiko-intro-v1')) {
+      document.getElementById('intro-overlay').style.display = 'none';
+    }
+  </script>
+
   <header class="site-header">
     <div class="header-inner">
       <a class="site-logo" href="./index.html">どこ行こ？</a>
@@ -25,7 +36,7 @@
 
       <section class="hero">
         <h1 class="hero-heading">行き先を、引いてみよう。</h1>
-        <p class="hero-text">出発地と距離感を選ぶだけ。行ける場所を1つだけ出します。</p>
+        <p class="hero-text">出発地と距離感だけで、ちゃんと行ける街を1つだけ。</p>
       </section>
 
       <section class="controls">

@@ -75,14 +75,14 @@ function buildCityBlock(city, _distanceLabel) {
  * アクセス文（1文目固定）
  *
  * 代表入口（駅/空港/港）と二次交通を1文に統合して表示する。
- * 「直結」は使用禁止。動詞で終わる形式を保つ。
+ * 「直結」は使用禁止。句点で終わる形式を保つ。
  *
  * 形式:
- *   rail + lastTransport  → 「○○駅から、△△」
- *   rail + null           → 「○○駅から直接アクセス」
- *   air  + lastTransport  → 「○○空港から、△△」
- *   air  + null           → 「○○空港に到着後すぐ市内へ」
- *   ferry                 → 「○○港からフェリー（△△）」
+ *   rail + lastTransport  → 「○○駅から、△△。」
+ *   rail + null           → 「○○駅から直接アクセス。」
+ *   air  + lastTransport  → 「○○空港から、△△。」
+ *   air  + null           → 「○○空港に到着後すぐ市内へ。」
+ *   ferry                 → 「○○港からフェリー（△△）。」
  */
 function buildAccessSentence(city) {
   const { access } = city;
@@ -90,24 +90,27 @@ function buildAccessSentence(city) {
 
   if (access.rail?.gatewayStation) {
     const { gatewayStation, lastTransport } = access.rail;
+    if (!gatewayStation) return '';
     const journey = lastTransport
-      ? `から、${lastTransport}`
-      : 'から直接アクセス';
+      ? `から、${lastTransport}。`
+      : 'から直接アクセス。';
     return `<p class="access-sentence">${gatewayStation}${journey}</p>`;
   }
 
   if (access.air?.airportName) {
     const { airportName, lastTransport } = access.air;
+    if (!airportName) return '';
     const journey = lastTransport
-      ? `から、${lastTransport}`
-      : 'に到着後すぐ市内へ';
+      ? `から、${lastTransport}。`
+      : 'に到着後すぐ市内へ。';
     return `<p class="access-sentence">${airportName}${journey}</p>`;
   }
 
   if (access.ferry?.portName) {
     const { portName, lastTransport } = access.ferry;
+    if (!portName) return '';
     const dur = lastTransport ? `（${lastTransport}）` : '';
-    return `<p class="access-sentence">${portName}からフェリー${dur}</p>`;
+    return `<p class="access-sentence">${portName}からフェリー${dur}。</p>`;
   }
 
   return '';
