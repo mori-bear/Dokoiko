@@ -512,17 +512,40 @@ body {
   color: var(--text);
 }
 
-/* アクセス行（代表駅→二次交通） */
+/* 最寄り駅/空港/港ラベル */
+
+.gateway-label {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+
+.gateway-type {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-sub);
+  letter-spacing: .5px;
+  background: var(--bg);
+  padding: 2px 7px;
+  border-radius: 100px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* アクセス行（二次交通のみ、直結は非表示） */
 
 .access-line {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--text-sub);
-  margin-bottom: 14px;
-  font-weight: 500;
-  padding: 6px 12px;
-  background: var(--bg);
-  border-radius: var(--radius);
-  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 400;
+  padding-left: 2px;
+  display: block;
 }
 
 /* 距離★凡例 */
