@@ -26,7 +26,7 @@ export function buildRakutenLink(cityName) {
   return {
     type: 'rakuten',
     label: 'この街の宿を見てみる（楽天トラベル）',
-    url: `https://travel.rakuten.co.jp/keyword_search/?f_query=${encoded}&cid=511c83ed.aa0fc172.511c83ee.51331b19`,
+    url: `https://hotel.travel.rakuten.co.jp/hotelsearch/keywordSearch.do?f_keyword=${encoded}&scid=af_pc_link_url&sc2id=511c83ed.aa0fc172.511c83ee.51331b19`,
   };
 }
 
