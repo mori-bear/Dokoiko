@@ -38,16 +38,11 @@ export function buildHotelLinks(city, date, stayType, people) {
 /* ── 楽天トラベル ── */
 
 function buildRakutenLink(area, dates, adult) {
-  let searchUrl = `https://search.travel.rakuten.co.jp/ds/yado/?f_keyword=${encodeURIComponent(area)}&f_adult=${adult}`;
+  let url = `https://search.travel.rakuten.co.jp/ds/yado/?f_keyword=${encodeURIComponent(area)}&f_adult=${adult}&scid=af_pc_link_url&sc2id=${RAKUTEN_AFF_ID}`;
   if (dates) {
-    searchUrl += `&f_checkin=${dates.checkIn}&f_checkout=${dates.checkOut}`;
+    url += `&f_checkin=${dates.checkIn}&f_checkout=${dates.checkOut}`;
   }
-
-  return {
-    type:  'rakuten',
-    label: 'この街の宿を見てみる（楽天トラベル）',
-    url:   `https://hb.afl.rakuten.co.jp/hgc/${RAKUTEN_AFF_ID}/?pc=${encodeURIComponent(searchUrl)}`,
-  };
+  return { type: 'rakuten', label: 'この街の宿を見てみる（楽天トラベル）', url };
 }
 
 /* ── じゃらん ── */

@@ -34,7 +34,10 @@ export function resolveTransportLinks(city, departure, datetime) {
   // 1. 鉄道（最優先）
   if (access.rail) {
     const { bookingProvider } = access.rail;
-    links.push(buildGoogleMapsLink(fromCity.rail, dest, datetime, 'transit'));
+    // star>=4かつair有りの場合はGoogle Maps transitを省略（飛行機が主要手段）
+    if (!(city.star >= 4 && access.air)) {
+      links.push(buildGoogleMapsLink(fromCity.rail, dest, datetime, 'transit'));
+    }
     const jrLink = buildJrLink(resolveBookingProvider(bookingProvider, departure));
     if (jrLink) links.push(jrLink);
   }
@@ -57,7 +60,7 @@ export function resolveTransportLinks(city, departure, datetime) {
     links.push(buildGoogleMapsLink(access.ferry.portName, dest, datetime, 'transit'));
   }
 
-  return links.filter(Boolean);
+  return links.filter(link => link && link.url);
 }
 
 /**
