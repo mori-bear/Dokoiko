@@ -3,9 +3,10 @@
     "id": "yokohama",
     "name": "横浜",
     "region": "関東",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "横浜",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -30,18 +31,16 @@
       "港町",
       "中華街",
       "夜景"
-    ],
-    "affiliate": {
-      "hotelArea": "横浜"
-    }
+    ]
   },
   {
     "id": "kamakura",
     "name": "鎌倉",
     "region": "関東",
-    "category": "town",
+    "type": "local",
     "mapDestination": "鎌倉",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -66,18 +65,16 @@
       "寺社",
       "海",
       "古都"
-    ],
-    "affiliate": {
-      "hotelArea": "鎌倉"
-    }
+    ]
   },
   {
     "id": "atami",
     "name": "熱海",
     "region": "中部",
-    "category": "onsen",
+    "type": "local",
     "mapDestination": "熱海",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "1night"
@@ -101,18 +98,16 @@
       "温泉",
       "海",
       "リゾート"
-    ],
-    "affiliate": {
-      "hotelArea": "熱海"
-    }
+    ]
   },
   {
     "id": "nikko",
     "name": "日光",
     "region": "関東",
-    "category": "town",
+    "type": "local",
     "mapDestination": "日光",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "daytrip",
@@ -137,18 +132,16 @@
       "世界遺産",
       "自然",
       "温泉"
-    ],
-    "affiliate": {
-      "hotelArea": "日光"
-    }
+    ]
   },
   {
     "id": "karuizawa",
     "name": "軽井沢",
     "region": "中部",
-    "category": "rural",
+    "type": "local",
     "mapDestination": "軽井沢",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -172,18 +165,16 @@
       "高原",
       "リゾート",
       "アウトレット"
-    ],
-    "affiliate": {
-      "hotelArea": "軽井沢"
-    }
+    ]
   },
   {
     "id": "fujikawaguchiko",
     "name": "富士河口湖",
     "region": "中部",
-    "category": "rural",
+    "type": "local",
     "mapDestination": "富士河口湖",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -207,18 +198,16 @@
       "富士山",
       "湖",
       "温泉"
-    ],
-    "affiliate": {
-      "hotelArea": "富士河口湖"
-    }
+    ]
   },
   {
     "id": "nagoya-t",
     "name": "名古屋",
     "region": "中部",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "名古屋",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -242,18 +231,16 @@
       "城下町",
       "グルメ",
       "ものづくり"
-    ],
-    "affiliate": {
-      "hotelArea": "名古屋"
-    }
+    ]
   },
   {
     "id": "sendai-t",
     "name": "仙台",
     "region": "東北",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "仙台",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -277,18 +264,16 @@
       "城下町",
       "海鮮",
       "杜の都"
-    ],
-    "affiliate": {
-      "hotelArea": "仙台"
-    }
+    ]
   },
   {
     "id": "kanazawa-t",
     "name": "金沢",
     "region": "中部",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "金沢",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -312,18 +297,16 @@
       "工芸",
       "兼六園",
       "海の幸"
-    ],
-    "affiliate": {
-      "hotelArea": "金沢"
-    }
+    ]
   },
   {
     "id": "osaka-t",
     "name": "大阪",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "大阪",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -347,18 +330,16 @@
       "グルメ",
       "エンタメ",
       "下町"
-    ],
-    "affiliate": {
-      "hotelArea": "大阪"
-    }
+    ]
   },
   {
     "id": "kyoto-t",
     "name": "京都",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "京都",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -382,18 +363,16 @@
       "寺社",
       "歴史",
       "町家"
-    ],
-    "affiliate": {
-      "hotelArea": "京都"
-    }
+    ]
   },
   {
     "id": "hiroshima-t",
     "name": "広島",
     "region": "中国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "広島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -417,18 +396,16 @@
       "平和",
       "牡蠣",
       "宮島"
-    ],
-    "affiliate": {
-      "hotelArea": "広島"
-    }
+    ]
   },
   {
     "id": "fukuoka-t",
     "name": "福岡",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "福岡",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -452,18 +429,16 @@
       "ラーメン",
       "屋台",
       "活気"
-    ],
-    "affiliate": {
-      "hotelArea": "福岡"
-    }
+    ]
   },
   {
     "id": "sapporo-t",
     "name": "札幌",
     "region": "北海道",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "札幌",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -487,18 +462,16 @@
       "グルメ",
       "自然",
       "雪まつり"
-    ],
-    "affiliate": {
-      "hotelArea": "札幌"
-    }
+    ]
   },
   {
     "id": "okinawa-t",
     "name": "沖縄",
     "region": "沖縄",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "沖縄",
     "parentHub": null,
+    "hotelBase": null,
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -522,18 +495,16 @@
       "海",
       "リゾート",
       "琉球文化"
-    ],
-    "affiliate": {
-      "hotelArea": "沖縄"
-    }
+    ]
   },
   {
     "id": "nara",
     "name": "奈良",
     "region": "近畿",
-    "category": "town",
+    "type": "local",
     "mapDestination": "奈良",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -559,18 +530,16 @@
       "世界遺産",
       "鹿",
       "古都"
-    ],
-    "affiliate": {
-      "hotelArea": "奈良"
-    }
+    ]
   },
   {
     "id": "kobe",
     "name": "神戸",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "神戸",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -595,18 +564,16 @@
       "港町",
       "異人館",
       "スイーツ"
-    ],
-    "affiliate": {
-      "hotelArea": "神戸"
-    }
+    ]
   },
   {
     "id": "kyoto-o",
     "name": "京都",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "京都",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -631,18 +598,16 @@
       "寺社",
       "歴史",
       "町家"
-    ],
-    "affiliate": {
-      "hotelArea": "京都"
-    }
+    ]
   },
   {
     "id": "himeji",
     "name": "姫路",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "姫路",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -667,18 +632,16 @@
       "城",
       "世界遺産",
       "播磨"
-    ],
-    "affiliate": {
-      "hotelArea": "姫路"
-    }
+    ]
   },
   {
     "id": "wakayama",
     "name": "和歌山",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "和歌山",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "1night"
@@ -704,18 +667,16 @@
       "高野山",
       "温泉",
       "海"
-    ],
-    "affiliate": {
-      "hotelArea": "和歌山"
-    }
+    ]
   },
   {
     "id": "okayama-o",
     "name": "岡山",
     "region": "中国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "岡山",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "daytrip",
@@ -740,18 +701,16 @@
       "後楽園",
       "倉敷",
       "桃"
-    ],
-    "affiliate": {
-      "hotelArea": "岡山"
-    }
+    ]
   },
   {
     "id": "nagoya-o",
     "name": "名古屋",
     "region": "中部",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "名古屋",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -775,18 +734,16 @@
       "城下町",
       "グルメ",
       "ものづくり"
-    ],
-    "affiliate": {
-      "hotelArea": "名古屋"
-    }
+    ]
   },
   {
     "id": "kanazawa-o",
     "name": "金沢",
     "region": "中部",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "金沢",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -810,18 +767,16 @@
       "工芸",
       "兼六園",
       "海の幸"
-    ],
-    "affiliate": {
-      "hotelArea": "金沢"
-    }
+    ]
   },
   {
     "id": "hiroshima-o",
     "name": "広島",
     "region": "中国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "広島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -845,18 +800,16 @@
       "平和",
       "牡蠣",
       "宮島"
-    ],
-    "affiliate": {
-      "hotelArea": "広島"
-    }
+    ]
   },
   {
     "id": "tokyo-o",
     "name": "東京",
     "region": "関東",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "東京",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -880,18 +833,16 @@
       "都市",
       "グルメ",
       "エンタメ"
-    ],
-    "affiliate": {
-      "hotelArea": "東京"
-    }
+    ]
   },
   {
     "id": "fukuoka-o",
     "name": "福岡",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "福岡",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -915,18 +866,16 @@
       "ラーメン",
       "屋台",
       "活気"
-    ],
-    "affiliate": {
-      "hotelArea": "福岡"
-    }
+    ]
   },
   {
     "id": "sapporo-o",
     "name": "札幌",
     "region": "北海道",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "札幌",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -950,18 +899,16 @@
       "グルメ",
       "自然",
       "雪まつり"
-    ],
-    "affiliate": {
-      "hotelArea": "札幌"
-    }
+    ]
   },
   {
     "id": "okinawa-o",
     "name": "沖縄",
     "region": "沖縄",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "沖縄",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -985,18 +932,16 @@
       "海",
       "リゾート",
       "琉球文化"
-    ],
-    "affiliate": {
-      "hotelArea": "沖縄"
-    }
+    ]
   },
   {
     "id": "ishigaki",
     "name": "石垣島",
     "region": "沖縄",
-    "category": "island",
+    "type": "island",
     "mapDestination": "石垣島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -1023,18 +968,16 @@
       "離島",
       "サンゴ礁",
       "星空"
-    ],
-    "affiliate": {
-      "hotelArea": "石垣島"
-    }
+    ]
   },
   {
     "id": "gifu",
     "name": "岐阜",
     "region": "中部",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "岐阜",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -1059,18 +1002,16 @@
       "城",
       "長良川",
       "鵜飼"
-    ],
-    "affiliate": {
-      "hotelArea": "岐阜"
-    }
+    ]
   },
   {
     "id": "kyoto-n",
     "name": "京都",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "京都",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -1095,18 +1036,16 @@
       "寺社",
       "歴史",
       "町家"
-    ],
-    "affiliate": {
-      "hotelArea": "京都"
-    }
+    ]
   },
   {
     "id": "ise",
     "name": "伊勢",
     "region": "中部",
-    "category": "town",
+    "type": "local",
     "mapDestination": "伊勢",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "daytrip",
@@ -1131,18 +1070,16 @@
       "神宮",
       "おかげ横丁",
       "海の幸"
-    ],
-    "affiliate": {
-      "hotelArea": "伊勢"
-    }
+    ]
   },
   {
     "id": "osaka-n",
     "name": "大阪",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "大阪",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -1166,18 +1103,16 @@
       "グルメ",
       "エンタメ",
       "下町"
-    ],
-    "affiliate": {
-      "hotelArea": "大阪"
-    }
+    ]
   },
   {
     "id": "kanazawa-n",
     "name": "金沢",
     "region": "中部",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "金沢",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -1201,18 +1136,16 @@
       "工芸",
       "兼六園",
       "海の幸"
-    ],
-    "affiliate": {
-      "hotelArea": "金沢"
-    }
+    ]
   },
   {
     "id": "tokyo-n",
     "name": "東京",
     "region": "関東",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "東京",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -1236,18 +1169,16 @@
       "都市",
       "グルメ",
       "エンタメ"
-    ],
-    "affiliate": {
-      "hotelArea": "東京"
-    }
+    ]
   },
   {
     "id": "hiroshima-n",
     "name": "広島",
     "region": "中国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "広島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -1271,18 +1202,16 @@
       "平和",
       "牡蠣",
       "宮島"
-    ],
-    "affiliate": {
-      "hotelArea": "広島"
-    }
+    ]
   },
   {
     "id": "sendai-n",
     "name": "仙台",
     "region": "東北",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "仙台",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -1306,18 +1235,16 @@
       "城下町",
       "海鮮",
       "杜の都"
-    ],
-    "affiliate": {
-      "hotelArea": "仙台"
-    }
+    ]
   },
   {
     "id": "fukuoka-n",
     "name": "福岡",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "福岡",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -1341,18 +1268,16 @@
       "ラーメン",
       "屋台",
       "活気"
-    ],
-    "affiliate": {
-      "hotelArea": "福岡"
-    }
+    ]
   },
   {
     "id": "sapporo-n",
     "name": "札幌",
     "region": "北海道",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "札幌",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -1376,18 +1301,16 @@
       "グルメ",
       "自然",
       "雪まつり"
-    ],
-    "affiliate": {
-      "hotelArea": "札幌"
-    }
+    ]
   },
   {
     "id": "okinawa-n",
     "name": "沖縄",
     "region": "沖縄",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "沖縄",
     "parentHub": null,
+    "hotelBase": null,
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -1411,18 +1334,16 @@
       "海",
       "リゾート",
       "琉球文化"
-    ],
-    "affiliate": {
-      "hotelArea": "沖縄"
-    }
+    ]
   },
   {
     "id": "saga",
     "name": "佐賀",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "佐賀",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -1447,18 +1368,16 @@
       "陶芸",
       "バルーン",
       "温泉"
-    ],
-    "affiliate": {
-      "hotelArea": "佐賀"
-    }
+    ]
   },
   {
     "id": "kumamoto",
     "name": "熊本",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "熊本",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -1483,18 +1402,16 @@
       "城",
       "阿蘇",
       "グルメ"
-    ],
-    "affiliate": {
-      "hotelArea": "熊本"
-    }
+    ]
   },
   {
     "id": "nagasaki",
     "name": "長崎",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "長崎",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -1518,18 +1435,16 @@
       "坂の街",
       "異国情緒",
       "歴史"
-    ],
-    "affiliate": {
-      "hotelArea": "長崎"
-    }
+    ]
   },
   {
     "id": "beppu",
     "name": "別府",
     "region": "九州",
-    "category": "onsen",
+    "type": "local",
     "mapDestination": "別府",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -1553,18 +1468,16 @@
       "温泉",
       "地獄めぐり",
       "海の幸"
-    ],
-    "affiliate": {
-      "hotelArea": "別府"
-    }
+    ]
   },
   {
     "id": "kagoshima",
     "name": "鹿児島",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "鹿児島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -1588,18 +1501,16 @@
       "桜島",
       "温泉",
       "薩摩"
-    ],
-    "affiliate": {
-      "hotelArea": "鹿児島"
-    }
+    ]
   },
   {
     "id": "miyazaki",
     "name": "宮崎",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "宮崎",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -1623,18 +1534,16 @@
       "海",
       "神話",
       "地鶏"
-    ],
-    "affiliate": {
-      "hotelArea": "宮崎"
-    }
+    ]
   },
   {
     "id": "hiroshima-f",
     "name": "広島",
     "region": "中国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "広島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -1658,18 +1567,16 @@
       "平和",
       "牡蠣",
       "宮島"
-    ],
-    "affiliate": {
-      "hotelArea": "広島"
-    }
+    ]
   },
   {
     "id": "osaka-f",
     "name": "大阪",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "大阪",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -1693,18 +1600,16 @@
       "グルメ",
       "エンタメ",
       "下町"
-    ],
-    "affiliate": {
-      "hotelArea": "大阪"
-    }
+    ]
   },
   {
     "id": "tokyo-f",
     "name": "東京",
     "region": "関東",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "東京",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -1728,18 +1633,16 @@
       "都市",
       "グルメ",
       "エンタメ"
-    ],
-    "affiliate": {
-      "hotelArea": "東京"
-    }
+    ]
   },
   {
     "id": "okinawa-f",
     "name": "沖縄",
     "region": "沖縄",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "沖縄",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -1763,18 +1666,16 @@
       "海",
       "リゾート",
       "琉球文化"
-    ],
-    "affiliate": {
-      "hotelArea": "沖縄"
-    }
+    ]
   },
   {
     "id": "sapporo-f",
     "name": "札幌",
     "region": "北海道",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "札幌",
     "parentHub": null,
+    "hotelBase": null,
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -1798,18 +1699,16 @@
       "グルメ",
       "自然",
       "雪まつり"
-    ],
-    "affiliate": {
-      "hotelArea": "札幌"
-    }
+    ]
   },
   {
     "id": "otaru",
     "name": "小樽",
     "region": "北海道",
-    "category": "town",
+    "type": "local",
     "mapDestination": "小樽",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -1834,18 +1733,16 @@
       "運河",
       "海の幸",
       "ガラス工芸"
-    ],
-    "affiliate": {
-      "hotelArea": "小樽"
-    }
+    ]
   },
   {
     "id": "asahikawa",
     "name": "旭川",
     "region": "北海道",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "旭川",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -1869,18 +1766,16 @@
       "動物園",
       "ラーメン",
       "自然"
-    ],
-    "affiliate": {
-      "hotelArea": "旭川"
-    }
+    ]
   },
   {
     "id": "furano",
     "name": "富良野",
     "region": "北海道",
-    "category": "rural",
+    "type": "local",
     "mapDestination": "富良野",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -1904,18 +1799,16 @@
       "ラベンダー",
       "農場",
       "スキー"
-    ],
-    "affiliate": {
-      "hotelArea": "富良野"
-    }
+    ]
   },
   {
     "id": "kushiro",
     "name": "釧路",
     "region": "北海道",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "釧路",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -1939,18 +1832,16 @@
       "湿原",
       "丹頂鶴",
       "炉端焼き"
-    ],
-    "affiliate": {
-      "hotelArea": "釧路"
-    }
+    ]
   },
   {
     "id": "hakodate",
     "name": "函館",
     "region": "北海道",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "函館",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -1974,18 +1865,16 @@
       "夜景",
       "朝市",
       "洋館"
-    ],
-    "affiliate": {
-      "hotelArea": "函館"
-    }
+    ]
   },
   {
     "id": "tokyo-s",
     "name": "東京",
     "region": "関東",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "東京",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -2009,18 +1898,16 @@
       "都市",
       "グルメ",
       "エンタメ"
-    ],
-    "affiliate": {
-      "hotelArea": "東京"
-    }
+    ]
   },
   {
     "id": "osaka-s",
     "name": "大阪",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "大阪",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -2044,18 +1931,16 @@
       "グルメ",
       "エンタメ",
       "下町"
-    ],
-    "affiliate": {
-      "hotelArea": "大阪"
-    }
+    ]
   },
   {
     "id": "fukuoka-s",
     "name": "福岡",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "福岡",
     "parentHub": null,
+    "hotelBase": null,
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -2079,18 +1964,16 @@
       "ラーメン",
       "屋台",
       "活気"
-    ],
-    "affiliate": {
-      "hotelArea": "福岡"
-    }
+    ]
   },
   {
     "id": "okinawa-s",
     "name": "沖縄",
     "region": "沖縄",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "沖縄",
     "parentHub": null,
+    "hotelBase": null,
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -2114,18 +1997,16 @@
       "海",
       "リゾート",
       "琉球文化"
-    ],
-    "affiliate": {
-      "hotelArea": "沖縄"
-    }
+    ]
   },
   {
     "id": "matsushima",
     "name": "松島",
     "region": "東北",
-    "category": "town",
+    "type": "local",
     "mapDestination": "松島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -2150,18 +2031,16 @@
       "日本三景",
       "海",
       "牡蠣"
-    ],
-    "affiliate": {
-      "hotelArea": "松島"
-    }
+    ]
   },
   {
     "id": "yamagata",
     "name": "山形",
     "region": "東北",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "山形",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -2186,18 +2065,16 @@
       "山寺",
       "温泉",
       "芋煮"
-    ],
-    "affiliate": {
-      "hotelArea": "山形"
-    }
+    ]
   },
   {
     "id": "morioka",
     "name": "盛岡",
     "region": "東北",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "盛岡",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -2221,18 +2098,16 @@
       "わんこそば",
       "冷麺",
       "城跡"
-    ],
-    "affiliate": {
-      "hotelArea": "盛岡"
-    }
+    ]
   },
   {
     "id": "tokyo-se",
     "name": "東京",
     "region": "関東",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "東京",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -2256,18 +2131,16 @@
       "都市",
       "グルメ",
       "エンタメ"
-    ],
-    "affiliate": {
-      "hotelArea": "東京"
-    }
+    ]
   },
   {
     "id": "niigata",
     "name": "新潟",
     "region": "中部",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "新潟",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -2291,18 +2164,16 @@
       "コシヒカリ",
       "日本酒",
       "海の幸"
-    ],
-    "affiliate": {
-      "hotelArea": "新潟"
-    }
+    ]
   },
   {
     "id": "kanazawa-se",
     "name": "金沢",
     "region": "中部",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "金沢",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -2326,18 +2197,16 @@
       "工芸",
       "兼六園",
       "海の幸"
-    ],
-    "affiliate": {
-      "hotelArea": "金沢"
-    }
+    ]
   },
   {
     "id": "osaka-se",
     "name": "大阪",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "大阪",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -2361,18 +2230,16 @@
       "グルメ",
       "エンタメ",
       "下町"
-    ],
-    "affiliate": {
-      "hotelArea": "大阪"
-    }
+    ]
   },
   {
     "id": "fukuoka-se",
     "name": "福岡",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "福岡",
     "parentHub": null,
+    "hotelBase": null,
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -2396,18 +2263,16 @@
       "ラーメン",
       "屋台",
       "活気"
-    ],
-    "affiliate": {
-      "hotelArea": "福岡"
-    }
+    ]
   },
   {
     "id": "miyajima",
     "name": "宮島",
     "region": "中国",
-    "category": "island",
+    "type": "island",
     "mapDestination": "宮島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -2432,18 +2297,16 @@
       "厳島神社",
       "世界遺産",
       "鹿"
-    ],
-    "affiliate": {
-      "hotelArea": "宮島"
-    }
+    ]
   },
   {
     "id": "onomichi",
     "name": "尾道",
     "region": "中国",
-    "category": "town",
+    "type": "local",
     "mapDestination": "尾道",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -2468,18 +2331,16 @@
       "坂の街",
       "映画の街",
       "瀬戸内"
-    ],
-    "affiliate": {
-      "hotelArea": "尾道"
-    }
+    ]
   },
   {
     "id": "okayama-h",
     "name": "岡山",
     "region": "中国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "岡山",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -2504,18 +2365,16 @@
       "後楽園",
       "倉敷",
       "桃"
-    ],
-    "affiliate": {
-      "hotelArea": "岡山"
-    }
+    ]
   },
   {
     "id": "matsuyama",
     "name": "松山",
     "region": "四国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "松山",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -2539,18 +2398,16 @@
       "道後温泉",
       "松山城",
       "坊っちゃん"
-    ],
-    "affiliate": {
-      "hotelArea": "松山"
-    }
+    ]
   },
   {
     "id": "osaka-h",
     "name": "大阪",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "大阪",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -2574,18 +2431,16 @@
       "グルメ",
       "エンタメ",
       "下町"
-    ],
-    "affiliate": {
-      "hotelArea": "大阪"
-    }
+    ]
   },
   {
     "id": "fukuoka-h",
     "name": "福岡",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "福岡",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -2609,18 +2464,16 @@
       "ラーメン",
       "屋台",
       "活気"
-    ],
-    "affiliate": {
-      "hotelArea": "福岡"
-    }
+    ]
   },
   {
     "id": "kyoto-h",
     "name": "京都",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "京都",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -2644,18 +2497,16 @@
       "寺社",
       "歴史",
       "町家"
-    ],
-    "affiliate": {
-      "hotelArea": "京都"
-    }
+    ]
   },
   {
     "id": "nagoya-h",
     "name": "名古屋",
     "region": "中部",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "名古屋",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -2679,18 +2530,16 @@
       "城下町",
       "グルメ",
       "ものづくり"
-    ],
-    "affiliate": {
-      "hotelArea": "名古屋"
-    }
+    ]
   },
   {
     "id": "tokyo-h",
     "name": "東京",
     "region": "関東",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "東京",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -2714,18 +2563,16 @@
       "都市",
       "グルメ",
       "エンタメ"
-    ],
-    "affiliate": {
-      "hotelArea": "東京"
-    }
+    ]
   },
   {
     "id": "okinawa-h",
     "name": "沖縄",
     "region": "沖縄",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "沖縄",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -2749,18 +2596,16 @@
       "海",
       "リゾート",
       "琉球文化"
-    ],
-    "affiliate": {
-      "hotelArea": "沖縄"
-    }
+    ]
   },
   {
     "id": "sapporo-h",
     "name": "札幌",
     "region": "北海道",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "札幌",
     "parentHub": null,
+    "hotelBase": null,
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -2784,18 +2629,16 @@
       "グルメ",
       "自然",
       "雪まつり"
-    ],
-    "affiliate": {
-      "hotelArea": "札幌"
-    }
+    ]
   },
   {
     "id": "tokushima",
     "name": "徳島",
     "region": "四国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "徳島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -2820,18 +2663,16 @@
       "阿波踊り",
       "鳴門",
       "すだち"
-    ],
-    "affiliate": {
-      "hotelArea": "徳島"
-    }
+    ]
   },
   {
     "id": "okayama-k",
     "name": "岡山",
     "region": "中国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "岡山",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "daytrip",
@@ -2856,18 +2697,16 @@
       "後楽園",
       "倉敷",
       "桃"
-    ],
-    "affiliate": {
-      "hotelArea": "岡山"
-    }
+    ]
   },
   {
     "id": "shodoshima",
     "name": "小豆島",
     "region": "四国",
-    "category": "island",
+    "type": "island",
     "mapDestination": "小豆島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 1,
     "stayTypeAllowed": [
       "1night"
@@ -2891,18 +2730,16 @@
       "オリーブ",
       "醤油",
       "映画の舞台"
-    ],
-    "affiliate": {
-      "hotelArea": "小豆島"
-    }
+    ]
   },
   {
     "id": "kochi",
     "name": "高知",
     "region": "四国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "高知",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -2926,18 +2763,16 @@
       "カツオ",
       "よさこい",
       "坂本龍馬"
-    ],
-    "affiliate": {
-      "hotelArea": "高知"
-    }
+    ]
   },
   {
     "id": "matsuyama-k",
     "name": "松山",
     "region": "四国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "松山",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -2961,18 +2796,16 @@
       "道後温泉",
       "松山城",
       "坊っちゃん"
-    ],
-    "affiliate": {
-      "hotelArea": "松山"
-    }
+    ]
   },
   {
     "id": "osaka-k",
     "name": "大阪",
     "region": "近畿",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "大阪",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -2996,18 +2829,16 @@
       "グルメ",
       "エンタメ",
       "下町"
-    ],
-    "affiliate": {
-      "hotelArea": "大阪"
-    }
+    ]
   },
   {
     "id": "hiroshima-k",
     "name": "広島",
     "region": "中国",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "広島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -3031,18 +2862,16 @@
       "平和",
       "牡蠣",
       "宮島"
-    ],
-    "affiliate": {
-      "hotelArea": "広島"
-    }
+    ]
   },
   {
     "id": "fukuoka-k",
     "name": "福岡",
     "region": "九州",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "福岡",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -3066,18 +2895,16 @@
       "ラーメン",
       "屋台",
       "活気"
-    ],
-    "affiliate": {
-      "hotelArea": "福岡"
-    }
+    ]
   },
   {
     "id": "tokyo-k",
     "name": "東京",
     "region": "関東",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "東京",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -3101,18 +2928,16 @@
       "都市",
       "グルメ",
       "エンタメ"
-    ],
-    "affiliate": {
-      "hotelArea": "東京"
-    }
+    ]
   },
   {
     "id": "okinawa-k",
     "name": "沖縄",
     "region": "沖縄",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "沖縄",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -3136,18 +2961,16 @@
       "海",
       "リゾート",
       "琉球文化"
-    ],
-    "affiliate": {
-      "hotelArea": "沖縄"
-    }
+    ]
   },
   {
     "id": "sapporo-k",
     "name": "札幌",
     "region": "北海道",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "札幌",
     "parentHub": null,
+    "hotelBase": null,
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -3171,18 +2994,16 @@
       "グルメ",
       "自然",
       "雪まつり"
-    ],
-    "affiliate": {
-      "hotelArea": "札幌"
-    }
+    ]
   },
   {
     "id": "mihonoseki",
     "name": "美保関",
     "region": "中国",
-    "category": null,
+    "type": "local",
     "mapDestination": "美保関",
     "parentHub": null,
+    "hotelBase": null,
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -3203,18 +3024,16 @@
       "境港まで続く中海の水面は、夕方になると橙に染まる。",
       "青石畳の参道を歩くと、都市とは別の時間の密度がある。"
     ],
-    "themes": null,
-    "affiliate": {
-      "hotelArea": "境港・美保関"
-    }
+    "themes": null
   },
   {
     "id": "ryujin-onsen",
     "name": "龍神温泉",
     "region": "近畿",
-    "category": null,
+    "type": "local",
     "mapDestination": "龍神温泉",
     "parentHub": "和歌山",
+    "hotelBase": "wakayama",
     "star": 3,
     "stayTypeAllowed": [
       "1night"
@@ -3234,18 +3053,16 @@
       "龍神スカイラインの険しい山道を越えると、別世界の静けさが待っている。",
       "宿の露天風呂から聞こえる渓流の音が、夜を長くする。"
     ],
-    "themes": null,
-    "affiliate": {
-      "hotelArea": "龍神温泉"
-    }
+    "themes": null
   },
   {
     "id": "naha",
     "name": "那覇",
     "region": "沖縄",
-    "category": "city",
+    "type": "hub",
     "mapDestination": "那覇",
     "parentHub": null,
+    "hotelBase": null,
     "star": 4,
     "stayTypeAllowed": [
       "1night"
@@ -3276,18 +3093,16 @@
       "琉球文化",
       "海",
       "グルメ"
-    ],
-    "affiliate": {
-      "hotelArea": "那覇"
-    }
+    ]
   },
   {
     "id": "tokashiki-jima",
     "name": "渡嘉敷島",
     "region": "沖縄",
-    "category": null,
+    "type": "island",
     "mapDestination": "渡嘉敷島",
     "parentHub": "那覇",
+    "hotelBase": "naha",
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -3309,18 +3124,16 @@
       "フェリーで那覇から35分。島に着くと、本島の喧騒が別世界に感じる。",
       "夜は星が降るように見える。島の暗さが空をその分だけ広げる。"
     ],
-    "themes": null,
-    "affiliate": {
-      "hotelArea": "渡嘉敷島"
-    }
+    "themes": null
   },
   {
     "id": "kumejima",
     "name": "久米島",
     "region": "沖縄",
-    "category": "island",
+    "type": "island",
     "mapDestination": "久米島",
     "parentHub": "那覇",
+    "hotelBase": "naha",
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -3346,18 +3159,16 @@
       "離島",
       "砂浜",
       "ダイビング"
-    ],
-    "affiliate": {
-      "hotelArea": "久米島"
-    }
+    ]
   },
   {
     "id": "miyakojima",
     "name": "宮古島",
     "region": "沖縄",
-    "category": "island",
+    "type": "island",
     "mapDestination": "宮古島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 5,
     "stayTypeAllowed": [
       "1night"
@@ -3384,18 +3195,16 @@
       "離島",
       "ダイビング",
       "ビーチ"
-    ],
-    "affiliate": {
-      "hotelArea": "宮古島"
-    }
+    ]
   },
   {
     "id": "kouzushima",
     "name": "神津島",
     "region": "伊豆諸島",
-    "category": "island",
+    "type": "island",
     "mapDestination": "神津島",
     "parentHub": null,
+    "hotelBase": null,
     "star": 2,
     "stayTypeAllowed": [
       "1night"
@@ -3419,9 +3228,6 @@
       "離島",
       "ハイキング",
       "ダイビング"
-    ],
-    "affiliate": {
-      "hotelArea": "神津島"
-    }
+    ]
   }
 ]

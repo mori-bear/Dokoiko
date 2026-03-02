@@ -56,7 +56,7 @@ function buildCityBlock(city, _distanceLabel) {
     ? city.themes.map((t) => `<span class="theme-tag">${t}</span>`).join('')
     : '';
 
-  const categoryBadge = buildCategoryBadge(city.category);
+  const categoryBadge = buildCategoryBadge(city.type);
 
   return `
     <div class="city-block">
@@ -90,16 +90,9 @@ function buildAccessSentence(city) {
   return '';
 }
 
-function buildCategoryBadge(category) {
-  const labels = {
-    onsen:  '温泉',
-    island: '島',
-    rural:  '自然',
-    town:   '町',
-  };
-  const label = labels[category] || '';
-  if (!label) return '';
-  return `　<span class="type-badge type-${category}">${label}</span>`;
+function buildCategoryBadge(type) {
+  if (type !== 'island') return '';
+  return `　<span class="type-badge type-island">島</span>`;
 }
 
 /* ── 交通ブロック ── */

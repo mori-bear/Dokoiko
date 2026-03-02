@@ -5,25 +5,27 @@ export function buildHotelLinks(city, date, stayType, people) {
 
   return {
     destination: [
-      buildRakutenLink(),
-      buildJalanLink(),
+      buildRakutenLink(city.name),
+      buildJalanLink(city.name),
     ],
     hub: [],
   };
 }
 
-export function buildRakutenLink() {
+export function buildRakutenLink(cityName) {
+  const encoded = encodeURIComponent(cityName);
   return {
     type: 'rakuten',
-    label: '楽天トラベルで探す',
-    url: 'https://travel.rakuten.co.jp/',
+    label: '楽天でこの街の宿を見る',
+    url: `https://www.google.com/search?q=${encoded}+楽天トラベル`,
   };
 }
 
-export function buildJalanLink() {
+export function buildJalanLink(cityName) {
+  const encoded = encodeURIComponent(cityName);
   return {
     type: 'jalan',
-    label: 'じゃらんで探す',
-    url: 'https://www.jalan.net/',
+    label: 'じゃらんでこの街の宿を見る',
+    url: `https://www.google.com/search?q=${encoded}+じゃらん`,
   };
 }
