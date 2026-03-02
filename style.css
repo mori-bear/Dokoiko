@@ -564,9 +564,9 @@ body {
   color: var(--text);
 }
 
-/* アクセス文（1文目固定・代表入口＋二次交通を統合） */
+/* アクセス行（代表入口＋方向性のみ） */
 
-.access-sentence {
+.access-line {
   font-size: 13px;
   font-weight: 500;
   color: var(--text);

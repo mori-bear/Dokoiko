@@ -60,7 +60,7 @@ export function buildGoogleMapsLink(origin, destination, datetime, mode = 'trans
   const unix = datetimeToUnix(datetime);
   return {
     type: 'google-maps',
-    label: '所要時間を見る（Googleマップ）',
+    label: 'ルートを見る（Googleマップ）',
     url: mapsUrl(origin, destination, mode, unix),
   };
 }
