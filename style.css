@@ -137,19 +137,20 @@ body {
 }
 
 .hero-heading {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 800;
   letter-spacing: -1px;
   color: var(--text);
-  line-height: 1.2;
+  line-height: 1.3;
   margin-bottom: 12px;
+  max-width: 560px;
 }
 
 .hero-sub {
   font-size: 14px;
   line-height: 1.9;
   color: var(--text-sub);
-  max-width: 420px;
+  max-width: 520px;
 }
 
 /* ── コントロール ── */
@@ -335,10 +336,10 @@ body {
 
 .result-card {
   background: var(--white);
-  border-radius: var(--radius-lg);
+  border-radius: 24px;
   border: 1px solid var(--border);
-  box-shadow: 0 30px 70px rgba(0,0,0,0.07);
-  overflow: hidden;
+  box-shadow: 0 28px 70px rgba(0,0,0,0.06);
+  padding: 32px;
 }
 
 /* カウンター */
@@ -348,13 +349,13 @@ body {
   justify-content: flex-end;
   font-size: 11px;
   color: var(--text-sub);
-  padding: 14px 24px 0;
+  margin-bottom: 20px;
 }
 
 /* 都市ブロック */
 
 .city-block {
-  padding: 20px 24px 24px;
+  /* padding は result-card が担う */
 }
 
 .city-header {
@@ -446,7 +447,8 @@ body {
 /* カードセクション（交通・宿泊） */
 
 .card-section {
-  padding: 20px 24px;
+  padding-top: 20px;
+  margin-top: 20px;
   border-top: 1px solid var(--border);
 }
 
@@ -478,21 +480,40 @@ body {
   opacity: .85;
 }
 
-/* 交通リンクの色 */
-.link-jr-east      { background: var(--c-jr-east); }
-.link-jr-west      { background: var(--c-jr-west); }
-.link-jr-kyushu    { background: var(--c-jr-kyushu); }
-.link-jr-ex        { background: var(--c-jr-ex); }
-.link-skyscanner   { background: var(--c-skyscanner); }
-.link-google-maps  { background: var(--c-google-maps); }
-.link-bus          { background: var(--c-bus); }
-.link-ferry        { background: var(--c-ferry); }
-.link-rental       { background: var(--c-rental); }
+/* primary（JR・航空）: 色付き solid */
+.link-jr-east    { background: var(--c-jr-east); }
+.link-jr-west    { background: var(--c-jr-west); }
+.link-jr-kyushu  { background: var(--c-jr-kyushu); }
+.link-jr-ex      { background: var(--c-jr-ex); }
+.link-skyscanner { background: var(--c-skyscanner); }
+.link-bus        { background: var(--c-bus); }
+.link-ferry      { background: var(--c-ferry); }
 
-/* 宿泊リンクの色 */
-.link-rakuten      { background: var(--c-rakuten); }
-.link-jalan        { background: var(--c-jalan); }
-.link-jalan-rental { background: var(--c-jalan-rental); }
+/* secondary（地図・レンタカー）: アウトライン */
+.link-google-maps {
+  background: transparent;
+  color: var(--text-sub);
+  border: 1px solid var(--border);
+  font-weight: 500;
+}
+.link-rental {
+  background: transparent;
+  color: var(--text-sub);
+  border: 1px solid var(--border);
+  font-weight: 500;
+}
+
+/* affiliate（楽天・じゃらん）: 控えめテキスト */
+.link-rakuten,
+.link-jalan,
+.link-jalan-rental {
+  background: transparent;
+  color: var(--text-sub);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 400;
+  padding: 10px 16px;
+}
 
 /* リトライボタン */
 
@@ -637,6 +658,10 @@ body {
 /* ── レスポンシブ ── */
 
 @media (max-width: 420px) {
+  .hero-heading {
+    font-size: 26px;
+  }
+
   .hero-sub {
     font-size: 13px;
   }
@@ -645,9 +670,8 @@ body {
     font-size: 28px;
   }
 
-  .city-block,
-  .card-section {
-    padding: 20px 16px;
+  .result-card {
+    padding: 24px 20px;
   }
 
   .go-btn {
