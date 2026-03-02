@@ -400,10 +400,10 @@
   },
   {
     "id": "fukuoka-t",
-    "name": "福岡",
+    "name": "博多",
     "type": "hub",
     "region": "九州",
-    "mapDestination": "福岡",
+    "mapDestination": "博多",
     "parentHub": null,
     "hotelBase": null,
     "distanceStars": 4,
@@ -421,9 +421,9 @@
       "ferryGateway": null
     },
     "atmosphere": [
-      "博多の屋台文化は、食べる場所と話す場所が同一になった独自の空間だ。",
-      "中洲の夜は、九州最大の繁華街の密度を一身に感じさせる。",
-      "福岡はアジアに最も近い日本の大都市であることが、街の空気に出ている。"
+      "博多駅から街へ。",
+      "屋台と濃いラーメン。",
+      "海を感じたくなれば、電車で糸島へ。"
     ],
     "themes": [
       "ラーメン",
@@ -837,10 +837,10 @@
   },
   {
     "id": "fukuoka-o",
-    "name": "福岡",
+    "name": "博多",
     "type": "hub",
     "region": "九州",
-    "mapDestination": "福岡",
+    "mapDestination": "博多",
     "parentHub": null,
     "hotelBase": null,
     "distanceStars": 3,
@@ -858,9 +858,9 @@
       "ferryGateway": null
     },
     "atmosphere": [
-      "博多ラーメンのスープは、豚骨の深みと濃度の点で東京系ラーメンと完全に別物だ。",
-      "中洲屋台は夜の博多に溶け込む独特の食文化で、屋外席の解放感が独自だ。",
-      "天神の地下街は雨の日でも完結する都市設計で、福岡の都市力を感じる。"
+      "博多駅から街へ。",
+      "屋台と濃いラーメン。",
+      "海を感じたくなれば、電車で糸島へ。"
     ],
     "themes": [
       "ラーメン",
@@ -1239,10 +1239,10 @@
   },
   {
     "id": "fukuoka-n",
-    "name": "福岡",
+    "name": "博多",
     "type": "hub",
     "region": "九州",
-    "mapDestination": "福岡",
+    "mapDestination": "博多",
     "parentHub": null,
     "hotelBase": null,
     "distanceStars": 3,
@@ -1260,9 +1260,9 @@
       "ferryGateway": null
     },
     "atmosphere": [
-      "新幹線で3時間、九州最大の都市は食の選択肢の多さで旅の密度が高い。",
-      "博多と天神が徒歩圏内にある地理的な集約が、福岡の使いやすさを生んでいる。",
-      "屋台でラーメンを食べながら隣の見知らぬ人と話す経験は、博多でしか起きにくい。"
+      "博多駅から街へ。",
+      "屋台と濃いラーメン。",
+      "海を感じたくなれば、電車で糸島へ。"
     ],
     "themes": [
       "ラーメン",
@@ -1935,10 +1935,10 @@
   },
   {
     "id": "fukuoka-s",
-    "name": "福岡",
+    "name": "博多",
     "type": "hub",
     "region": "九州",
-    "mapDestination": "福岡",
+    "mapDestination": "博多",
     "parentHub": null,
     "hotelBase": null,
     "distanceStars": 5,
@@ -1956,9 +1956,9 @@
       "ferryGateway": null
     },
     "atmosphere": [
-      "日本の南北両端から考えると、福岡と北海道の食文化の距離は最大級だ。",
-      "博多屋台の気軽さと質の高さは、札幌のすすきのとは全く異なる夜の文化だ。",
-      "天神と博多が近い福岡の街構造は、初めての旅先として動きやすい設計だ。"
+      "博多駅から街へ。",
+      "屋台と濃いラーメン。",
+      "海を感じたくなれば、電車で糸島へ。"
     ],
     "themes": [
       "ラーメン",
@@ -2234,10 +2234,10 @@
   },
   {
     "id": "fukuoka-se",
-    "name": "福岡",
+    "name": "博多",
     "type": "hub",
     "region": "九州",
-    "mapDestination": "福岡",
+    "mapDestination": "博多",
     "parentHub": null,
     "hotelBase": null,
     "distanceStars": 5,
@@ -2255,9 +2255,9 @@
       "ferryGateway": null
     },
     "atmosphere": [
-      "仙台から飛行機で福岡へ。東北と九州の食文化は、どちらも豊かで全く異なる。",
-      "博多の屋台は冬の寒い夜でも外で食べることで成立する文化的な強さがある。",
-      "太宰府天満宮は梅の季節に来ると、九州の春の始まりが鮮やかに体験できる。"
+      "博多駅から街へ。",
+      "屋台と濃いラーメン。",
+      "海を感じたくなれば、電車で糸島へ。"
     ],
     "themes": [
       "ラーメン",
@@ -2434,10 +2434,10 @@
   },
   {
     "id": "fukuoka-h",
-    "name": "福岡",
+    "name": "博多",
     "type": "hub",
     "region": "九州",
-    "mapDestination": "福岡",
+    "mapDestination": "博多",
     "parentHub": null,
     "hotelBase": null,
     "distanceStars": 2,
@@ -2455,9 +2455,9 @@
       "ferryGateway": null
     },
     "atmosphere": [
-      "広島から新幹線で1時間、九州の入り口は食の密度で旅人を迎える。",
-      "中洲の屋台街と長浜のラーメン横丁は、博多の夜食文化の二大拠点だ。",
-      "モツ鍋は博多の鍋文化の核心で、濃い出汁と野菜の組み合わせが完成されている。"
+      "博多駅から街へ。",
+      "屋台と濃いラーメン。",
+      "海を感じたくなれば、電車で糸島へ。"
     ],
     "themes": [
       "ラーメン",
@@ -2865,10 +2865,10 @@
   },
   {
     "id": "fukuoka-k",
-    "name": "福岡",
+    "name": "博多",
     "type": "hub",
     "region": "九州",
-    "mapDestination": "福岡",
+    "mapDestination": "博多",
     "parentHub": null,
     "hotelBase": null,
     "distanceStars": 3,
@@ -2886,9 +2886,9 @@
       "ferryGateway": null
     },
     "atmosphere": [
-      "高松から新幹線乗継か飛行機で、九州の入り口に到着する。",
-      "博多の食文化は香川の讃岐うどん文化とは対照的な濃さと量のある世界だ。",
-      "福岡タワーからの夜景は、博多湾を含む九州最大都市の夜の広がりを見せる。"
+      "博多駅から街へ。",
+      "屋台と濃いラーメン。",
+      "海を感じたくなれば、電車で糸島へ。"
     ],
     "themes": [
       "ラーメン",

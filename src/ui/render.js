@@ -2,9 +2,9 @@
  * DOM描画モジュール
  *
  * 表示順:
- *   1. カウンター（あとN件）
+ *   1. カウンター（N / total）
  *   2. 都市ブロック（アクセス行 + 空気感3行）
- *   3. 交通ブロック
+ *   3. 交通ブロック（ラベルなし）
  *   4. 宿泊ブロック（stayType=1night 時のみ）
  */
 
@@ -31,13 +31,8 @@ export function clearResult() {
 /* ── カウンター ── */
 
 function buildCounterBlock(index, total) {
-  const remaining = total - index - 1;
-  const remainingText = remaining > 0
-    ? `あと${remaining}件あります`
-    : 'すべて表示しました';
   return `
     <div class="result-counter">
-      <span>${remainingText}</span>
       <span>${index + 1} / ${total}</span>
     </div>
   `;
@@ -46,7 +41,7 @@ function buildCounterBlock(index, total) {
 /* ── 都市ブロック ── */
 
 function buildCityBlock(city, _distanceLabel) {
-  const accessSentence = buildAccessSentence(city);
+  const accessLine = buildAccessLine(city);
 
   const atmosphereHtml = (city.atmosphere || [])
     .map((line) => `<p class="appeal-line">${line}</p>`)
@@ -64,23 +59,23 @@ function buildCityBlock(city, _distanceLabel) {
         <h2 class="city-name">${city.name}</h2>
         <p class="city-sub">${city.region}${categoryBadge}</p>
       </div>
-      ${accessSentence}
+      ${accessLine}
       ${themesHtml ? `<div class="themes-row">${themesHtml}</div>` : ''}
       <div class="city-appeal">${atmosphereHtml}</div>
     </div>
   `;
 }
 
-function buildAccessSentence(city) {
+function buildAccessLine(city) {
   const { access } = city;
   if (!access) return '';
 
   if (access.railGateway) {
-    return `<p class="access-line">${access.railGateway}から、${access.railNote || 'アクセス可'}</p>`;
+    return `<p class="access-line">${access.railGateway}から街へ</p>`;
   }
 
   if (access.airportGateway) {
-    return `<p class="access-line">${access.airportGateway}から移動可</p>`;
+    return `<p class="access-line">${access.airportGateway}から市内へ</p>`;
   }
 
   if (access.ferryGateway) {
@@ -102,7 +97,6 @@ function buildTransportBlock(links, isLast) {
   const linksHtml = links.map((link) => buildLinkItem(link)).join('');
   return `
     <div class="result-block${lastClass}">
-      <div class="block-label">交通</div>
       <div class="link-list">${linksHtml}</div>
     </div>
   `;

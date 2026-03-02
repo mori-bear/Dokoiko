@@ -32,7 +32,7 @@
   --c-jr-kyushu:     #c0392b;
   --c-jr-ex:         #d44d00;
   --c-skyscanner:    #0770e3;
-  --c-google-maps:   #4285f4;
+  --c-google-maps:   #6b8cba;
   --c-bus:           #5a8a2a;
   --c-ferry:         #1a7a8a;
   --c-rental:        #7a7a7a;
@@ -335,8 +335,8 @@ body {
 
 .result-counter {
   display: flex;
-  justify-content: space-between;
-  font-size: 12px;
+  justify-content: flex-end;
+  font-size: 11px;
   color: var(--text-sub);
   padding: 0 4px 14px;
 }
